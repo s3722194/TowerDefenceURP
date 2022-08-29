@@ -23,7 +23,7 @@ public class GridSetup : MonoBehaviour
             GridTile tile = child.GetComponent<GridTile>();
             if(tile != null)
             {
-                print(child.name);
+                //print(child.name);
                
                 float newX = child.transform.position.x - x;
                 float newY = child.transform.position.y - y;
