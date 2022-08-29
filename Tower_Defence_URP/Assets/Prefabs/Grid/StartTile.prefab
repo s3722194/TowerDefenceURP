@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1135728280363216442}
   - component: {fileID: -2221466144099193206}
   m_Layer: 0
-  m_Name: WallTile
-  m_TagString: WallTile
+  m_Name: StartTile
+  m_TagString: StartTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7695552, g: 0.39248842, b: 0.7924528, a: 1}
+  m_Color: {r: 0.6820155, g: 0.7735849, b: 0.1788003, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

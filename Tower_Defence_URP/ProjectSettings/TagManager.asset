@@ -7,6 +7,10 @@ TagManager:
   - Manager
   - Grid
   - Wall
+  - WallTile
+  - GridTile
+  - StartTile
+  - EndTile
   layers:
   - Default
   - TransparentFX

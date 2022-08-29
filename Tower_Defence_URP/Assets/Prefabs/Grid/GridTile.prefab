@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1604103593223030460}
   m_Layer: 0
   m_Name: GridTile
-  m_TagString: Untagged
+  m_TagString: GridTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
