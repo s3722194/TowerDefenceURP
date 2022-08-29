@@ -101,8 +101,8 @@ public class SpawnGrid : MonoBehaviour
 
     private void DisplayGrid()
     {
-        int x = 0;
         int y = 0;
+        int x = 0;
         for (int i = -height / 2; i < height / 2; i++)
         {
             
@@ -116,10 +116,10 @@ public class SpawnGrid : MonoBehaviour
                 gridTile.x = x;
                 gridTile.y = y;
                 gridTile.nodeSize = 1;
-                x++;
+                y++;
             }
-            y++;
-            x = 0;
+            x++;
+            y = 0;
         }
     }
 
