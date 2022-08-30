@@ -18,10 +18,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Grid
+  - Wall
+  - Towers
+  - Tower Effects
   - 
   - 
   - 
@@ -47,4 +47,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2750682497
+    locked: 0
+  - name: Middleground
+    uniqueID: 3938272391
+    locked: 0
+  - name: Foreground
+    uniqueID: 3648415381
     locked: 0
