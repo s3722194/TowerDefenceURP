@@ -72,9 +72,12 @@ TagManager:
   - name: Enemy Effect
     uniqueID: 314535509
     locked: 0
+  - name: Death Lazer
+    uniqueID: 2453874695
+    locked: 0
+  - name: Death Tower
+    uniqueID: 3353135297
+    locked: 0
   - name: Special Effect
     uniqueID: 1156062459
-    locked: 0
-  - name: 
-    uniqueID: 3353135297
     locked: 0
