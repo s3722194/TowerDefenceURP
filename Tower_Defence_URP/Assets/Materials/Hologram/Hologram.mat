@@ -55,6 +55,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _Flicker: 0.3
+    - _FlickerCompare: 0.99
+    - _FlickerIntensity: 0.4
     - _FresnalPower: 3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

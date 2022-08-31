@@ -7,6 +7,10 @@ public class SpawnGrid : MonoBehaviour
     [SerializeField]
     private GameObject gridPrefab;
     [SerializeField]
+    private GameObject startPrefab;
+    [SerializeField]
+    private GameObject endPrefab;
+    [SerializeField]
     private GameObject wallPrefab;
     [SerializeField]
     [Range(4f, 20f)]
@@ -29,6 +33,10 @@ public class SpawnGrid : MonoBehaviour
     private GameObject gridParent;
     [SerializeField]
     private GameObject wallParent;
+    [SerializeField]
+    private GameObject startParent;
+    [SerializeField]
+    private GameObject endParent;
 
     public Vector2 Opening { get => opening; private set => opening = value; }
     public Vector2 End { get => end; private set => end = value; }
@@ -53,6 +61,13 @@ public class SpawnGrid : MonoBehaviour
             end = new Vector2(Random.Range(-width / 2, width/2), (-height/2) -1);
 
         }
+
+        GameObject startTile = Instantiate(startPrefab, Opening, Quaternion.identity);
+        startTile.transform.parent = startParent.transform;
+
+        GameObject endTile = Instantiate(endPrefab, end, Quaternion.identity);
+        endTile.transform.parent = startParent.transform;
+
         print("Start: " + Opening);
         print("End: " + end);
 
@@ -95,6 +110,8 @@ public class SpawnGrid : MonoBehaviour
                 westTile.transform.parent = wallParent.transform;
                 westTile.name = "WallTile (" + westPosition.x + ", " + westPosition.y + ")";
             }
+
+            
         }
         
     }
