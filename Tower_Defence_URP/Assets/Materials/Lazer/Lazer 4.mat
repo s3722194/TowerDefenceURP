@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lazer
+  m_Name: Lazer 4
   m_Shader: {fileID: -6465566751694194690, guid: 3b08dccfc373dc6418a36aa9cb6355fe, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -57,12 +57,12 @@ Material:
     - _EnableExternalAlpha: 0
     - _MaxNoiseValue: 1
     - _MinNoiseValue: 0.3
-    - _NoiseScale: 2
-    - _Power: 0.3
+    - _NoiseScale: 3
+    - _Power: 0.2
     - _Speed: 0.5
     m_Colors:
-    - _Color: {r: 64.00394, g: 17.45562, b: 123.482346, a: 1}
+    - _Color: {r: 84.329414, g: 13.050981, b: 191.74902, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed2D: {r: 0, g: -3, b: 0, a: 0}
+    - _Speed2D: {r: 0, g: -0.3, b: 0, a: 0}
   m_BuildTextureStacks: []
