@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Toxic Bkacground
+  m_Name: Toxic Bkacground 2
   m_Shader: {fileID: -6465566751694194690, guid: 626a60c34bbb772428b62cae658f33f9, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -55,12 +55,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _ShaderTime: 15
+    - _ShaderTime: 20
     - _TexturePower: 8
-    - _VorPower: 8
-    - _VorScale: 2
+    - _VorPower: 10
+    - _VorScale: 1
     m_Colors:
-    - _Color: {r: 1150.3022, g: 5.425967, b: 146.06413, a: 1}
+    - _Color: {r: 6.0225353, g: 135.15797, b: 1150.302, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _RipleTime: {r: -0.1, g: 0, b: 0, a: 0}
