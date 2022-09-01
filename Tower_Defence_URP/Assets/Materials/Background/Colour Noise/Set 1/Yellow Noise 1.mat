@@ -58,7 +58,7 @@ Material:
     - _NoiseScale: 50
     - _Step: 0.6
     m_Colors:
-    - _Color: {r: 0.97777843, g: 1, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.8741051, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Speed: {r: 0.3, g: 0, b: 0, a: 0}
