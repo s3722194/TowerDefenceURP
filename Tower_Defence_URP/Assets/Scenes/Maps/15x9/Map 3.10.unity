@@ -440,6 +440,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 947798260}
     m_Modifications:
+    - target: {fileID: 1135728280363216442, guid: 078d9e93603df2f4986ce88ab3c249c3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135728280363216442, guid: 078d9e93603df2f4986ce88ab3c249c3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -646551915
+      objectReference: {fileID: 0}
     - target: {fileID: 1135728280363216443, guid: 078d9e93603df2f4986ce88ab3c249c3, type: 3}
       propertyPath: m_Name
       value: WallTile (58)
