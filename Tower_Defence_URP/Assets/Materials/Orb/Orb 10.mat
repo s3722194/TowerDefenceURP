@@ -55,19 +55,19 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha_Radius: 0.7
-    - _CellSpeed: 33
+    - _CellSpeed: 10
     - _EnableExternalAlpha: 0
     - _Float: 0
     - _NoiseSpeed1: -4
     - _POwer_Alpha: 3
     - _PowerAphla: 9
     - _Power_1: 1.3
-    - _Power_2: 0.8
+    - _Power_2: 1.4
     - _Size: 1.3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_1: {r: 0.20288824, g: 2.8674877, b: 0.95050645, a: 0}
-    - _Color_2: {r: 0.10693307, g: 0.17562272, b: 0.8396226, a: 0}
+    - _Color_1: {r: 0.8192246, g: 0.5649696, b: 4.4360576, a: 0}
+    - _Color_2: {r: 0.53612584, g: 0.9828974, b: 17.066673, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseSpeed: {r: 0, g: -1.1, b: 0, a: 0}
     - _NoiseTime: {r: -0.4, g: -0.4, b: 0, a: 0}
