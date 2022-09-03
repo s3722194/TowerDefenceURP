@@ -2449,10 +2449,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1906.0001220703125,
-            "y": 2599.000244140625,
-            "width": 124.0001220703125,
-            "height": 172.999755859375
+            "x": -1792.9998779296875,
+            "y": 2446.0,
+            "width": 124.0,
+            "height": 173.0
         }
     },
     "m_Slots": [
@@ -3798,10 +3798,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1651.0001220703125,
-            "y": 2621.0,
+            "x": -1549.9998779296875,
+            "y": 2500.0,
             "width": 208.0,
-            "height": 302.000244140625
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -4673,10 +4673,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1900.732421875,
-            "y": 2858.138427734375,
-            "width": 0.0,
-            "height": 0.0
+            "x": -1779.9998779296875,
+            "y": 2681.0,
+            "width": 129.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -5037,7 +5037,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b78a20b17fa04b98acc8238e5718f22a",
     "m_Id": 0,
-    "m_DisplayName": "POwer Alpha",
+    "m_DisplayName": "PowerAphla",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -5305,10 +5305,10 @@
     "m_Guid": {
         "m_GuidSerialized": "5b69f9b0-7759-4910-a304-59cd7580f164"
     },
-    "m_Name": "Speed1",
+    "m_Name": "NoiseSpeed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Speed1",
-    "m_DefaultReferenceName": "_Speed1",
+    "m_RefNameGeneratedByDisplayName": "NoiseSpeed",
+    "m_DefaultReferenceName": "_NoiseSpeed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -5432,7 +5432,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "cb0735a9d552482c9f5275eda7d3d516",
     "m_Id": 0,
-    "m_DisplayName": "NoiseSpeed1",
+    "m_DisplayName": "CellSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -5490,10 +5490,10 @@
     "m_Guid": {
         "m_GuidSerialized": "e186049b-ba3b-4767-a6d1-bdf006cc56f7"
     },
-    "m_Name": "NoiseSpeed1",
+    "m_Name": "CellSpeed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "NoiseSpeed1",
-    "m_DefaultReferenceName": "_NoiseSpeed1",
+    "m_RefNameGeneratedByDisplayName": "CellSpeed",
+    "m_DefaultReferenceName": "_CellSpeed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -5665,10 +5665,10 @@
     "m_Guid": {
         "m_GuidSerialized": "3f9cbaeb-98e7-4451-a4c9-4d32fae5cb77"
     },
-    "m_Name": "POwer Alpha",
+    "m_Name": "PowerAphla",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "POwer Alpha",
-    "m_DefaultReferenceName": "_POwer_Alpha",
+    "m_RefNameGeneratedByDisplayName": "PowerAphla",
+    "m_DefaultReferenceName": "_PowerAphla",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -6089,7 +6089,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "f7582fc7e11445ddad2aea3364283dd9",
     "m_Id": 0,
-    "m_DisplayName": "Speed1",
+    "m_DisplayName": "NoiseSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
