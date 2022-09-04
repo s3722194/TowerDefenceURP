@@ -12,10 +12,14 @@ public class EnemyUnit : AUnit
     public int LivesOnEscape { get => livesOnEscape; private set => livesOnEscape = value; }
     public int MoneyOnDeath { get => moneyOnDeath; private set => moneyOnDeath = value; }
 
+    private GameManager gameManager;
+
     protected override void Start()
     {
         base.Start();
         gameObject.tag = enemyTag;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
     }
 
     protected override void Update()
@@ -51,7 +55,7 @@ public class EnemyUnit : AUnit
 
     public override void Die()
     {
-        GameManager.Instance.Money += MoneyOnDeath;
+        gameManager.Money += MoneyOnDeath;
         Destroy(gameObject);
     }
 
