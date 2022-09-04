@@ -58,15 +58,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AshesPower: 1.2
+    - _AshesScale: 2.5
     - _DissolveScale: 2.5
     - _DistorstionAmount: 0.1
     - _DistortionScale: 4.7
     - _EnableExternalAlpha: 0
+    - _NoiseScale: 5
     m_Colors:
     - _AshesTime: {r: -0.1, g: -1, b: 0, a: 0}
     - _Color: {r: 1367.1202, g: 221.88861, b: 0, a: 1}
     - _FireTime: {r: 0, g: 0, b: 0, a: 0}
-    - _FireTme: {r: 0, g: -1.2, b: 0, a: 0}
+    - _FireTme: {r: 0, g: -2.2, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Time: {r: 0, g: 0, b: 0, a: 0}
