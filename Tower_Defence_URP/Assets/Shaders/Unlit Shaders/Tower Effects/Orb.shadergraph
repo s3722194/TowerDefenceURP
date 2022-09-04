@@ -181,6 +181,9 @@
         },
         {
             "m_Id": "d0bde84239464633bcc30a6941f1d206"
+        },
+        {
+            "m_Id": "db24cb2a2dc04672b0b0bb5ec74c9684"
         }
     ],
     "m_StickyNoteDatas": [],
@@ -2272,17 +2275,17 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "431e84101f164d6db1c17a354e7689e8",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "db24cb2a2dc04672b0b0bb5ec74c9684"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -743.9999389648438,
-            "y": 917.9999389648438,
-            "width": 207.9998779296875,
-            "height": 302.00006103515627
+            "x": -530.0001220703125,
+            "y": 973.0,
+            "width": 208.00006103515626,
+            "height": 302.0001220703125
         }
     },
     "m_Slots": [
@@ -5091,6 +5094,17 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "db24cb2a2dc04672b0b0bb5ec74c9684",
+    "m_Title": "Final Sprite",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
+    }
 }
 
 {

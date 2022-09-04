@@ -166,6 +166,9 @@
         },
         {
             "m_Id": "7a9c582a1c284eaab71711da563d1b76"
+        },
+        {
+            "m_Id": "426d7411e8ed4293820dd45380550fc5"
         }
     ],
     "m_StickyNoteDatas": [],
@@ -635,8 +638,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 602.9999389648438,
-            "y": 440.0000305175781
+            "x": 763.0001220703125,
+            "y": 457.9999694824219
         },
         "m_Blocks": [
             {
@@ -652,8 +655,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 602.9999389648438,
-            "y": 694.0000610351563
+            "x": 763.0001220703125,
+            "y": 712.0
         },
         "m_Blocks": [
             {
@@ -1506,16 +1509,16 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "3bedc7741ca447f6b55f92053c8dc22d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "426d7411e8ed4293820dd45380550fc5"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 257.9999694824219,
-            "y": 562.0000610351563,
-            "width": 207.99996948242188,
+            "x": 398.0,
+            "y": 538.0000610351563,
+            "width": 208.0,
             "height": 301.99993896484377
         }
     },
@@ -1762,6 +1765,17 @@
     },
     "m_Property": {
         "m_Id": "885c6f862c4f42b6b1a5e9394d1180d5"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "426d7411e8ed4293820dd45380550fc5",
+    "m_Title": "Final Sprite",
+    "m_Position": {
+        "x": 171.0000457763672,
+        "y": 479.0001220703125
     }
 }
 
@@ -3073,16 +3087,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "8f3e957afe1a4225ba2720c56d974478",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "426d7411e8ed4293820dd45380550fc5"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 55.999996185302737,
-            "y": 713.0,
-            "width": 148.9999237060547,
+            "x": 196.00003051757813,
+            "y": 689.0,
+            "width": 149.0,
             "height": 34.0
         }
     },
