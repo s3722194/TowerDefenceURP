@@ -127,6 +127,9 @@
         },
         {
             "m_Id": "3af15b89f0ee4398885db88821b7b9f7"
+        },
+        {
+            "m_Id": "384e72660b524e0999bb1c5c5e981012"
         }
     ],
     "m_StickyNoteDatas": [],
@@ -1143,6 +1146,17 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "384e72660b524e0999bb1c5c5e981012",
+    "m_Title": "Final Sprite",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
     }
 }
 
@@ -2455,7 +2469,7 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "9bd129d52e054b7faaefc3e51149895d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "384e72660b524e0999bb1c5c5e981012"
     },
     "m_Name": "Multiply",
     "m_DrawState": {

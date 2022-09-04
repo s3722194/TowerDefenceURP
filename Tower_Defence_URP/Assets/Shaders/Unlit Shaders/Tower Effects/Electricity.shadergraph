@@ -636,10 +636,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -853.9999389648438,
-            "y": 563.9999389648438,
-            "width": 138.99993896484376,
-            "height": 34.00006103515625
+            "x": -859.0000610351563,
+            "y": 717.0000610351563,
+            "width": 139.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1301,8 +1301,8 @@
     "m_ObjectId": "45d1b5aecf034d75acaf74cb37e7804e",
     "m_Title": "Alpha",
     "m_Position": {
-        "x": -878.9999389648438,
-        "y": 480.0000915527344
+        "x": -884.0001220703125,
+        "y": 633.0000610351563
     }
 }
 
@@ -1627,9 +1627,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -365.00006103515627,
-            "y": 539.0,
-            "width": 208.00001525878907,
+            "x": -370.0,
+            "y": 692.0000610351563,
+            "width": 208.0,
             "height": 301.99993896484377
         }
     },
@@ -1677,17 +1677,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "5f7a4c1a3e8942dd89cb6061ef66c26f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "f02c4e7f3e9c4730bed5bf7f74612fe6"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -625.0,
-            "y": -40.0000114440918,
-            "width": 104.99993896484375,
-            "height": 34.000038146972659
+            "x": -596.0000610351563,
+            "y": 55.00001525878906,
+            "width": 105.00003051757813,
+            "height": 34.00000762939453
         }
     },
     "m_Slots": [
@@ -2064,10 +2064,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -415.99993896484377,
-            "y": -5.00006628036499,
-            "width": 207.99996948242188,
-            "height": 302.0000305175781
+            "x": -402.0,
+            "y": 50.00001525878906,
+            "width": 208.00001525878907,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -2152,7 +2152,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "79c58f18c2294142b48ea66d1c5ee097",
-    "m_Title": "Electricty",
+    "m_Title": "Electricity",
     "m_Position": {
         "x": 10.0,
         "y": 10.0
@@ -3122,10 +3122,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -678.9999389648438,
-            "y": 539.0,
-            "width": 208.0,
-            "height": 435.0
+            "x": -684.0000610351563,
+            "y": 692.0000610351563,
+            "width": 208.00006103515626,
+            "height": 434.99993896484377
         }
     },
     "m_Slots": [
@@ -3490,8 +3490,8 @@
     "m_ObjectId": "f02c4e7f3e9c4730bed5bf7f74612fe6",
     "m_Title": "Final Sprite",
     "m_Position": {
-        "x": 10.0,
-        "y": 10.0
+        "x": -621.0001220703125,
+        "y": -8.999969482421875
     }
 }
 
