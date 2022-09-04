@@ -11,6 +11,9 @@ TagManager:
   - GridTile
   - StartTile
   - EndTile
+  - GameManager
+  - AudioManager
+  - LevelManager
   layers:
   - Default
   - TransparentFX
