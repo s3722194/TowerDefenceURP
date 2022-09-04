@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1135728280363216442}
   - component: {fileID: -2221466144099193206}
   m_Layer: 0
-  m_Name: EndTile
+  m_Name: TealEnd
   m_TagString: EndTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
