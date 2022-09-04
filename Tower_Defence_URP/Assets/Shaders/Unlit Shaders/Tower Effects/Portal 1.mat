@@ -58,10 +58,10 @@ Material:
     - _EnableExternalAlpha: 0
     - _TexturePower: 2
     - _TwirlScale: 3
-    - _TwirlStrength: 10
+    - _TwirlStrength: 20
     - _VorPower: 1
     m_Colors:
-    - _Color: {r: 927.62354, g: 76.29804, b: 718.80786, a: 1}
+    - _Color: {r: 1121.615, g: 111.10337, b: 161.0567, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Speed: {r: 0.5, g: 0.5, b: 0, a: 0}

@@ -24,6 +24,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BaseTexture:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HologramTexture:
+        m_Texture: {fileID: 2800000, guid: 2b29d5122ccee2743b9a725a130f3b30, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -64,10 +72,12 @@ Material:
     - _FlickerIntensity: 0.4
     - _FresnalPower: 3
     m_Colors:
+    - _BaseColour: {r: 0, g: 0.05, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_2: {r: 0, g: 3.9275537, b: 7.061659, a: 0}
     - _Color_3: {r: 0, g: 19.344223, b: 22.627417, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _FrenalColour: {r: 82.22067, g: 0, b: 20.55517, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Speed: {r: 0, g: 0.03, b: 0, a: 0}
     - _Tilling: {r: 4, g: 1, b: 0, a: 0}
