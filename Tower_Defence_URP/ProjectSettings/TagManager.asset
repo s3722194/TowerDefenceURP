@@ -20,6 +20,7 @@ TagManager:
   - Map_5x5
   - Map_9x9
   - Map_15x9
+  - Tower
   layers:
   - Default
   - TransparentFX

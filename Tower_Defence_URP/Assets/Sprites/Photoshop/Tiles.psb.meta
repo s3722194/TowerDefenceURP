@@ -91,48 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Hue/Saturation 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 492
-      y: 307
-      width: 0
-      height: 0
-    spriteID: a041436029b30dc42bc40def5964fe93
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -28, y: -213}
-  - name: Brightness/Contrast 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 492
-      y: 315
-      width: 0
-      height: 0
-    spriteID: 2db9a351872dc4f458e3763b073aaca1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -28, y: -205}
   - name: Tile 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -507,8 +465,8 @@ ScriptedImporter:
     layerID: 27
     mosaicPosition: {x: 492, y: 307}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Brightness/Contrast 1
     spriteName: Brightness/Contrast 1
     isGroup: 0
@@ -517,8 +475,8 @@ ScriptedImporter:
     layerID: 26
     mosaicPosition: {x: 492, y: 315}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Tile 1
     spriteName: Tile 1
     isGroup: 0

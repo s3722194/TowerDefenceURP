@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1721770921013829175}
   m_Layer: 2
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,5 +122,6 @@ MonoBehaviour:
   rDamage: 2
   range: 5
   destructable: 0
+  buildingTag: 
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 5171430460733740458, guid: 34cb36417dafa1845a62255bbf0435a0, type: 3}

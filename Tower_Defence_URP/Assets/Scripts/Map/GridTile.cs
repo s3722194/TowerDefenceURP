@@ -7,18 +7,19 @@ public class GridTile : MonoBehaviour
     public int x;
     public int y;
     public float nodeSize;
-    private ABuilding building;
+    private GameObject occupiedTower;
     
 
     
 
-    public ABuilding Building { get => building; set => building = value; }
-    public bool Occupied { get => Building != null; }
+    public GameObject OccupiedTower { get => occupiedTower; set => occupiedTower = value; }
+    public bool Occupied { get => occupiedTower != null; }
+    public GameManager GM;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        occupiedTower = null;
     }
 
     // Update is called once per frame
@@ -27,14 +28,24 @@ public class GridTile : MonoBehaviour
         
     }
 
-   
+    void OnMouseDown()
+    {
+        if(occupiedTower == null)
+        {
+            if(GM.getSelectedTower() != null)
+            {
+                GameObject spawnedTower = Instantiate(GM.getSelectedTower(), this.transform.position, this.transform.rotation);
+                occupiedTower = spawnedTower;
+            }
+        }
+    }
 
 
 
 
     public bool GetOccupied()
     {
-        return Building != null;
+        return occupiedTower != null;
     }
 
     /*/// <summary>
