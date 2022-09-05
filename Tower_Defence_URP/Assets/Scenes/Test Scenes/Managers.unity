@@ -257,10 +257,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
   gridBackground: {fileID: 6908436801002247194, guid: 63c58bb69544ff94bae5d621534d2c99, type: 3}
-  map: {fileID: 4367721508683645009, guid: 4ba6114fbffb3ec48a81a2a481717c92, type: 3}
+  map: {fileID: 4331385869890323860, guid: fd6dc3144b1eed048b11e1054718f668, type: 3}
   wallMaterials:
-  - {fileID: 0}
-  tileMaterials: []
-  startMaterials: []
-  endMaterials: []
+  - {fileID: 2100000, guid: 8f49776478cfc0a41a9376a404c761b3, type: 2}
+  tileMaterials:
+  - {fileID: 2100000, guid: 1c0779891199f8547bf1eba5d5467846, type: 2}
+  - {fileID: 2100000, guid: 7ba48cba6f538ef49b1f67d4f9cf0733, type: 2}
+  - {fileID: 2100000, guid: accadb3e6190e3442b30f166b1372cc0, type: 2}
+  startMaterials:
+  - {fileID: 2100000, guid: f6918018a0ae2ad4fa1ee2bc91875413, type: 2}
+  endMaterials:
+  - {fileID: 2100000, guid: a35dc1af91d78904db6df467778ff568, type: 2}
   delayStart: 0

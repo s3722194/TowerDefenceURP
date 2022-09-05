@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DarkBlueTile
+  m_Name: GreenTile
   m_Shader: {fileID: -6465566751694194690, guid: c3e12e4e7b0e1664bb75662fffb6d0f3, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -61,7 +61,7 @@ Material:
     - _EnableExternalAlpha: 0
     - _Scale: 0.9
     m_Colors:
-    - _Color: {r: 0.08490564, g: 0.09623396, b: 0.11320752, a: 1}
+    - _Color: {r: 0.25996798, g: 0.4339623, b: 0.27137685, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
