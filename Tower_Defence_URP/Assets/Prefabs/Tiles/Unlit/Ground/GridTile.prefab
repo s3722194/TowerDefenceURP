@@ -140,6 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d84c65ceda63b4a82fc48e82d381ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColour: {r: 0, g: 0, b: 0, a: 0}
+  highlightColour: {r: 0.7490196, g: 0.8149707, b: 0.85882354, a: 0}
   baseColour: {r: 0.3882353, g: 0.41568628, b: 0.45882353, a: 1}
-  hoverColour: {r: 0.7372549, g: 0.7764706, b: 0.8392157, a: 1}
+  hoverColour: {r: 0.4033909, g: 0.42603448, b: 0.46226418, a: 1}

@@ -8,7 +8,7 @@ public class HighlightGrid : MonoBehaviour
     private bool mouseDrag = false;
     [SerializeField]
     private Color highlightColour = new Color(99.0f / 255.0f, 106.0f / 255.0f, 117.0f / 255.0f);
-    [SerializeField]
+    
     private Color baseColour;
     [SerializeField]
     private Color hoverColour = new Color(188.0f / 255.0f, 198.0f / 255.0f, 214.0f / 255.0f);
