@@ -55,7 +55,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _NoiseScale: 600
+    - _NoiseScale: 650
     - _Step: 0.67
     m_Colors:
     - _Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}

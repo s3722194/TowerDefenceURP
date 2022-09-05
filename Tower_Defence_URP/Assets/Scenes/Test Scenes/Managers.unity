@@ -257,7 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
   gridBackground: {fileID: 7140031105269995494, guid: b72e1a1feb5b16841b6a1a3d3ac377e9, type: 3}
-  map: {fileID: 4331385869890323860, guid: fd6dc3144b1eed048b11e1054718f668, type: 3}
+  map: {fileID: 6754072134003331203, guid: ed435e0cacc252944a3b059f491d1c3d, type: 3}
   wallMaterials:
   - {fileID: 2100000, guid: 8f49776478cfc0a41a9376a404c761b3, type: 2}
   tileMaterials:
@@ -281,4 +281,5 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f6918018a0ae2ad4fa1ee2bc91875413, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: a35dc1af91d78904db6df467778ff568, type: 2}
+  mapSize: Map_19x19
   delayStart: 0
