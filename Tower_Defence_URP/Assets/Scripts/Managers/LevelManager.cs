@@ -12,6 +12,15 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject map;
 
+    [SerializeField]
+    private List<Material> wallMaterials = new List<Material>();
+    [SerializeField]
+    private List<Material> tileMaterials = new List<Material>();
+    [SerializeField]
+    private List<Material> startMaterials = new List<Material>();
+    [SerializeField]
+    private List<Material> endMaterials = new List<Material>();
+
     private float time;
     private GameObject ui;
     //private GameObject managers;

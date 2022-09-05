@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 192729066}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 1679346990}
   m_Layer: 0
   m_Name: LevelManager
-  m_TagString: Untagged
+  m_TagString: LevelManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258,4 +258,9 @@ MonoBehaviour:
   background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
   gridBackground: {fileID: 6908436801002247194, guid: 63c58bb69544ff94bae5d621534d2c99, type: 3}
   map: {fileID: 4367721508683645009, guid: 4ba6114fbffb3ec48a81a2a481717c92, type: 3}
+  wallMaterials:
+  - {fileID: 0}
+  tileMaterials: []
+  startMaterials: []
+  endMaterials: []
   delayStart: 0
