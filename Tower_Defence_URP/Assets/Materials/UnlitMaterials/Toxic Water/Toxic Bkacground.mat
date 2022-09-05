@@ -55,8 +55,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _NoisePower: 2
+    - _NoiseScale: 10
     - _ShaderTime: 15
     - _TexturePower: 8
+    - _VorAngleSpeed: 15
     - _VorPower: 8
     - _VorScale: 2
     m_Colors:
@@ -66,4 +69,5 @@ Material:
     - _RipleTime: {r: -0.1, g: 0, b: 0, a: 0}
     - _Speed: {r: -0.05, g: 0.03, b: 0, a: 0}
     - _Tiling: {r: 5, g: 5, b: 0, a: 0}
+    - _VorSpeed: {r: 0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
