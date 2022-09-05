@@ -9,6 +9,11 @@ public class TowerButtons : MonoBehaviour
 
     [SerializeField] private GameObject TowerPrefab;
 
+    private void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     public void ToggleTowerPanel()
     {
         if (!TowerPanel.activeSelf)

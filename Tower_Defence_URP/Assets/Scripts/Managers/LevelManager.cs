@@ -20,7 +20,10 @@ public class LevelManager : MonoBehaviour
     private List<Material> startMaterials = new List<Material>();
     [SerializeField]
     private List<Material> endMaterials = new List<Material>();
-   
+
+    //to calcualte the x and y corrdinates for the game
+    [SerializeField]
+    private Dictionary<string, Vector2> southWestCorners = new Dictionary<string, Vector2>();
 
     private float time;
     private GameObject ui;
@@ -28,6 +31,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private int delayStart;
 
+    public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
     public GameObject Background { get => background; set => background = value; }
     public GameObject GridBackground { get => gridBackground; set => gridBackground = value; }
 

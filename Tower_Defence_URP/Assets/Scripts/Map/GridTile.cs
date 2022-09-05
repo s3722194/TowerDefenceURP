@@ -19,6 +19,7 @@ public class GridTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         occupiedTower = null;
     }
 
