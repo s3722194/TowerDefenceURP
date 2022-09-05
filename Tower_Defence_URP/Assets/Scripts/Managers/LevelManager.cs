@@ -1,41 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    private int money;
-    private int lives;
+    [SerializeField]
+    private GameObject background;
+    [SerializeField]
+    private GameObject gridBackground;
+    [SerializeField]
+    private GameObject map;
+
     private float time;
+    private GameObject ui;
+    //private GameObject managers;
 
     [SerializeField] private int delayStart;
 
-    public int Money { get => money; set => money = value; }
-    public int Lives { get => lives; set => lives = value; }
+    public GameObject Background { get => background; set => background = value; }
+    public GameObject GridBackground { get => gridBackground; set => gridBackground = value; }
+
+    public GameObject Map { get => map; set => map = value; }
+
+
+  
+
 
     // Start is called before the first frame update
     void Start()
     {
+
         time = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.fixedDeltaTime;
+        time += Time.deltaTime;
         if (time > delayStart)
         {
             // Start sending waves
         }
     }
 
-    public void Escape(EnemyUnit unit)
-    {
-        Lives -= unit.LivesOnEscape;
-        Money += unit.MoneyOnDeath;
-        if (Lives <= 0)
-        {
-            // TODO: End Level.
-        }
-    }
+   
 }

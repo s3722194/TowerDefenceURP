@@ -255,4 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fbf55f178ff8646b9b1231f18363af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
+  gridBackground: {fileID: 6908436801002247194, guid: 63c58bb69544ff94bae5d621534d2c99, type: 3}
+  map: {fileID: 4367721508683645009, guid: 4ba6114fbffb3ec48a81a2a481717c92, type: 3}
   delayStart: 0

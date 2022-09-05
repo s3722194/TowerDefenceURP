@@ -43,7 +43,7 @@ public class EnemyUnit : AUnit
 
         if (Vector2.Distance(gameObject.GetComponent<Rigidbody2D>().position, GetEndPosition()) <= grid.EndSensitivity)
         {
-            levelManager.Escape(this);
+            gameManager.Escape(this);
         }
         throw new NotImplementedException();
     }

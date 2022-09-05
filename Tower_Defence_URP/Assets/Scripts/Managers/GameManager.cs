@@ -4,18 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    private int lives;
+    private int money;
+    public int Money {  get => money; set => money =value; }
     
-    [SerializeField]
-    public int Money {  get; set; }
+    public int Lives { get => lives; set => lives = value; }
     // Start is called before the first frame update
     void Start()
     {
-        
+        // probs want to inistialise these values
+        // idk what they are so i wont touch them
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Escape(EnemyUnit unit)
+    {
+        Lives -= unit.LivesOnEscape;
+        Money += unit.MoneyOnDeath;
+        if (Lives <= 0)
+        {
+            // TODO: End Level.
+        }
     }
 }

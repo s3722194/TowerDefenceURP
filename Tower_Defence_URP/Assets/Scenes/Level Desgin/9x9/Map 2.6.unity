@@ -6344,7 +6344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b84bbabe020d046af9471f4484abf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SouthWestCorner: {x: -2, y: -2}
+  SouthWestCorner: {x: -4, y: -4}
   NorthEastCorner: {x: 0, y: 0}
 --- !u!1001 &1683284121
 PrefabInstance:
