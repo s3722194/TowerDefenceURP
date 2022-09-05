@@ -8,9 +8,9 @@ public class GridTile : MonoBehaviour
     public int y;
     public float nodeSize;
     private ABuilding building;
-    private SpriteRenderer spriteRenderer;
+    
 
-    private bool mouseDrag = false;
+    
 
     public ABuilding Building { get => building; set => building = value; }
     public bool Occupied { get => Building != null; }
@@ -18,7 +18,7 @@ public class GridTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -27,38 +27,7 @@ public class GridTile : MonoBehaviour
         
     }
 
-    public void OnMouseDrag()
-    {
-        print("Mouse Drag");
-       mouseDrag = true;
-      //  spriteRenderer.color = new Color(29.0f / 255.0f, 27.0f / 255.0f, 27.0f / 255.0f, 1.0f);
-    }
-
-    public void OnMouseDown()
-    {
-        spriteRenderer.color = new Color(188.0f / 255.0f, 198.0f / 255.0f, 214.0f / 255.0f);
-    }
-
-    public void OnMouseUp()
-    {
-        print("Click! "+x+" ,"+y);
-        //spriteRenderer.color = new Color(99.0f / 255.0f, 106.0f / 255.0f, 117.0f / 255.0f, 1.0f);
-        mouseDrag = false;
-    }
-
-    public void OnMouseEnter()
-    {
-        //print("Tile: " + x + " ," + y +" "+ "Mouse Enter");
-        spriteRenderer.color = new Color(99.0f/255.0f, 106.0f / 255.0f, 117.0f / 255.0f, 1.0f);
-       // spriteRenderer.color = Color.red;
-    }
-
-    public void OnMouseExit()
-    {
-        //print("Tile: " + x + " ," + y + " " + "Mouse Exit");
-        spriteRenderer.color = new Color(29.0f / 255.0f, 27.0f / 255.0f, 27.0f / 255.0f, 1.0f);
-       // spriteRenderer.color = Color.black;
-    }
+   
 
 
 
