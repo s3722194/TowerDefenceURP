@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tile 1
+  m_Name: Tile 8
   m_Shader: {fileID: -6465566751694194690, guid: a1b8a6a62b3973c4fb4fed615f8e89fd, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: aa757e9892f03514b92d8c50a25a48be, type: 3}
+        m_Texture: {fileID: 2800000, guid: a26edf9f66956a0429e39dfa2d3090e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
