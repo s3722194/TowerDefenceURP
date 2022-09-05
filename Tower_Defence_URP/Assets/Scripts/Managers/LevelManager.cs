@@ -32,6 +32,11 @@ public class LevelManager : MonoBehaviour
 
     public GameObject Map { get => map; set => map = value; }
 
+    public List<Material> TileMaterials { get =>tileMaterials; }
+    public List<Material> StartMaterials { get => startMaterials; }
+    public List<Material> EndMaterials { get =>endMaterials; }
+    public List<Material> WallMaterials { get => wallMaterials; }
+
 
   
 
