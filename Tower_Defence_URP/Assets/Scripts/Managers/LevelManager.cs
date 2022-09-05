@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     private List<Material> startMaterials = new List<Material>();
     [SerializeField]
     private List<Material> endMaterials = new List<Material>();
+   
 
     private float time;
     private GameObject ui;
@@ -36,6 +37,8 @@ public class LevelManager : MonoBehaviour
     public List<Material> StartMaterials { get => startMaterials; }
     public List<Material> EndMaterials { get =>endMaterials; }
     public List<Material> WallMaterials { get => wallMaterials; }
+
+    
 
 
   
