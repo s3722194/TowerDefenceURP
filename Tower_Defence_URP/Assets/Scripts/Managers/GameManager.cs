@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private GameObject selectedTower;
 
     private int lives;
     private int money;
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     {
         // probs want to inistialise these values
         // idk what they are so i wont touch them
+
+        selectedTower = null;
     }
 
     // Update is called once per frame
@@ -31,5 +34,17 @@ public class GameManager : MonoBehaviour
         {
             // TODO: End Level.
         }
+    }
+
+    public void setSelectedTower(GameObject _selectedTower)
+    {
+        selectedTower = _selectedTower;
+        Debug.Log("setting tower to " + selectedTower);
+    }
+
+    public GameObject getSelectedTower()
+    {
+        Debug.Log("selected tower -> " + selectedTower);
+        return selectedTower;
     }
 }

@@ -101,6 +101,8 @@ MonoBehaviour:
   x: 0
   y: 0
   nodeSize: 0
+  GM: {fileID: 5200878493993091196, guid: adb794a6d318bd049bd774cfa31504d2, type: 3}
+  towerManager: {fileID: 2668423926456948954, guid: d3e22a194d397d845a1505fccd58857b, type: 3}
 --- !u!61 &1604103593223030460
 BoxCollider2D:
   m_ObjectHideFlags: 0
