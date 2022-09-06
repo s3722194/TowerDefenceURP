@@ -87,6 +87,12 @@ public class Grid : MonoBehaviour
         }
     }
 
+    public void UpdatePosition(GridTile tile)
+    {
+        Vector2Int pos = new Vector2Int((int)tile.transform.position.x, (int)tile.transform.position.y);
+        nodes[pos.x, pos.y] = tile.Occupied;
+    }
+
     public List<Vector2Int> GetPath(int entryNum = 0, int exitNum = 0)
     {
         if (entryNum >= startPositions.Count)

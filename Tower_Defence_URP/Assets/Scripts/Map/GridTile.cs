@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class GridTile : MonoBehaviour
 {
+    private GameObject occupiedTower;
     public int x;
     public int y;
     public float nodeSize;
-    private GameObject occupiedTower;
-    
 
-    
+    public GameObject OccupiedTower
+    {
+        get
+        {
+            return occupiedTower;
+        }
+        private set
+        {
+            occupiedTower = value;
+            GetGrid().UpdatePosition(this);
+        }
+    }
 
-    public GameObject OccupiedTower { get => occupiedTower; set => occupiedTower = value; }
-    public bool Occupied { get => occupiedTower != null; }
-    public GameManager GM;
+    public bool Occupied { get => OccupiedTower != null; }
+    private GameManager GM;
 
     // Start is called before the first frame update
     void Start()
     {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        occupiedTower = null;
+        OccupiedTower = null;
     }
 
     // Update is called once per frame
@@ -31,22 +40,25 @@ public class GridTile : MonoBehaviour
 
     void OnMouseDown()
     {
-        if(occupiedTower == null)
+        if(OccupiedTower == null)
         {
             if(GM.getSelectedTower() != null)
             {
+                // Place Tower
                 GameObject spawnedTower = Instantiate(GM.getSelectedTower(), this.transform.position, this.transform.rotation);
-                occupiedTower = spawnedTower;
+                OccupiedTower = spawnedTower;
             }
         }
     }
 
-
-
-
     public bool GetOccupied()
     {
-        return occupiedTower != null;
+        return OccupiedTower != null;
+    }
+
+    private Grid GetGrid()
+    {
+        return transform.parent.parent.GetComponent<Grid>();
     }
 
     /*/// <summary>
