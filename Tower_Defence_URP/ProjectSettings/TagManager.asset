@@ -22,6 +22,7 @@ TagManager:
   - Map_15x9
   - Tower
   - Map_19x19
+  - GridBackground
   layers:
   - Default
   - TransparentFX

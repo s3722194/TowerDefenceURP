@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
-  gridBackground: {fileID: 7140031105269995494, guid: b72e1a1feb5b16841b6a1a3d3ac377e9, type: 3}
+  gridBackground: {fileID: 5019763209384083634, guid: cbce546028ff0ee4fbc9bb635fbef6bd, type: 3}
   map: {fileID: 3097521260592855373, guid: b5ce9276ff1bee44d981793efa73cd84, type: 3}
   wallMaterials:
   - {fileID: 2100000, guid: 8f49776478cfc0a41a9376a404c761b3, type: 2}
