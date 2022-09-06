@@ -440,6 +440,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636119534}
     m_Modifications:
+    - target: {fileID: 2264258985731535735, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258985731535735, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258985986195176, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258985986195176, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2264258986557886711, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -487,6 +503,22 @@ PrefabInstance:
     - target: {fileID: 2264258986557886712, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
       propertyPath: m_Name
       value: CYM Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258986802178335, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258986802178335, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258987420784548, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264258987420784548, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fffa714d1582d1e45bf402e9e13a1f69, type: 3}
