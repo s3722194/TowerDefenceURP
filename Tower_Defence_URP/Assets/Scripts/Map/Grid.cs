@@ -124,4 +124,11 @@ public class Grid : MonoBehaviour
         throw new NotImplementedException();
         return path;
     }
+
+   
+    public bool ContainsNode(Node node)
+    {
+        throw new NotImplementedException();
+        
+    }
 }

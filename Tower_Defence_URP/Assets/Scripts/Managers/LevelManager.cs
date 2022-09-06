@@ -54,7 +54,7 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         southWestCorners.Add("Map_9x9", new Vector2(-4, -4));
-        southWestCorners.Add("Map_19x19", new Vector2(-4, -14));
+        southWestCorners.Add("Map_19x19", new Vector2(-9, -9));
     }
 
     // Start is called before the first frame update
