@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("setting tower to " + selectedTower);
     }
 
+    public void resetTower()
+    {
+        selectedTower = null;
+    }
+
     public GameObject getSelectedTower()
     {
         Debug.Log("selected tower -> " + selectedTower);

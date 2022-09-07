@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 0}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
 --- !u!1 &197528080058275412
@@ -570,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 0}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
 --- !u!1 &1813937208795099540
@@ -856,6 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 0}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 4062520100240784665, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
 --- !u!1 &2417131624504825691
@@ -1654,6 +1657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 3187447494279116426}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 731292499974833925, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
 --- !u!1 &3187447494042253738
@@ -3100,6 +3104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 3187447494279116426}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 0}
 --- !u!1 &3334060510499778590
@@ -3385,7 +3390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d10abc0c24d3ff47a0e462ec9da0624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TowerPanel: {fileID: 0}
+  TowerPanel: {fileID: 3187447494279116426}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
 --- !u!1 &3647758761079437814
@@ -3536,7 +3542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d10abc0c24d3ff47a0e462ec9da0624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TowerPanel: {fileID: 0}
+  TowerPanel: {fileID: 3187447494279116426}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 2823415487228418254, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
 --- !u!1 &4696477573461569285
@@ -3688,6 +3695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TowerPanel: {fileID: 0}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
 --- !u!1 &5766700071978150379
@@ -4353,7 +4361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d10abc0c24d3ff47a0e462ec9da0624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TowerPanel: {fileID: 0}
+  TowerPanel: {fileID: 3187447494279116426}
+  TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
   TowerPrefab: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
 --- !u!1 &8207531636861882770

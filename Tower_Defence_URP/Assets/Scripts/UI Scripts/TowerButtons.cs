@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerButtons : MonoBehaviour
 {
     public GameObject TowerPanel;
+    public GameObject TowerInfoPanel;
     public GameManager gm;
 
     [SerializeField] private GameObject TowerPrefab;
@@ -28,6 +29,42 @@ public class TowerButtons : MonoBehaviour
 
     public void SelectTower()
     {
-        gm.setSelectedTower(TowerPrefab);
+        if(!TowerInfoPanel.activeSelf)
+        {
+            DisableInfoPanels();
+            gm.setSelectedTower(TowerPrefab);
+            EnableInfoPanels(TowerInfoPanel.GetComponent<Transform>());
+        }
+    }
+
+    public void DeselectTower()
+    {
+        gm.resetTower();
+        TowerInfoPanel.SetActive(false);
+    }
+
+    private void DisableInfoPanels()
+    {
+        GameObject info_canvas = GameObject.Find("Info_Canvas");
+        foreach(Transform panel in info_canvas.GetComponentsInChildren<Transform>())
+        {
+            Debug.Log(panel);
+            if(panel.gameObject.name != "Info_Canvas")
+            {
+                if (panel.gameObject.activeSelf)
+                {
+                    panel.gameObject.SetActive(false);
+                }
+            }
+        }
+    }
+
+    private void EnableInfoPanels(Transform panel)
+    {
+        panel.gameObject.SetActive(true);
+        foreach (Transform child in panel)
+        {
+            EnableInfoPanels(child);
+        }
     }
 }
