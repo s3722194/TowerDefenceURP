@@ -25,6 +25,7 @@ public class Node
         return Building != null;
     }
 
+    /*
     /// <summary>
     /// Checks if a tower can be placed on this node.
     /// </summary>
@@ -80,5 +81,6 @@ public class Node
             return 0;
         }
     }
+    */
 
 }

@@ -45,9 +45,9 @@ public class GridTile : MonoBehaviour
         return OccupiedTower != null;
     }
 
-    private Grid GetGrid()
+    private MapGrid GetGrid()
     {
-        return transform.parent.parent.GetComponent<Grid>();
+        return transform.parent.parent.GetComponent<MapGrid>();
     }
 
     /*/// <summary>

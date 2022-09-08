@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public class MapGrid : MonoBehaviour
 {
     [SerializeField] private int x;
     [SerializeField] private int y;
@@ -98,22 +98,22 @@ public class Grid : MonoBehaviour
         tiles[pos.x, pos.y] = tile;
     }
 
-    public bool HasTile(int i, int j)
+    public bool HasGridTile(int i, int j)
     {
-        return HasTile(new Vector2Int(i,j));
+        return HasGridTile(new Vector2Int(i,j));
     }
 
-    public bool HasTile(Vector2Int pos)
+    public bool HasGridTile(Vector2Int pos)
     {
         return tiles[pos.x, pos.y] != null;
     }
 
-    public GridTile GetTile(int i, int j)
+    public GridTile GetGridTile(int i, int j)
     {
-        return GetTile(new Vector2Int(i,j));
+        return GetGridTile(new Vector2Int(i,j));
     }
 
-    public GridTile GetTile(Vector2Int pos)
+    public GridTile GetGridTile(Vector2Int pos)
     {
         return tiles[pos.x, pos.y];
     }

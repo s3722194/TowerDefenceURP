@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class AStarSearch
 {
-    public static List<Vector2Int> Search(Grid grid, Vector2Int startPos, Vector2Int endPos,
+    public static List<Vector2Int> Search(MapGrid grid, Vector2Int startPos, Vector2Int endPos,
         bool goThroughBuildings=false, bool ignoreBuildings=false, bool allowDiagonal=false)
     {
         Node node = new Node(startPos, cost:1);
@@ -59,7 +59,7 @@ public static class AStarSearch
         return path;
     }
 
-    private static List<Vector2Int> GetSuccessors(Grid grid, Node node, bool goThroughBuildings, bool allowDiagonal)
+    private static List<Vector2Int> GetSuccessors(MapGrid grid, Node node, bool goThroughBuildings, bool allowDiagonal)
     {
         List<Vector2Int> successors = new List<Vector2Int>();
         Vector2Int pos;
@@ -78,12 +78,12 @@ public static class AStarSearch
                 }
                 // Remove pos if there is no tile there
                 pos = new Vector2Int(node.Position.x+i, node.Position.y+j);
-                if (!grid.HasTile(pos))
+                if (!grid.HasGridTile(pos))
                 {
                     continue;
                 }
                 // Remove pos if there is a building there
-                if (!goThroughBuildings && grid.GetTile(pos).Occupied)
+                if (!goThroughBuildings && grid.GetGridTile(pos).Occupied)
                 {
                     continue;
                 }
