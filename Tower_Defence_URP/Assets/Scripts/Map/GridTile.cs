@@ -9,20 +9,9 @@ public class GridTile : MonoBehaviour
     public int y;
     public float nodeSize;
 
-    public GameObject OccupiedTower
-    {
-        get
-        {
-            return occupiedTower;
-        }
-        private set
-        {
-            occupiedTower = value;
-            GetGrid().UpdatePosition(this);
-        }
-    }
-
     public bool Occupied { get => OccupiedTower != null; }
+    public GameObject OccupiedTower { get => occupiedTower; set => occupiedTower = value; }
+
     private GameManager GM;
 
     // Start is called before the first frame update
@@ -42,10 +31,10 @@ public class GridTile : MonoBehaviour
     {
         if(OccupiedTower == null)
         {
-            if(GM.getSelectedTower() != null)
+            if(GM.GetSelectedTower() != null)
             {
                 // Place Tower
-                GameObject spawnedTower = Instantiate(GM.getSelectedTower(), this.transform.position, this.transform.rotation);
+                GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), this.transform.position, this.transform.rotation);
                 OccupiedTower = spawnedTower;
             }
         }

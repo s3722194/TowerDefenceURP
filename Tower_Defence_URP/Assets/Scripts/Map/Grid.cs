@@ -8,11 +8,12 @@ public class Grid : MonoBehaviour
     [SerializeField] private int x;
     [SerializeField] private int y;
     [SerializeField] private float nodeSize;
+    [SerializeField] private bool allowDiagonalMovement;
 
     private List<Vector2Int> startPositions;
     private List<Vector2Int> endPositions;
 
-    private bool[,] nodes;
+    private GridTile[,] tiles;
     private List<Vector2Int>[] paths;
 
     // Start is called before the first frame update
@@ -28,16 +29,20 @@ public class Grid : MonoBehaviour
         Vector3 position;
         for (int i = 0; i < tileCount; i++)
         {
-            position = grid.GetChild(i).position;
-            nodes[(int)position.x, (int)position.y] = true;
+            Transform child = grid.GetChild(i);
+            position = child.position;
+            tiles[(int)position.x, (int)position.y] = child.GetComponent<GridTile>();
         }
 
         paths = new List<Vector2Int>[startPositions.Count * endPositions.Count];
+        bool goThroughBuildings = false;
+        bool ignoreBuildings = false;
+
         for (int i = 0; i < startPositions.Count; i++)
         {
             for (int j = 0; j < endPositions.Count; j++)
             {
-                paths[i * endPositions.Count + j] = GetPath(i, j);
+                paths[i * endPositions.Count + j] = CalculatePath(startPositions[i], endPositions[i], goThroughBuildings, ignoreBuildings);
             }
         }
     }
@@ -82,7 +87,7 @@ public class Grid : MonoBehaviour
         {
             for (int j = 0; j < y; j++)
             {
-                nodes[i, j] = false;
+                tiles[i, j] = null;
             }
         }
     }
@@ -90,7 +95,27 @@ public class Grid : MonoBehaviour
     public void UpdatePosition(GridTile tile)
     {
         Vector2Int pos = new Vector2Int((int)tile.transform.position.x, (int)tile.transform.position.y);
-        nodes[pos.x, pos.y] = tile.Occupied;
+        tiles[pos.x, pos.y] = tile;
+    }
+
+    public bool HasTile(int i, int j)
+    {
+        return HasTile(new Vector2Int(i,j));
+    }
+
+    public bool HasTile(Vector2Int pos)
+    {
+        return tiles[pos.x, pos.y] != null;
+    }
+
+    public GridTile GetTile(int i, int j)
+    {
+        return GetTile(new Vector2Int(i,j));
+    }
+
+    public GridTile GetTile(Vector2Int pos)
+    {
+        return tiles[pos.x, pos.y];
     }
 
     public List<Vector2Int> GetPath(int entryNum = 0, int exitNum = 0)
@@ -123,18 +148,11 @@ public class Grid : MonoBehaviour
     /// <returns></returns>
     public List<Vector2Int> GetPath(Vector2Int startPos, Vector2Int endPos)
     {
-        List<Vector2Int> path = new List<Vector2Int>();
-
-        List<Vector2Int> visited = new List<Vector2Int>();
-        List<Vector2Int> frontier = new List<Vector2Int>();
         throw new NotImplementedException();
-        return path;
     }
 
-   
-    public bool ContainsNode(Node node)
+    private List<Vector2Int> CalculatePath(Vector2Int startPos, Vector2Int endPos, bool goThroughBuildings, bool ignoreBuildings)
     {
-        throw new NotImplementedException();
-        
+        return AStarSearch.Search(this, startPos, endPos, goThroughBuildings, ignoreBuildings, allowDiagonalMovement);
     }
 }

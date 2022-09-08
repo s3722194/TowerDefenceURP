@@ -32,14 +32,14 @@ public class TowerButtons : MonoBehaviour
         if(!TowerInfoPanel.activeSelf)
         {
             DisableInfoPanels();
-            gm.setSelectedTower(TowerPrefab);
+            gm.SetSelectedTower(TowerPrefab);
             EnableInfoPanels(TowerInfoPanel.GetComponent<Transform>());
         }
     }
 
     public void DeselectTower()
     {
-        gm.resetTower();
+        gm.ResetTower();
         TowerInfoPanel.SetActive(false);
     }
 
