@@ -252,15 +252,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3097521260592855373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ac610a63e025f4b9033f57480ac06a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3062028d9b58b74479b8af2a2c1a75ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 19
-  y: 19
+  x: 0
+  y: 0
   nodeSize: 0
-  startPositions: []
-  endPositions: []
-  exceptions: []
+  allowDiagonalMovement: 0
 --- !u!4 &3097521260692959769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4331385869655871168, guid: fd6dc3144b1eed048b11e1054718f668, type: 3}
