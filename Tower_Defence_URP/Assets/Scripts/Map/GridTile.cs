@@ -10,7 +10,22 @@ public class GridTile : MonoBehaviour
     public float nodeSize;
 
     public bool Occupied { get => OccupiedTower != null; }
-    public GameObject OccupiedTower { get => occupiedTower; set => occupiedTower = value; }
+    public GameObject OccupiedTower
+    {
+        get => occupiedTower;
+        set
+        {
+            if (occupiedTower.GetComponent<ABuilding>())
+            {
+                occupiedTower = value;
+                GetGrid().UpdatePosition(this);
+            }
+            else
+            {
+                throw new System.ArgumentException("Input must be a building!");
+            }
+        }
+    }
 
     private GameManager GM;
 

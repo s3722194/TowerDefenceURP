@@ -37,7 +37,6 @@ public class LevelManager : MonoBehaviour
     public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
     public GameObject Background { get => background; set => background = value; }
     public GameObject GridBackground { get => gridBackground; set => gridBackground = value; }
-
     public GameObject Map { get => map; set => map = value; }
 
     
@@ -46,9 +45,6 @@ public class LevelManager : MonoBehaviour
     public List<Material> StartMaterials { get => startMaterials; }
     public List<Material> EndMaterials { get =>endMaterials; }
     public List<Material> WallMaterials { get => wallMaterials; }
-
-
-
 
 
     private void Awake()
@@ -60,7 +56,6 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         time = 0;
     }
 
@@ -73,6 +68,5 @@ public class LevelManager : MonoBehaviour
             // Start sending waves
         }
     }
-
    
 }

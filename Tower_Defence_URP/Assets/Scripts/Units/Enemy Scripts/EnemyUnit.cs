@@ -13,13 +13,17 @@ public class EnemyUnit : AUnit
     public int MoneyOnDeath { get => moneyOnDeath; private set => moneyOnDeath = value; }
 
     private GameManager gameManager;
+    private LevelManager levelManager;
+    private int gridPath;
 
     protected override void Start()
     {
         base.Start();
         gameObject.tag = enemyTag;
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
 
+        // Determine path number
     }
 
     protected override void Update()

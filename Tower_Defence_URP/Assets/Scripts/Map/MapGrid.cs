@@ -96,6 +96,17 @@ public class MapGrid : MonoBehaviour
     {
         Vector2Int pos = new Vector2Int((int)tile.transform.position.x, (int)tile.transform.position.y);
         tiles[pos.x, pos.y] = tile;
+
+        bool goThroughBuildings = false;
+        bool ignoreBuildings = false;
+
+        foreach (List<Vector2Int> path in paths)
+        {
+            if (path.Contains(pos))
+            {
+                AStarSearch.Search(this, path[0], path[-1], goThroughBuildings, ignoreBuildings, allowDiagonalMovement);
+            }
+        }
     }
 
     public bool HasGridTile(int i, int j)
