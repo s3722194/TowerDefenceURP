@@ -23,6 +23,7 @@ TagManager:
   - Tower
   - Map_19x19
   - GridBackground
+  - Map_17x17
   layers:
   - Default
   - TransparentFX
@@ -63,7 +64,7 @@ TagManager:
   - name: Background
     uniqueID: 2361162395
     locked: 0
-  - name: Grid
+  - name: Ground
     uniqueID: 2750682497
     locked: 0
   - name: Ground Effect
@@ -92,4 +93,7 @@ TagManager:
     locked: 0
   - name: Special Effect
     uniqueID: 1156062459
+    locked: 0
+  - name: UI
+    uniqueID: 3239744627
     locked: 0

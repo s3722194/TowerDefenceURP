@@ -55,6 +55,7 @@ public class LevelManager : MonoBehaviour
     {
         southWestCorners.Add("Map_9x9", new Vector2(-4, -4));
         southWestCorners.Add("Map_19x19", new Vector2(-9, -9));
+        southWestCorners.Add("Map_17x17", new Vector2(-8, -8));
     }
 
     private void ScaleBackground()

@@ -24,7 +24,11 @@ public class LoadGrid : MonoBehaviour
 
     private void SetUpMaterials()
     {
-        southWestCorner = levelManager.SouthWestCorners[levelManager.Map.tag];
+        if( !levelManager.Map.Equals("Untagged"))
+        {
+            southWestCorner = levelManager.SouthWestCorners[levelManager.Map.tag];
+        }
+        
 
         SetUpGridMaterial();
         SetUpWallMaterials();
