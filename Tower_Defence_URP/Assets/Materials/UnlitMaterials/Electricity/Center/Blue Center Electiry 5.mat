@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Electiry
+  m_Name: Blue Center Electiry 5
   m_Shader: {fileID: -6465566751694194690, guid: 42781bd8a7fea664f9552a2d3cdbeeb5, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -54,15 +54,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElectiryScale: 20
+    - _ElectiryScale: 30
     - _EnableExternalAlpha: 0
     - _LineWeight: 2
-    - _NoiseScale: 25
+    - _NoiseScale: 10
     - _Power: 7
     m_Colors:
-    - _Color: {r: 0, g: 10.680627, b: 8.145516, a: 1}
-    - _ElecitrySpeed: {r: -1, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 0, g: 7.999999, b: 7.4639196, a: 1}
+    - _ElecitrySpeed: {r: 0, g: 0.5, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseSpeed: {r: 1, g: 0.5, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: -1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
