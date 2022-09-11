@@ -33,7 +33,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Taunt
+  m_Name: BlueWraith_Taunt
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Idle
+  m_Name: BlueWraith_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -107,7 +107,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Death
+  m_Name: BlueWraith_Death
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -140,7 +140,7 @@ AnimatorStateMachine:
     m_Position: {x: 200, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7028689618259847446}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_Position: {x: 270, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4731249608246136571}
     m_Position: {x: 270, y: 130, z: 0}
@@ -164,7 +164,7 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 10, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -176,7 +176,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Attack
+  m_Name: BlueWraith_Attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -202,7 +202,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Hurt
+  m_Name: BlueWraith_Hurt
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -228,7 +228,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Idle_Blink
+  m_Name: BlueWraith_Idle_Blink
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -254,7 +254,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueWaith_Cast_Spell
+  m_Name: BlueWraith_Cast_Spell
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

@@ -3580,6 +3580,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1888783670}
     m_Modifications:
+    - target: {fileID: 2035722182643687232, guid: 6f1a81187f37088468d34ec897a35fbb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035722182643687232, guid: 6f1a81187f37088468d34ec897a35fbb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035722182643687232, guid: 6f1a81187f37088468d34ec897a35fbb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2035722182896773497, guid: 6f1a81187f37088468d34ec897a35fbb, type: 3}
       propertyPath: m_Name
       value: Fire Tower Beta
