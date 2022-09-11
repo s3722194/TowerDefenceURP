@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Basic Fog Damage
-  m_Shader: {fileID: -6465566751694194690, guid: 28d21a298ae2ae04e83788c281205e74, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: ad5a50cbc0725ba438e42d8092d6660c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -51,6 +51,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _SineSpeed: 10
     m_Colors:
     - _Color: {r: 0.41972235, g: 0.676677, b: 0.6792453, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
