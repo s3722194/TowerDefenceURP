@@ -61,7 +61,7 @@ Material:
     - _Power: 0.2
     - _Speed: 0.5
     m_Colors:
-    - _Color: {r: 84.329414, g: 13.050981, b: 191.74902, a: 1}
+    - _Color: {r: 24.203989, g: 3.4061959, b: 55.54717, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Speed2D: {r: 0, g: -0.3, b: 0, a: 0}

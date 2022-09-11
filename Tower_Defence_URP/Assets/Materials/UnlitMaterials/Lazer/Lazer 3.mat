@@ -61,8 +61,8 @@ Material:
     - _Power: 0.3
     - _Speed: 0.5
     m_Colors:
-    - _Color: {r: 714.7922, g: 104.407845, b: 1024, a: 1}
+    - _Color: {r: 207.96991, g: 69.32332, b: 277.29327, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed2D: {r: 0, g: 0, b: 0, a: 0}
+    - _Speed2D: {r: 0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
