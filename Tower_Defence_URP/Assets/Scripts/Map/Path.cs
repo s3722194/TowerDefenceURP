@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Path : IEnumerable<Vector2Int>
+public class Path : IList<Vector2Int>
 {
     List<Vector2Int> positions;
+
+    public bool IsReadOnly => ((ICollection<Vector2Int>)positions).IsReadOnly;
+
+    public int Count => ((ICollection<Vector2Int>)positions).Count;
+
+    public Vector2Int this[int index] { get => ((IList<Vector2Int>)positions)[index]; set => ((IList<Vector2Int>)positions)[index] = value; }
 
     public Path(List<Vector2Int> positionList)
     {
@@ -55,7 +61,7 @@ public class Path : IEnumerable<Vector2Int>
 
     public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0)
     {
-        for (int i = positionNumber; i < Count() - 1; i++)
+        for (int i = positionNumber; i < Count - 1; i++)
         {
             if (PointExistsOnLineSegment(positions[i], positions[i + 1], point))
             {
@@ -67,7 +73,7 @@ public class Path : IEnumerable<Vector2Int>
         float distance = Mathf.Infinity;
         float tempDist;
         Vector2Int minPosition = positions[positionNumber];
-        for (int i = positionNumber; i < Count(); i++)
+        for (int i = positionNumber; i < Count; i++)
         {
             tempDist = Vector2.Distance(positions[i], point);
             if (tempDist < distance)
@@ -109,6 +115,41 @@ public class Path : IEnumerable<Vector2Int>
         return positions.Contains(pos);
     }
 
+    public int IndexOf(Vector2Int item)
+    {
+        return ((IList<Vector2Int>)positions).IndexOf(item);
+    }
+
+    public void Insert(int index, Vector2Int item)
+    {
+        ((IList<Vector2Int>)positions).Insert(index, item);
+    }
+
+    public void RemoveAt(int index)
+    {
+        ((IList<Vector2Int>)positions).RemoveAt(index);
+    }
+
+    public void Add(Vector2Int item)
+    {
+        ((ICollection<Vector2Int>)positions).Add(item);
+    }
+
+    public void Clear()
+    {
+        ((ICollection<Vector2Int>)positions).Clear();
+    }
+
+    public void CopyTo(Vector2Int[] array, int arrayIndex)
+    {
+        ((ICollection<Vector2Int>)positions).CopyTo(array, arrayIndex);
+    }
+
+    public bool Remove(Vector2Int item)
+    {
+        return ((ICollection<Vector2Int>)positions).Remove(item);
+    }
+
     public IEnumerator<Vector2Int> GetEnumerator()
     {
         return ((IEnumerable<Vector2Int>)positions).GetEnumerator();
@@ -117,16 +158,5 @@ public class Path : IEnumerable<Vector2Int>
     IEnumerator IEnumerable.GetEnumerator()
     {
         return ((IEnumerable)positions).GetEnumerator();
-    }
-
-    public Vector2Int this[int index]
-    {
-        get => positions[index];
-        set => positions[index] = value;
-    }
-
-    public int Count()
-    {
-        return positions.Count;
     }
 }
