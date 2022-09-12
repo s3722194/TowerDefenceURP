@@ -14,7 +14,9 @@ public class MapGrid : MonoBehaviour
     private List<Vector2Int> endPositions;
 
     private GridTile[,] tiles;
-    private List<Vector2Int>[] paths;
+    private List<Path> paths;
+
+    private int lastPathNumAssigned;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +36,7 @@ public class MapGrid : MonoBehaviour
             tiles[(int)position.x, (int)position.y] = child.GetComponent<GridTile>();
         }
 
-        paths = new List<Vector2Int>[startPositions.Count * endPositions.Count];
+        paths = new List<Path>();
         bool goThroughBuildings = false;
         bool ignoreBuildings = false;
 
@@ -42,9 +44,11 @@ public class MapGrid : MonoBehaviour
         {
             for (int j = 0; j < endPositions.Count; j++)
             {
-                paths[i * endPositions.Count + j] = CalculatePath(startPositions[i], endPositions[i], goThroughBuildings, ignoreBuildings);
+                paths.Add(CalculatePath(startPositions[i], endPositions[i], goThroughBuildings, ignoreBuildings));
             }
         }
+
+        lastPathNumAssigned = -1;
     }
 
     private List<Vector2Int> GetStartPositions()
@@ -100,7 +104,7 @@ public class MapGrid : MonoBehaviour
         bool goThroughBuildings = false;
         bool ignoreBuildings = false;
 
-        foreach (List<Vector2Int> path in paths)
+        foreach (Path path in paths)
         {
             if (path.Contains(pos))
             {
@@ -127,6 +131,38 @@ public class MapGrid : MonoBehaviour
     public GridTile GetGridTile(Vector2Int pos)
     {
         return tiles[pos.x, pos.y];
+    }
+
+    public int AssignPathNumber()
+    {
+        lastPathNumAssigned += 1;
+        if (lastPathNumAssigned >= GetNumPaths())
+        {
+            lastPathNumAssigned = 0;
+        }
+        return lastPathNumAssigned;
+    }
+
+    public void ResetPathNumber()
+    {
+        lastPathNumAssigned = -1;
+    }
+
+    public int GetNumPaths()
+    {
+        return paths.Count;
+    }
+
+    public Path GetPathFromNumber(int pathNum)
+    {
+        if (pathNum >= GetNumPaths() || pathNum < 0)
+        {
+            throw new ArgumentOutOfRangeException("Path number must between 0 and " + GetNumPaths().ToString() + " inclusive");
+        }
+        else
+        {
+            return paths[pathNum];
+        }
     }
 
     public List<Vector2Int> GetPath(int entryNum = 0, int exitNum = 0)
@@ -162,8 +198,8 @@ public class MapGrid : MonoBehaviour
         throw new NotImplementedException();
     }
 
-    private List<Vector2Int> CalculatePath(Vector2Int startPos, Vector2Int endPos, bool goThroughBuildings, bool ignoreBuildings)
+    private Path CalculatePath(Vector2Int startPos, Vector2Int endPos, bool goThroughBuildings, bool ignoreBuildings)
     {
-        return AStarSearch.Search(this, startPos, endPos, goThroughBuildings, ignoreBuildings, allowDiagonalMovement);
+        return new Path(AStarSearch.Search(this, startPos, endPos, goThroughBuildings, ignoreBuildings, allowDiagonalMovement));
     }
 }

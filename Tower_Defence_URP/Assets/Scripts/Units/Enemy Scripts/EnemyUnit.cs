@@ -14,7 +14,9 @@ public class EnemyUnit : AUnit
 
     private GameManager gameManager;
     private LevelManager levelManager;
-    private int gridPath;
+    private MapGrid mapGrid;
+    private int pathNum;
+    private Vector2Int[] nextPositions;
 
     protected override void Start()
     {
@@ -24,6 +26,15 @@ public class EnemyUnit : AUnit
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
 
         // Determine path number
+        mapGrid = FindObjectOfType<MapGrid>();
+        pathNum = mapGrid.AssignPathNumber();
+        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Vector2Int startPos = path[0];
+        GetComponent<Rigidbody2D>().position = new Vector3(startPos.x, startPos.y);
+
+        nextPositions = new Vector2Int[2];
+        nextPositions[0] = path.GetNextPosition(0);
+        nextPositions[1] = path.GetNextPosition(1);
     }
 
     protected override void Update()
@@ -70,17 +81,10 @@ public class EnemyUnit : AUnit
         return grid.Opening;
     }
 
-    public Vector2 GetEndPosition()
-    {
-        GameObject tiles = GameObject.Find("SpawnTiles");
-        SpawnGrid grid = tiles.GetComponent<SpawnGrid>();
-        return grid.End;
-    }
-
     public Vector2 DirectMoveToExit()
     {
         Vector2 pos = gameObject.GetComponent<Rigidbody2D>().position;
-        Vector2 targetPos = GetEndPosition();
+        Vector2 targetPos = mapGrid.GetPathFromNumber(pathNum).GetEndPosition();
         Vector2 direction = targetPos - pos;
         direction.Normalize();
         return direction * Speed;
@@ -88,9 +92,13 @@ public class EnemyUnit : AUnit
 
     public Vector2 WalkAlongPath()
     {
-        GameObject tiles = GameObject.Find("SpawnTiles");
-        SpawnGrid grid = tiles.GetComponent<SpawnGrid>();
-        throw new System.NotImplementedException();
+        Vector2 pos = GetPosition();
+        Vector2 targetPos = mapGrid.GetPathFromNumber(pathNum).get;
+        Vector
+    }
 
+    public Vector2 GetPosition()
+    {
+        return gameObject.GetComponent<Rigidbody2D>().position;
     }
 }
