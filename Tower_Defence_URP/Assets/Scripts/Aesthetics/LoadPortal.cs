@@ -20,10 +20,7 @@ public class LoadPortal : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
 
-    void Awake()
-    {
-        Random.InitState((int)System.DateTime.Now.Ticks);
-    }
+   
 
 
 

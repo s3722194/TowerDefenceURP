@@ -813,49 +813,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2093819992983936563, guid: 0de41084d3e73f64fb24f58a4c5dd938, type: 3}
   m_PrefabInstance: {fileID: 4317691299787944659}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &431716880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5094359372893914353, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
-  m_PrefabInstance: {fileID: 1620758991}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &431716881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3601507999650165740, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
   m_PrefabInstance: {fileID: 1620758991}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &431716884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431716880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
-  minColor: {r: 230.19884, g: 19.283669, b: 27.139463, a: 0}
-  maxColor: {r: 160.04607, g: 66.81776, b: 911.5856, a: 0}
-  minSpeed: {x: 0.3, y: 0.3}
-  maxSpeed: {x: 1, y: 1}
-  angle: {x: 1, y: 100}
-  twirlScale: {x: 2.7, y: 3.3}
-  twirlStrength: {x: 9, y: 18}
-  rotation: {x: 1, y: 360}
 --- !u!1001 &439106049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2643,11 +2605,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5039458592944751241, guid: 3c20d3da5ada56544ba6f2d2acf22a91, type: 3}
   m_PrefabInstance: {fileID: 1287265652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1288995855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5094359372893914353, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
-  m_PrefabInstance: {fileID: 2689055566085007775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1310535878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2722,49 +2679,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8421921442138789840, guid: e84afc85772006b4199bc580ba62bb28, type: 3}
   m_PrefabInstance: {fileID: 1310535878}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1336853345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5094359372893914353, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
-  m_PrefabInstance: {fileID: 247834402}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1336853346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3601507999650165740, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
   m_PrefabInstance: {fileID: 247834402}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1336853349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336853345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
-  minColor: {r: 230.19884, g: 19.283669, b: 26.705595, a: 0}
-  maxColor: {r: 137.62648, g: 66.81776, b: 911.5856, a: 0}
-  minSpeed: {x: 0.3, y: 0.3}
-  maxSpeed: {x: 1, y: 1}
-  angle: {x: 1, y: 100}
-  twirlScale: {x: 2.7, y: 3.3}
-  twirlStrength: {x: 9, y: 18}
-  rotation: {x: 1, y: 360}
 --- !u!1 &1361503181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,49 +3138,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5039458592944751241, guid: 3c20d3da5ada56544ba6f2d2acf22a91, type: 3}
   m_PrefabInstance: {fileID: 1534444624}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1540661337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5094359372893914353, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
-  m_PrefabInstance: {fileID: 1643044463}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1540661338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3601507999650165740, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
   m_PrefabInstance: {fileID: 1643044463}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1540661341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540661337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
-  minColor: {r: 230.19884, g: 19.283669, b: 34.384785, a: 0}
-  maxColor: {r: 144.73982, g: 66.81776, b: 911.5856, a: 0}
-  minSpeed: {x: 0.3, y: 0.3}
-  maxSpeed: {x: 1, y: 1}
-  angle: {x: 1, y: 100}
-  twirlScale: {x: 2.7, y: 3.3}
-  twirlStrength: {x: 9, y: 18}
-  rotation: {x: 1, y: 360}
 --- !u!1 &1586106440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,49 +3814,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9404713937e8083409b62806584df29d, type: 2}
   - {fileID: 2100000, guid: 101188b3e13638b44b5ab1177741ff65, type: 2}
   - {fileID: 2100000, guid: fc46385e23b45354eae2aa209b1dea1b, type: 2}
---- !u!1 &1845941018 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5094359372893914353, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
-  m_PrefabInstance: {fileID: 320065568}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1845941019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3601507999650165740, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
   m_PrefabInstance: {fileID: 320065568}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1845941022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845941018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
-  minColor: {r: 230.19884, g: 19.283669, b: 31.059969, a: 0}
-  maxColor: {r: 118.28887, g: 66.81776, b: 911.5856, a: 0}
-  minSpeed: {x: 0.3, y: 0.3}
-  maxSpeed: {x: 1, y: 1}
-  angle: {x: 1, y: 100}
-  twirlScale: {x: 2.7, y: 3.3}
-  twirlStrength: {x: 9, y: 18}
-  rotation: {x: 1, y: 360}
 --- !u!1 &1888783669
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,39 +4668,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3601507999650165740, guid: 997be41830a04924f898bfdaa977f2b7, type: 3}
   m_PrefabInstance: {fileID: 2689055566085007775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2689055566085007779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288995855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
-  minColor: {r: 230.19884, g: 19.283669, b: 30.410172, a: 0}
-  maxColor: {r: 123.71642, g: 66.81776, b: 911.5856, a: 0}
-  minSpeed: {x: 0.3, y: 0.3}
-  maxSpeed: {x: 1, y: 1}
-  angle: {x: 1, y: 100}
-  twirlScale: {x: 2.7, y: 3.3}
-  twirlStrength: {x: 9, y: 18}
-  rotation: {x: 1, y: 360}
 --- !u!1001 &2802711680837944788
 PrefabInstance:
   m_ObjectHideFlags: 0
