@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 2180935893817606145, guid: 32ca162ed2a35134f82f124a2f9b92bb, type: 3}
   gridBackground: {fileID: 5019763209384083634, guid: 615a0f21ed39f1d4084f2948c39a7900, type: 3}
-  map: {fileID: 6630900386416602473, guid: 1a72bb8a1e1cea248a705e720df7f5fe, type: 3}
+  map: {fileID: 6630900386416602473, guid: bec3f4600f596ac40b490f62be5c9c5c, type: 3}
   wallMaterials:
   - {fileID: 2100000, guid: 8f49776478cfc0a41a9376a404c761b3, type: 2}
   tileMaterials:
