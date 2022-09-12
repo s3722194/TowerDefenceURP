@@ -94,7 +94,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
   m_PrefabInstance: {fileID: 4317691300005268161}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1918143581319934065
+--- !u!114 &990956803591127261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2093819992983936561}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
+  m_Script: {fileID: 11500000, guid: e68c621376041964f9fa50d94e2b4e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
@@ -117,4 +117,3 @@ MonoBehaviour:
   buildingTag: 
   cost: 150
   EnemiesInRange: []
-  ProjectilePrefab: {fileID: 620734796780510478, guid: 4ab73fe1624505346bd4e379089be8fa, type: 3}
