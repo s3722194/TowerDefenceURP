@@ -120,7 +120,7 @@ public class MapGrid : MonoBehaviour
         {
             return tiles[x, y] != null;
         }
-        return false
+        return false;
     }
 
     public bool HasGridTile(Vector2Int pos)
