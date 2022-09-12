@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     {
         if(!target)
         {
-            Debug.Log("no enemy to target");
+            //Debug.Log("no enemy to target");
             Destroy(gameObject);
             return;
         }
@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
 
         if(direction.sqrMagnitude < radiusSq)
         {
-            Debug.Log("enemy hit");
+            //Debug.Log("enemy hit");
             Destroy(gameObject);
         }
     }

@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 661d78f6d9b4eb0469b5ed5be63c86eb, type: 3}
     - target: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Name
-      value: Fire Tower Beta
+      value: Fire Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Layer
@@ -101,3 +101,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+--- !u!1 &2035722182896773497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+  m_PrefabInstance: {fileID: 5722302004569027543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5218394787845281232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035722182896773497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 450
+  maxHealth: 450
+  speed: 10
+  attackCooldown: 10
+  mDamage: 0
+  rDamage: 0
+  range: 50
+  destructable: 0
+  buildingTag: 
+  cost: 900
+  EnemiesInRange: []
+  ProjectilePrefab: {fileID: 9213397056524092256, guid: b9b7bce6e26d8534cb2f8ebee500f7e4, type: 3}

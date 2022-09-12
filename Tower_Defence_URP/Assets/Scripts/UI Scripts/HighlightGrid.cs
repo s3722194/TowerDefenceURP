@@ -31,7 +31,7 @@ public class HighlightGrid : MonoBehaviour
 
     public void OnMouseDrag()
     {
-        print("Mouse Drag");
+        //print("Mouse Drag");
         mouseDrag = true;
         //  spriteRenderer.color = new Color(29.0f / 255.0f, 27.0f / 255.0f, 27.0f / 255.0f, 1.0f);
     }

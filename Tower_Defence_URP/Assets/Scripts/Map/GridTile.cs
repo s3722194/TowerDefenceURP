@@ -15,15 +15,7 @@ public class GridTile : MonoBehaviour
         get => occupiedTower;
         set
         {
-            if (occupiedTower.GetComponent<ABuilding>())
-            {
-                occupiedTower = value;
-                GetGrid().UpdatePosition(this);
-            }
-            else
-            {
-                throw new System.ArgumentException("Input must be a building!");
-            }
+            occupiedTower = value;
         }
     }
 
@@ -48,9 +40,16 @@ public class GridTile : MonoBehaviour
         {
             if(GM.GetSelectedTower() != null)
             {
-                // Place Tower
-                GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), this.transform.position, this.transform.rotation);
-                OccupiedTower = spawnedTower;
+                GameObject selectedTower = GM.GetSelectedTower();
+                ABuilding building = selectedTower.GetComponent<ABuilding>();
+
+                if(building != null && GM.Money >= building.Cost)
+                {
+                    // Place Tower
+                    GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), this.transform.position, this.transform.rotation);
+                    OccupiedTower = spawnedTower;
+                    GM.SpendMoney(building.Cost);
+                } 
             }
         }
     }

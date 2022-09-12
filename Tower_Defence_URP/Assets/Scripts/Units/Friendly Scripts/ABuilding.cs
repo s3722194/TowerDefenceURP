@@ -6,6 +6,9 @@ public abstract class ABuilding : AUnit
 {
     [SerializeField] private bool destructable;
     [SerializeField] private string buildingTag;
+    [SerializeField] private int cost;
+
+    public int Cost { get => cost; set => cost = value; }
 
     protected override void Start()
     {

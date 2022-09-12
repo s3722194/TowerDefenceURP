@@ -48,7 +48,6 @@ public class TowerButtons : MonoBehaviour
         GameObject info_canvas = GameObject.Find("Info_Canvas");
         foreach(Transform panel in info_canvas.GetComponentsInChildren<Transform>())
         {
-            Debug.Log(panel);
             if(panel.gameObject.name != "Info_Canvas")
             {
                 if (panel.gameObject.activeSelf)

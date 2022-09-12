@@ -183,11 +183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048402, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.26900005
+      value: -3.6238112
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048402, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.432
+      value: -5.1433764
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048402, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_LocalPosition.z
@@ -404,6 +404,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6295751766374296796, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
   m_PrefabInstance: {fileID: 5478609558113978872}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5566523414977030248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+  m_PrefabInstance: {fileID: 5478609558113978872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2665535826505403803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566523414977030248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  speed: 10
+  attackCooldown: 1
+  mDamage: 10
+  rDamage: 5
+  range: 5
+  destructable: 0
+  buildingTag: 
+  cost: 100
+  EnemiesInRange: []
+  ProjectilePrefab: {fileID: 5918706840276306595, guid: 9651b1909cbc4cb4aa339bafe49b0b68, type: 3}
 --- !u!1001 &6812068582576507173
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     {
         // probs want to inistialise these values
         // idk what they are so i wont touch them
-
+        Lives = 100;
+        Money = 100000;
         selectedTower = null;
     }
 
@@ -36,10 +37,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SpendMoney(int cost)
+    {
+        Money -= cost;
+    }
+
     public void SetSelectedTower(GameObject _selectedTower)
     {
         selectedTower = _selectedTower;
-        Debug.Log("setting tower to " + selectedTower);
     }
 
     public void ResetTower()
@@ -49,7 +54,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject GetSelectedTower()
     {
-        Debug.Log("selected tower -> " + selectedTower);
         return selectedTower;
     }
 }
