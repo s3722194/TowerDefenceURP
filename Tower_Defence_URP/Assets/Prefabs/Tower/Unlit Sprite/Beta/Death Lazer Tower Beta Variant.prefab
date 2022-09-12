@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 6de051268277b9c49b48d731e748c514, type: 3}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Name
-      value: Death Lazer Tower Beta
+      value: Death Lazer Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Layer
@@ -249,6 +249,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+--- !u!1 &1414879613201294334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8669025635416463515, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+  m_PrefabInstance: {fileID: 7776653747535412069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7805736699013338030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414879613201294334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d8b3cc1e4896c4488d5c3fd1ba71ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: a08231f5f89157f479a8aed4a57a8186, type: 2}
+  - {fileID: 2100000, guid: 582ff73bcb898834bb02e50c6a7c3854, type: 2}
+  - {fileID: 2100000, guid: 570fab945cf848343ab7922883440edc, type: 2}
+  - {fileID: 2100000, guid: c9039d2a94f81594081df3a60ebc1f33, type: 2}
+  - {fileID: 2100000, guid: 94a11e3613eb8754681565dcd9e4b020, type: 2}
+  - {fileID: 2100000, guid: e3bd7bfde0907814eb8934253b5f6a2e, type: 2}
+  - {fileID: 2100000, guid: 43c725d927fb9024296f06f5aa40ea08, type: 2}
+  - {fileID: 2100000, guid: 5c98ed7ef4a39ae4eaeef09cd012cae2, type: 2}
+  - {fileID: 2100000, guid: cb006c384019c34478fe94e9e8929d1e, type: 2}
+  - {fileID: 2100000, guid: de6145e1877d55a43a69d3d8233f9ae1, type: 2}
+  - {fileID: 2100000, guid: be1157db56e49704697687bc8a53cd78, type: 2}
 --- !u!4 &1414879613443250690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
