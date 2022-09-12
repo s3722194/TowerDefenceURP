@@ -12,6 +12,8 @@ public class MapGrid : MonoBehaviour
 
     private List<Vector2Int> startPositions;
     private List<Vector2Int> endPositions;
+    [SerializeField] private Vector2Int offset;
+    [SerializeField] private int wallThickness;
 
     private GridTile[,] tiles;
     private List<Path> paths;
@@ -30,25 +32,28 @@ public class MapGrid : MonoBehaviour
 
         Transform grid = transform.Find("Grid");
         int tileCount = grid.childCount;
-        tiles = new GridTile[x,y];
+        tiles = new GridTile[x+wallThickness*2, y+wallThickness*2];
         EmptyNodes();
-        Vector3 position;
         for (int i = 0; i < tileCount; i++)
         {
             Transform child = grid.GetChild(i);
-            position = child.position;
-            tiles[(int)position.x, (int)position.y] = child.GetComponent<GridTile>();
+            SetGridTile(child.GetComponent<GridTile>());
         }
 
         paths = new List<Path>();
         bool goThroughBuildings = false;
         bool ignoreBuildings = false;
 
+        Vector2Int startPos;
+        Vector2Int endPos;
+
         for (int i = 0; i < startPositions.Count; i++)
         {
             for (int j = 0; j < endPositions.Count; j++)
             {
-                paths.Add(CalculatePath(startPositions[i], endPositions[i], goThroughBuildings, ignoreBuildings));
+                startPos = startPositions[i];
+                endPos = endPositions[i];
+                paths.Add(CalculatePath(startPos, endPos, goThroughBuildings, ignoreBuildings));
             }
         }
 
@@ -57,10 +62,6 @@ public class MapGrid : MonoBehaviour
 
     private List<Vector2Int> GetStartPositions()
     {
-        if (startPositions.Count > 0)
-        {
-            return startPositions;
-        }
         Transform startObject = transform.Find("Start");
         int childCount = startObject.childCount;
         List<Vector2Int> StartTiles = new List<Vector2Int>();
@@ -74,10 +75,6 @@ public class MapGrid : MonoBehaviour
 
     private List<Vector2Int> GetEndPositions()
     {
-        if (endPositions.Count > 0)
-        {
-            return endPositions;
-        }
         Transform endObject = transform.Find("End");
         int childCount = endObject.childCount;
         List<Vector2Int> EndTiles = new List<Vector2Int>();
@@ -91,9 +88,9 @@ public class MapGrid : MonoBehaviour
 
     private void EmptyNodes()
     {
-        for (int i = 0; i < x; i++)
+        for (int i = 0; i < x + wallThickness*2; i++)
         {
-            for (int j = 0; j < y; j++)
+            for (int j = 0; j < y + wallThickness*2; j++)
             {
                 tiles[i, j] = null;
             }
@@ -103,7 +100,7 @@ public class MapGrid : MonoBehaviour
     public void UpdatePosition(GridTile tile)
     {
         Vector2Int pos = new Vector2Int((int)tile.transform.position.x, (int)tile.transform.position.y);
-        tiles[pos.x, pos.y] = tile;
+        SetGridTile(tile);
 
         bool goThroughBuildings = false;
         bool ignoreBuildings = false;
@@ -117,14 +114,23 @@ public class MapGrid : MonoBehaviour
         }
     }
 
-    public bool HasGridTile(int i, int j)
+    public bool HasGridTile(int x, int y)
     {
-        return HasGridTile(new Vector2Int(i,j));
+        if (tiles.GetLength(0) < x && tiles.GetLength(1) < y)
+        {
+            return tiles[x, y] != null;
+        }
+        return false
     }
 
     public bool HasGridTile(Vector2Int pos)
     {
-        return tiles[pos.x, pos.y] != null;
+        Vector2Int adjusted = new Vector2Int(pos.x - offset.x, pos.y - offset.y);
+        if (adjusted.x > tiles.GetLength(0) || adjusted.y > tiles.GetLength(1))
+        {
+            return false;
+        }
+        return tiles[adjusted.x, adjusted.y] != null;
     }
 
     public GridTile GetGridTile(int i, int j)
@@ -134,7 +140,17 @@ public class MapGrid : MonoBehaviour
 
     public GridTile GetGridTile(Vector2Int pos)
     {
-        return tiles[pos.x, pos.y];
+        Vector2Int adjusted = new Vector2Int(pos.x - offset.x, pos.y - offset.y);
+        if (adjusted.x > tiles.Length || adjusted.y > tiles.GetLength(1))
+        {
+            return null;
+        }
+        return tiles[adjusted.x, adjusted.y];
+    }
+
+    public void SetGridTile(GridTile gridTile)
+    {
+        tiles[(int)gridTile.transform.position.x - offset.x, (int)gridTile.transform.position.y - offset.y] = gridTile;
     }
 
     public int AssignPathNumber()
@@ -157,7 +173,7 @@ public class MapGrid : MonoBehaviour
         return paths.Count;
     }
 
-    public Path GetPathFromNumber(int pathNum)
+    public Path GetPath(int pathNum)
     {
         if (pathNum >= GetNumPaths() || pathNum < 0)
         {
@@ -167,39 +183,6 @@ public class MapGrid : MonoBehaviour
         {
             return paths[pathNum];
         }
-    }
-
-    public List<Vector2Int> GetPath(int entryNum = 0, int exitNum = 0)
-    {
-        if (entryNum >= startPositions.Count)
-        {
-            throw new ArgumentOutOfRangeException("entryNum must be smaller than the number of entrances");
-        }
-        if (exitNum >= endPositions.Count)
-        {
-            throw new ArgumentOutOfRangeException("exitNum must be smaller than the number of exits");
-        }
-        return GetPath(startPositions[entryNum], endPositions[exitNum]);
-    }
-
-    public List<Vector2Int> GetPath(Vector2Int startPos, int exitNum = 0)
-    {
-        if (exitNum >= endPositions.Count)
-        {
-            throw new ArgumentOutOfRangeException("exitNum must be smaller than the number of exits");
-        }
-        return GetPath(startPos, endPositions[exitNum]);
-    }
-
-    /// <summary>
-    /// A* pathfinding between two points. Gets cost from Node.WalkCost().
-    /// </summary>
-    /// <param name="startPos"></param>
-    /// <param name="endPos"></param>
-    /// <returns></returns>
-    public List<Vector2Int> GetPath(Vector2Int startPos, Vector2Int endPos)
-    {
-        throw new NotImplementedException();
     }
 
     private Path CalculatePath(Vector2Int startPos, Vector2Int endPos, bool goThroughBuildings, bool ignoreBuildings)

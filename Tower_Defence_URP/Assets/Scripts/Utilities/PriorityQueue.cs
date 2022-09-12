@@ -6,7 +6,12 @@ using UnityEngine;
 public class PriorityQueue<T>
 {
 
-	List<Tuple<T, float>> elements = new List<Tuple<T, float>>();
+	List<Tuple<T, float>> elements;
+
+	public PriorityQueue()
+	{
+		elements = new List<Tuple<T, float>>();
+	}
 
 
 	/// <summary>
@@ -40,9 +45,9 @@ public class PriorityQueue<T>
 	/// <returns>Queue item with lowest priority value.</returns>
 	public T Pop()
 	{
-		int bestPriorityIndex = -1;
+		int bestPriorityIndex = 0;
 
-		for (int i = 0; i < elements.Count; i++)
+		for (int i = 1; i < elements.Count; i++)
 		{
 			if (elements[i].Item2 < elements[bestPriorityIndex].Item2)
 			{

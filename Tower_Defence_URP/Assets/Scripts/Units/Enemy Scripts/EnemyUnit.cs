@@ -28,7 +28,7 @@ public class EnemyUnit : AUnit
         // Determine path number
         mapGrid = FindObjectOfType<MapGrid>();
         pathNum = mapGrid.AssignPathNumber();
-        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Path path = mapGrid.GetPath(pathNum);
         Vector2Int startPos = path[0];
         GetComponent<Rigidbody2D>().position = new Vector3(startPos.x, startPos.y);
         positionNum = 0;
@@ -47,7 +47,7 @@ public class EnemyUnit : AUnit
 
     private void CheckExit()
     {
-        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Path path = mapGrid.GetPath(pathNum);
         Vector2Int endPosition = path.GetEndPosition();
 
         if (Vector2.Distance(GetPosition(), endPosition) <= mapGrid.EndSensitivity)
@@ -70,7 +70,7 @@ public class EnemyUnit : AUnit
     public Vector2 DirectMoveToExit()
     {
         Vector2 pos = gameObject.GetComponent<Rigidbody2D>().position;
-        Vector2 targetPos = mapGrid.GetPathFromNumber(pathNum).GetEndPosition();
+        Vector2 targetPos = mapGrid.GetPath(pathNum).GetEndPosition();
         Vector2 direction = targetPos - pos;
         direction.Normalize();
         return direction * Speed;
@@ -79,7 +79,7 @@ public class EnemyUnit : AUnit
     public Vector2 WalkAlongPath()
     {
         Vector2 pos = GetPosition();
-        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Path path = mapGrid.GetPath(pathNum);
         Vector2Int targetPos = path.CalculateNextPosition(pos, positionNum);
         if (!targetPos.Equals(path.GetNextPosition(positionNum))) {
             positionNum = path.GetPositionNumber(targetPos);
