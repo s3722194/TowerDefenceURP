@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Name
-      value: Portal Tower Beta
+      value: Portal Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Layer
@@ -77,3 +77,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+--- !u!1 &5072118315256904507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 959825260647491940, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+  m_PrefabInstance: {fileID: 5418449656968696415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6734921969909338951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072118315256904507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404cd5f6efed16447b7072655b959120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
+  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
+  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
+  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
+  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
+  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
+  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
+  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
+  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
+  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
+  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
+  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
+  minColor: {r: 230.19884, g: 19.283669, b: 34.384785, a: 0}
+  maxColor: {r: 144.73982, g: 66.81776, b: 911.5856, a: 0}
+  minSpeed: {x: 0.3, y: 0.3}
+  maxSpeed: {x: 1, y: 1}
+  angle: {x: 1, y: 100}
+  twirlScale: {x: 2.7, y: 3.3}
+  twirlStrength: {x: 9, y: 18}
+  rotation: {x: 1, y: 360}
