@@ -61,7 +61,8 @@ Material:
     - _TwirlStrength: 10
     - _VorPower: 1
     m_Colors:
-    - _Color: {r: 927.62354, g: 76.29804, b: 718.80786, a: 1}
+    - _Centre: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 231.9058, g: 19.426664, b: 180.91081, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Speed: {r: 0.5, g: 0.5, b: 0, a: 0}

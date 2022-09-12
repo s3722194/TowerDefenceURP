@@ -54,15 +54,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Angle: 2
+    - _Angle: 4
     - _EnableExternalAlpha: 0
     - _TexturePower: 2
     - _TwirlScale: 3
-    - _TwirlStrength: 10
+    - _TwirlStrength: 12
     - _VorPower: 1
     m_Colors:
-    - _Color: {r: 927.62354, g: 76.29804, b: 718.80786, a: 1}
+    - _Centre: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 1420.107, g: 118.96183, b: 534.42084, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Speed: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
