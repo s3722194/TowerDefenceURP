@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7317701605406225261}
   - component: {fileID: 6130152234416740888}
   - component: {fileID: 7451502605789448696}
-  - component: {fileID: 2635912711410991845}
+  - component: {fileID: 2816713343074277325}
   m_Layer: 0
   m_Name: Orb
   m_TagString: Untagged
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.00000011920929}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!114 &2635912711410991845
+--- !u!114 &2816713343074277325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

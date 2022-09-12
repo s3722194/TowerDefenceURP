@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5918706840276306597}
   - component: {fileID: 5918706840276306596}
   - component: {fileID: 5918706840276306598}
-  - component: {fileID: 1724256615556329502}
+  - component: {fileID: -4837134539676215232}
   m_Layer: 0
   m_Name: Lazer Bullet
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.9}
   m_EdgeRadius: 0
---- !u!114 &1724256615556329502
+--- !u!114 &-4837134539676215232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
