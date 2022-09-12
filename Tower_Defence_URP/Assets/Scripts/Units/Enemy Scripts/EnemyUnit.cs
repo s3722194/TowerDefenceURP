@@ -16,7 +16,7 @@ public class EnemyUnit : AUnit
     private LevelManager levelManager;
     private MapGrid mapGrid;
     private int pathNum;
-    private Vector2Int[] nextPositions;
+    private int positionNum;
 
     protected override void Start()
     {
@@ -31,16 +31,13 @@ public class EnemyUnit : AUnit
         Path path = mapGrid.GetPathFromNumber(pathNum);
         Vector2Int startPos = path[0];
         GetComponent<Rigidbody2D>().position = new Vector3(startPos.x, startPos.y);
-
-        nextPositions = new Vector2Int[2];
-        nextPositions[0] = path.GetNextPosition(0);
-        nextPositions[1] = path.GetNextPosition(1);
+        positionNum = 0;
     }
 
     protected override void Update()
     {
-        // Vector 2 force = WalkAlongPath();
-        Vector2 force = DirectMoveToExit();
+        Vector2 force = WalkAlongPath();
+        // Vector2 force = DirectMoveToExit();
 
         gameObject.GetComponent<Rigidbody2D>().AddForce(force);
 
@@ -50,17 +47,13 @@ public class EnemyUnit : AUnit
 
     private void CheckExit()
     {
-        GameObject levelManagerObject = GameObject.Find("LevelManager");
-        LevelManager levelManager = levelManagerObject.GetComponent<LevelManager>();
+        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Vector2Int endPosition = path.GetEndPosition();
 
-        GameObject tiles = GameObject.Find("SpawnTiles");
-        SpawnGrid grid = tiles.GetComponent<SpawnGrid>();
-
-        if (Vector2.Distance(gameObject.GetComponent<Rigidbody2D>().position, GetEndPosition()) <= grid.EndSensitivity)
+        if (Vector2.Distance(GetPosition(), endPosition) <= mapGrid.EndSensitivity)
         {
             gameManager.Escape(this);
         }
-        throw new NotImplementedException();
     }
 
     public override void Attack()
@@ -72,13 +65,6 @@ public class EnemyUnit : AUnit
     {
         gameManager.Money += MoneyOnDeath;
         Destroy(gameObject);
-    }
-
-    public Vector2 GetStartPosition()
-    {
-        GameObject tiles = GameObject.Find("SpawnTiles");
-        SpawnGrid grid = tiles.GetComponent<SpawnGrid>();
-        return grid.Opening;
     }
 
     public Vector2 DirectMoveToExit()
@@ -93,8 +79,14 @@ public class EnemyUnit : AUnit
     public Vector2 WalkAlongPath()
     {
         Vector2 pos = GetPosition();
-        Vector2 targetPos = mapGrid.GetPathFromNumber(pathNum).get;
-        Vector
+        Path path = mapGrid.GetPathFromNumber(pathNum);
+        Vector2Int targetPos = path.CalculateNextPosition(pos, positionNum);
+        if (!targetPos.Equals(path.GetNextPosition(positionNum))) {
+            positionNum = path.GetPositionNumber(targetPos);
+        }
+        Vector2 direction = targetPos - pos;
+        direction.Normalize();
+        return direction * Speed;
     }
 
     public Vector2 GetPosition()

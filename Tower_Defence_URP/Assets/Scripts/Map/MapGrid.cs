@@ -18,15 +18,19 @@ public class MapGrid : MonoBehaviour
 
     private int lastPathNumAssigned;
 
+    public float EndSensitivity { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
+        startPositions = new List<Vector2Int>();
         startPositions = GetStartPositions();
+        endPositions = new List<Vector2Int>();
         endPositions = GetEndPositions();
 
         Transform grid = transform.Find("Grid");
         int tileCount = grid.childCount;
-
+        tiles = new GridTile[x,y];
         EmptyNodes();
         Vector3 position;
         for (int i = 0; i < tileCount; i++)

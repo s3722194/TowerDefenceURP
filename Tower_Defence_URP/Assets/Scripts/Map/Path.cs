@@ -33,6 +33,11 @@ public class Path : IEnumerable<Vector2Int>
         return lastPosition;
     }
 
+    public int GetPositionNumber(Vector2Int position)
+    {
+        return positions.IndexOf(position);
+    }
+
     public Vector2Int GetStartPosition()
     {
         return positions[0];
@@ -48,11 +53,11 @@ public class Path : IEnumerable<Vector2Int>
         return position.Equals(GetEndPosition());
     }
 
-    public Vector2Int CalculateNextPosition(Vector2 point)
+    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0)
     {
-        for (int i = 0; i < Count()-1; i++)
+        for (int i = positionNumber; i < Count() - 1; i++)
         {
-            if (PointExistsOnLineSegment(positions[i], positions[i+1], point))
+            if (PointExistsOnLineSegment(positions[i], positions[i + 1], point))
             {
                 return positions[i + 1];
             }
@@ -61,8 +66,8 @@ public class Path : IEnumerable<Vector2Int>
         // If the point does not lie along the path
         float distance = Mathf.Infinity;
         float tempDist;
-        Vector2Int minPosition = positions[0];
-        for (int i = 0; i < Count(); i++)
+        Vector2Int minPosition = positions[positionNumber];
+        for (int i = positionNumber; i < Count(); i++)
         {
             tempDist = Vector2.Distance(positions[i], point);
             if (tempDist < distance)
