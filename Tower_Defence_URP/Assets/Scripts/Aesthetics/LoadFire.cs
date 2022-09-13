@@ -24,7 +24,7 @@ public class LoadFire : MonoBehaviour
             spriteRenderer.material.SetFloat("_NoiseScale", Random.Range(noiseScale.x, noiseScale.y));
             spriteRenderer.material.SetFloat("_AshesScale", Random.Range(ashesScale.x, ashesScale.y));
             spriteRenderer.material.SetFloat("_AshesAngle", Random.Range(ashesAngle.x, ashesAngle.y));
-            spriteRenderer.material.SetVector("_FireTime", new Vector2(0, Random.Range(fireTimeY.x, fireTimeY.y)));
+            spriteRenderer.material.SetVector("_FireTme", new Vector2(0, Random.Range(fireTimeY.x, fireTimeY.y)));
             spriteRenderer.material.SetVector("_AshesTimeY", new Vector2(-0.1f,Random.Range(ashesTimeY.x, ashesTimeY.y)));
             spriteRenderer.material.SetVector("_NoiseOffset", new Vector2(Random.Range(noiseOffset.x, noiseOffset.y),
                 Random.Range(noiseOffset.z, noiseOffset.w)));
