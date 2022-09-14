@@ -1393,7 +1393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494889209937, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_text
-      value: SHOCK TOWER
+      value: CHAIN TOWER
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494889209937, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_fontSize
@@ -3487,6 +3487,10 @@ PrefabInstance:
       value: 0.227451
       objectReference: {fileID: 0}
     - target: {fileID: 4525120337361525709, guid: 030f218f328cc9c4082b1f096bcac7ca, type: 3}
+      propertyPath: m_text
+      value: CHAIN TOWER
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525120337361525709, guid: 030f218f328cc9c4082b1f096bcac7ca, type: 3}
       propertyPath: m_fontSize
       value: 25
       objectReference: {fileID: 0}
@@ -3612,7 +3616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4525120337624911515, guid: 030f218f328cc9c4082b1f096bcac7ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4525120337769648456, guid: 030f218f328cc9c4082b1f096bcac7ca, type: 3}
       propertyPath: m_fontSize
