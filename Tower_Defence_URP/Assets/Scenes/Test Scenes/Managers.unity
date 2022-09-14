@@ -407,6 +407,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9cdf85c226e64ce43863387f2327e6be, type: 2}
   - {fileID: 2100000, guid: 02e6826255f76df44b9cbbe65327c6c1, type: 2}
   - {fileID: 2100000, guid: 7ac9d575580721b42a0e1624b5cdb0e6, type: 2}
+  - {fileID: 2100000, guid: cd98dd23c1b39774195d40f08139e3f8, type: 2}
+  - {fileID: 2100000, guid: e87f87c6067a9bb498cac6a644b80217, type: 2}
   startMaterials:
   - {fileID: 2100000, guid: a02b67956cea9fa468bb5700373f0141, type: 2}
   endMaterials:
