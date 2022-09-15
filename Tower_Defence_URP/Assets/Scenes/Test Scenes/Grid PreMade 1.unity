@@ -1015,6 +1015,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1295422057}
+    - target: {fileID: 3187447494531834505, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3187447494531834506, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -1261,6 +1265,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9128565459060031639, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191488945759822569, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191488945759822569, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

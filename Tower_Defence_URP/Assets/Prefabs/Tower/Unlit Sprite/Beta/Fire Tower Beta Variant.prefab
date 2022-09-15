@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3426228085747074694, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426228085747074694, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.975
       objectReference: {fileID: 0}
@@ -99,7 +103,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3426228085747074694, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
 --- !u!1 &2035722182661627811 stripped
 GameObject:
@@ -218,6 +223,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
   m_PrefabInstance: {fileID: 5722302004569027543}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &1442022157614697423
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035722182896773497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 6
 --- !u!114 &5218394787845281232
 MonoBehaviour:
   m_ObjectHideFlags: 0
