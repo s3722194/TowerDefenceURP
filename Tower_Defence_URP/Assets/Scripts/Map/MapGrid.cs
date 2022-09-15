@@ -121,7 +121,7 @@ public class MapGrid : MonoBehaviour
             }
         }
     }
-
+    
     public bool HasGridTile(int x, int y)
     {
         if (tiles.GetLength(0) > x && tiles.GetLength(1) > y)
