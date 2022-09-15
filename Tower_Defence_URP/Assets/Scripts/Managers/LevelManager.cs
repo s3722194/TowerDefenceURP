@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField]
     private List<EnemyUnit> enemies = new List<EnemyUnit>();
+    private List<Tuple<EnemyUnit, float>> spawnQueue = new List<Tuple<EnemyUnit, float>>();
     
 
     //to calcualte the x and y corrdinates for the game
@@ -74,12 +76,28 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (spawnQueue.Count > 0)
+        {
+            time += Time.deltaTime;
+            if (time > spawnQueue[0].Item2)
+            {
+                Instantiate(spawnQueue[0].Item1);
+                spawnQueue.RemoveAt(0);
+                time = 0f;
+            }
+        }
     }
 
-    void SendWave()
+    public void SendWave()
     {
-        throw new System.NotImplementedException();
+        float delay = 1;
+        for (int i = 0; i < waveNum*3; i++)
+        {
+            Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(enemies[0], delay);
+            spawnQueue.Add(spawnItem);
+            delay = 0.5f;
+        }
+        waveNum += 1;
     }
 
    
