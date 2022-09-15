@@ -25,19 +25,25 @@ public class MapGrid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        Transform grid = transform.Find("Grid");
+        int tileCount = grid.childCount;
+        tiles = new GridTile[x + wallThickness * 2, y + wallThickness * 2];
+        EmptyNodes();
+
         startPositions = new List<Vector2Int>();
         startPositions = GetStartPositions();
         endPositions = new List<Vector2Int>();
         endPositions = GetEndPositions();
 
-        Transform grid = transform.Find("Grid");
-        int tileCount = grid.childCount;
-        tiles = new GridTile[x+wallThickness*2, y+wallThickness*2];
-        EmptyNodes();
         for (int i = 0; i < tileCount; i++)
         {
             Transform child = grid.GetChild(i);
             SetGridTile(child.GetComponent<GridTile>());
+        }
+        for (int i = 0; i < startPositions.Count; i++)
+        {
+
         }
 
         paths = new List<Path>();
@@ -69,8 +75,10 @@ public class MapGrid : MonoBehaviour
             List<Vector2Int> StartTiles = new List<Vector2Int>();
             for (int i = 0; i < childCount; i++)
             {
-                Vector3 childPos = startObject.GetChild(i).position;
+                Transform child = startObject.GetChild(i);
+                Vector3 childPos = child.position;
                 StartTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+                SetGridTile(child.GetComponent<GridTile>());
             }
             return StartTiles;
         }
@@ -86,8 +94,10 @@ public class MapGrid : MonoBehaviour
             List<Vector2Int> EndTiles = new List<Vector2Int>();
             for (int i = 0; i < childCount; i++)
             {
-                Vector3 childPos = endObject.GetChild(i).position;
+                Transform child = endObject.GetChild(i);
+                Vector3 childPos = child.position;
                 EndTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+                SetGridTile(child.GetComponent<GridTile>());
             }
             return EndTiles;
         }

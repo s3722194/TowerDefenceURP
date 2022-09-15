@@ -29,12 +29,13 @@ public static class AStarSearch
                 return GetSolution(node);
             }
             explored.Add(node.Position);
-            foreach (Vector2Int pos in GetSuccessors(grid, node, goThroughBuildings, allowDiagonal))
+            List<Vector2Int> successors = GetSuccessors(grid, node, goThroughBuildings, allowDiagonal);
+            foreach (Vector2Int pos in successors)
             {
                 Node child = new Node(pos, node);
                 if (!explored.Contains(child.Position))
                 {
-                    float cost = child.GetPathCost() + Heuristics.BuildingHeuristic(grid, child.Position);
+                    float cost = child.GetPathCost() + Heuristics.BuildingHeuristic(grid, child.Position, endPos);
                     frontier.Update(child, cost);
                 }
             }
@@ -72,7 +73,7 @@ public static class AStarSearch
                 {
                     continue;
                 }
-                if (i+j % 2 == 0 && !allowDiagonal)
+                if ((i+j) % 2 == 0 && !allowDiagonal)
                 {
                     continue;
                 }
