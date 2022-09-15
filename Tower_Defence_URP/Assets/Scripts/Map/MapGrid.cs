@@ -62,28 +62,36 @@ public class MapGrid : MonoBehaviour
 
     private List<Vector2Int> GetStartPositions()
     {
-        Transform startObject = transform.Find("Start");
-        int childCount = startObject.childCount;
-        List<Vector2Int> StartTiles = new List<Vector2Int>();
-        for (int i = 0; i < childCount; i++)
+        if (startPositions.Count == 0)
         {
-            Vector3 childPos = startObject.GetChild(i).position;
-            StartTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+            Transform startObject = transform.Find("Start");
+            int childCount = startObject.childCount;
+            List<Vector2Int> StartTiles = new List<Vector2Int>();
+            for (int i = 0; i < childCount; i++)
+            {
+                Vector3 childPos = startObject.GetChild(i).position;
+                StartTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+            }
+            return StartTiles;
         }
-        return StartTiles;
+        return startPositions;
     }
 
     private List<Vector2Int> GetEndPositions()
     {
-        Transform endObject = transform.Find("End");
-        int childCount = endObject.childCount;
-        List<Vector2Int> EndTiles = new List<Vector2Int>();
-        for (int i = 0; i < childCount; i++)
+        if (endPositions.Count == 0)
         {
-            Vector3 childPos = endObject.GetChild(i).position;
-            EndTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+            Transform endObject = transform.Find("End");
+            int childCount = endObject.childCount;
+            List<Vector2Int> EndTiles = new List<Vector2Int>();
+            for (int i = 0; i < childCount; i++)
+            {
+                Vector3 childPos = endObject.GetChild(i).position;
+                EndTiles.Add(new Vector2Int((int)childPos.x, (int)childPos.y));
+            }
+            return EndTiles;
         }
-        return EndTiles;
+        return endPositions;
     }
 
     private void EmptyNodes()
@@ -116,7 +124,7 @@ public class MapGrid : MonoBehaviour
 
     public bool HasGridTile(int x, int y)
     {
-        if (tiles.GetLength(0) < x && tiles.GetLength(1) < y)
+        if (tiles.GetLength(0) > x && tiles.GetLength(1) > y)
         {
             return tiles[x, y] != null;
         }
@@ -126,7 +134,7 @@ public class MapGrid : MonoBehaviour
     public bool HasGridTile(Vector2Int pos)
     {
         Vector2Int adjusted = new Vector2Int(pos.x - offset.x, pos.y - offset.y);
-        if (adjusted.x > tiles.GetLength(0) || adjusted.y > tiles.GetLength(1))
+        if (adjusted.x >= tiles.GetLength(0) || adjusted.y >= tiles.GetLength(1))
         {
             return false;
         }
@@ -141,7 +149,7 @@ public class MapGrid : MonoBehaviour
     public GridTile GetGridTile(Vector2Int pos)
     {
         Vector2Int adjusted = new Vector2Int(pos.x - offset.x, pos.y - offset.y);
-        if (adjusted.x > tiles.Length || adjusted.y > tiles.GetLength(1))
+        if (adjusted.x >= tiles.Length || adjusted.y >= tiles.GetLength(1))
         {
             return null;
         }
@@ -150,7 +158,13 @@ public class MapGrid : MonoBehaviour
 
     public void SetGridTile(GridTile gridTile)
     {
-        tiles[(int)gridTile.transform.position.x - offset.x, (int)gridTile.transform.position.y - offset.y] = gridTile;
+        int pos_x = (int)Math.Ceiling(gridTile.transform.position.x) - offset.x;
+        int pos_y = (int)Math.Ceiling(gridTile.transform.position.y) - offset.y;
+        if (pos_x >= tiles.GetLength(0) || pos_y >= tiles.GetLength(1))
+        {
+            throw new ArgumentOutOfRangeException("Grid tile position is too high for tilemap size");
+        }
+        tiles[pos_x, pos_y] = gridTile;
     }
 
     public int AssignPathNumber()
