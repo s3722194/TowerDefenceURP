@@ -169,13 +169,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 50
   speed: 10
   attackCooldown: 0
   mDamage: 0
   rDamage: 0
   range: 0
-  moneyOnDeath: 200
+  moneyOnDeath: 20
   livesOnEscape: 1
   enemyTag: Enemy
 --- !u!1 &5852554947016372710

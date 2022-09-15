@@ -193,6 +193,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f6918018a0ae2ad4fa1ee2bc91875413, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: a35dc1af91d78904db6df467778ff568, type: 2}
+  enemies: []
 --- !u!1 &192729064
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +354,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: db077fcb6fdcc834790bacc929806dde, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: f7f9c797050b1344a80f67af3dcbfc07, type: 2}
+  enemies: []
 --- !u!1 &1846191909
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +428,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 29c458d5602ae4f439cb85e9d1a0c4f8, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: 3b243d3aaa9cc884aa1db9802702951c, type: 2}
+  enemies:
+  - {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+  - {fileID: 5363133832958399745, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
+  - {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
 --- !u!1 &1936788327
 GameObject:
   m_ObjectHideFlags: 0

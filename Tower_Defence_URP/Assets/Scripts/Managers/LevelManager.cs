@@ -20,7 +20,9 @@ public class LevelManager : MonoBehaviour
     private List<Material> startMaterials = new List<Material>();
     [SerializeField]
     private List<Material> endMaterials = new List<Material>();
+
     [SerializeField]
+    private List<EnemyUnit> enemies = new List<EnemyUnit>();
     
 
     //to calcualte the x and y corrdinates for the game
