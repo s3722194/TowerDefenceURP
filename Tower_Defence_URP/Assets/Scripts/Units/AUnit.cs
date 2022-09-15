@@ -12,7 +12,7 @@ public abstract class AUnit : MonoBehaviour
     [SerializeField] private int rDamage;
     [SerializeField] private float range;
 
-    public int Health { get => health; protected set => health = value; }
+    public int Health { get => health; set => health = value; }
     public int MaxHealth { get => maxHealth; protected set => maxHealth = value; }
     public int Speed { get => speed; protected set => speed = value; }
     public float AttackCooldown { get => attackCooldown; protected set => attackCooldown = value; }
