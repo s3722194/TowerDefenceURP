@@ -96,7 +96,7 @@ public class Path : IList<Vector2Int>
 
     public Vector2Int GetNextPosition(int positionCount)
     {
-        if (positionCount < positions.Count && positionCount > -1)
+        if (positionCount+1 < positions.Count && positionCount > -1)
         {
             return positions[positionCount + 1];
         }
