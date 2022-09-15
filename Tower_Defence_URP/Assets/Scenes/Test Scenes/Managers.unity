@@ -193,7 +193,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f6918018a0ae2ad4fa1ee2bc91875413, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: a35dc1af91d78904db6df467778ff568, type: 2}
-  delayStart: 0
 --- !u!1 &192729064
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3637c6b8659ddf149a95f79c115a6557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 100
+  money: 1000
 --- !u!4 &933358869
 Transform:
   m_ObjectHideFlags: 0
@@ -352,7 +353,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: db077fcb6fdcc834790bacc929806dde, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: f7f9c797050b1344a80f67af3dcbfc07, type: 2}
-  delayStart: 0
 --- !u!1 &1846191909
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +426,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 29c458d5602ae4f439cb85e9d1a0c4f8, type: 2}
   endMaterials:
   - {fileID: 2100000, guid: 3b243d3aaa9cc884aa1db9802702951c, type: 2}
-  delayStart: 0
 --- !u!1 &1936788327
 GameObject:
   m_ObjectHideFlags: 0

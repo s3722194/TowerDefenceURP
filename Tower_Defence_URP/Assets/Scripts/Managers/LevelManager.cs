@@ -30,8 +30,7 @@ public class LevelManager : MonoBehaviour
     private float time;
     private GameObject ui;
     //private GameObject managers;
-
-    [SerializeField] private int delayStart;
+    private int waveNum;
 
     
     public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
@@ -66,18 +65,19 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         time = 0;
+        waveNum = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (time > delayStart)
-        {
-            // Start sending waves
-        }
+        
+    }
+
+    void SendWave()
+    {
+        throw new System.NotImplementedException();
     }
 
    

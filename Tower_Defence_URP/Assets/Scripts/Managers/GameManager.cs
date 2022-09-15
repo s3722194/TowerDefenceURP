@@ -6,18 +6,16 @@ public class GameManager : MonoBehaviour
 {
     private GameObject selectedTower;
 
-    private int lives;
-    private int money;
+    [SerializeField] private int lives;
+    [SerializeField] private int money;
     public int Money {  get => money; set => money =value; }
     
     public int Lives { get => lives; set => lives = value; }
     // Start is called before the first frame update
     void Start()
     {
-        // probs want to inistialise these values
+        // probs want to initialise these values
         // idk what they are so i wont touch them
-        Lives = 100;
-        Money = 1000;
         selectedTower = null;
     }
 
