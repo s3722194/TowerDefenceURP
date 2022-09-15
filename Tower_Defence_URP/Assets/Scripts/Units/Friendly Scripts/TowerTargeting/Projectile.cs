@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private float movementSpeed = 5.5f;
+    public float movementSpeed = 5.5f;
+    public int damage;
     private float radius = 1.0f;
     private float radiusSq;
 
@@ -27,10 +28,21 @@ public class Projectile : MonoBehaviour
 
         Vector3 direction = target.position - this.transform.position;
         transform.position += direction.normalized * movementSpeed * Time.deltaTime;
+    }
 
-        if(direction.sqrMagnitude < radiusSq)
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if(collider.gameObject.tag.Equals("Enemy"))
         {
-            //Debug.Log("enemy hit");
+            EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
+            if(enemy != null)
+            {
+                enemy.Health -= damage;
+                if(enemy.Health <= 0)
+                {
+                    enemy.Die();
+                }
+            }
             Destroy(gameObject);
         }
     }

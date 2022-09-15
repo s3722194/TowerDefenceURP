@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         // probs want to inistialise these values
         // idk what they are so i wont touch them
         Lives = 100;
-        Money = 100000;
+        Money = 1000;
         selectedTower = null;
     }
 
