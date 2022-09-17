@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2314335224042822813}
   - component: {fileID: 3035902623965110180}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Light Purple Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6465929344536560546}
   - component: {fileID: 8931136020565032604}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Neon Purple Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2831782039861991142}
   - component: {fileID: 7629777776024705900}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Dark Purple Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5651042988219490580}
   - component: {fileID: 9114638200394061755}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,9 +343,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 92233426808526259, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
       value: Lazer Tower Beta Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_TagString
@@ -399,6 +407,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8ec56a77685671045ad14f9804384715, type: 3}
+    - target: {fileID: 92233427403485330, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 92233427403485332, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -419,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower Lazers
       objectReference: {fileID: 0}
+    - target: {fileID: 575856323113913387, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 903763508296570646, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.0625
@@ -430,6 +446,10 @@ PrefabInstance:
     - target: {fileID: 3433329400193644538, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
       value: West Lazer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433329400193644538, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644538, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_IsActive
@@ -508,12 +528,20 @@ PrefabInstance:
       value: Center Lazer
       objectReference: {fileID: 0}
     - target: {fileID: 4207677422278161159, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207677422278161159, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013818, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
       value: East Lazer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948567749821013818, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013818, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_IsActive
@@ -546,6 +574,10 @@ PrefabInstance:
     - target: {fileID: 8765285056442331945, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
       value: North Lazer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765285056442331945, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8765285056442331945, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_IsActive
