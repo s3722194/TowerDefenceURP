@@ -16,7 +16,7 @@ public class MapGrid : MonoBehaviour
     [SerializeField] private int wallThickness;
 
     private GridTile[,] tiles;
-    private List<Path> paths;
+    [SerializeReference] private List<Path> paths;
 
     private int lastPathNumAssigned;
 

@@ -48,12 +48,19 @@ public class EnemyUnit : AUnit
     private void CheckExit()
     {
         Path path = mapGrid.GetPath(pathNum);
+        if (path.Count - 1 <= positionNum)
+        {
+            gameManager.Escape(this);
+        }
+        /*
+        Path path = mapGrid.GetPath(pathNum);
         Vector2Int endPosition = path.GetEndPosition();
 
         if (Vector2.Distance(GetPosition(), endPosition) <= mapGrid.EndSensitivity)
         {
             gameManager.Escape(this);
         }
+        */
     }
 
     public override void Attack()

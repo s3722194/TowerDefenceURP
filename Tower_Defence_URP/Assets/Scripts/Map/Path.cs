@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Path : IList<Vector2Int>
 {
-    List<Vector2Int> positions;
+    [SerializeReference] List<Vector2Int> positions;
 
     public bool IsReadOnly => ((ICollection<Vector2Int>)positions).IsReadOnly;
 

@@ -1249,15 +1249,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1083609880}
+    - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187447494091701079, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494244160999, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_fontAsset
@@ -1713,6 +1729,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+--- !u!1 &1083609879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187447494091701073, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+  m_PrefabInstance: {fileID: 1083609878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1083609880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083609879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2e60538c710924492b966ca3e933ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1108506468
 GameObject:
   m_ObjectHideFlags: 0
