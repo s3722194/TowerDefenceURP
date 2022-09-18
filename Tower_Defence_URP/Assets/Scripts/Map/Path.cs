@@ -150,6 +150,20 @@ public class Path : IList<Vector2Int>
         return ((ICollection<Vector2Int>)positions).Remove(item);
     }
 
+    public override string ToString()
+    {
+        string text = "Path: ";
+        for (int i = 0; i < positions.Count; i++)
+        {
+            text += positions[i].ToString() + ", ";
+        }
+        if (text.EndsWith(", "))
+        {
+            text = text.Remove(text.Length-2);
+        }
+        return text;
+    }
+
     public IEnumerator<Vector2Int> GetEnumerator()
     {
         return ((IEnumerable<Vector2Int>)positions).GetEnumerator();

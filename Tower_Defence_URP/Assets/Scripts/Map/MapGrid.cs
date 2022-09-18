@@ -58,8 +58,10 @@ public class MapGrid : MonoBehaviour
             for (int j = 0; j < endPositions.Count; j++)
             {
                 startPos = startPositions[i];
-                endPos = endPositions[i];
-                paths.Add(CalculatePath(startPos, endPos, goThroughBuildings, ignoreBuildings));
+                endPos = endPositions[j];
+                Path path = CalculatePath(startPos, endPos, goThroughBuildings, ignoreBuildings);
+                paths.Add(path);
+                print(path.ToString());
             }
         }
 
@@ -127,7 +129,8 @@ public class MapGrid : MonoBehaviour
         {
             if (path.Contains(pos))
             {
-                AStarSearch.Search(this, path[0], path[-1], goThroughBuildings, ignoreBuildings, allowDiagonalMovement);
+                path.UpdatePositions(AStarSearch.Search(this, path[0], path[-1], goThroughBuildings, ignoreBuildings, allowDiagonalMovement));
+                print(path.ToString());
             }
         }
     }
