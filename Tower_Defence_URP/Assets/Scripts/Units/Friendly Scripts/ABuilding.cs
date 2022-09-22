@@ -5,7 +5,6 @@ using UnityEngine;
 public abstract class ABuilding : AUnit
 {
     [SerializeField] private bool destructable;
-    [SerializeField] private string buildingTag;
     [SerializeField] private int cost;
 
     public int Cost { get => cost; set => cost = value; }
@@ -13,14 +12,12 @@ public abstract class ABuilding : AUnit
     protected override void Start()
     {
         base.Start();
-        gameObject.tag = buildingTag;
     }
 
     //Store a list of enemies that come into range of a tower
     public List<GameObject> EnemiesInRange;
 
-    public ABuilding()
-        : base()
+    public ABuilding() : base()
     {
         EnemiesInRange = new List<GameObject>();
     }

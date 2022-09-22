@@ -91,13 +91,14 @@ public class LevelManager : MonoBehaviour
     public void SendWave()
     {
         float delay = 1;
+        waveNum += 1;
+
         for (int i = 0; i < waveNum*3; i++)
         {
             Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(enemies[0], delay);
             spawnQueue.Add(spawnItem);
             delay = 0.5f;
         }
-        waveNum += 1;
     }
 
    
