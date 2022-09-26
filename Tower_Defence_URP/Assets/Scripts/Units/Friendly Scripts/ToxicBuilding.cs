@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyFirstBuilding : ABuilding
+public class ToxicBuilding : ABuilding
 {
     public GameObject ProjectilePrefab;
 
@@ -16,14 +16,19 @@ public class MyFirstBuilding : ABuilding
     public override void Attack()
     {
         //throw new System.NotImplementedException();
-        
+
         // Fire a bullet every [AttackCooldown] seconds
-        if(fireRate >= AttackCooldown)
+        if (fireRate >= AttackCooldown)
         {
-            Debug.Log("spawning projectile");
-            Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[0].transform);
+            for(int i = 0; i < EnemiesInRange.Count; i++)
+            {
+                Debug.Log("spawning projectile");
+                Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[i].transform);
+            }
+
             fireRate = 0.0f;
-        } else
+        }
+        else
         {
             fireRate += Time.deltaTime;
         }
@@ -37,12 +42,11 @@ public class MyFirstBuilding : ABuilding
     protected override void Update()
     {
         //throw new System.NotImplementedException();
-        
-        if(EnemiesInRange.Count > 0)
+
+        if (EnemiesInRange.Count > 0)
         {
             Attack();
-        }
-        else
+        } else
         {
             fireRate = AttackCooldown;
         }

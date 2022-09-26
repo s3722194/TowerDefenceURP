@@ -140,6 +140,6 @@ MonoBehaviour:
   rDamage: 25
   range: 10
   destructable: 0
-  buildingTag: 
+  buildingTag: Tower
   cost: 1000
   EnemiesInRange: []

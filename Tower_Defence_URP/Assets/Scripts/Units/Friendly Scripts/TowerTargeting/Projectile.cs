@@ -6,10 +6,10 @@ public class Projectile : MonoBehaviour
 {
     public float movementSpeed = 5.5f;
     public int damage;
-    private float radius = 1.0f;
-    private float radiusSq;
+    protected float radius = 1.0f;
+    protected float radiusSq;
 
-    Transform target;
+    protected Transform target;
 
     void OnEnable()
     {

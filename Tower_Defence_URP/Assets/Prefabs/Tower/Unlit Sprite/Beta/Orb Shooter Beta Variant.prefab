@@ -188,6 +188,10 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: buildingTag
+      value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: attackCooldown
       value: 0.1
       objectReference: {fileID: 0}

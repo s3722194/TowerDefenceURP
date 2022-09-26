@@ -259,7 +259,7 @@ MonoBehaviour:
   rDamage: 0
   range: 50
   destructable: 0
-  buildingTag: 
+  buildingTag: Tower
   cost: 900
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 9213397056524092256, guid: b9b7bce6e26d8534cb2f8ebee500f7e4, type: 3}

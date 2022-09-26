@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 96232767790036286}
   - component: {fileID: 8138013133141908324}
   - component: {fileID: 4703707863900209042}
+  - component: {fileID: 7919136939338418618}
   m_Layer: 0
   m_Name: Toxic Water
   m_TagString: Untagged
@@ -124,3 +125,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674887b3dbd86bf4ea0e6c2bf7a5a6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7919136939338418618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855910885084074260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e321b09736bc49447a611b3128444931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 0
+  damage: 1

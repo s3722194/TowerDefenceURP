@@ -215,7 +215,7 @@ MonoBehaviour:
   rDamage: 2
   range: 50
   destructable: 0
-  buildingTag: 
+  buildingTag: Tower
   cost: 700
   EnemiesInRange: []
 --- !u!1 &5383567818666988218 stripped
