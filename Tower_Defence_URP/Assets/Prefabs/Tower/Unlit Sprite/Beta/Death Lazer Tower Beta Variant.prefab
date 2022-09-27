@@ -208,6 +208,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Size.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.85
@@ -280,7 +312,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
 --- !u!1 &1414879613201294334 stripped
 GameObject:
@@ -321,7 +354,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
   m_PrefabInstance: {fileID: 7776653747535412069}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &421397296454315764
+--- !u!114 &6504688555254336223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,17 +363,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414879613443250692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68c621376041964f9fa50d94e2b4e38, type: 3}
+  m_Script: {fileID: 11500000, guid: 284601cc8f069a1499e8258ddb0e1154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
   maxHealth: 500
   speed: 1
-  attackCooldown: 0.01
-  mDamage: 100
-  rDamage: 50
-  range: 25
+  attackCooldown: 0.5
+  mDamage: 1
+  rDamage: 25
+  range: 0
   destructable: 0
-  buildingTag: Tower
   cost: 1500
   EnemiesInRange: []

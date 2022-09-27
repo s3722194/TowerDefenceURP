@@ -36,7 +36,7 @@ public class ToxicProjectile : Projectile
             existanceTime += Time.deltaTime;
         }
 
-        // Deal damage of time incrementaly
+        // Deal damage over time incrementaly
         if(DoT_Time >= DoT_Cooldown)
         {
             EnemyUnit enemy = target.gameObject.GetComponent<EnemyUnit>();
