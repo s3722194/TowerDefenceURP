@@ -171,7 +171,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 638829852091684672, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
 --- !u!1 &5383567817124873362 stripped
 GameObject:
@@ -195,7 +196,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 731292499974833925, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
   m_PrefabInstance: {fileID: 4652311664660108797}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3074414817279487297
+--- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,20 +205,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 5383567817789444856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68c621376041964f9fa50d94e2b4e38, type: 3}
+  m_Script: {fileID: 11500000, guid: 16811afd700cb384b8697be4a9eb1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 300
   maxHealth: 300
   speed: 10
-  attackCooldown: 1
+  attackCooldown: 2
   mDamage: 5
   rDamage: 2
   range: 50
   destructable: 0
-  buildingTag: Tower
   cost: 700
   EnemiesInRange: []
+  firstLightning: {fileID: 6123263498117829287, guid: 3c20d3da5ada56544ba6f2d2acf22a91, type: 3}
+  secondLightning: {fileID: 4536320636921029647, guid: ea2a1797838847248991b3a2ca3c0348, type: 3}
+  thirdLightning: {fileID: 5637911999041725105, guid: 33b1f9b8c191b2f48837cbebdd1dd36d, type: 3}
+--- !u!58 &8846114482517341261
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383567817789444856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5
 --- !u!1 &5383567818666988218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 731292498024335175, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
