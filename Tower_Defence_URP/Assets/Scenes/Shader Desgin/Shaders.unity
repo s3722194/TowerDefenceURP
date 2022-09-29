@@ -5120,6 +5120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brown Wraith
       objectReference: {fileID: 0}
+    - target: {fileID: 6938414425754714122, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
 --- !u!1001 &4317691299787944659
@@ -5689,6 +5693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1361503182}
     m_Modifications:
+    - target: {fileID: 1747593604029971783, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6306837949470522016, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
       propertyPath: m_Name
       value: PurpleWraith
