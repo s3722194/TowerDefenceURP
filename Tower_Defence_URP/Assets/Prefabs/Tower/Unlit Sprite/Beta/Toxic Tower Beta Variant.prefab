@@ -180,7 +180,7 @@ MonoBehaviour:
   maxHealth: 360
   speed: 0
   attackCooldown: 5
-  mDamage: 2
+  mDamage: 5
   rDamage: 0
   range: 5
   destructable: 0

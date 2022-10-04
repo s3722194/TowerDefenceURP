@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 77240379946218320, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Name
@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_TagString
@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3122897147758345120, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3122897147758345120, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_IsActive

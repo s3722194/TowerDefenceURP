@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5696569347125618597}
   - component: {fileID: 1324177647744481023}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Fire Eye West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8747652475740918729}
   - component: {fileID: 3984359456669736339}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Fire Eye East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2961608422558539121}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,11 +226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Size.x
-      value: 7
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Size.y
-      value: 7
+      value: 0.79
       objectReference: {fileID: 0}
     - target: {fileID: 7672843122081416895, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Offset.x
@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a08231f5f89157f479a8aed4a57a8186, type: 2}
+    - target: {fileID: 8669025635416463515, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285664, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -262,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_TagString
@@ -311,6 +315,10 @@ PrefabInstance:
     - target: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669025636960693624, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5063775450954531464, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
@@ -370,8 +378,8 @@ MonoBehaviour:
   maxHealth: 500
   speed: 1
   attackCooldown: 0.5
-  mDamage: 1
-  rDamage: 25
+  mDamage: 50
+  rDamage: 1
   range: 0
   destructable: 0
   cost: 1500

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         // probs want to initialise these values
         // idk what they are so i wont touch them
         selectedTower = null;
+        money = 100000;
     }
 
     // Update is called once per frame

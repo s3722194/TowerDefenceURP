@@ -23,7 +23,7 @@ public class ToxicBuilding : ABuilding
             for(int i = 0; i < EnemiesInRange.Count; i++)
             {
                 Debug.Log("spawning projectile");
-                Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[i].transform);
+                Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[i].transform, MDamage);
             }
 
             fireRate = 0.0f;

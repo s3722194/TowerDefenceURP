@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_TagString
@@ -67,6 +67,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 05f2323d8f755f5469c3a528e56ee4fc, type: 3}
+    - target: {fileID: 959825259843809892, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 959825260647491940, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7948211379964339299, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1
@@ -140,6 +148,5 @@ MonoBehaviour:
   rDamage: 25
   range: 10
   destructable: 0
-  buildingTag: Tower
   cost: 1000
   EnemiesInRange: []

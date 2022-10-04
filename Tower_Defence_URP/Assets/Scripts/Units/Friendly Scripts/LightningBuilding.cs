@@ -27,9 +27,9 @@ public class LightningBuilding : ABuilding
             int secondTarget = (int) Random.Range(0, EnemiesInRange.Count);
             int thirdTarget = (int) Random.Range(0, EnemiesInRange.Count);
 
-            LightningProjectile first = LightningProjectile.Spawn(firstLightning, this.transform.position, this.transform.rotation, EnemiesInRange[firstTarget].transform);
-            LightningProjectile second = LightningProjectile.Spawn(secondLightning, this.transform.position, this.transform.rotation, EnemiesInRange[secondTarget].transform);
-            LightningProjectile third = LightningProjectile.Spawn(thirdLightning, this.transform.position, this.transform.rotation, EnemiesInRange[thirdTarget].transform);
+            LightningProjectile first = LightningProjectile.Spawn(firstLightning, this.transform.position, this.transform.rotation, EnemiesInRange[firstTarget].transform, MDamage);
+            LightningProjectile second = LightningProjectile.Spawn(secondLightning, this.transform.position, this.transform.rotation, EnemiesInRange[secondTarget].transform, MDamage);
+            LightningProjectile third = LightningProjectile.Spawn(thirdLightning, this.transform.position, this.transform.rotation, EnemiesInRange[thirdTarget].transform, MDamage);
 
             fireRate = 0.0f;
         }

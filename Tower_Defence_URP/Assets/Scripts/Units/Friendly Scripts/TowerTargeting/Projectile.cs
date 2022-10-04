@@ -5,7 +5,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float movementSpeed = 5.5f;
-    public int damage;
+
+    protected static int damage;
     protected float radius = 1.0f;
     protected float radiusSq;
 
@@ -30,7 +31,7 @@ public class Projectile : MonoBehaviour
         transform.position += direction.normalized * movementSpeed * Time.deltaTime;
     }
 
-    void OnCollisionEnter2D(Collision2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.tag.Equals("Enemy"))
         {
@@ -47,7 +48,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public static Projectile Spawn(GameObject prefab, Vector3 position, Quaternion rotation, Transform _target)
+    public static Projectile Spawn(GameObject prefab, Vector3 position, Quaternion rotation, Transform _target, int _damage)
     {
         GameObject spawnProjectile = Instantiate(prefab, position, rotation);
         Projectile sp = spawnProjectile.GetComponent<Projectile>();
@@ -58,6 +59,7 @@ public class Projectile : MonoBehaviour
         }
 
         sp.target = _target;
+        damage = _damage;
         return sp;
     }
 }

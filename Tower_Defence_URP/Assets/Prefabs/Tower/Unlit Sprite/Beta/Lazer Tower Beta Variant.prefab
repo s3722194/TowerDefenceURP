@@ -652,11 +652,10 @@ MonoBehaviour:
   maxHealth: 100
   speed: 10
   attackCooldown: 1
-  mDamage: 10
+  mDamage: 15
   rDamage: 5
   range: 5
   destructable: 0
-  buildingTag: Tower
   cost: 100
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 5918706840276306595, guid: 9651b1909cbc4cb4aa339bafe49b0b68, type: 3}
