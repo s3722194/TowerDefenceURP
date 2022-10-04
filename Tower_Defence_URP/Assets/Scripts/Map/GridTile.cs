@@ -28,12 +28,6 @@ public class GridTile : MonoBehaviour
         OccupiedTower = null;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnMouseDown()
     {
         if(OccupiedTower == null)

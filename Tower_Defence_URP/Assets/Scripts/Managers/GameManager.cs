@@ -20,12 +20,6 @@ public class GameManager : MonoBehaviour
         money = 100000;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Escape(EnemyUnit unit)
     {
         Lives -= unit.LivesOnEscape;
