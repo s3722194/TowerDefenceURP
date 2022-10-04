@@ -20,7 +20,7 @@ public class MyFirstBuilding : ABuilding
         // Fire a bullet every [AttackCooldown] seconds
         if(fireRate >= AttackCooldown)
         {
-            Debug.Log("spawning projectile");
+            // Debug.Log("spawning projectile");
             Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[0].transform);
             fireRate = 0.0f;
         } else

@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 50
-  speed: 30
+  speed: 3
   attackCooldown: 0
   mDamage: 0
   rDamage: 0
