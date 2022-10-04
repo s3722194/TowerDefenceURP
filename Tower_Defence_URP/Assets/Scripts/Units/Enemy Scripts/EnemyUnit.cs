@@ -39,6 +39,7 @@ public class EnemyUnit : AUnit
         Vector2 force = WalkAlongPath();
         // Vector2 force = DirectMoveToExit();
 
+        // gameObject.GetComponent<Rigidbody2D>().velocity = force;
         gameObject.GetComponent<Rigidbody2D>().AddForce(force);
 
         // Check if at exit
