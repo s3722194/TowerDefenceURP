@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1491289855065459766, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174574276336265045, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4062520099425247836, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -102,6 +110,14 @@ PrefabInstance:
     - target: {fileID: 4062520100619903049, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272739101761859313, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485384487164641739, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5045607853857145278, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
       propertyPath: m_Size.x

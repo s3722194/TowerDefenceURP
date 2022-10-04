@@ -103,6 +103,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7110688353580007375, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949437397292074479, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9209126491963849367, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3426228085747074694, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}

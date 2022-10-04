@@ -131,13 +131,25 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 3459263882696080563, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3564454618922285272, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Radius
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 3564454618922285272, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3859974159378524415, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Radius
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859974159378524415, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4236802226468257483, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Name

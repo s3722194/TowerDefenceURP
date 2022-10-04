@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 132502323679266512, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313515833733798441, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2823415486434257558, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -150,6 +158,14 @@ PrefabInstance:
     - target: {fileID: 2823415488416653294, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7343660710561933363, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381558699276815720, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7977802913381393394, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
