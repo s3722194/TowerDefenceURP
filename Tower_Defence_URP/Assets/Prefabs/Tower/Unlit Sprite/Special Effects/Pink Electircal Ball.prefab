@@ -161,6 +161,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9deeca72035e0394aaebb31587b6337e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 77be238114ed50942892adf6a587c4be, type: 2}
+  - {fileID: 2100000, guid: 1cdef2bf3263db14aa391317ad82edc2, type: 2}
+  - {fileID: 2100000, guid: fa90a83a959e0af44a6f5c75c3eba7a0, type: 2}
+  - {fileID: 2100000, guid: 5544313803514ab4aaf5989b36682d79, type: 2}
+  - {fileID: 2100000, guid: d715bdf881e982744af0971adbfeb76e, type: 2}
+  - {fileID: 2100000, guid: cac9698b68a72ad45b3613ede2e43812, type: 2}
+  - {fileID: 2100000, guid: 88974009df032904fb75c2a6fa503ce5, type: 2}
+  - {fileID: 2100000, guid: 7448c8fa17dfdc84293113e8fb7d934d, type: 2}
+  - {fileID: 2100000, guid: 03636af8367117746bf1360fc74107bf, type: 2}
+  - {fileID: 2100000, guid: c01f0d03a9e23fc409eb20bde440946e, type: 2}
+  - {fileID: 2100000, guid: aafd88661b11fcb4a87ce1936f4c67f5, type: 2}
+  - {fileID: 2100000, guid: 755237639760c1e4bbef47a1892585d9, type: 2}
+  - {fileID: 2100000, guid: 1927ffe6e140bf44da9c222ca91df0fd, type: 2}
+  - {fileID: 2100000, guid: 02d2c7907c13e114a9927822cd43f213, type: 2}
+  - {fileID: 2100000, guid: db87c46187cbf4246833a86ac8811cf3, type: 2}
+  - {fileID: 2100000, guid: 5a8ef377d4c049a499911a69b06d7b30, type: 2}
+  - {fileID: 2100000, guid: 6414949618b685240971b05e3741b14f, type: 2}
+  - {fileID: 2100000, guid: b7e57335ea2408d42874cc71904ce441, type: 2}
+  - {fileID: 2100000, guid: 5690108ccae52504eb3370911987219d, type: 2}
+  - {fileID: 2100000, guid: be69d49ced5d6cf4195a3f0cb617e7c0, type: 2}
+  elecitrySpeed: {x: 0, y: 1, z: 0.3, w: 1.5}
+  electiryScale: {x: 10, y: 25}
+  lineWeight: {x: 1, y: 10}
+  noiseScale: {x: 10, y: 30}
+  noiseSpeed: {x: -1, y: -0.1}
+  electiryOffset: {x: 0, y: 1000, z: 0, w: 1000}
+  noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
 --- !u!1 &5968693116011893647
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,3 +286,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9deeca72035e0394aaebb31587b6337e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials: []
+  elecitrySpeed: {x: 0, y: 0, z: 0, w: 0}
+  electiryScale: {x: 0, y: 0}
+  lineWeight: {x: 0, y: 0}
+  noiseScale: {x: 0, y: 0}
+  noiseSpeed: {x: 0, y: 0}
+  electiryOffset: {x: 0, y: 0, z: 0, w: 0}
+  noiseOffset: {x: 0, y: 0, z: 0, w: 0}

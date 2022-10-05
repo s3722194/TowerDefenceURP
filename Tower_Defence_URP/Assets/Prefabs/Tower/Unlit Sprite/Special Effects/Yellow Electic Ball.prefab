@@ -161,6 +161,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9deeca72035e0394aaebb31587b6337e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials: []
+  elecitrySpeed: {x: 0, y: 0, z: 0, w: 0}
+  electiryScale: {x: 0, y: 0}
+  lineWeight: {x: 0, y: 0}
+  noiseScale: {x: 0, y: 0}
+  noiseSpeed: {x: 0, y: 0}
+  electiryOffset: {x: 0, y: 0, z: 0, w: 0}
+  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6506042134204517027
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,3 +266,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9deeca72035e0394aaebb31587b6337e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 4107b745117bc224b85db1f932d3b22a, type: 2}
+  - {fileID: 2100000, guid: f46086e80930b5e42ade6f2029e2a7de, type: 2}
+  - {fileID: 2100000, guid: 89c82f2b4d34ed54381eb4f06ad3700d, type: 2}
+  - {fileID: 2100000, guid: 7420f3c95aca6384485d2e39f829d73d, type: 2}
+  - {fileID: 2100000, guid: bd0c38e1444e6c944bceb4ee36f30b52, type: 2}
+  - {fileID: 2100000, guid: 7dfbfea693fa80641bd585f44ef973f2, type: 2}
+  - {fileID: 2100000, guid: 09799efe71711524d9a27feb337dd34f, type: 2}
+  - {fileID: 2100000, guid: bb7568731a33cb940b646b8d7efd0835, type: 2}
+  - {fileID: 2100000, guid: ac0f065808f4cd74fa845c6ed71b9f5f, type: 2}
+  - {fileID: 2100000, guid: 13329c68859567349a13c4257706f2f1, type: 2}
+  - {fileID: 2100000, guid: c6db876933a825145bd815831c9cc059, type: 2}
+  - {fileID: 2100000, guid: 4c23c30ee4e99a34ea7c7832f866cd8d, type: 2}
+  - {fileID: 2100000, guid: cd3ea0f22891cdf4eb330ee980ea0708, type: 2}
+  - {fileID: 2100000, guid: 1847a291301777540a6ed520c05f0289, type: 2}
+  - {fileID: 2100000, guid: 29b38c0ceb7a14c45ac7815f1334c028, type: 2}
+  - {fileID: 2100000, guid: 6c0428a4f775a2347ab896cc14243909, type: 2}
+  - {fileID: 2100000, guid: df5dc23f1dfd5884c866456ad75cd5e7, type: 2}
+  - {fileID: 2100000, guid: eb2f735a3d9c69d47b33f7256f2bde72, type: 2}
+  - {fileID: 2100000, guid: 9d4159e28ea5139468fa0a15db6257a8, type: 2}
+  - {fileID: 2100000, guid: 89047b00182d78e40aaa4c323b4ba6d1, type: 2}
+  elecitrySpeed: {x: 0, y: 1, z: 0.3, w: 1.5}
+  electiryScale: {x: 10, y: 25}
+  lineWeight: {x: 1, y: 10}
+  noiseScale: {x: 10, y: 30}
+  noiseSpeed: {x: -1, y: -0.1}
+  electiryOffset: {x: 0, y: 1000, z: 0, w: 1000}
+  noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
