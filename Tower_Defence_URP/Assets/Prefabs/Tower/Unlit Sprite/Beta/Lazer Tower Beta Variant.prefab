@@ -659,20 +659,3 @@ MonoBehaviour:
   cost: 100
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 5918706840276306595, guid: 9651b1909cbc4cb4aa339bafe49b0b68, type: 3}
---- !u!1 &5566523416506055018 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 92233427403485330, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
-  m_PrefabInstance: {fileID: 5478609558113978872}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3678490819158901426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5566523416506055018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3212cdd9115a8094f8bd21c20fdaf302, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
