@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8454836573440423000}
   - component: {fileID: 1757733497368185881}
   - component: {fileID: 1809935701932603270}
+  - component: {fileID: 1464837448426446302}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -125,4 +126,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 6
-  damage: 25
+--- !u!114 &1464837448426446302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9213397056524092256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01fc5f41ca53f479d1410e242d36f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 45c9f4f7f94b6dd409b5a5e49349f631, type: 2}
+  - {fileID: 2100000, guid: f843227012f04e946a94c1e8e7c85dc7, type: 2}
+  - {fileID: 2100000, guid: af84b46b43e996d4291d71ed648948fa, type: 2}
+  - {fileID: 2100000, guid: b57ac2c938438a74db5f1ba5a6ac776a, type: 2}
+  - {fileID: 2100000, guid: 7ab201478daf4404f874a7247d3c74e4, type: 2}
+  - {fileID: 2100000, guid: 10d37fc43b610954c9013f41179d4bf2, type: 2}
+  - {fileID: 2100000, guid: ccb65e5206219204b8ad20d96d0a2525, type: 2}
+  - {fileID: 2100000, guid: 2bda476302f79ad428eadf2b1f426c95, type: 2}
+  - {fileID: 2100000, guid: a4a583baee26c9b4e9a6f2b44e7b8641, type: 2}
+  - {fileID: 2100000, guid: 6de81621a2edcaf46823fcc45d076571, type: 2}
+  - {fileID: 2100000, guid: 4d8a0e12edba42048bcfd72408fa16c0, type: 2}
+  - {fileID: 2100000, guid: f69efca88c5e3db489bbdffa417ee768, type: 2}
+  - {fileID: 2100000, guid: 60a7e307fbf475a4ca6c91753abd653e, type: 2}
+  - {fileID: 2100000, guid: a66b71826fd7c8b408d3295c16f3e6d2, type: 2}
+  - {fileID: 2100000, guid: 1ae9c0637819a6147a05e774846cd6e8, type: 2}
+  - {fileID: 2100000, guid: 17672d28b5932dc49948560567d2d6a5, type: 2}
+  - {fileID: 2100000, guid: f9cff3aa01eb58d4bb35488787a2db49, type: 2}
+  - {fileID: 2100000, guid: 72a54db72e6300f4fab77bffd3e80957, type: 2}
+  - {fileID: 2100000, guid: 98742755be1ce2e43bfe5ee2dd49cadd, type: 2}
+  - {fileID: 2100000, guid: 9672ae55c6c6cab438b4d70312b9fd86, type: 2}
+  - {fileID: 2100000, guid: 900c0aaead887c54c9bec84f5f88c33e, type: 2}
+  - {fileID: 2100000, guid: 15b5e67fa8d45ba4b84a88fd65b69eee, type: 2}
+  - {fileID: 2100000, guid: fef12d1ca2c76814bbf785bcd05cdfd0, type: 2}
+  - {fileID: 2100000, guid: ea1e379db08648a4380a1fb69c9cd0c2, type: 2}
+  - {fileID: 2100000, guid: eff686c6333628545a7cf5672a1a769a, type: 2}
+  - {fileID: 2100000, guid: 3a4863d324a3c4e469c5d969c438b4c4, type: 2}
+  - {fileID: 2100000, guid: d3d90937f95738047aa6364ceceaa437, type: 2}
+  - {fileID: 2100000, guid: 0f94c36b4360d4a468b66e6cac164f3d, type: 2}
+  - {fileID: 2100000, guid: dab3593948af1c34cb6273ed61a5e96f, type: 2}
+  - {fileID: 2100000, guid: ad0433cab15afb64ab4f24ae0b87e3ab, type: 2}
+  - {fileID: 2100000, guid: e2deda8b1e69a0e46bd6c08bbaea7a32, type: 2}
+  fireTimeY: {x: -2.7, y: -1}
+  noiseScale: {x: 4, y: 5}
+  ashesTimeY: {x: -2.5, y: -1}
+  ashesScale: {x: 2, y: 3}
+  ashesAngle: {x: 2, y: 90}
+  noiseOffset: {x: 0, y: 100, z: 0, w: 100}
+  ashesOffset: {x: 0, y: 100, z: 0, w: 100}

@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2823415487468442755, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7

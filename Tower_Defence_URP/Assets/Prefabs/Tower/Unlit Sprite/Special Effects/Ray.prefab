@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7036347124345382299}
   - component: {fileID: 2235161419066094672}
   - component: {fileID: 1833133599024425936}
+  - component: {fileID: -2700384310782652952}
   m_Layer: 0
   m_Name: Ray
   m_TagString: Untagged
@@ -136,3 +137,15 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cb006c384019c34478fe94e9e8929d1e, type: 2}
   - {fileID: 2100000, guid: de6145e1877d55a43a69d3d8233f9ae1, type: 2}
   - {fileID: 2100000, guid: be1157db56e49704697687bc8a53cd78, type: 2}
+--- !u!114 &-2700384310782652952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729827742688461312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dec4f3851194814c8a463cfd20150d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
