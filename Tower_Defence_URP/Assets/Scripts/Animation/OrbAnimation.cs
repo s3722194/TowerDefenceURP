@@ -8,6 +8,7 @@ public class OrbAnimation : MonoBehaviour
     [ColorUsage(true, true)][SerializeField] private Color color1;
     [ColorUsage(true, true)][SerializeField] private Color color2;
     private SpriteRenderer spriteRenderer;
+    private bool changeColor = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,9 @@ public class OrbAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (changeColor)
+        {
+
+        }
     }
 }
