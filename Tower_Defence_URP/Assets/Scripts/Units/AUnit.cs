@@ -16,7 +16,7 @@ public abstract class AUnit : MonoBehaviour
     public int MaxHealth { get => maxHealth; protected set => maxHealth = value; }
     public int Speed { get => speed; protected set => speed = value; }
     public float AttackCooldown { get => attackCooldown; protected set => attackCooldown = value; }
-    public int MDamage { get => mDamage; protected set => mDamage = value; }
+    public int MDamage { get => mDamage; set => mDamage = value; }
     public int RDamage { get => rDamage; protected set => rDamage = value; }
     public float Range { get => range; protected set => range = value; }
 

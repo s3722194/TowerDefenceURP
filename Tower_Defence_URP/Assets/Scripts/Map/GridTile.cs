@@ -20,18 +20,24 @@ public class GridTile : MonoBehaviour
     }
 
     private GameManager GM;
+    private UpgradeHUD UpgradeCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        UpgradeCanvas = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
+
         OccupiedTower = null;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(!OccupiedTower)
+        {
+            OccupiedTower = null;
+        }
     }
 
     void OnMouseDown()
@@ -51,6 +57,9 @@ public class GridTile : MonoBehaviour
                     GM.SpendMoney(building.Cost);
                 } 
             }
+        } else
+        {
+            UpgradeCanvas.updateHUD(occupiedTower);
         }
     }
 
