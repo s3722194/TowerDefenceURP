@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4959504732280135488}
   - component: {fileID: 1747593604029971783}
   - component: {fileID: 4346392046146053814}
+  - component: {fileID: -4767969781564234157}
   m_Layer: 11
   m_Name: PurpleWraith
   m_TagString: Enemy
@@ -178,6 +179,43 @@ MonoBehaviour:
   moneyOnDeath: 100
   livesOnEscape: 1
   enemyTag: Enemy
+--- !u!114 &-4767969781564234157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306837949470522016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7db5e4bed5b1a40970811ee5dd2017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicDamage: {fileID: 0}
+  toxicDamage: {fileID: 0}
+  fireDamage: {fileID: 0}
+  blackHoleDamage: {fileID: 0}
+  fogDamage: {fileID: 0}
+  orbDamage: {fileID: 0}
+  lazerDamage: {fileID: 0}
+  deathLazerDamage: {fileID: 0}
+  takingToxicDamage: 0
+  takingFogDamage: 0
+  takingBlackHoleDamage: 0
+  takingBasicDamage: 0
+  takingFireDamage: 0
+  takingDeathLazerDamage: 0
+  takingLazerDamage: 0
+  takingOrbDamage: 0
+  isBlink: 0
+  isAttack: 0
+  isCastSpell: 0
+  isDying: 0
+  isDeath: 0
+  isHurt: 0
+  isTaunt: 0
+  isWalking: 0
+  isIdle: 0
 --- !u!1 &6306837950510884144
 GameObject:
   m_ObjectHideFlags: 0
