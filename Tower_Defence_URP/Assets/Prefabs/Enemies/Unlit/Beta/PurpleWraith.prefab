@@ -191,22 +191,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7db5e4bed5b1a40970811ee5dd2017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicDamage: {fileID: 0}
-  toxicDamage: {fileID: 0}
-  fireDamage: {fileID: 0}
-  blackHoleDamage: {fileID: 0}
-  fogDamage: {fileID: 0}
-  orbDamage: {fileID: 0}
-  lazerDamage: {fileID: 0}
-  deathLazerDamage: {fileID: 0}
-  takingToxicDamage: 0
-  takingFogDamage: 0
-  takingBlackHoleDamage: 0
-  takingBasicDamage: 0
-  takingFireDamage: 0
-  takingDeathLazerDamage: 0
-  takingLazerDamage: 0
-  takingOrbDamage: 0
+  basicMaterial: {fileID: 2100000, guid: 196e923674a711c45bb7ac1b76c326de, type: 2}
+  orbMaterial: {fileID: 2100000, guid: f906059d88732b549aff3de4f4e1c20c, type: 2}
+  fireMaterial: {fileID: 2100000, guid: 0429b01c9aa7ba443a649f0077b838b5, type: 2}
+  blackHoleMaterial: {fileID: 0}
+  fogMaterial: {fileID: 2100000, guid: 16336666365ec3c4584b6a466e4bb877, type: 2}
+  shockMaterial: {fileID: 2100000, guid: f60c667167f80144c999b71811a344a5, type: 2}
+  toxicMaterial: {fileID: 2100000, guid: 754010b08601db74195791e68b15e12f, type: 2}
+  lazerMaterial: {fileID: 2100000, guid: 158c5073ecb7d3047ba452977f946687, type: 2}
+  deathRayMaterial: {fileID: 0}
+  basicDamage: 0
+  toxicDamage: 0
+  fogDamage: 0
+  blackHoleDamage: 0
+  fireDamage: 0
+  deathRayDamage: 0
+  lazerDamage: 0
+  orbDamage: 0
+  shockDamage: 0
   isBlink: 0
   isAttack: 0
   isCastSpell: 0

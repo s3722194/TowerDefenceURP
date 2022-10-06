@@ -6,23 +6,25 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    [SerializeField] private Material basicDamage;
-    [SerializeField] private Material toxicDamage;
-    [SerializeField] private Material fireDamage;
-    [SerializeField] private Material blackHoleDamage;
-    [SerializeField] private Material fogDamage;
-    [SerializeField] private Material orbDamage;
-    [SerializeField] private Material lazerDamage;
-    [SerializeField] private Material deathLazerDamage;
+    [SerializeField] private Material basicMaterial;
+    [SerializeField] private Material orbMaterial;
+    [SerializeField] private Material fireMaterial;
+    [SerializeField] private Material blackHoleMaterial;
+    [SerializeField] private Material fogMaterial;
+    [SerializeField] private Material shockMaterial;
+    [SerializeField] private Material toxicMaterial;
+    [SerializeField] private Material lazerMaterial;
+    [SerializeField] private Material deathRayMaterial;
 
-    [SerializeField] private bool takingToxicDamage;
-    [SerializeField] private bool takingFogDamage;
-    [SerializeField] private bool takingBlackHoleDamage;
-    [SerializeField] private bool takingBasicDamage;
-    [SerializeField] private bool takingFireDamage;
-    [SerializeField] private bool takingDeathLazerDamage;
-    [SerializeField] private bool takingLazerDamage;
-    [SerializeField] private bool takingOrbDamage;
+    [SerializeField] private bool basicDamage;
+    [SerializeField] private bool toxicDamage;
+    [SerializeField] private bool fogDamage;
+    [SerializeField] private bool blackHoleDamage;
+    [SerializeField] private bool fireDamage;
+    [SerializeField] private bool deathRayDamage;
+    [SerializeField] private bool lazerDamage;
+    [SerializeField] private bool orbDamage;
+    [SerializeField] private bool shockDamage;
 
     [SerializeField] private bool isBlink;
     [SerializeField] private bool isAttack;
@@ -36,10 +38,15 @@ public class EnemyAnimation : MonoBehaviour
 
     private Animator animator;
 
+    private SpriteRenderer sr;
+    private Material enemyMaterial;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        enemyMaterial = sr.material;
     }
 
     // Update is called once per frame
@@ -47,7 +54,9 @@ public class EnemyAnimation : MonoBehaviour
     {
 
         TestAnimation();
-        
+        TestDamage();
+
+
     }
 
     private void TestAnimation()
@@ -88,6 +97,153 @@ public class EnemyAnimation : MonoBehaviour
         {
             IsIdle();
         }
+    }
+
+    private void TestDamage()
+    {
+        if (orbDamage)
+        {
+            OrbDamage();
+        } 
+        else if (fireDamage)
+        {
+            FireDamage();
+        } else if (toxicDamage)
+        {
+            ToxicDamage();
+        } else if (shockDamage)
+        {
+            ShockDamage();
+        } else if (deathRayDamage)
+        {
+            DeathRayDamage();
+        } else if (lazerDamage)
+        {
+            LazerDamage();
+        } else if (basicDamage)
+        {
+            BasicDamage();
+        } else
+        {
+            NoDamage();
+        }
+    }
+
+    public void NoDamage()
+    {
+        sr.material = enemyMaterial;
+    }
+
+    public void OrbDamage()
+    {
+        if(orbMaterial != null)
+        {
+            sr.material = orbMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+        
+    }
+
+    public void BasicDamage()
+    {
+        
+        sr.material = basicMaterial;
+        
+
+    }
+
+    public void LazerDamage()
+    {
+        if (lazerMaterial != null)
+        {
+            sr.material = lazerMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void BlackHoleDamage()
+    {
+        if (blackHoleMaterial != null)
+        {
+            sr.material = blackHoleMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void DeathRayDamage()
+    {
+        if (deathRayMaterial != null)
+        {
+            sr.material = deathRayMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void FogDamage()
+    {
+        if (fogMaterial != null)
+        {
+            sr.material = fogMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void FireDamage()
+    {
+        if (fireMaterial != null)
+        {
+            sr.material = fireMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void ToxicDamage()
+    {
+        if (toxicMaterial != null)
+        {
+            sr.material = toxicMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
+    }
+
+    public void ShockDamage()
+    {
+        if (shockMaterial != null)
+        {
+            sr.material = orbMaterial;
+        }
+        else
+        {
+            sr.material = basicMaterial;
+        }
+
     }
 
     public void IsBlink()

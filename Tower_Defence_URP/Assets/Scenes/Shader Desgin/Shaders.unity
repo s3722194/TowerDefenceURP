@@ -1199,6 +1199,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6306837949470522021, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
   m_PrefabInstance: {fileID: 6306837950551476393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &600398611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5852554946865004473, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+  m_PrefabInstance: {fileID: 5852554947604140062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &649081218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1857,6 +1862,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5852554946865004470, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
   m_PrefabInstance: {fileID: 5852554947604140062}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &875671470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600398611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7db5e4bed5b1a40970811ee5dd2017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicMaterial: {fileID: 2100000, guid: 196e923674a711c45bb7ac1b76c326de, type: 2}
+  orbMaterial: {fileID: 2100000, guid: f906059d88732b549aff3de4f4e1c20c, type: 2}
+  fireMaterial: {fileID: 2100000, guid: 0429b01c9aa7ba443a649f0077b838b5, type: 2}
+  blackHoleMaterial: {fileID: 0}
+  fogMaterial: {fileID: 2100000, guid: 16336666365ec3c4584b6a466e4bb877, type: 2}
+  shockMaterial: {fileID: 2100000, guid: f60c667167f80144c999b71811a344a5, type: 2}
+  toxicMaterial: {fileID: 2100000, guid: 754010b08601db74195791e68b15e12f, type: 2}
+  lazerMaterial: {fileID: 2100000, guid: 158c5073ecb7d3047ba452977f946687, type: 2}
+  deathRayMaterial: {fileID: 0}
+  basicDamage: 0
+  toxicDamage: 0
+  fogDamage: 0
+  blackHoleDamage: 0
+  fireDamage: 0
+  deathRayDamage: 0
+  lazerDamage: 0
+  orbDamage: 0
+  shockDamage: 0
+  isBlink: 0
+  isAttack: 0
+  isCastSpell: 0
+  isDying: 0
+  isDeath: 0
+  isHurt: 0
+  isTaunt: 0
+  isWalking: 0
+  isIdle: 0
 --- !u!1 &920268588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6703,6 +6747,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Wraith
       objectReference: {fileID: 0}
+    - target: {fileID: 7595859158783691156, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      propertyPath: fireMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 0429b01c9aa7ba443a649f0077b838b5, type: 2}
+    - target: {fileID: 7595859158783691156, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      propertyPath: basicMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 196e923674a711c45bb7ac1b76c326de, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
 --- !u!1001 &5992573463341965547
