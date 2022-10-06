@@ -14,11 +14,11 @@ public class FireAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
+        count =0;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (chargeUp)
         {

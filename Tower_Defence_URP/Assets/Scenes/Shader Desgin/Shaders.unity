@@ -912,6 +912,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 509380611012633953, guid: 6578a56487230a847a52c74ba44e9a0b, type: 3}
   m_PrefabInstance: {fileID: 439106049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &471005997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2173682292343665349, guid: 438c6d4ce9cd94044a4c15f811e50fca, type: 3}
+  m_PrefabInstance: {fileID: 4108604378908018306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &471006001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471005997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def07ac2b5e5bda40b3feaf7a91d62e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.001
+  startHue: 0
+  endHue: 360
+  newColor: {r: 1.2832199, g: 0.8027008, b: 13.090193, a: 0}
+  count: 0
+  intensity: 10
+  newHue: 0
 --- !u!1 &481780948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2812,8 @@ MonoBehaviour:
   chargeUp: 1
   chargeDown: 0
   chargeConstant: 0
-  speedUp: 0.005
+  speedUp: 0.002
+  count: 0
   rotation: 0
   speedConstant: 10
 --- !u!1 &1361503181
