@@ -7,6 +7,7 @@ public class TowerButtons : MonoBehaviour
     public GameObject TowerPanel;
     public GameObject TowerInfoPanel;
     public GameManager gm;
+    public GameObject upgradeCanvas;
 
     [SerializeField] private GameObject TowerPrefab;
 
@@ -34,6 +35,11 @@ public class TowerButtons : MonoBehaviour
             DisableInfoPanels();
             gm.SetSelectedTower(TowerPrefab);
             EnableInfoPanels(TowerInfoPanel.GetComponent<Transform>());
+
+            if (upgradeCanvas.activeSelf)
+            {
+                upgradeCanvas.SetActive(false);
+            }
         }
     }
 

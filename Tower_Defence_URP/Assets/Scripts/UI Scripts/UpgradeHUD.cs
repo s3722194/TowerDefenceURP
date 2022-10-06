@@ -7,10 +7,9 @@ using TMPro;
 public class UpgradeHUD : MonoBehaviour
 {
     private GameManager gm;
-    private GameObject selectedTower;
+    public GameObject selectedTower;
     private ABuilding towerScript;
     private int sellCost;
-    private int upgradeCost;
 
     [SerializeField] private GameObject upgradeCanvas;
     [SerializeField] private Image towerImage;
@@ -27,7 +26,6 @@ public class UpgradeHUD : MonoBehaviour
         selectedTower = null;
         towerScript = null;
         sellCost = 0;
-        upgradeCost = 0;
 
         if(upgradeCanvas.activeSelf)
         {
@@ -51,10 +49,9 @@ public class UpgradeHUD : MonoBehaviour
                 attackText.text = towerScript.MDamage.ToString();
 
                 sellCost = (int) towerScript.Cost / 2;
-                upgradeCost = (int) towerScript.Cost / 2;
 
                 sellCostText.text = "Sell (" + sellCost.ToString() + ")";
-                upgradeCostText.text = "Upgrade (" + upgradeCost.ToString() + ")";
+                upgradeCostText.text = "Upgrade (" + towerScript.UpgradeCost.ToString() + ")";
         }
     }
 
@@ -76,12 +73,13 @@ public class UpgradeHUD : MonoBehaviour
     {
         if (selectedTower != null && towerScript != null)
         {
-            if(upgradeCost > 0 && gm.Money >= upgradeCost)
+            if(towerScript.UpgradeCost > 0 && gm.Money >= towerScript.UpgradeCost)
             {
-                towerScript.Cost += upgradeCost;
+                gm.SpendMoney(towerScript.UpgradeCost);
+                towerScript.Cost += towerScript.UpgradeCost;
                 towerScript.MDamage *= 2;
                 towerScript.Health += 100;
-                gm.SpendMoney(upgradeCost);
+                towerScript.UpgradeCost = (int)towerScript.Cost/2;
 
                 updateHUD(selectedTower);
             }

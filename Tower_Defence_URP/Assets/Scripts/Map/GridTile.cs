@@ -60,6 +60,20 @@ public class GridTile : MonoBehaviour
         } else
         {
             UpgradeCanvas.updateHUD(occupiedTower);
+
+            GameObject info_canvas = GameObject.Find("Info_Canvas");
+            foreach (Transform panel in info_canvas.GetComponentsInChildren<Transform>())
+            {
+                if (panel.gameObject.name != "Info_Canvas")
+                {
+                    if (panel.gameObject.activeSelf)
+                    {
+                        panel.gameObject.SetActive(false);
+                    }
+                }
+            }
+
+            GM.ResetTower();
         }
     }
 

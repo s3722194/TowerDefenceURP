@@ -6,12 +6,15 @@ public abstract class ABuilding : AUnit
 {
     [SerializeField] private bool destructable;
     [SerializeField] private int cost;
+    [SerializeField] private int upgradeCost;
 
     public int Cost { get => cost; set => cost = value; }
+    public int UpgradeCost { get => upgradeCost; set => upgradeCost = value; }
 
     protected override void Start()
     {
         base.Start();
+        UpgradeCost = (int)Cost / 2;
     }
 
     //Store a list of enemies that come into range of a tower
