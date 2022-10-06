@@ -55,19 +55,23 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _NoisePower: 2
-    - _NoiseScale: 10
+    - _NoisePower: 2.7
+    - _NoiseScale: 10.5
     - _ShaderTime: 0.5
     - _TexturePower: 4
-    - _VorAngleSpeed: 2
-    - _VorPower: 3.4
-    - _VorScale: 5
+    - _VorAngleSpeed: 3
+    - _VorPower: 3.5
+    - _VorScale: 5.5
     m_Colors:
     - _Color: {r: 0.7529412, g: 64, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RipleTime: {r: 0, g: 0.1, b: 0, a: 0}
+    - _RipleTime: {r: 0, g: 0.2, b: 0, a: 0}
+    - _RippleTiling: {r: 1, g: 1, b: 0, a: 0}
     - _Speed: {r: 0, g: 0.25, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _VorOffset: {r: 7, g: 0, b: 0, a: 0}
     - _VorSpeed: {r: 0, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -54,15 +54,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElectiryScale: 20
+    - _ElectiryScale: 25
     - _EnableExternalAlpha: 0
     - _LineWeight: 2
-    - _NoiseScale: 25
+    - _NoiseScale: 30
     - _Power: 7
     m_Colors:
     - _Color: {r: 9.67302, g: 0.13688211, b: 8.484791, a: 1}
-    - _ElecitrySpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _ElecitrySpeed: {r: 0, g: 1.5, b: 0, a: 0}
+    - _ElectiryOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ElectiryTilling: {r: 1, g: 1, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseSpeed: {r: 0, g: -1, b: 0, a: 0}
+    - _NoiseTillling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

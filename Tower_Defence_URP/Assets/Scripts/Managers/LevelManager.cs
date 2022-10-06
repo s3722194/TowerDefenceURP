@@ -25,6 +25,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private List<EnemyUnit> enemies = new List<EnemyUnit>();
     private List<Tuple<EnemyUnit, float>> spawnQueue = new List<Tuple<EnemyUnit, float>>();
+    [SerializeField]
+    private float enemySpawnDelay;
     
 
     //to calcualte the x and y corrdinates for the game
@@ -97,7 +99,7 @@ public class LevelManager : MonoBehaviour
         {
             Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(enemies[0], delay);
             spawnQueue.Add(spawnItem);
-            delay = 0.5f;
+            delay = enemySpawnDelay;
         }
     }
 

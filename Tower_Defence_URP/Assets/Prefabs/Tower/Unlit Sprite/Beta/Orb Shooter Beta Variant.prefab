@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2823415487468442755, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -251,6 +255,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295ad1fdb07223e4abbf4543c7a25af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials: []
+  colourHue: {x: 0, y: 0}
+  colourSaturation: {x: 0, y: 0}
+  colourValue: {x: 0, y: 0}
+  secondColourRange: {x: 0, y: 0}
+  power1: {x: 0, y: 0}
+  power2: {x: 0, y: 0}
+  noiseSpeed: {x: 0, y: 0}
+  noiseTime: {x: 0, y: 0}
+  cellSpeed: {x: 0, y: 0}
+  noisePower: {x: 0, y: 0}
+  noiseCell: {x: 0, y: 0}
+  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
+  colour1: {r: 0, g: 0, b: 0, a: 0}
+  colour2: {r: 0, g: 0, b: 0, a: 0}
+  intensity: 0
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
@@ -268,6 +288,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295ad1fdb07223e4abbf4543c7a25af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 539b69f6c0e811b478058527ec34dde5, type: 2}
+  - {fileID: 2100000, guid: 2873083199f71f645b5a91999c8fc8d5, type: 2}
+  - {fileID: 2100000, guid: 045f62222e69cb745adafa256468f148, type: 2}
+  - {fileID: 2100000, guid: 539957e9abaa01f49aca5fc90cde7a41, type: 2}
+  - {fileID: 2100000, guid: bca66042eee595b42b687857596d056e, type: 2}
+  - {fileID: 2100000, guid: 9404713937e8083409b62806584df29d, type: 2}
+  - {fileID: 2100000, guid: 101188b3e13638b44b5ab1177741ff65, type: 2}
+  - {fileID: 2100000, guid: fc46385e23b45354eae2aa209b1dea1b, type: 2}
+  - {fileID: 2100000, guid: 44fe9b7334e693c439c2eb519c94995c, type: 2}
+  - {fileID: 2100000, guid: 242d53bcbfd3cdc4a9968ddafef993e0, type: 2}
+  - {fileID: 2100000, guid: dc7be71c43269f446a399dc5c5ebb429, type: 2}
+  - {fileID: 2100000, guid: 4a6c06bffcb5a2549801daebc2ff2524, type: 2}
+  - {fileID: 2100000, guid: 29152271a9a1fbb4895da0e611abc2a6, type: 2}
+  - {fileID: 2100000, guid: 9fd4896bd82d842429f21175aac1aff7, type: 2}
+  - {fileID: 2100000, guid: 74de2780767d36c489659158aa177f1f, type: 2}
+  - {fileID: 2100000, guid: ce300b68a8aef4348b68cacc89483abe, type: 2}
+  - {fileID: 2100000, guid: 27d836d3d8dbad84583d56f0dc606db7, type: 2}
+  - {fileID: 2100000, guid: aff212c32f6e9644ea3a7dd0cd9a37f4, type: 2}
+  - {fileID: 2100000, guid: bf9eabe4043493a4e9dd4480ae20cbf5, type: 2}
+  - {fileID: 2100000, guid: a92aab6f7fb04554482ce8801335ff99, type: 2}
+  colourHue: {x: 0, y: 360}
+  colourSaturation: {x: 94, y: 95}
+  colourValue: {x: 75, y: 76}
+  secondColourRange: {x: -30, y: 30}
+  power1: {x: 2, y: 3}
+  power2: {x: 1.3, y: 1.7}
+  noiseSpeed: {x: -2, y: -0.5}
+  noiseTime: {x: -1, y: -0.1}
+  cellSpeed: {x: 20, y: 30}
+  noisePower: {x: 1, y: 2}
+  noiseCell: {x: 3, y: 5}
+  noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
+  colour1: {r: 1.1921569, g: 0.6901961, b: 12.737255, a: 0}
+  colour2: {r: 2.2588236, g: 0.9411765, b: 12.737255, a: 0}
+  intensity: 10
 --- !u!114 &4481903443368406582
 MonoBehaviour:
   m_ObjectHideFlags: 0

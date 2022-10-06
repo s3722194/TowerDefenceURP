@@ -19,14 +19,6 @@ public class HighlightGrid : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         baseColour = spriteRenderer.material.GetColor("_Color");
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnMouseDrag()

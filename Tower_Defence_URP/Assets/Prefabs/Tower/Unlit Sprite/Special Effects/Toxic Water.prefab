@@ -125,6 +125,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674887b3dbd86bf4ea0e6c2bf7a5a6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 574665204aac43240b94e855426fe201, type: 2}
+  - {fileID: 2100000, guid: ac59bab5be1f63f43917f4f23497c111, type: 2}
+  - {fileID: 2100000, guid: f09b641a56522bd438e135812945a95c, type: 2}
+  - {fileID: 2100000, guid: 1354771ab0a6d7041bdc85f5330f0308, type: 2}
+  - {fileID: 2100000, guid: f967c60c6d7fad44b8356985f9694ce0, type: 2}
+  - {fileID: 2100000, guid: 37fa085ba66a0c949a716c9e2ca64edc, type: 2}
+  - {fileID: 2100000, guid: 216cfd4aa289dde48b0adcc448d589df, type: 2}
+  - {fileID: 2100000, guid: 245631ed68b56cd4fb5887683ff3f4cd, type: 2}
+  - {fileID: 2100000, guid: 4b1a265866976f548b71b77445f138a5, type: 2}
+  - {fileID: 2100000, guid: 87af6ae84450a704b816062461bc2be0, type: 2}
+  - {fileID: 2100000, guid: 2ed77d4e736c87e4eae057288b43fa46, type: 2}
+  - {fileID: 2100000, guid: e061be139bcebbb42b7f6921b19df255, type: 2}
+  - {fileID: 2100000, guid: 2aee160512160c04da21d6b8ca38c68d, type: 2}
+  - {fileID: 2100000, guid: 7aacee7423b0ada41b111412be2bff9f, type: 2}
+  - {fileID: 2100000, guid: a632358eb3c747f4493b6e85c4f91298, type: 2}
+  - {fileID: 2100000, guid: 207858bc0a97e1740b7876357f9bbcfc, type: 2}
+  - {fileID: 2100000, guid: c2f5a11f9dab273459a7b898419d9aa4, type: 2}
+  - {fileID: 2100000, guid: 3d54ccd5ab661144e8204b7225ac1a52, type: 2}
+  - {fileID: 2100000, guid: c2271aeb4854ff841bcebf57f994c2e6, type: 2}
+  - {fileID: 2100000, guid: b6599a7966d1cd3408cfe0f206b9c46c, type: 2}
+  - {fileID: 2100000, guid: e4d72efb4403517458e4b121a9ba060e, type: 2}
+  vorSpeed: {x: 0.1, y: 0.5}
+  vorAngleSpeed: {x: 2, y: 3}
+  ripleTime: {x: 0.1, y: 0.3}
+  vorScale: {x: 4.5, y: 5.5}
+  vorPower: {x: 2.5, y: 3.5}
+  noisePower: {x: 1.5, y: 2.7}
+  noiseScale: {x: 9, y: 10.5}
+  noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
+  vorOffset: {x: 0, y: 1000, z: 0, w: 1000}
 --- !u!114 &7919136939338418618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,4 +169,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0
-  damage: 1
