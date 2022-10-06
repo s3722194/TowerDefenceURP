@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class OrbAnimation : MonoBehaviour
 {
+    [SerializeField] private float speed;
+    [ColorUsage(true, true)][SerializeField] private Color color1;
+    [ColorUsage(true, true)][SerializeField] private Color color2;
+    private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
