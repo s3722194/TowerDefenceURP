@@ -4925,18 +4925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: 2100000, guid: 676a7a3359d3cdb4b87a5352cf1ea04f, type: 2}
-  - {fileID: 2100000, guid: bcaaeadb881523a41b73a0b90529fbdf, type: 2}
-  - {fileID: 2100000, guid: ffba3e4c29e15a342a0bb20ec90568aa, type: 2}
-  - {fileID: 2100000, guid: a9577c154414aae4a8800ed996827d9f, type: 2}
-  - {fileID: 2100000, guid: 9343c48da02611a468a07316f7d82161, type: 2}
-  - {fileID: 2100000, guid: 3d14ed5b6148a4c4fa5f17f4d9d1c9f2, type: 2}
-  - {fileID: 2100000, guid: 0d00f52371bc8b54aa87944da16e2130, type: 2}
-  - {fileID: 2100000, guid: e268392990e037c498536e06cf1b3942, type: 2}
-  - {fileID: 2100000, guid: 90d92ffba8513e442a66d17ac4518aee, type: 2}
-  - {fileID: 2100000, guid: 82bd585d3fba40c4b9ca6a24c757e3d3, type: 2}
-  - {fileID: 2100000, guid: 968ae23ff46218a48978db6f44b7c582, type: 2}
-  - {fileID: 2100000, guid: 83c1707c29e084c4bb3906a9e7aae0f0, type: 2}
+  - {fileID: 2100000, guid: 6fb20b020c907ba4e9072f82ed47bec0, type: 2}
   minColor: {r: 230.19884, g: 19.283669, b: 34.384785, a: 0}
   maxColor: {r: 144.73982, g: 66.81776, b: 911.5856, a: 0}
   minSpeed: {x: 0.3, y: 0.3}
@@ -5019,6 +5008,10 @@ PrefabInstance:
     - target: {fileID: 959825260647491940, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976131754449303806, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7948211379964339299, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

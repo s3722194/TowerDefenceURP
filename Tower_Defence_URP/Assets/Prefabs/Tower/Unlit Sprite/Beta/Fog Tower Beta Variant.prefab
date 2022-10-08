@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e936ec39b79a34d844368bb91ddedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materials: []
-  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
+  materials:
+  - {fileID: 2100000, guid: 3387fd51c8a83f94d88d8e761a3846a1, type: 2}
+  noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
 --- !u!1 &7492716692729713268
 GameObject:
   m_ObjectHideFlags: 0
