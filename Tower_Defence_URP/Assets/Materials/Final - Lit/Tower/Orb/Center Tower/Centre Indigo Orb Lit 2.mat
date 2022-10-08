@@ -69,7 +69,7 @@ Material:
     - _Color_2: {r: 0.5324098, g: 1.6859645, b: 16.94838, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseOffset: {r: 2, g: 3, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0, g: 1, b: 0, a: 0}
+    - _NoiseSpeed: {r: -1, g: 1, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseTime: {r: -0.4, g: -0.4, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

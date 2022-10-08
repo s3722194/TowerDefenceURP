@@ -66,10 +66,10 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_1: {r: 3.334762, g: 2.3433464, b: 17.214582, a: 0}
-    - _Color_2: {r: 0.2662049, g: 0.84298223, b: 8.47419, a: 0}
+    - _Color_2: {r: 9.938316, g: 4.969158, b: 135.58704, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0, g: -1.1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 1, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseTime: {r: -0.4, g: -0.4, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
