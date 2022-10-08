@@ -141,6 +141,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+--- !u!1 &234753771662696387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5422963421103007369, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+  m_PrefabInstance: {fileID: 5188216246548265290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2396290906483478168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7584460698619033554, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+  m_PrefabInstance: {fileID: 5188216246548265290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8097691696032552567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4062520099705057085, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
@@ -263,8 +273,24 @@ MonoBehaviour:
   range: 5
   destructable: 0
   cost: 400
+  upgradeCost: 0
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 3855910885084074260, guid: a79a2c14e4c3e394392b6ff2cc91ef18, type: 3}
+--- !u!114 &2443210320345771828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8097691696572597331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  lit: {fileID: 2396290906483478168}
+  unlit: {fileID: 234753771662696387}
 --- !u!1 &8097691696592772238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4062520100268385732, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}

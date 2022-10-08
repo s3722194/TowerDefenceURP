@@ -413,10 +413,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLit: 0
-  lit: {fileID: 0}
-  unlit: {fileID: 0}
+  lit: {fileID: 5325360820830886355}
+  unlit: {fileID: 4844604422208614321}
 --- !u!4 &4506366773575815243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6153585968941296430, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+  m_PrefabInstance: {fileID: 7776653747535412069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4844604422208614321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2942899412236047572, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+  m_PrefabInstance: {fileID: 7776653747535412069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5325360820830886355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2453127067536368310, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
   m_PrefabInstance: {fileID: 7776653747535412069}
   m_PrefabAsset: {fileID: 0}

@@ -146,7 +146,28 @@ MonoBehaviour:
   range: 10
   destructable: 0
   cost: 150
+  upgradeCost: 0
   EnemiesInRange: []
+--- !u!114 &4900213774543976934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093819992983936561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  lit: {fileID: 4040473685728474607}
+  unlit: {fileID: 7004446707379178224}
+--- !u!1 &4040473685728474607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 286295461452807982, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
+  m_PrefabInstance: {fileID: 4317691300005268161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4249688217925286289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 77240379946218320, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
@@ -164,6 +185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e936ec39b79a34d844368bb91ddedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials: []
+  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7004446707379178224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6548038656964575281, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
+  m_PrefabInstance: {fileID: 4317691300005268161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &990956803591127261
 MonoBehaviour:
   m_ObjectHideFlags: 0

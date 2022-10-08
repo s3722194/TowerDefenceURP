@@ -615,6 +615,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6295751766374296796, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
   m_PrefabInstance: {fileID: 5478609558113978872}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2895313261256788997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7217535514990200317, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+  m_PrefabInstance: {fileID: 5478609558113978872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5566523414977030248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
@@ -657,5 +662,26 @@ MonoBehaviour:
   range: 5
   destructable: 0
   cost: 100
+  upgradeCost: 0
   EnemiesInRange: []
   ProjectilePrefab: {fileID: 5918706840276306595, guid: 9651b1909cbc4cb4aa339bafe49b0b68, type: 3}
+--- !u!114 &1367649047039654235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5566523414977030248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  lit: {fileID: 2895313261256788997}
+  unlit: {fileID: 8410324022274540745}
+--- !u!1 &8410324022274540745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4084931432934952241, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+  m_PrefabInstance: {fileID: 5478609558113978872}
+  m_PrefabAsset: {fileID: 0}

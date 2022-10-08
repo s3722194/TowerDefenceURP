@@ -186,6 +186,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 638829852091684672, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+--- !u!1 &2205627089675429849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6776689188863341092, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+  m_PrefabInstance: {fileID: 4652311664660108797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5383567817124873362 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 731292499566186863, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
@@ -313,10 +318,26 @@ MonoBehaviour:
   range: 50
   destructable: 0
   cost: 700
+  upgradeCost: 0
   EnemiesInRange: []
   firstLightning: {fileID: 6123263498117829287, guid: 3c20d3da5ada56544ba6f2d2acf22a91, type: 3}
   secondLightning: {fileID: 4536320636921029647, guid: ea2a1797838847248991b3a2ca3c0348, type: 3}
   thirdLightning: {fileID: 5637911999041725105, guid: 33b1f9b8c191b2f48837cbebdd1dd36d, type: 3}
+--- !u!114 &2744969772183750282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383567817789444856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  lit: {fileID: 2205627089675429849}
+  unlit: {fileID: 8244701477962116727}
 --- !u!1 &5383567818666988218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 731292498024335175, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
@@ -427,6 +448,11 @@ MonoBehaviour:
   noiseSpeed: {x: -1, y: -0.1}
   electiryOffset: {x: 0, y: 1000, z: 0, w: 1000}
   noiseOffset: {x: 0, y: 1000, z: 0, w: 1000}
+--- !u!1 &8244701477962116727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673605239835540362, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+  m_PrefabInstance: {fileID: 4652311664660108797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7436177498823479978
 MonoBehaviour:
   m_ObjectHideFlags: 0
