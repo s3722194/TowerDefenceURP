@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// this isnt my coded its taken from https://forum.unity.com/threads/lwrp-using-2d-lights-in-a-particle-system-emitter.718847/
+// this isnt my coded its taken from
+// https://forum.unity.com/threads/lwrp-using-2d-lights-in-a-particle-system-emitter.718847/
 // it allows gameobjects in this case 2d lights to be added to particule systems
 // since 2d lights are not currently supported in unity
 
