@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Centre Fog Lit 2
-  m_Shader: {fileID: -6465566751694194690, guid: fe16104ffd7ea3d4583a790a03d08484, type: 3}
+  m_Name: Light Purple Lazer Lit 2
+  m_Shader: {fileID: -6465566751694194690, guid: 6c18db7f487ce7c478d8ba85681ddb2b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -28,16 +28,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 80f07e891af38834487fe9248f0406a8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -55,13 +55,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _NoiseAmount: 0.1
-    - _NoiseScale: 5
+    - _MaxNoiseValue: 1
+    - _MinNoiseValue: 0.3
+    - _NoiseScale: 3
+    - _Power: 0.3
     m_Colors:
-    - _Color: {r: 1.350374, g: 1.8881336, b: 2.2824905, a: 1}
+    - _Color: {r: 34.60723, g: 16.067644, b: 59.017693, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _FogSpeed: {r: 0, g: -0.2, b: 0, a: 0}
-    - _NoiseOffset: {r: 5, g: 1, b: 0, a: 0}
+    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Speed2D: {r: 0, g: 0.3, b: 0, a: 0}
   m_BuildTextureStacks: []
