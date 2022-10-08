@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Red Ray Lit 1
-  m_Shader: {fileID: -6465566751694194690, guid: c9729252aaf504047ae131547f2b1c25, type: 3}
+  m_Name: Red Fire Lit 2
+  m_Shader: {fileID: -6465566751694194690, guid: 7cc5e4f9c8485f84997d4b0135e235d7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -28,16 +28,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 5a8dbaf0c245f9c499b3a6fa288eecc9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -54,15 +54,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _EdgeSize: 2
+    - _AshesPower: 1.2
+    - _AshesScale: 1
+    - _DistorstionAmount: 0.1
     - _EnableExternalAlpha: 0
-    - _NoiseScale: 35
+    - _NoiseScale: 5
+    - _NormalStrength: 0.2
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour_1: {r: 0.9254902, g: 0.054901984, b: 0.06270474, a: 0}
-    - _Colour_2: {r: 5.66451, g: 0, b: 0.04809217, a: 0}
-    - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _AshesTime: {r: -0.1, g: -0.5, b: 0, a: 0}
+    - _Color: {r: 645.3545, g: 10.136458, b: 3.3788195, a: 1}
+    - _FireTme: {r: 0, g: -0.9, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TextureSpeed1: {r: -1.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
