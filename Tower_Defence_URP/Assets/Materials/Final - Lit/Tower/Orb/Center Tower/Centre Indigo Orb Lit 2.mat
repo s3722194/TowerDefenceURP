@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pink Orb Lit 2
+  m_Name: Centre Indigo Orb Lit 2
   m_Shader: {fileID: -6465566751694194690, guid: 63cd853246a95f1408389ff221ae18f6, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -54,21 +54,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CellSpeed: 4
+    - _CellSpeed: 11
     - _EnableExternalAlpha: 0
     - _Float: 0
     - _NoiseCell: 5
     - _NoisePower: 2
     - _PowerAphla: 9
     - _Power_1: 2
-    - _Power_2: 2
-    - _Size: 1.5
+    - _Power_2: 1
+    - _Size: 1.3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_1: {r: 16.6175, g: 0.3214221, b: 22.71387, a: 0}
-    - _Color_2: {r: 13.45688, g: 1.4599447, b: 8.590446, a: 0}
+    - _Color_1: {r: 0.82079846, g: 0.5767773, b: 4.303646, a: 0}
+    - _Color_2: {r: 0.5324098, g: 1.6859645, b: 16.94838, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseOffset: {r: 2, g: 3, b: 0, a: 0}
     - _NoiseSpeed: {r: 0, g: 1, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseTime: {r: -0.4, g: -0.4, b: 0, a: 0}
