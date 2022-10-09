@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Rendering.Universal;
 
 public class PathLight : MonoBehaviour
 {
@@ -9,15 +9,19 @@ public class PathLight : MonoBehaviour
     [SerializeField] private MapGrid grid;
     [SerializeField] private GameObject parentLight;
     [SerializeField] private int length;
-    private Dictionary<string, GameObject> lights = new Dictionary<string, GameObject>();
+    private Dictionary<string, (GameObject, Light2D)> lights = new Dictionary<string, (GameObject, Light2D)>();
+    
     [SerializeField] private int updateSpeed = 1000;
-    [SerializeField] private int flashSpeed =1000;
-    [SerializeField] private GameObject previousLight =null;
+    [SerializeField] private int flashSpeed =100;
+    
     private int flashIndex = 0;
-    // private ArrrayList<Path> oldpath =null;
+    
     [SerializeField] private int countUpdatePath;
     [SerializeField] private int countFlash = 0;
-    private Dictionary<int, List<GameObject>> pathLights = new Dictionary<int, List<GameObject>>();
+    private Dictionary<int, List<Light2D>> pathLights = new Dictionary<int, List<Light2D>>();
+
+    [SerializeField] private float flashIntensity = 3;
+    [SerializeField] private float normalIntensity = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +34,7 @@ public class PathLight : MonoBehaviour
                 newLight = Instantiate(gridLight);
                 newLight.transform.position = new Vector3(i, j, newLight.transform.position.z);
                 newLight.transform.parent = parentLight.transform;
-                lights.Add(i+","+j, newLight);
+                lights.Add(i+","+j, (newLight, newLight.GetComponent<Light2D>()));
                 
                 newLight.SetActive(false);
 
@@ -38,87 +42,151 @@ public class PathLight : MonoBehaviour
             
         }
         countUpdatePath = updateSpeed;
-        flashIndex = length;
+
+        flashIndex = length-1;
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         
         if(grid.GetNumPaths() != 0)
         {
-            countUpdatePath++;
-            if (countUpdatePath >= updateSpeed)
+            UpdatePathLight();
+            UpdateFlash();
+
+        }
+        else
+        {
+            if(pathLights.Count > 0)
             {
-                countUpdatePath = 0;
-
-                foreach (GameObject light in lights.Values)
-                {
-                    light.SetActive(false);
-                }
                 pathLights.Clear();
-                for (int i = 0; i < grid.GetNumPaths(); i++)
+            }
+        }
+
+    }
+
+    private void UpdateFlash()
+    {
+        UpdateFlashCount();
+
+        if (countFlash >= flashSpeed)
+        {
+            countFlash = 0;
+
+            // List<GameObject> currentLights = pathLights[flashIndex];
+            if (flashIndex ==length )
+            {
+                foreach (Light2D light in pathLights[1])
                 {
-                    Path path = grid.GetPath(i);
-                    List<Vector2Int> positoins = path.GetPositions();
-                    foreach (Vector2Int tile in positoins)
-                    {
-                        if(lights.ContainsKey(tile.x + "," + tile.y))
-                        {
-                            GameObject currentLight = lights[tile.x + "," + tile.y];
+                    light.intensity = normalIntensity;
 
-                            //adds tile by Y position
-                            if (pathLights.ContainsKey(tile.y)){
-
-                                pathLights[tile.y].Add(currentLight);
-
-                            }
-                            else
-                            {
-                                pathLights.Add(tile.y, new List<GameObject>());
-                                pathLights[tile.y].Add(currentLight);
-                            }
-                            
-                            currentLight.SetActive(true);
-                        }
-                        
-                    }
                 }
             }
             else
             {
-                if (pathLights.Count > 0)
+                foreach (Light2D light in pathLights[flashIndex+1])
                 {
-                    pathLights.Clear();
+                    light.intensity = normalIntensity;
                 }
             }
 
-
-            if(pathLights.Count > 0)
+            foreach (Light2D light in pathLights[flashIndex])
             {
-                countFlash++;
+
+                light.intensity = flashIntensity;
             }
 
-            if(countFlash >= flashSpeed)
+
+            flashIndex--;
+            if (flashIndex == 0)
             {
-                countFlash = 0;
-
-                List<GameObject> currentLights = pathLights[flashIndex];
-                foreach (GameObject light in currentLights)
-                {
-                  // light.GetComponent<Light2D>();
-                }
-
-
-                flashIndex--;
-                if(flashIndex == 0)
-                {
-                    flashIndex = length;
-                }
-
+                flashIndex = length;
             }
-           
+
         }
-      
+    }
+
+    private void UpdateFlashCount()
+    {
+        if (pathLights.Count > 0)
+        {
+            countFlash++;
+        }
+    }
+
+    private void UpdatePathLight()
+    {
+        countUpdatePath++;
+        if (countUpdatePath >= updateSpeed)
+        {
+            countUpdatePath = 0;
+
+            DeactivateAllLights();
+
+            pathLights.Clear();
+            FindAllPaths();
+        }
+        
+    }
+
+    private void FindAllPaths()
+    {
+        for (int i = 0; i < grid.GetNumPaths(); i++)
+        {
+            Path path = grid.GetPath(i);
+            List<Vector2Int> positoins = path.GetPositions();
+
+            foreach (Vector2Int tile in positoins)
+            {
+
+                AddLightsToList(tile);
+                ActivateLight(tile);
+
+            }
+        }
+    }
+
+    private void ActivateLight(Vector2Int tile)
+    {
+        if (lights.ContainsKey(tile.x + "," + tile.y))
+        {
+            GameObject currentLight = lights[tile.x + "," + tile.y].Item1;
+            currentLight.SetActive(true);
+        }
+
+            
+    }
+
+    private void AddLightsToList(Vector2Int tile)
+    {
+        if (lights.ContainsKey(tile.x + "," + tile.y))
+        {
+            
+            Light2D currentLight2D = lights[tile.x + "," + tile.y].Item2;
+
+            //adds tile by Y position to use for 
+            if (pathLights.ContainsKey(tile.y))
+            {
+
+                pathLights[tile.y].Add(currentLight2D);
+
+            }
+            else
+            {
+                pathLights.Add(tile.y, new List<Light2D>());
+                pathLights[tile.y].Add(currentLight2D);
+            }
+
+          
+        }
+    }
+
+    private void DeactivateAllLights()
+    {
+        foreach ((GameObject, Light2D) light in lights.Values)
+        {
+            light.Item1.SetActive(false);
+        }
     }
 }

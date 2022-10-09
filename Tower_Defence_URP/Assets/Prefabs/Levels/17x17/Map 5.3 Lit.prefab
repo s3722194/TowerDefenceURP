@@ -411,9 +411,12 @@ MonoBehaviour:
   grid: {fileID: 7877542772378899482}
   parentLight: {fileID: 3264747342363047303}
   length: 17
-  updateSpeed: 1000
-  flashSpeed: 1000
-  previousLight: {fileID: 0}
+  updateSpeed: 100
+  flashSpeed: 7
+  countUpdatePath: 0
+  countFlash: 0
+  flashIntensity: 7
+  normalIntensity: 3
 --- !u!1 &3885721689089907321
 GameObject:
   m_ObjectHideFlags: 0
