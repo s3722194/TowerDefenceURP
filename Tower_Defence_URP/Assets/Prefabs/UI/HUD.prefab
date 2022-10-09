@@ -286,6 +286,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 1414879613443250692, guid: 34f8190441a8c5e42a008b0b9b3b2cf6, type: 3}
 --- !u!1 &167075495647840893
 GameObject:
@@ -784,6 +785,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 5072118316001354985, guid: e18eb6571d8e30d4ea41f1f229697520, type: 3}
 --- !u!1 &1813937208795099540
 GameObject:
@@ -1071,6 +1073,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 8097691696572597331, guid: f973af2f38da3d344912f809d82bd491, type: 3}
 --- !u!1 &2417131624504825691
 GameObject:
@@ -1138,7 +1141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8ce91de27bcf654ebe49f762d427183, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb21603d94ee271488fd1624faaaaefa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1819,6 +1822,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 5383567817789444856, guid: 01e52cb202e44834fa6e66cd899a4974, type: 3}
 --- !u!1 &3187447494042253738
 GameObject:
@@ -3104,6 +3108,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 0}
 --- !u!1 &3334060510499778590
 GameObject:
@@ -3391,6 +3396,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 5566523414977030248, guid: b282ac9c515576d46b4a3cf9b71a1c1a, type: 3}
 --- !u!1 &3647758761079437814
 GameObject:
@@ -3543,6 +3549,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 2173682292494325721, guid: 438c6d4ce9cd94044a4c15f811e50fca, type: 3}
 --- !u!1 &4491020810949044912
 GameObject:
@@ -3787,6 +3794,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 2035722182896773497, guid: 6f1a81187f37088468d34ec897a35fbb, type: 3}
 --- !u!1 &5766700071978150379
 GameObject:
@@ -4454,6 +4462,7 @@ MonoBehaviour:
   TowerPanel: {fileID: 3187447494279116426}
   TowerInfoPanel: {fileID: 0}
   gm: {fileID: 0}
+  upgradeCanvas: {fileID: 0}
   TowerPrefab: {fileID: 2093819992983936561, guid: 0de41084d3e73f64fb24f58a4c5dd938, type: 3}
 --- !u!1 &7675539659212109276
 GameObject:

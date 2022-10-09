@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.87843144, g: 0.07450981, b: 0.098039225, a: 1}
+  m_Color: {r: 0.754717, g: 0.23851903, b: 0.25362724, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8431373, g: 0.07058824, b: 0.09411766, a: 1}
+  m_Color: {r: 0.8301887, g: 0.23104309, b: 0.24929127, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -850,6 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ae48c44e0103d4f99160976e39400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedTower: {fileID: 0}
   upgradeCanvas: {fileID: 8856054980556803683}
   towerImage: {fileID: 8856054980043716609}
   towerName: {fileID: 8856054980428950975}
@@ -1395,8 +1396,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294901502
-  m_fontColor: {r: 0.9960785, g: 0.9960785, b: 0.9960785, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1511,7 +1512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8856054980556803682
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1735,7 +1736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10123708, g: 0.8584906, b: 0.22977147, a: 1}
+  m_Color: {r: 0.3252047, g: 0.7924528, b: 0.4050969, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494531834506, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_Name
-      value: HUD
+      value: HUD Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3187447494531834510, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_Pivot.x
@@ -663,6 +663,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -9046996740424428777, guid: fe3cbebdcd9a62049bc3173fbfd97171, type: 2}
+    - target: {fileID: 4725578837812134151, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 29879655f2e74704ab982c9b50ea8fdd, type: 3}
     - target: {fileID: 4950263021789561102, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 206.08
@@ -675,6 +679,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -449.96
       objectReference: {fileID: 0}
+    - target: {fileID: 5162966645991570875, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44e876a3d60185b43bb4fa0bf397a828, type: 3}
     - target: {fileID: 5626043671980911678, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: upgradeCanvas
       value: 
@@ -731,6 +739,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.24
       objectReference: {fileID: 0}
+    - target: {fileID: 6868240215956645005, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5553f26faad1af747ac94e30ae5fb07b, type: 3}
     - target: {fileID: 6882356480352453503, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -791,6 +803,18 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -9046996740424428777, guid: fe3cbebdcd9a62049bc3173fbfd97171, type: 2}
+    - target: {fileID: 8667744156474417438, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 03fb485859083a1419ffe3ddccc9f4a0, type: 3}
+    - target: {fileID: 8690262652172994728, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: babd77036b230494fb7e9b98564a5118, type: 3}
+    - target: {fileID: 9044303170771308833, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ce8f35dfef7b7ba49b2a8275e48918ac, type: 3}
     - target: {fileID: 9091815599378972187, guid: 1eed30c25b33be040bb521a15dc66f3b, type: 3}
       propertyPath: upgradeCanvas
       value: 
