@@ -9,14 +9,15 @@ public class TestPathLight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /* for(int i = 0; i < length; i++)
-         {
-             GameObject newLight = Instantiate(pathLight);
+        GameObject newLight;
+        for (int i = 0; i < length; i++)
+        {
+            newLight = Instantiate(pathLight);
 
-             newLight.transform.position = new Vector3(newLight.transform.position.x, i, newLight.transform.position.z);
-         }*/
+            newLight.transform.position = new Vector3(newLight.transform.position.x, i, newLight.transform.position.z);
+        }
 
-        GameObject newLight = Instantiate(pathLight);
+      //  GameObject newLight = Instantiate(pathLight);
 
     }
 
