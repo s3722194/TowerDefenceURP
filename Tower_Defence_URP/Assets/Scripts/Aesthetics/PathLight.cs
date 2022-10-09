@@ -102,7 +102,10 @@ public class PathLight : MonoBehaviour
             {
                 countFlash = 0;
 
-
+                foreach (GameObject light in pathLights.[flashIndex])
+                {
+                   // light.GetComponent<Light2D>();
+                }
 
 
                 flashIndex--;
