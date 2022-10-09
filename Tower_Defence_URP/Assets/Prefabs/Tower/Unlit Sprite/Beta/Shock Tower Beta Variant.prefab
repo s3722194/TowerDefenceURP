@@ -2276,7 +2276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLit: 0
+  isLit: 1
   lit: {fileID: 2205627089675429849}
   unlit: {fileID: 8244701477962116727}
 --- !u!1 &5383567818666988218 stripped

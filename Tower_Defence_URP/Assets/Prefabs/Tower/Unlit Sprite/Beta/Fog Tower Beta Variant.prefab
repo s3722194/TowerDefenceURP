@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f3725c33180b846bc6a5a8e68db74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLit: 0
+  isLit: 1
   lit: {fileID: 4040473685728474607}
   unlit: {fileID: 7004446707379178224}
 --- !u!114 &6361869969402622560
