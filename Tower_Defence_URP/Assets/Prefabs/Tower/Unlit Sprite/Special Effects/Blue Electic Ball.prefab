@@ -381,7 +381,6 @@ GameObject:
   - component: {fileID: 5039458592944751241}
   - component: {fileID: 6422666605308738646}
   - component: {fileID: 2450147234343257727}
-  - component: {fileID: -1367992973440182527}
   m_Layer: 9
   m_Name: Blue Electic Ball
   m_TagString: Untagged
@@ -434,26 +433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5.5
---- !u!114 &-1367992973440182527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6123263498117829287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9deeca72035e0394aaebb31587b6337e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials: []
-  elecitrySpeed: {x: 0, y: 0, z: 0, w: 0}
-  electiryScale: {x: 0, y: 0}
-  lineWeight: {x: 0, y: 0}
-  noiseScale: {x: 0, y: 0}
-  noiseSpeed: {x: 0, y: 0}
-  electiryOffset: {x: 0, y: 0, z: 0, w: 0}
-  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &7967298946138634918
 GameObject:
   m_ObjectHideFlags: 0

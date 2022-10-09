@@ -16,6 +16,7 @@ public class LoadShock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (materials.Count != 0)
         {

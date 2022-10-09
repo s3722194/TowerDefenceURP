@@ -171,7 +171,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.44
   m_Color: {r: 0.75286216, g: 0.5424528, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf12c1c8dcc7
@@ -280,8 +280,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.44
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.757388, g: 0.2783019, b: 1, a: 1}
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7
@@ -668,8 +668,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.44
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.80046916, g: 0.4292453, b: 1, a: 1}
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7
@@ -1010,34 +1010,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4
---- !u!114 &3637852895229048263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2173682292494325721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 295ad1fdb07223e4abbf4543c7a25af3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materials: []
-  colourHue: {x: 0, y: 0}
-  colourSaturation: {x: 0, y: 0}
-  colourValue: {x: 0, y: 0}
-  secondColourRange: {x: 0, y: 0}
-  power1: {x: 0, y: 0}
-  power2: {x: 0, y: 0}
-  noiseSpeed: {x: 0, y: 0}
-  noiseTime: {x: 0, y: 0}
-  cellSpeed: {x: 0, y: 0}
-  noisePower: {x: 0, y: 0}
-  noiseCell: {x: 0, y: 0}
-  noiseOffset: {x: 0, y: 0, z: 0, w: 0}
-  colour1: {r: 0, g: 0, b: 0, a: 0}
-  colour2: {r: 0, g: 0, b: 0, a: 0}
-  intensity: 0
 --- !u!114 &6494126025131297686
 MonoBehaviour:
   m_ObjectHideFlags: 0
