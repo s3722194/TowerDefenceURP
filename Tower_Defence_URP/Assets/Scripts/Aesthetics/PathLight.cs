@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PathLight : MonoBehaviour
 {
     [SerializeField] private GameObject gridLight;
@@ -14,8 +15,8 @@ public class PathLight : MonoBehaviour
     [SerializeField] private GameObject previousLight =null;
     private int flashIndex = 0;
     // private ArrrayList<Path> oldpath =null;
-    private int countUpdatePath = 0 ;
-    private int countFlash = 0;
+    [SerializeField] private int countUpdatePath;
+    [SerializeField] private int countFlash = 0;
     private Dictionary<int, List<GameObject>> pathLights = new Dictionary<int, List<GameObject>>();
 
     // Start is called before the first frame update
@@ -47,7 +48,7 @@ public class PathLight : MonoBehaviour
         if(grid.GetNumPaths() != 0)
         {
             countUpdatePath++;
-            if (countUpdatePath == 200)
+            if (countUpdatePath >= updateSpeed)
             {
                 countUpdatePath = 0;
 
@@ -98,13 +99,14 @@ public class PathLight : MonoBehaviour
                 countFlash++;
             }
 
-            if(countFlash == flashSpeed)
+            if(countFlash >= flashSpeed)
             {
                 countFlash = 0;
 
-                foreach (GameObject light in pathLights.[flashIndex])
+                List<GameObject> currentLights = pathLights[flashIndex];
+                foreach (GameObject light in currentLights)
                 {
-                   // light.GetComponent<Light2D>();
+                  // light.GetComponent<Light2D>();
                 }
 
 

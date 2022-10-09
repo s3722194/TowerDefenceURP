@@ -407,10 +407,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0293ed8804127b34a9418ebcbb2eb059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathLight: {fileID: 2282214384214487347, guid: 086de4ba9bb575545838963efddba14b, type: 3}
+  gridLight: {fileID: 2282214384214487347, guid: 086de4ba9bb575545838963efddba14b, type: 3}
   grid: {fileID: 7877542772378899482}
   parentLight: {fileID: 3264747342363047303}
   length: 17
+  updateSpeed: 1000
+  flashSpeed: 1000
+  previousLight: {fileID: 0}
 --- !u!1 &3885721689089907321
 GameObject:
   m_ObjectHideFlags: 0
