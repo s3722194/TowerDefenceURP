@@ -753,7 +753,11 @@ PrefabInstance:
     - target: {fileID: 5992573463983184557, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 661d78f6d9b4eb0469b5ed5be63c86eb, type: 3}
+      objectReference: {fileID: 21300000, guid: 29879655f2e74704ab982c9b50ea8fdd, type: 3}
+    - target: {fileID: 5992573463983184557, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47564af5ed481684a8a3fe6ac79ec5d0, type: 2}
     - target: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Name
       value: Fire Tower Beta Variant

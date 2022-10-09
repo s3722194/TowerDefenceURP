@@ -724,7 +724,11 @@ PrefabInstance:
     - target: {fileID: 4062520100240784664, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 18d833ac69c08bc47ad8526b30e0c60d, type: 3}
+      objectReference: {fileID: 21300000, guid: a82cb1a7262d35f418854dc09c8f4a39, type: 3}
+    - target: {fileID: 4062520100240784664, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de1375aa7b841c441a2d40fe9e28409b, type: 2}
     - target: {fileID: 4062520100240784665, guid: f61f7541bfd5d1241a007f9bcc6f5120, type: 3}
       propertyPath: m_Name
       value: Toxic Tower Beta Variant

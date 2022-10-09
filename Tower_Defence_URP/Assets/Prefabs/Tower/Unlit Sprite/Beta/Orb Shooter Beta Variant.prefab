@@ -499,7 +499,11 @@ PrefabInstance:
     - target: {fileID: 2823415487228418241, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8cda67824a7346f4fa3e5d552181fde3, type: 3}
+      objectReference: {fileID: 21300000, guid: babd77036b230494fb7e9b98564a5118, type: 3}
+    - target: {fileID: 2823415487228418241, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e669bb0eafbb1ba4db18dff5b405b735, type: 2}
     - target: {fileID: 2823415487228418254, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Name
       value: Orb Shooter Beta Variant

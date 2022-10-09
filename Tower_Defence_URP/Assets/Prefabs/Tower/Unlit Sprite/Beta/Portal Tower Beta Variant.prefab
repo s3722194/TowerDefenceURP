@@ -5000,7 +5000,11 @@ PrefabInstance:
     - target: {fileID: 959825259802375863, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 05f2323d8f755f5469c3a528e56ee4fc, type: 3}
+      objectReference: {fileID: 21300000, guid: 44e876a3d60185b43bb4fa0bf397a828, type: 3}
+    - target: {fileID: 959825259802375863, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3976528f39074ee4e8ebdd04813a8917, type: 2}
     - target: {fileID: 959825259843809892, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Layer
       value: 2

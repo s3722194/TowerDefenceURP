@@ -631,7 +631,11 @@ PrefabInstance:
     - target: {fileID: 8669025635558285664, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6de051268277b9c49b48d731e748c514, type: 3}
+      objectReference: {fileID: 21300000, guid: 5553f26faad1af747ac94e30ae5fb07b, type: 3}
+    - target: {fileID: 8669025635558285664, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db1d7601b14b6714d86a5cbe83450900, type: 2}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_Name
       value: Death Lazer Tower Beta Variant
@@ -650,11 +654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_LocalPosition.z
