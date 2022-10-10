@@ -60,8 +60,8 @@ MonoBehaviour:
   m_NormalMapDistance: 10
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -5104,8 +5104,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -5380,7 +5380,7 @@ MonoBehaviour:
   - {x: -0.2540772, y: -0.3826512, z: 0.000000022351742}
   m_ShapePathHash: -414209467
   m_Mesh: {fileID: 0}
-  m_InstanceId: -103134
+  m_InstanceId: 202764
 --- !u!1 &7097509523736308385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2976131754449303806, guid: f116628cbd4415d46b7e62a6172df875, type: 3}

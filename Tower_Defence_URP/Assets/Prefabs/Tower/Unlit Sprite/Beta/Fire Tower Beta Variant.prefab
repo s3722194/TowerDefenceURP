@@ -60,8 +60,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -541,8 +541,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -651,8 +651,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -958,8 +958,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -1316,30 +1316,6 @@ MonoBehaviour:
   isLit: 1
   lit: {fileID: 8483863763708997574}
   unlit: {fileID: 1569817287892393119}
---- !u!114 &5218394787845281232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035722182896773497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 450
-  maxHealth: 450
-  speed: 10
-  attackCooldown: 10
-  mDamage: 100
-  rDamage: 0
-  range: 50
-  destructable: 0
-  cost: 900
-  upgradeCost: 0
-  EnemiesInRange: []
-  ProjectilePrefab: {fileID: 9213397056524092256, guid: b9b7bce6e26d8534cb2f8ebee500f7e4, type: 3}
 --- !u!114 &2613358559065819992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,7 +1358,31 @@ MonoBehaviour:
   - {x: -0.19559288, y: -0.32016283, z: 0.000000022351742}
   m_ShapePathHash: -105192543
   m_Mesh: {fileID: 0}
-  m_InstanceId: -73442
+  m_InstanceId: 201154
+--- !u!114 &5218394787845281232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035722182896773497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 450
+  maxHealth: 450
+  speed: 10
+  attackCooldown: 10
+  mDamage: 100
+  rDamage: 0
+  range: 50
+  destructable: 0
+  cost: 900
+  upgradeCost: 0
+  EnemiesInRange: []
+  ProjectilePrefab: {fileID: 9213397056524092256, guid: b9b7bce6e26d8534cb2f8ebee500f7e4, type: 3}
 --- !u!1 &2035722183345486305 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5992573464339745334, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}

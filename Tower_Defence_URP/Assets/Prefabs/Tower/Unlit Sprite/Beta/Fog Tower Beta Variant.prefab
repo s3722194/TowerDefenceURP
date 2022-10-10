@@ -5000,8 +5000,8 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
@@ -5282,29 +5282,6 @@ MonoBehaviour:
   isLit: 1
   lit: {fileID: 4040473685728474607}
   unlit: {fileID: 7004446707379178224}
---- !u!114 &6361869969402622560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093819992983936561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d833dae1f284b94e8ece801264cb035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 200
-  maxHealth: 200
-  speed: 15
-  attackCooldown: 0.01
-  mDamage: 0
-  rDamage: 0
-  range: 10
-  destructable: 0
-  cost: 150
-  upgradeCost: 0
-  EnemiesInRange: []
 --- !u!114 &4923791933956627202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5354,7 +5331,30 @@ MonoBehaviour:
   - {x: -0.37771225, y: -0.4202397, z: 0.000000022351742}
   m_ShapePathHash: -2075957077
   m_Mesh: {fileID: 0}
-  m_InstanceId: -53050
+  m_InstanceId: 201452
+--- !u!114 &6361869969402622560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093819992983936561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d833dae1f284b94e8ece801264cb035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  maxHealth: 200
+  speed: 15
+  attackCooldown: 0.01
+  mDamage: 0
+  rDamage: 0
+  range: 10
+  destructable: 0
+  cost: 150
+  upgradeCost: 0
+  EnemiesInRange: []
 --- !u!1 &4040473685728474607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 286295461452807982, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}

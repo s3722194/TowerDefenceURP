@@ -13,6 +13,8 @@ public class ToxicBuilding : ABuilding
         fireRate = AttackCooldown;
     }
 
+
+
     public override void Attack()
     {
         //throw new System.NotImplementedException();
