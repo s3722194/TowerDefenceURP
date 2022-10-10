@@ -265,9 +265,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -938,9 +938,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -1794,36 +1794,12 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7fb1ce84473941ac1
   m_ShapePath:
-  - {x: -0.49073362, y: -0.4192295, z: 0}
-  - {x: -0.5177984, y: -0.37518883, z: 0.000000022351742}
-  - {x: -0.40975428, y: -0.20862103, z: 0.000000022351742}
-  - {x: -0.4367652, y: -0.17710829, z: 0.000000022351742}
-  - {x: -0.40075064, y: -0.14109325, z: 0.000000022351742}
-  - {x: -0.42776155, y: -0.09607506, z: 0.000000022351742}
-  - {x: -0.23418283, y: 0.25957012, z: 0.000000022351742}
-  - {x: -0.1846087, y: 0.257164, z: 0}
-  - {x: -0.18466258, y: 0.29108286, z: 0.000000022351742}
-  - {x: -0.13514233, y: 0.29108286, z: 0.000000022351742}
-  - {x: -0.040603876, y: 0.4666543, z: 0.000000022351742}
-  - {x: -0.00008749962, y: 0.4441452, z: 0.000000022351742}
-  - {x: 0.08544755, y: 0.29108286, z: 0.000000022351742}
-  - {x: 0.11696029, y: 0.29558468, z: 0.000000022351742}
-  - {x: 0.15297508, y: 0.25957012, z: 0.000000022351742}
-  - {x: 0.18010664, y: 0.26166582, z: 0}
-  - {x: 0.42308497, y: -0.15459871, z: 0.000000022351742}
-  - {x: 0.4050777, y: -0.17710781, z: 0.000000022351742}
-  - {x: 0.4275868, y: -0.20411873, z: 0.000000022351742}
-  - {x: 0.40519857, y: -0.23465443, z: 0}
-  - {x: 0.49961615, y: -0.39769745, z: 0.000000022351742}
-  - {x: 0.29703355, y: -0.40219927, z: 0.000000022351742}
-  - {x: 0.29253173, y: -0.42921066, z: 0.000000022351742}
-  - {x: 0.24751353, y: -0.42921066, z: 0.000000022351742}
-  - {x: 0.23033237, y: -0.4630189, z: 0.000000022351742}
-  - {x: -0.23868465, y: -0.46072388, z: 0.000000022351742}
-  - {x: -0.25669193, y: -0.42470932, z: 0.000000022351742}
-  m_ShapePathHash: 1619039983
+  - {x: -0.5258179, y: -0.42330503, z: 0.000000022351742}
+  - {x: -0.03258443, y: 0.47868347, z: 0.000000022351742}
+  - {x: 0.5116451, y: -0.4217553, z: 0.000000022351742}
+  m_ShapePathHash: 1060431707
   m_Mesh: {fileID: 0}
-  m_InstanceId: 201670
+  m_InstanceId: 378746
 --- !u!4 &5601194033274021309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 125148708078906437, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}

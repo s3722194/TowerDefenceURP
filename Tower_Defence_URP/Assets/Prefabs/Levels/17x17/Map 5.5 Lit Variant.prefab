@@ -1588,7 +1588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5748249649161626366, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6630900384721514341, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_IsActive
@@ -1608,7 +1608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6630900386416602473, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_Name
-      value: Map 5.5 Lit
+      value: Map 5.5 Lit Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6630900386416602478, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_RootOrder
@@ -1660,7 +1660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7877542772378899482, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8630626607344206069, guid: 29f0be1fc9d87784e97cf16334d7f51d, type: 3}
       propertyPath: m_IsActive

@@ -58,9 +58,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -539,9 +539,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -649,9 +649,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -956,9 +956,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -1338,27 +1338,13 @@ MonoBehaviour:
   m_ShapePath:
   - {x: -0.33189154, y: -0.32702845, z: 0}
   - {x: -0.4679079, y: -0.12078917, z: 0.000000022351742}
-  - {x: -0.3949666, y: 0.010505676, z: 0.000000022351742}
-  - {x: -0.4727707, y: 0.16125163, z: 0.000000022351742}
-  - {x: -0.36106825, y: 0.3464796, z: 0}
-  - {x: -0.21018124, y: 0.34117424, z: 0.000000022351742}
   - {x: -0.12751389, y: 0.48705742, z: 0.000000022351742}
-  - {x: 0.08481789, y: 0.4815595, z: 0.000000022351742}
   - {x: 0.14480114, y: 0.4578808, z: 0.000000022351742}
-  - {x: 0.21518517, y: 0.3270285, z: 0}
-  - {x: 0.3344493, y: 0.32658592, z: 0.000000022351742}
-  - {x: 0.363626, y: 0.3119976, z: 0.000000022351742}
-  - {x: 0.47060728, y: 0.10289836, z: 0.000000022351742}
-  - {x: 0.38307714, y: 0.010505676, z: 0.000000022351742}
   - {x: 0.47547007, y: -0.13537747, z: 0.000000022351742}
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
-  - {x: 0.22491074, y: -0.31730288, z: 0}
-  - {x: 0.12535, y: -0.4757716, z: 0.000000022351742}
-  - {x: -0.0886116, y: -0.4757716, z: 0.000000022351742}
-  - {x: -0.19559288, y: -0.32016283, z: 0.000000022351742}
-  m_ShapePathHash: -105192543
+  m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 201154
+  m_InstanceId: 376366
 --- !u!114 &5218394787845281232
 MonoBehaviour:
   m_ObjectHideFlags: 0

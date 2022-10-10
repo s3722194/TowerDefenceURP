@@ -180,9 +180,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -290,9 +290,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -678,9 +678,9 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 1
+  m_NormalMapQuality: 0
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -903,7 +903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010918903313678432, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7343660710561933363, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_IsTrigger
@@ -1049,34 +1049,12 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7fb1ce84473941ac1
   m_ShapePath:
-  - {x: -0.47358024, y: -0.405967, z: 0}
-  - {x: -0.49934238, y: -0.32646275, z: 0.000000022351742}
-  - {x: -0.47292262, y: -0.24720359, z: 0.000000022351742}
-  - {x: -0.41567987, y: -0.20757389, z: 0.000000022351742}
-  - {x: -0.35843706, y: -0.20317054, z: 0.000000022351742}
-  - {x: -0.086090505, y: 0.26506162, z: 0}
-  - {x: -0.116256, y: 0.3340311, z: 0.000000022351742}
-  - {x: -0.09423953, y: 0.4044838, z: 0.000000022351742}
-  - {x: -0.041400015, y: 0.4441135, z: 0.000000022351742}
-  - {x: 0.029052645, y: 0.4485166, z: 0.000000022351742}
-  - {x: 0.10831189, y: 0.38687062, z: 0.000000022351742}
-  - {x: 0.12152177, y: 0.29880476, z: 0.000000022351742}
-  - {x: 0.09510201, y: 0.25917506, z: 0.000000022351742}
-  - {x: 0.3723045, y: -0.22370362, z: 0}
-  - {x: 0.44736534, y: -0.22959018, z: 0.000000022351742}
-  - {x: 0.49139827, y: -0.28683305, z: 0.000000022351742}
-  - {x: 0.5090115, y: -0.33086586, z: 0.000000022351742}
-  - {x: 0.47818846, y: -0.41012526, z: 0.000000022351742}
-  - {x: 0.42514402, y: -0.45000005, z: 0}
-  - {x: 0.33728307, y: -0.44094825, z: 0.000000022351742}
-  - {x: 0.28444356, y: -0.38810873, z: 0.000000022351742}
-  - {x: -0.25716135, y: -0.38370538, z: 0.000000022351742}
-  - {x: -0.2923877, y: -0.42773843, z: 0.000000022351742}
-  - {x: -0.3364206, y: -0.45415807, z: 0.000000022351742}
-  - {x: -0.41567987, y: -0.4365449, z: 0.000000022351742}
-  m_ShapePathHash: 102698797
+  - {x: 0.0011970997, y: 0.38438177, z: 0.000000022351742}
+  - {x: 0.41702116, y: -0.35785365, z: 0}
+  - {x: -0.39131126, y: -0.34346056, z: 0.000000022351742}
+  m_ShapePathHash: -1450391104
   m_Mesh: {fileID: 0}
-  m_InstanceId: 202448
+  m_InstanceId: 253644
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
