@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1420555874132581415, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2313515833733798441, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1025,6 +1029,54 @@ MonoBehaviour:
   isLit: 1
   lit: {fileID: 6363437232441593719}
   unlit: {fileID: 3076633512329876272}
+--- !u!114 &8245457424547800024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173682292494325721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7fb1ce84473941ac1
+  m_ShapePath:
+  - {x: -0.47358024, y: -0.405967, z: 0}
+  - {x: -0.49934238, y: -0.32646275, z: 0.000000022351742}
+  - {x: -0.47292262, y: -0.24720359, z: 0.000000022351742}
+  - {x: -0.41567987, y: -0.20757389, z: 0.000000022351742}
+  - {x: -0.35843706, y: -0.20317054, z: 0.000000022351742}
+  - {x: -0.086090505, y: 0.26506162, z: 0}
+  - {x: -0.116256, y: 0.3340311, z: 0.000000022351742}
+  - {x: -0.09423953, y: 0.4044838, z: 0.000000022351742}
+  - {x: -0.041400015, y: 0.4441135, z: 0.000000022351742}
+  - {x: 0.029052645, y: 0.4485166, z: 0.000000022351742}
+  - {x: 0.10831189, y: 0.38687062, z: 0.000000022351742}
+  - {x: 0.12152177, y: 0.29880476, z: 0.000000022351742}
+  - {x: 0.09510201, y: 0.25917506, z: 0.000000022351742}
+  - {x: 0.3723045, y: -0.22370362, z: 0}
+  - {x: 0.44736534, y: -0.22959018, z: 0.000000022351742}
+  - {x: 0.49139827, y: -0.28683305, z: 0.000000022351742}
+  - {x: 0.5090115, y: -0.33086586, z: 0.000000022351742}
+  - {x: 0.47818846, y: -0.41012526, z: 0.000000022351742}
+  - {x: 0.42514402, y: -0.45000005, z: 0}
+  - {x: 0.33728307, y: -0.44094825, z: 0.000000022351742}
+  - {x: 0.28444356, y: -0.38810873, z: 0.000000022351742}
+  - {x: -0.25716135, y: -0.38370538, z: 0.000000022351742}
+  - {x: -0.2923877, y: -0.42773843, z: 0.000000022351742}
+  - {x: -0.3364206, y: -0.45415807, z: 0.000000022351742}
+  - {x: -0.41567987, y: -0.4365449, z: 0.000000022351742}
+  m_ShapePathHash: 102698797
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -95804
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}

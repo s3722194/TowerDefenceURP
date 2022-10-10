@@ -2279,6 +2279,35 @@ MonoBehaviour:
   isLit: 1
   lit: {fileID: 2205627089675429849}
   unlit: {fileID: 8244701477962116727}
+--- !u!114 &2529163994613330117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5383567817789444856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7fb1ce84473941ac1
+  m_ShapePath:
+  - {x: -0.45331138, y: -0.023417443, z: 0}
+  - {x: -0.22765112, y: 0.4153043, z: 0}
+  - {x: 0.18002501, y: 0.41422993, z: 0.000000022351742}
+  - {x: 0.45875832, y: -0.068963856, z: 0}
+  - {x: 0.27189907, y: -0.40045965, z: 0.000000022351742}
+  - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
+  m_ShapePathHash: -1014512811
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -109424
 --- !u!1 &5383567818666988218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 731292498024335175, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
