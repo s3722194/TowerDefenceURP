@@ -262,7 +262,7 @@ MonoBehaviour:
   m_LightOrder: 2
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_LightOrder: 1
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_LightOrder: 2
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   m_LightOrder: 1
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -1687,7 +1687,7 @@ MonoBehaviour:
   m_LightOrder: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_LightOrder: 2
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 0
+  m_NormalMapQuality: 2
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 1
@@ -2080,6 +2080,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3673605239835540362, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3859974159378524415, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Radius
       value: 0.4
@@ -2114,7 +2118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6776689188863341092, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8616669943617123589, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Name
@@ -2266,7 +2270,7 @@ MonoBehaviour:
   - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
   m_ShapePathHash: -1014512811
   m_Mesh: {fileID: 0}
-  m_InstanceId: 154556
+  m_InstanceId: 508576
 --- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0
