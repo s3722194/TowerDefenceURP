@@ -58,7 +58,7 @@ Material:
     - _NoiseAmount: 0.1
     - _NoiseScale: 5
     m_Colors:
-    - _Color: {r: 5.401496, g: 7.5525346, b: 9.129962, a: 1}
+    - _Color: {r: 10.898594, g: 15.20067, b: 18.259924, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _FogSpeed: {r: 0, g: -0.2, b: 0, a: 0}
     - _NoiseOffset: {r: 0, g: 1, b: 0, a: 0}

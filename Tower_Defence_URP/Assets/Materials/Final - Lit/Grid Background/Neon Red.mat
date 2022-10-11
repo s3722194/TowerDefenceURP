@@ -62,7 +62,7 @@ Material:
     - _VorPower: 1.5
     - _VorScale: 17
     m_Colors:
-    - _Color: {r: 3.7803926, g: 0.29688948, b: 0.6135716, a: 1}
+    - _Color: {r: 3.7803926, g: 0.31668213, b: 0.6135716, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _RipleTime: {r: 0, g: 0.05, b: 0, a: 0}
