@@ -34,7 +34,7 @@ public class LightningProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag.Equals("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if (enemy != null)
@@ -48,7 +48,7 @@ public class LightningProjectile : MonoBehaviour
                 List<Collider2D> newTargets = new List<Collider2D>();
                 foreach(Collider2D collision in tmp)
                 {
-                    if(collision.gameObject.tag.Equals("Enemy") && collision.gameObject.transform != target)
+                    if(collision.gameObject.CompareTag("Enemy") && collision.gameObject.transform != target)
                     {
                         newTargets.Add(collision);
                     }

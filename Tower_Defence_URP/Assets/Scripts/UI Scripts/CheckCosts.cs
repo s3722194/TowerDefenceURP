@@ -28,7 +28,7 @@ public class CheckCosts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.gameObject.tag.Equals("Upgrade"))
+        if(gameObject.CompareTag("Upgrade"))
         {
             if(upgrade.selectedTower != null)
             {
