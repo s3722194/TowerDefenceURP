@@ -51,7 +51,7 @@ public class Path : IList<Vector2Int>
 
     public Vector2Int GetEndPosition()
     {
-        return positions[-1];
+        return positions[^1];
     }
 
     public bool IsEndPosition(Vector2Int position)
@@ -59,7 +59,7 @@ public class Path : IList<Vector2Int>
         return position.Equals(GetEndPosition());
     }
 
-    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0, float tolerance = 0.05f)
+    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0, float tolerance = 0.10f)
     {
         for (int i = positionNumber; i < Count - 1; i++)
         {
@@ -102,7 +102,7 @@ public class Path : IList<Vector2Int>
         }
         else if (positionCount >= positions.Count)
         {
-            return positions[-1];
+            return GetEndPosition();
         }
         else
         {
