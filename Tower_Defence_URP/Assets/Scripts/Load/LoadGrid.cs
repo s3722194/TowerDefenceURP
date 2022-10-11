@@ -66,14 +66,19 @@ public class LoadGrid : MonoBehaviour
     private void SetUpWallMaterials()
     {
         GameObject wall = GameObject.FindGameObjectWithTag("Wall");
-        List<Material> materials = levelManager.WallMaterials;
 
-        foreach (Transform child in wall.transform)
+        if(wall != null)
         {
-            SpriteRenderer sr = child.gameObject.GetComponent<SpriteRenderer>();
-            sr.color = Color.white;
-            sr.material = materials[Random.Range(0, materials.Count)];
+            List<Material> materials = levelManager.WallMaterials;
+
+            foreach (Transform child in wall.transform)
+            {
+                SpriteRenderer sr = child.gameObject.GetComponent<SpriteRenderer>();
+                sr.color = Color.white;
+                sr.material = materials[Random.Range(0, materials.Count)];
+            }
         }
+        
     }
 
     private void SetUpGridMaterial()
