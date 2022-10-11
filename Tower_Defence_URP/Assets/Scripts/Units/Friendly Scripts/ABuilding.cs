@@ -37,7 +37,7 @@ public abstract class ABuilding : AUnit
     protected void OnTriggerEnter2D (Collider2D other)
     {
         //Add enemies to the list of enemies a tower can target within its range
-        if(other.gameObject.tag.Equals("Enemy"))
+        if(other.gameObject.CompareTag("Enemy"))
         {
             EnemiesInRange.Add(other.gameObject);
         }
@@ -46,7 +46,7 @@ public abstract class ABuilding : AUnit
     protected void OnTriggerExit2D (Collider2D other)
     {
         //Remove enemies from the list that exits a tower's range
-        if(other.gameObject.tag.Equals("Enemy"))
+        if(other.gameObject.CompareTag("Enemy"))
         {
             EnemiesInRange.Remove(other.gameObject);
         }

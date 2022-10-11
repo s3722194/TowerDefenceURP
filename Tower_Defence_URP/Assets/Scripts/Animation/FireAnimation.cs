@@ -11,6 +11,7 @@ public class FireAnimation : MonoBehaviour
     [SerializeField] private float count;
     public float rotation =0;
     [SerializeField] private float speedConstant;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,6 @@ public class FireAnimation : MonoBehaviour
 
         if (chargeConstant)
         {
-
             transform.rotation = Quaternion.Euler(0f, 0f, (speedConstant * count) % 360);
             count++;
         }
@@ -46,6 +46,5 @@ public class FireAnimation : MonoBehaviour
         chargeUp = true;
         chargeDown = false;
         chargeConstant = false;
-
     }
 }

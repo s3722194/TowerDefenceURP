@@ -128,7 +128,6 @@ public class MapGrid : MonoBehaviour
         {
             if (path.Contains(pos))
             {
-
                 path.UpdatePositions(AStarSearch.Search(this, path.GetStartPosition(), path.GetEndPosition(), goThroughBuildings, ignoreBuildings, allowDiagonalMovement));
             }
         }

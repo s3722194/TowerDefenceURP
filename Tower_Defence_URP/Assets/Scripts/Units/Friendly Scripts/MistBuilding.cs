@@ -21,20 +21,20 @@ public class MistBuilding : ABuilding
         // Update handled through trigger colliders
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    new void OnTriggerEnter2D(Collider2D collider)
     {
         base.OnTriggerEnter2D(collider);
-        if (collider.gameObject.tag.Equals("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
             Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
             rb.velocity -= rb.velocity / speedRate;
         }
     }
 
-    void OnTriggerExit2D(Collider2D collider)
+    new void OnTriggerExit2D(Collider2D collider)
     {
         base.OnTriggerEnter2D(collider);
-        if (collider.gameObject.tag.Equals("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
             Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
             rb.velocity += rb.velocity / speedRate;
