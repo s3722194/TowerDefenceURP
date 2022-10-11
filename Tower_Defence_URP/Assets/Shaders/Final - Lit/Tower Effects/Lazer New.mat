@@ -39,12 +39,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _AngleOffset: 1
-    - _CellDensity: 5
+    - _CellDensity: 10
     - _EdgeWeight: 8
     - _LineThickness: 6.93
+    - _NoiseScale: 10
+    - _NoiseScale1: 15
     - _VorSpeed1: 2
     m_Colors:
-    - _Color: {r: 4.5176473, g: 0.8156863, b: 7.5607843, a: 0}
-    - _LazerSpeed: {r: -3, g: 0, b: 0, a: 0}
+    - _Color: {r: 72.83688, g: 13.300649, b: 120.972565, a: 0}
+    - _LazerSpeed: {r: -4, g: 0, b: 0, a: 0}
+    - _Speed2: {r: 3, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
