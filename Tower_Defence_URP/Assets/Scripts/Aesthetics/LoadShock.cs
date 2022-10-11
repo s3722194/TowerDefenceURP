@@ -44,9 +44,5 @@ public class LoadShock : MonoBehaviour
 
         }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -79,8 +79,5 @@ public class LoadOrb : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }

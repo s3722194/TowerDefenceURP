@@ -22,6 +22,8 @@ public class PathLight : MonoBehaviour
 
     [SerializeField] private float flashIntensity = 3;
     [SerializeField] private float normalIntensity = 2;
+    
+   // private 
 
     // Start is called before the first frame update
     void Start()
@@ -114,27 +116,58 @@ public class PathLight : MonoBehaviour
             countFlash++;
         }
     }
-
+    private List<List<Vector2Int>> allPaths = new  List<List<Vector2Int>>();
     private void UpdatePathLight()
     {
         countUpdatePath++;
         if (countUpdatePath >= updateSpeed)
         {
-            countUpdatePath = 0;
+            if(allPaths.Count > 0)
+            {
 
-            DeactivateAllLights();
+                for (int i = 0; i < grid.GetNumPaths(); i++)
+                {
+                    path = grid.GetPath(i);
+                    List<Vector2Int> positoins = path.GetPositions();
 
-            pathLights.Clear();
-            FindAllPaths();
+                    if(positoins != allPaths[i])
+                    {
+                        DeactivateAllLights();
+                        pathLights.Clear();
+                        FindAllPaths();
+                        break;
+                    }
+                }
+                countUpdatePath = 0;
+
+                
+            }
+            else
+            {
+                for (int i = 0; i < grid.GetNumPaths(); i++)
+                {
+                    path = grid.GetPath(i);
+                    List<Vector2Int> positoins = path.GetPositions();
+                    allPaths.Add(positoins);
+
+                    
+                }
+                countUpdatePath = 0;
+                FindAllPaths();
+            }
+           
+                //  if()
+               
         }
         
     }
 
+    private Path path;
     private void FindAllPaths()
     {
         for (int i = 0; i < grid.GetNumPaths(); i++)
         {
-            Path path = grid.GetPath(i);
+            path = grid.GetPath(i);
             List<Vector2Int> positoins = path.GetPositions();
 
             foreach (Vector2Int tile in positoins)
@@ -184,9 +217,15 @@ public class PathLight : MonoBehaviour
 
     private void DeactivateAllLights()
     {
-        foreach ((GameObject, Light2D) light in lights.Values)
+        foreach (List<Light2D> light in pathLights.Values)
         {
-            light.Item1.SetActive(false);
+            foreach(Light2D newlight in light)
+            {
+                //light.SetActive(false);
+                newlight.gameObject.SetActive(false);
+
+            }
+            
         }
     }
 }

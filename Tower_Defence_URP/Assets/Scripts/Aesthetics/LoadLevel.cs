@@ -11,8 +11,5 @@ public class LoadLevel : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
