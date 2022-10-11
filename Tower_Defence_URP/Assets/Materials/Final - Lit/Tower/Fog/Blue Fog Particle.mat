@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pink Shock Lit 8
-  m_Shader: {fileID: -6465566751694194690, guid: 7fff83c0bb265974b9a60e3da8b41545, type: 3}
+  m_Name: Blue Fog Particle
+  m_Shader: {fileID: -6465566751694194690, guid: fe16104ffd7ea3d4583a790a03d08484, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -36,7 +36,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2D:
+    - _Texture:
         m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -54,19 +54,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElectiryScale: 10
     - _EnableExternalAlpha: 0
-    - _LineWeight: 2
-    - _NoiseScale: 15
-    - _Power: 7
+    - _NoiseAmount: 0.1
+    - _NoiseScale: 5
     m_Colors:
-    - _Color: {r: 9.67302, g: 0.13688211, b: 8.484791, a: 1}
-    - _ElecitrySpeed: {r: 0, g: 1.5, b: 0, a: 0}
-    - _ElectiryOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ElectiryTilling: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 5.401496, g: 7.5525346, b: 9.129962, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0, g: -1, b: 0, a: 0}
-    - _NoiseTillling: {r: 1, g: 1, b: 0, a: 0}
+    - _FogSpeed: {r: 0, g: -0.2, b: 0, a: 0}
+    - _NoiseOffset: {r: 0, g: 1, b: 0, a: 0}
+    - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

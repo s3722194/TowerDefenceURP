@@ -115,9 +115,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 10
-      minScalar: 5
+      minMaxState: 3
+      scalar: 16
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4761,7 +4761,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e53acbf4775298b4282d5875f88a8154, type: 2}
+  - {fileID: 2100000, guid: b735f05e6615d8048816eb6c97f29a71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5147,7 +5147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 286295461452807982, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Name
@@ -5175,11 +5175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284274, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.11
+      value: 0.503
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284274, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4218974
+      value: 0.613
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284274, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5220,6 +5220,10 @@ PrefabInstance:
     - target: {fileID: 3122897147758345120, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548038656964575281, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7186366600525678581, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5308,7 +5312,7 @@ MonoBehaviour:
   - {x: 0.4322729, y: -0.41620398, z: -0.00000015646219}
   m_ShapePathHash: -855526859
   m_Mesh: {fileID: 0}
-  m_InstanceId: 377664
+  m_InstanceId: 940658
 --- !u!114 &6361869969402622560
 MonoBehaviour:
   m_ObjectHideFlags: 0

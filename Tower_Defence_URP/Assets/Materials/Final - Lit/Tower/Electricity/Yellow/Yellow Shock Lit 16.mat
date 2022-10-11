@@ -54,10 +54,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ElectiryScale: 20
+    - _ElectiryScale: 11
     - _EnableExternalAlpha: 0
     - _LineWeight: 2
-    - _NoiseScale: 25
+    - _NoiseScale: 5
     - _Power: 7
     m_Colors:
     - _Color: {r: 6.1803923, g: 8, b: 0, a: 1}
