@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public void Escape(EnemyUnit unit)
     {
         Lives -= unit.LivesOnEscape;
-        Money += unit.MoneyOnDeath;
+        unit.Die();
         if (Lives <= 0)
         {
             // TODO: End Level.

@@ -51,19 +51,25 @@ public class PathLight : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        
-        if(grid.GetNumPaths() != 0)
+        try
         {
-            UpdatePathLight();
-            UpdateFlash();
-
-        }
-        else
-        {
-            if(pathLights.Count > 0)
+            if (grid.GetNumPaths() != 0)
+            {
+                UpdatePathLight();
+                UpdateFlash();
+            }
+            else
             {
                 pathLights.Clear();
             }
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            pathLights.Clear();
+        }
+        catch (System.NullReferenceException)
+        {
+            pathLights.Clear();
         }
 
     }

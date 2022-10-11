@@ -20,13 +20,15 @@ public class GridTile : MonoBehaviour
     }
 
     private GameManager GM;
-    private UpgradeHUD UpgradeCanvas;
+    private UpgradeHUD upgradeCanvas;
+    private MapGrid mapGrid;
 
     // Start is called before the first frame update
     void Start()
     {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        UpgradeCanvas = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
+        upgradeCanvas = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
+        mapGrid = transform.parent.parent.gameObject.GetComponent<MapGrid>();
 
         OccupiedTower = null;
     }
@@ -52,14 +54,15 @@ public class GridTile : MonoBehaviour
                 if(building != null && GM.Money >= building.Cost)
                 {
                     // Place Tower
-                    GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), this.transform.position, this.transform.rotation);
+                    GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), transform.position, transform.rotation);
                     OccupiedTower = spawnedTower;
                     GM.SpendMoney(building.Cost);
+                    mapGrid.UpdatePosition(this);
                 } 
             }
         } else
         {
-            UpgradeCanvas.updateHUD(occupiedTower);
+            upgradeCanvas.updateHUD(occupiedTower);
 
             GameObject info_canvas = GameObject.Find("Info_Canvas");
             foreach (Transform panel in info_canvas.GetComponentsInChildren<Transform>())
