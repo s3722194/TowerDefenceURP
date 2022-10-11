@@ -42,12 +42,7 @@ public class ToxicProjectile : Projectile
             EnemyUnit enemy = target.gameObject.GetComponent<EnemyUnit>();
             if (enemy != null)
             {
-                enemy.Health -= damage;
-                if (enemy.Health <= 0)
-                {
-                    enemy.Die();
-                    Destroy(gameObject);
-                }
+                enemy.TakeDamage(damage);
             }
 
             DoT_Time = 0.0f;

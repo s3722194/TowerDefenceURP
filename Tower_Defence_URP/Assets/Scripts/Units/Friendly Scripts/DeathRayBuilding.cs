@@ -23,11 +23,7 @@ public class DeathRayBuilding : ABuilding
                 EnemyUnit enemy = EnemiesInRange[i].gameObject.GetComponent<EnemyUnit>();
                 if (enemy != null)
                 {
-                    enemy.Health -= MDamage;
-                    if (enemy.Health <= 0)
-                    {
-                        enemy.Die();
-                    }
+                    enemy.TakeDamage(MDamage);
                 }
             }
 

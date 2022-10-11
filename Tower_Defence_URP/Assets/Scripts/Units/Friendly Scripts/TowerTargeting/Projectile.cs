@@ -38,11 +38,7 @@ public class Projectile : MonoBehaviour
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if(enemy != null)
             {
-                enemy.Health -= damage;
-                if(enemy.Health <= 0)
-                {
-                    enemy.Die();
-                }
+                enemy.TakeDamage(damage);
             }
             Destroy(gameObject);
         }

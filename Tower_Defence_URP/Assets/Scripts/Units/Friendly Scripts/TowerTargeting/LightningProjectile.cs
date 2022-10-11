@@ -39,11 +39,7 @@ public class LightningProjectile : MonoBehaviour
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if (enemy != null)
             {
-                enemy.Health -= damage;
-                if (enemy.Health <= 0)
-                {
-                    enemy.Die();
-                }
+                enemy.TakeDamage(damage);
 
                 List<Collider2D> tmp = new List<Collider2D>(
                     Physics2D.OverlapCircleAll(collider.transform.position, 5)
