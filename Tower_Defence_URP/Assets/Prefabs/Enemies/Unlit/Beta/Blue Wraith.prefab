@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4504484103362092268}
   - component: {fileID: 4190926774936116961}
   - component: {fileID: 7595859158783691156}
+  - component: {fileID: 2996137340366802542}
   m_Layer: 11
   m_Name: Blue Wraith
   m_TagString: Enemy
@@ -58,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de427c509b55c1b44a29a0fe8a40f49d, type: 2}
+  - {fileID: 2100000, guid: 3da2751231b51914fab50ec6cc1e8b14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -218,6 +219,35 @@ MonoBehaviour:
   isTaunt: 0
   isWalking: 0
   isIdle: 0
+--- !u!114 &2996137340366802542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852554946865004473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000009b7abc8c8115f4a37512b5ca8744bdeae5ddf88a956676d9b1b42c19556ebf1207284392c1c8dcc7fb1ce84473941ac1
+  m_ShapePath:
+  - {x: -0.371737, y: -0.6500187, z: 0}
+  - {x: -0.4696145, y: -0.59958124, z: 0.000000022351742}
+  - {x: -0.27744484, y: -0.5458174, z: 0}
+  - {x: 0.10689974, y: -0.54581594, z: 0}
+  - {x: 0.3235829, y: -0.5870614, z: 0.000000022351742}
+  - {x: 0.18762088, y: -0.65640974, z: 0}
+  m_ShapePathHash: -918944619
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -559838
 --- !u!1 &5852554947016372710
 GameObject:
   m_ObjectHideFlags: 0
