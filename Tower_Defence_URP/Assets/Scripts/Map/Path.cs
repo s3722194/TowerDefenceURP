@@ -85,7 +85,7 @@ public class Path : IList<Vector2Int>
         return minPosition;
     }
 
-    public static bool PointExistsOnLineSegment(Vector2 a, Vector2 b, Vector2 p, float tolerance = 0.001f)
+    public static bool PointExistsOnLineSegment(Vector2 a, Vector2 b, Vector2 p, float tolerance = 0.05f)
     {
         var seg = b - a;
         var v = p - a;
