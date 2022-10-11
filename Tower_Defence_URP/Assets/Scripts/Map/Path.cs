@@ -59,11 +59,11 @@ public class Path : IList<Vector2Int>
         return position.Equals(GetEndPosition());
     }
 
-    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0)
+    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0, float tolerance = 0.05f)
     {
         for (int i = positionNumber; i < Count - 1; i++)
         {
-            if (PointExistsOnLineSegment(positions[i], positions[i + 1], point))
+            if (PointExistsOnLineSegment(positions[i], positions[i + 1], point, tolerance))
             {
                 return positions[i + 1];
             }
@@ -85,7 +85,7 @@ public class Path : IList<Vector2Int>
         return minPosition;
     }
 
-    public static bool PointExistsOnLineSegment(Vector2 a, Vector2 b, Vector2 p, float tolerance = 0.05f)
+    public static bool PointExistsOnLineSegment(Vector2 a, Vector2 b, Vector2 p, float tolerance)
     {
         var seg = b - a;
         var v = p - a;
