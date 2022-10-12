@@ -48,7 +48,7 @@ public class LightningProjectile : MonoBehaviour
                 List<Collider2D> newTargets = new List<Collider2D>();
                 foreach(Collider2D collision in tmp)
                 {
-                    if(collision.gameObject.CompareTag("Enemy") && Vector2.Distance(collision.gameObject.transform.position, target.position) > radiusSq)
+                    if(collision.gameObject.CompareTag("Enemy") && Vector2.Distance(collision.gameObject.transform.position, this.transform.position) > radiusSq)
                     {
                         newTargets.Add(collision);
                     }
