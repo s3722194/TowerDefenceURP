@@ -23,9 +23,9 @@ public class LightningBuilding : ABuilding
         if (fireRate >= AttackCooldown)
         {
             Debug.Log("spawning projectile");
-            int firstTarget = (int) Random.Range(0, EnemiesInRange.Count);
-            int secondTarget = (int) Random.Range(0, EnemiesInRange.Count);
-            int thirdTarget = (int) Random.Range(0, EnemiesInRange.Count);
+            int firstTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);
+            int secondTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);
+            int thirdTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);
 
             LightningProjectile first = LightningProjectile.Spawn(firstLightning, this.transform.position, this.transform.rotation, EnemiesInRange[firstTarget].transform, MDamage);
             LightningProjectile second = LightningProjectile.Spawn(secondLightning, this.transform.position, this.transform.rotation, EnemiesInRange[secondTarget].transform, MDamage);

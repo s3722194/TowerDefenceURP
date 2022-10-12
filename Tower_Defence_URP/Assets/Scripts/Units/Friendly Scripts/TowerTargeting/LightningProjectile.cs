@@ -54,9 +54,9 @@ public class LightningProjectile : MonoBehaviour
                     }
                 }
 
-                if (tmp.Count > 0)
+                if (newTargets.Count > 0)
                 {
-                    int randomTarget = (int)Random.Range(0, newTargets.Count);
+                    int randomTarget = (int)Random.Range(0, newTargets.Count - 1);
                     int chainProbability = (int)Random.Range(0, 100);
 
                     if(chainProbability < chainChance)

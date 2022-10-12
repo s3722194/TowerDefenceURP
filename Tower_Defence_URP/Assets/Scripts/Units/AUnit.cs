@@ -6,7 +6,7 @@ public abstract class AUnit : MonoBehaviour
 {
     [SerializeReference] private int health;
     [SerializeField] private int maxHealth;
-    [SerializeField] private int speed;
+    [SerializeField] private float speed;
     [SerializeField] private float attackCooldown;
     [SerializeField] private int mDamage;
     [SerializeField] private int rDamage;
@@ -14,7 +14,7 @@ public abstract class AUnit : MonoBehaviour
 
     public int Health { get => health; set => health = value; }
     public int MaxHealth { get => maxHealth; protected set => maxHealth = value; }
-    public int Speed { get => speed; protected set => speed = value; }
+    public float Speed { get => speed; set => speed = value; }
     public float AttackCooldown { get => attackCooldown; protected set => attackCooldown = value; }
     public int MDamage { get => mDamage; set => mDamage = value; }
     public int RDamage { get => rDamage; protected set => rDamage = value; }

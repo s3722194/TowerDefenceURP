@@ -26,8 +26,11 @@ public class MistBuilding : ABuilding
         base.OnTriggerEnter2D(collider);
         if (collider.gameObject.CompareTag("Enemy"))
         {
-            Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
-            rb.velocity -= rb.velocity / speedRate;
+            EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
+            if(enemy != null)
+            {
+                enemy.Speed = enemy.Speed / speedRate;
+            }
         }
     }
 
@@ -36,8 +39,11 @@ public class MistBuilding : ABuilding
         base.OnTriggerEnter2D(collider);
         if (collider.gameObject.CompareTag("Enemy"))
         {
-            Rigidbody2D rb = collider.gameObject.GetComponent<Rigidbody2D>();
-            rb.velocity += rb.velocity / speedRate;
+            EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
+            if (enemy != null)
+            {
+                enemy.Speed = enemy.Speed * speedRate;
+            }
         }
     }
 }
