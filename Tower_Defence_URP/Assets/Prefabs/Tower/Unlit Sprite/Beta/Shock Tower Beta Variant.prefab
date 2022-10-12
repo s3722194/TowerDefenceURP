@@ -453,7 +453,7 @@ MonoBehaviour:
   - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
   m_ShapePathHash: -1014512811
   m_Mesh: {fileID: 0}
-  m_InstanceId: 134608
+  m_InstanceId: 1131674
 --- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,9 +477,9 @@ MonoBehaviour:
   cost: 700
   upgradeCost: 0
   EnemiesInRange: []
-  firstLightning: {fileID: 6123263498117829287, guid: 3c20d3da5ada56544ba6f2d2acf22a91, type: 3}
-  secondLightning: {fileID: 4536320636921029647, guid: ea2a1797838847248991b3a2ca3c0348, type: 3}
-  thirdLightning: {fileID: 5637911999041725105, guid: 33b1f9b8c191b2f48837cbebdd1dd36d, type: 3}
+  firstLightning: {fileID: 3455376017817686582, guid: 5348676dd95f85041a91d8066125ae1d, type: 3}
+  secondLightning: {fileID: 4432242467140003617, guid: 81fc9662c8350f34e896e2dd9a432317, type: 3}
+  thirdLightning: {fileID: 829971830658889584, guid: adc96a9c5a6ab6344b8a954af69f2b2d, type: 3}
 --- !u!114 &2744969772183750282
 MonoBehaviour:
   m_ObjectHideFlags: 0
