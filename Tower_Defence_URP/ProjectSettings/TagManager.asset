@@ -35,6 +35,7 @@ TagManager:
   - Toxic Tower
   - Black Hole Tower
   - Chain Tower
+  - InfoPanel
   layers:
   - Default
   - TransparentFX

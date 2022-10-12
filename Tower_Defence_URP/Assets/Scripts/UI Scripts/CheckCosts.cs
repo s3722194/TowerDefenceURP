@@ -40,7 +40,14 @@ public class CheckCosts : MonoBehaviour
                 button.interactable = false;
             } else
             {
-                button.interactable = true;
+                if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+                {
+                    button.interactable = false;
+                }
+                else
+                {
+                    button.interactable = true;
+                }
             }
         } else
         {
@@ -49,8 +56,32 @@ public class CheckCosts : MonoBehaviour
                 button.interactable = false;
             } else
             {
-                button.interactable = true;
+                if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+                {
+                    button.interactable = false;
+                }
+                else
+                {
+                    button.interactable = true;
+                }
             }
+        }
+
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+        {
+            Button playButton = GameObject.Find("PlayButton").GetComponent<Button>();
+            playButton.interactable = false;
+
+            GameObject infoPanel = GameObject.FindGameObjectWithTag("InfoPanel");
+            if(infoPanel != null && infoPanel.activeSelf)
+            {
+                infoPanel.SetActive(false);
+                gm.ResetTower();
+            }
+        } else
+        {
+            Button playButton = GameObject.Find("PlayButton").GetComponent<Button>();
+            playButton.interactable = true;
         }
     }
 }

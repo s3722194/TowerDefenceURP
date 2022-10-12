@@ -2184,6 +2184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1928431857}
     m_Modifications:
+    - target: {fileID: 462639628575839061, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 462639629865431623, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
@@ -2192,6 +2196,14 @@ PrefabInstance:
       propertyPath: TowerPanel
       value: 
       objectReference: {fileID: 1909534189}
+    - target: {fileID: 1013509573624960155, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345041411216649206, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 1345041412473719524, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
@@ -2200,14 +2212,30 @@ PrefabInstance:
       propertyPath: TowerPanel
       value: 
       objectReference: {fileID: 1909534189}
+    - target: {fileID: 1976029746719639536, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 2127633117576798775, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
       objectReference: {fileID: 1909534189}
+    - target: {fileID: 2127633118573101861, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 4332727892648359263, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
       objectReference: {fileID: 1909534189}
+    - target: {fileID: 4332727893774226509, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480988490884991926, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 5480988492145748644, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
@@ -2267,6 +2295,10 @@ PrefabInstance:
     - target: {fileID: 8057374176751559157, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057374176993311725, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_TagString
+      value: InfoPanel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40cc8323830b86e49af406cd62940245, type: 3}
