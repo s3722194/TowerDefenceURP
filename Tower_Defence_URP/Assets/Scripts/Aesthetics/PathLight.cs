@@ -18,12 +18,12 @@ public class PathLight : MonoBehaviour
     
     [SerializeField] private int countUpdatePath;
     [SerializeField] private int countFlash = 0;
-    private Dictionary<int, List<Light2D>> pathLights = new Dictionary<int, List<Light2D>>();
+    private List<List<Light2D>> pathLights = new List<List<Light2D>>();
 
     [SerializeField] private float flashIntensity = 3;
     [SerializeField] private float normalIntensity = 2;
-    
-   // private 
+    private List<List<Vector2Int>> allPaths = new List<List<Vector2Int>>();
+    private Path path;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,7 @@ public class PathLight : MonoBehaviour
         }
         countUpdatePath = updateSpeed;
 
-        flashIndex = length-1;
+        flashIndex = 0;
     }
 
     // Update is called once per frame
@@ -69,11 +69,11 @@ public class PathLight : MonoBehaviour
         }
         catch (System.ArgumentOutOfRangeException)
         {
-            pathLights.Clear();
+            
         }
         catch (System.NullReferenceException)
         {
-            pathLights.Clear();
+            
         }
 
     }
@@ -87,17 +87,16 @@ public class PathLight : MonoBehaviour
             countFlash = 0;
 
             // List<GameObject> currentLights = pathLights[flashIndex];
-            if (flashIndex ==length )
+            if (flashIndex == 0)
             {
-                foreach (Light2D light in pathLights[1])
+                foreach (Light2D light in pathLights[pathLights.Count-1])
                 {
                     light.intensity = normalIntensity;
-
                 }
             }
             else
             {
-                foreach (Light2D light in pathLights[flashIndex+1])
+                foreach (Light2D light in pathLights[flashIndex-1])
                 {
                     light.intensity = normalIntensity;
                 }
@@ -105,15 +104,14 @@ public class PathLight : MonoBehaviour
 
             foreach (Light2D light in pathLights[flashIndex])
             {
-
                 light.intensity = flashIntensity;
             }
 
 
-            flashIndex--;
-            if (flashIndex == 0)
+            flashIndex++;
+            if (flashIndex == pathLights.Count-1)
             {
-                flashIndex = length;
+                flashIndex = 0;
             }
 
         }
@@ -126,7 +124,7 @@ public class PathLight : MonoBehaviour
             countFlash++;
         }
     }
-    private List<List<Vector2Int>> allPaths = new  List<List<Vector2Int>>();
+    
     private void UpdatePathLight()
     {
         countUpdatePath++;
@@ -134,12 +132,11 @@ public class PathLight : MonoBehaviour
         {
             if(allPaths.Count > 0)
             {
-
                 for (int i = 0; i < grid.GetNumPaths(); i++)
                 {
                     path = grid.GetPath(i);
                     List<Vector2Int> positoins = path.GetPositions();
-
+                    
                     if(positoins != allPaths[i])
                     {
                         DeactivateAllLights();
@@ -149,7 +146,6 @@ public class PathLight : MonoBehaviour
                     }
                 }
                 countUpdatePath = 0;
-
                 
             }
             else
@@ -160,32 +156,34 @@ public class PathLight : MonoBehaviour
                     List<Vector2Int> positoins = path.GetPositions();
                     allPaths.Add(positoins);
 
-                    
                 }
                 countUpdatePath = 0;
                 FindAllPaths();
             }
-           
-                //  if()
                
         }
         
     }
 
-    private Path path;
+    
     private void FindAllPaths()
     {
         for (int i = 0; i < grid.GetNumPaths(); i++)
         {
             path = grid.GetPath(i);
             List<Vector2Int> positoins = path.GetPositions();
-
+            int count = 0;
             foreach (Vector2Int tile in positoins)
             {
-
-                AddLightsToList(tile);
+                
+                AddLightsToList(tile, count);
                 ActivateLight(tile);
 
+                if (lights.ContainsKey(tile.x + "," + tile.y))
+                {
+                    count++;
+                }
+                    
             }
         }
     }
@@ -201,24 +199,25 @@ public class PathLight : MonoBehaviour
             
     }
 
-    private void AddLightsToList(Vector2Int tile)
+    private void AddLightsToList(Vector2Int tile, int index)
     {
+        
         if (lights.ContainsKey(tile.x + "," + tile.y))
         {
             
             Light2D currentLight2D = lights[tile.x + "," + tile.y].Item2;
-
+            
             //adds tile by Y position to use for 
-            if (pathLights.ContainsKey(tile.y))
+            if (pathLights.Count < index)
             {
 
-                pathLights[tile.y].Add(currentLight2D);
+                pathLights[index].Add(currentLight2D);
 
             }
             else
             {
-                pathLights.Add(tile.y, new List<Light2D>());
-                pathLights[tile.y].Add(currentLight2D);
+                pathLights.Add( new List<Light2D>());
+                pathLights[index].Add(currentLight2D);
             }
 
           
@@ -227,7 +226,7 @@ public class PathLight : MonoBehaviour
 
     private void DeactivateAllLights()
     {
-        foreach (List<Light2D> light in pathLights.Values)
+        foreach (List<Light2D> light in pathLights)
         {
             foreach(Light2D newlight in light)
             {
