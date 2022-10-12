@@ -59,7 +59,14 @@ public class EnemyUnit : AUnit
        //
        
        if(Random.Range(0,1) < blinkProbablity) {
-            enemyAnimation.IsBlink();
+            if (Random.Range(0, 1) < 0.5)
+            {
+                enemyAnimation.IsBlink();
+            }
+            else
+            {
+                enemyAnimation.IsTaunt();
+            }
         }
         
     }
@@ -111,6 +118,7 @@ public class EnemyUnit : AUnit
     {
         bool doesTakeDamage = base.TakeDamage(damage);
         enemyAnimation.IsHurt();
+        enemyAnimation.BasicDamage();
         return doesTakeDamage;
     }
 

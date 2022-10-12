@@ -267,108 +267,145 @@ public class EnemyAnimation : MonoBehaviour
         StartCoroutine(ResetMaterial());
     }
 
-    public void IsBlink()
-    {
-        animator.SetBool("IsBlink", true);
-
-        //animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-
-        StartCoroutine(ResetAnimation());
-    }
-
     public float getAnimationTime()
     {
         return animationTime;
     }
 
+
+    public void IsBlink()
+    {
+        if(!animator.GetBool("IsHurt") && 
+            !animator.GetBool("IsDying") && 
+            !animator.GetBool("IsTaunt") &&
+            !animator.GetBool("IsBlink"))
+        {
+            animator.SetBool("IsBlink", true);
+
+            //animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+
+            StartCoroutine(ResetAnimation());
+        }
+        
+    }
+
+    
     public void IsAttack()
     {
-        animator.SetBool("IsAttack", true);
+        if (!animator.GetBool("IsAttack"))
+        {
+            animator.SetBool("IsAttack", true);
 
-        animator.SetBool("IsBlink", false);
-       // animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            // animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+            
     }
 
     public void IsCastSpell()
     {
-        animator.SetBool("IsCastSpell", true);
+        if (!animator.GetBool("IsCastSpell"))
+        {
+            animator.SetBool("IsCastSpell", true);
 
-        animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-       // animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            // animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+       
     }
 
     public void IsTaunt()
     {
-        animator.SetBool("IsTaunt", true);
+        if(!animator.GetBool("IsHurt") && 
+            !animator.GetBool("IsDying") && 
+            !animator.GetBool("IsBlink") && 
+            !animator.GetBool("IsTaunt"))
+        {
+            animator.SetBool("IsTaunt", true);
 
-        animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        //animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            //animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+            
+       
     }
 
     public void IsWalking()
     {
-        animator.SetBool("IsWalking", true);
+        if (!animator.GetBool("IsWalking")) 
+        {
+            animator.SetBool("IsWalking", true);
 
-        animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        //animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            //animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+        
     }
 
     public void IsHurt()
     {
-        animator.SetBool("IsHurt", true);
+        if (!animator.GetBool("IsDying") && !animator.GetBool("IsHurt"))
+        {
+            animator.SetBool("IsHurt", true);
 
-        animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        animator.SetBool("IsDying", false);
-        //animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            animator.SetBool("IsDying", false);
+            //animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+       
     }
 
     public void IsDying()
     {
-        animator.SetBool("IsDying", true);
+        if (!animator.GetBool("IsDying"))
+        {
+            animator.SetBool("IsDying", true);
 
-        animator.SetBool("IsBlink", false);
-        animator.SetBool("IsAttack", false);
-        animator.SetBool("IsCastSpell", false);
-        //animator.SetBool("IsDying", false);
-        animator.SetBool("IsHurt", false);
-        animator.SetBool("IsTaunt", false);
-        animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+            animator.SetBool("IsBlink", false);
+            animator.SetBool("IsAttack", false);
+            animator.SetBool("IsCastSpell", false);
+            //animator.SetBool("IsDying", false);
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsTaunt", false);
+            animator.SetBool("IsWalking", false);
+            StartCoroutine(ResetAnimation());
+        }
+      
     }
 
     public void IsIdle()
@@ -380,6 +417,6 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
-        StartCoroutine(ResetAnimation());
+       // StartCoroutine(ResetAnimation());
     }
 }
