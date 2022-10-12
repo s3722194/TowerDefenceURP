@@ -36,6 +36,8 @@ public class EnemyAnimation : MonoBehaviour
     [SerializeField] private bool isWalking;
     [SerializeField] private bool isIdle;
 
+    [SerializeField] private float animationTime = 1;
+
     private Animator animator;
 
     private SpriteRenderer sr;
@@ -53,8 +55,8 @@ public class EnemyAnimation : MonoBehaviour
     void Update()
     {
 
-        TestAnimation();
-        TestDamage();
+        //TestAnimation();
+        //TestDamage();
 
 
     }
@@ -129,9 +131,27 @@ public class EnemyAnimation : MonoBehaviour
         }
     }
 
+    IEnumerator ResetMaterial()
+    {
+        yield return new WaitForSeconds(animationTime);
+        NoDamage();
+       
+
+    }
+
+    IEnumerator ResetAnimation()
+    {
+        yield return new WaitForSeconds(animationTime);
+        
+        IsIdle();
+
+    }
+
+
+
     public void NoDamage()
     {
-        sr.material = enemyMaterial;
+        sr.material = enemyMaterial; 
     }
 
     public void OrbDamage()
@@ -144,15 +164,16 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-        
+
+        StartCoroutine(ResetMaterial());
     }
 
     public void BasicDamage()
     {
         
         sr.material = basicMaterial;
-        
 
+        StartCoroutine(ResetMaterial());
     }
 
     public void LazerDamage()
@@ -165,7 +186,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void BlackHoleDamage()
@@ -178,7 +199,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void DeathRayDamage()
@@ -191,7 +212,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void FogDamage()
@@ -204,7 +225,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void FireDamage()
@@ -217,7 +238,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void ToxicDamage()
@@ -230,7 +251,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void ShockDamage()
@@ -243,7 +264,7 @@ public class EnemyAnimation : MonoBehaviour
         {
             sr.material = basicMaterial;
         }
-
+        StartCoroutine(ResetMaterial());
     }
 
     public void IsBlink()
@@ -257,6 +278,13 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+
+        StartCoroutine(ResetAnimation());
+    }
+
+    public float getAnimationTime()
+    {
+        return animationTime;
     }
 
     public void IsAttack()
@@ -270,6 +298,7 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsCastSpell()
@@ -283,6 +312,7 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsTaunt()
@@ -296,6 +326,7 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         //animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsWalking()
@@ -309,6 +340,7 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         //animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsHurt()
@@ -322,6 +354,7 @@ public class EnemyAnimation : MonoBehaviour
         //animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsDying()
@@ -335,6 +368,7 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 
     public void IsIdle()
@@ -346,5 +380,6 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsTaunt", false);
         animator.SetBool("IsWalking", false);
+        StartCoroutine(ResetAnimation());
     }
 }

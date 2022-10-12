@@ -266,6 +266,7 @@ MonoBehaviour:
   moneyOnDeath: 20
   livesOnEscape: 1
   enemyTag: Enemy
+  enemyAnimation: {fileID: 7595859158783691156}
 --- !u!114 &7595859158783691156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +306,7 @@ MonoBehaviour:
   isTaunt: 0
   isWalking: 0
   isIdle: 0
+  animationTime: 2
 --- !u!114 &2996137340366802542
 MonoBehaviour:
   m_ObjectHideFlags: 0
