@@ -37,6 +37,14 @@ public class UpgradeHUD : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Delete) && upgradeCanvas.activeSelf)
+        {
+            sellTower();
+        }
+    }
+
     public void updateHUD(GameObject _selectedTower, GameObject towerRange)
     {
         range = towerRange;
