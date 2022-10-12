@@ -52,7 +52,7 @@ public class LevelManager : MonoBehaviour
     public List<Material> EndMaterials { get =>endMaterials; }
     public List<Material> WallMaterials { get => wallMaterials; }
 
-
+    private GameManager gameManager;
 
 
 
@@ -73,12 +73,14 @@ public class LevelManager : MonoBehaviour
     {
         time = 0;
         waveNum = 0;
+
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnQueue.Count > 0)
+        if (spawnQueue.Count > 0 && gameManager.Lives >0)
         {
             time += Time.deltaTime;
             if (time > spawnQueue[0].Item2)
@@ -97,11 +99,20 @@ public class LevelManager : MonoBehaviour
 
         for (int i = 0; i < waveNum*3; i++)
         {
+           
             Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(enemies[0], delay);
             spawnQueue.Add(spawnItem);
             delay = enemySpawnDelay;
+           
+            
         }
     }
+
+    public int getWave()
+    {
+        return waveNum;
+    }
+
 
    
 }

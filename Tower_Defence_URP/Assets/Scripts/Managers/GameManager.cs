@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,17 +21,32 @@ public class GameManager : MonoBehaviour
         money = 100000;
     }
 
+    
+
     public void Escape(EnemyUnit unit)
     {
         Lives -= unit.LivesOnEscape;
         unit.Die();
         if (Lives <= 0)
         {
-            // TODO: End Level.
+            SceneManager.LoadScene("Game Over", LoadSceneMode.Additive);
+            StartCoroutine(UnLoadGrid());
         }
     }
 
-    public void SpendMoney(int cost)
+    IEnumerator UnLoadGrid()
+    {
+
+        AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync("Grid HandDrawn");
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+        public void SpendMoney(int cost)
     {
         Money -= cost;
     }

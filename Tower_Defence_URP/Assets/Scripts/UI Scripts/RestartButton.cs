@@ -22,7 +22,7 @@ public class RestartButton : MonoBehaviour
 
     private void RestartGame()
     {
-        SceneManager.LoadScene("Grid Handdrawn", LoadSceneMode.Single);
+        SceneManager.LoadScene("Grid HandDrawn", LoadSceneMode.Single);
     }
 
 
