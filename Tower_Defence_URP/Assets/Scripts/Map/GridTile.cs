@@ -76,6 +76,7 @@ public class GridTile : MonoBehaviour
                     if (panel.gameObject.activeSelf)
                     {
                         panel.gameObject.SetActive(false);
+                        towerRange.SetActive(false);
                        
                     }
                 }
@@ -84,6 +85,17 @@ public class GridTile : MonoBehaviour
             GM.ResetTower();
         }
     }
+
+    private void OnMouseExit()
+    {
+        towerRange.SetActive(false);
+    }
+
+    private void OnMouseEnter()
+    {
+        towerRange.SetActive(true);
+    }
+
 
     public bool GetOccupied()
     {
