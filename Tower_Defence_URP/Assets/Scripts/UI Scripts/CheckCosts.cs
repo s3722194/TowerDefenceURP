@@ -54,6 +54,12 @@ public class CheckCosts : MonoBehaviour
             if(building.Cost > gm.Money)
             {
                 button.interactable = false;
+                GameObject infoPanel = GameObject.FindGameObjectWithTag("InfoPanel");
+                if (infoPanel != null && infoPanel.activeSelf)
+                {
+                    infoPanel.SetActive(false);
+                    gm.ResetTower();
+                }
             } else
             {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
