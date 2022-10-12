@@ -391,6 +391,62 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.enter
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.inside
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.radiusScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: CollisionModule.collisionMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.colliderQueryMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.primitives.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[0]
+      value: 
+      objectReference: {fileID: 5852554946865004470, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[1]
+      value: 
+      objectReference: {fileID: 4190883178016845113, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
+    - target: {fileID: 6996458931012927446, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[2]
+      value: 
+      objectReference: {fileID: 6306837949470522021, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
     - target: {fileID: 7948211379964339299, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Size.x
       value: 3
@@ -467,7 +523,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
   m_PrefabInstance: {fileID: 5418449656968696415}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1253328315266950482
+--- !u!58 &6771412057252060834
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072118316001354985}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!114 &3435383503194597562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -476,14 +548,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5072118316001354985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e68c621376041964f9fa50d94e2b4e38, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bb8755932fdde498282f4920325899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
   maxHealth: 200
   speed: 1
   attackCooldown: 5
-  mDamage: 50
+  mDamage: 1
   rDamage: 25
   range: 10
   destructable: 0
@@ -533,23 +605,7 @@ MonoBehaviour:
   - {x: 0.35493064, y: -0.33327246, z: 0.000000022351742}
   m_ShapePathHash: -2016135523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1113662
---- !u!58 &6771412057252060834
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5072118316001354985}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
+  m_InstanceId: 109224
 --- !u!4 &5072118316001354987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959825259802375860, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
@@ -560,3 +616,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2976131754449303806, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
   m_PrefabInstance: {fileID: 5418449656968696415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7606555394599132168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2503397304587603543, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
+  m_PrefabInstance: {fileID: 5418449656968696415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9159658215953009094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606555394599132168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9acdc285f61b984a86d50e666f93bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackHoleTower: {fileID: 3435383503194597562}
