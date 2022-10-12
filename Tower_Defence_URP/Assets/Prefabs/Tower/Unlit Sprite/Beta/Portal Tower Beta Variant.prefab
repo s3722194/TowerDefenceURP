@@ -365,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_TagString
-      value: Tower
+      value: Black Hole Tower
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375863, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Sprite
@@ -618,7 +618,7 @@ MonoBehaviour:
   - {x: 0.35493064, y: -0.33327246, z: 0.000000022351742}
   m_ShapePathHash: -2016135523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 116856
+  m_InstanceId: 74174
 --- !u!4 &5072118316001354987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959825259802375860, guid: f116628cbd4415d46b7e62a6172df875, type: 3}

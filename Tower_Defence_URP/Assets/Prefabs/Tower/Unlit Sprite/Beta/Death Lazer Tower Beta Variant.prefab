@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285665, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_TagString
-      value: Tower
+      value: Death Ray
       objectReference: {fileID: 0}
     - target: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
       propertyPath: m_RootOrder
@@ -558,7 +558,7 @@ MonoBehaviour:
   - {x: -0.31971955, y: -0.30684972, z: 0.000000022351742}
   m_ShapePathHash: 1441849937
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1168314
+  m_InstanceId: 73640
 --- !u!114 &6504688555254336223
 MonoBehaviour:
   m_ObjectHideFlags: 0

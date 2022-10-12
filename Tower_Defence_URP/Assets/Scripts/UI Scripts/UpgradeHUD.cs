@@ -54,7 +54,7 @@ public class UpgradeHUD : MonoBehaviour
         {
                 upgradeCanvas.SetActive(true);
                 towerImage.sprite = selectedTower.GetComponent<SpriteRenderer>().sprite;
-                towerName.text = selectedTower.name;
+                towerName.text = selectedTower.tag;
                 healthText.text = towerScript.Health.ToString();
                 attackText.text = towerScript.MDamage.ToString();
 
