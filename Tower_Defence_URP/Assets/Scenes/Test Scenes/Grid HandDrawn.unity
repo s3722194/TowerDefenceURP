@@ -1859,6 +1859,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1928431857}
     m_Modifications:
+    - target: {fileID: 84684790975850660, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 84684790975850660, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 84684790975850660, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 556077760983307464, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1874,6 +1886,18 @@ PrefabInstance:
     - target: {fileID: 556077760983307464, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 862790379737776985, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 862790379737776985, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 862790379737776985, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.3207547
       objectReference: {fileID: 0}
     - target: {fileID: 1330152500885190716, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: upgradeCanvas
@@ -1915,6 +1939,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3269807920183176403, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269807920183176403, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269807920183176403, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 3429853294742265318, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: upgradeCanvas
       value: 
@@ -1923,9 +1959,33 @@ PrefabInstance:
       propertyPath: TowerInfoPanel
       value: 
       objectReference: {fileID: 6048749983108320857}
+    - target: {fileID: 3642576366889344542, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642576366889344542, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642576366889344542, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 3642576367355444491, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642576367658143284, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642576367658143284, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642576367658143284, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
       objectReference: {fileID: 0}
     - target: {fileID: 3642576367658143285, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2083,6 +2143,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5729860512547798229, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729860512547798229, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729860512547798229, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 5810392952335681911, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: upgradeCanvas
       value: 
@@ -2099,6 +2171,30 @@ PrefabInstance:
       propertyPath: TowerInfoPanel
       value: 
       objectReference: {fileID: 1553195513}
+    - target: {fileID: 6514359985217767706, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514359985217767706, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514359985217767706, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545445861359483781, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545445861359483781, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545445861359483781, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 6777671230835333975, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: upgradeCanvas
       value: 
@@ -2138,6 +2234,18 @@ PrefabInstance:
     - target: {fileID: 7007507616575702944, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161504288310301267, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161504288310301267, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161504288310301267, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
       objectReference: {fileID: 0}
     - target: {fileID: 7795871236040716363, guid: ec496421ad03c5e438cc5eedf03c6d76, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2614,6 +2722,18 @@ PrefabInstance:
     - target: {fileID: 8856054980692846788, guid: 5ea011c3c64bbea44976c6ecca2cc6cc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 25.996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856054980782919982, guid: 5ea011c3c64bbea44976c6ecca2cc6cc, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856054980782919982, guid: 5ea011c3c64bbea44976c6ecca2cc6cc, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856054980782919982, guid: 5ea011c3c64bbea44976c6ecca2cc6cc, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.32156864
       objectReference: {fileID: 0}
     - target: {fileID: 8856054980782919983, guid: 5ea011c3c64bbea44976c6ecca2cc6cc, type: 3}
       propertyPath: m_SizeDelta.x
