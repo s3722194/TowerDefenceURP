@@ -111,6 +111,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1849272730575205958, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849272730575205958, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2313515833733798441, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -279,6 +287,22 @@ PrefabInstance:
       propertyPath: startHue
       value: 224
       objectReference: {fileID: 0}
+    - target: {fileID: 6656195455498215898, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656195455498215898, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686819398261041259, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686819398261041259, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7010918903313678432, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -445,7 +469,7 @@ MonoBehaviour:
   - {x: -0.39131126, y: -0.34346056, z: 0.000000022351742}
   m_ShapePathHash: -1450391104
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1404652
+  m_InstanceId: 1654396
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}

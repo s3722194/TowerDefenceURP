@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5514887811225882207, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5992573463149823973, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -441,7 +445,7 @@ MonoBehaviour:
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
   m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 73774
+  m_InstanceId: 1654002
 --- !u!114 &5218394787845281232
 MonoBehaviour:
   m_ObjectHideFlags: 0

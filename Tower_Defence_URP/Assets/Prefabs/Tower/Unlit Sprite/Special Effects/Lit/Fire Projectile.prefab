@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6220976645631090384}
   - component: {fileID: 7339728010188670378}
   - component: {fileID: 3359032374664830888}
+  - component: {fileID: 1053922315323100674}
   m_Layer: 2
   m_Name: Fire Projectile
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -143,6 +144,19 @@ MonoBehaviour:
   ashesAngle: {x: 2, y: 90}
   noiseOffset: {x: 0, y: 100, z: 0, w: 100}
   ashesOffset: {x: 0, y: 100, z: 0, w: 100}
+--- !u!114 &1053922315323100674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757484330204549615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e2eac2a1e8de149830ca9c0aec3d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 6
 --- !u!1 &6920641376974098240
 GameObject:
   m_ObjectHideFlags: 0
