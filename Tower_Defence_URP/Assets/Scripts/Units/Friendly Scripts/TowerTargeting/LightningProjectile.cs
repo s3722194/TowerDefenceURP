@@ -48,7 +48,7 @@ public class LightningProjectile : MonoBehaviour
                 List<Collider2D> newTargets = new List<Collider2D>();
                 foreach(Collider2D collision in tmp)
                 {
-                    if(collision.gameObject.CompareTag("Enemy") && collision.gameObject.transform != target)
+                    if(collision.gameObject.CompareTag("Enemy") && Vector2.Distance(collision.gameObject.transform.position, target.position) > radiusSq)
                     {
                         newTargets.Add(collision);
                     }
@@ -62,7 +62,7 @@ public class LightningProjectile : MonoBehaviour
                     if(chainProbability < chainChance)
                     {
                         target = newTargets[randomTarget].transform;
-                        //chainChance -= 10;
+                        chainChance -= 10;
                     } else
                     {
                         Destroy(gameObject);
