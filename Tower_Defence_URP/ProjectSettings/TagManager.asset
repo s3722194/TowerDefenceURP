@@ -85,9 +85,6 @@ TagManager:
   - name: Tower
     uniqueID: 3938272391
     locked: 0
-  - name: Tower Effect
-    uniqueID: 2331565541
-    locked: 0
   - name: Wall
     uniqueID: 3648415381
     locked: 0
@@ -108,4 +105,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3239744627
+    locked: 0
+  - name: Tower Effect
+    uniqueID: 2331565541
     locked: 0
