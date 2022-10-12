@@ -25,6 +25,16 @@ TagManager:
   - GridBackground
   - Map_17x17
   - Tower_Range
+  - Enemy_Shadow
+  - Upgrade
+  - Death Ray
+  - Blaze Tower
+  - Plasma Tower
+  - Orb Shooter
+  - Mist Tower
+  - Toxic Tower
+  - Black Hole Tower
+  - Chain Tower
   layers:
   - Default
   - TransparentFX

@@ -551,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_TagString
-      value: Tower
+      value: Plasma Tower
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048402, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_RootOrder
@@ -919,7 +919,7 @@ MonoBehaviour:
   - {x: 0.5116451, y: -0.4217553, z: 0.000000022351742}
   m_ShapePathHash: 1060431707
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1168580
+  m_InstanceId: 73948
 --- !u!114 &8604560573431288381
 MonoBehaviour:
   m_ObjectHideFlags: 0

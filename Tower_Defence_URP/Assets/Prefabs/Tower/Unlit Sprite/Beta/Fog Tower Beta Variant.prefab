@@ -113,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284272, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_TagString
-      value: Tower
+      value: Mist Tower
       objectReference: {fileID: 0}
     - target: {fileID: 2802711681706284273, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
       propertyPath: m_Sprite
@@ -287,7 +287,7 @@ MonoBehaviour:
   - {x: 0.4322729, y: -0.41620398, z: -0.00000015646219}
   m_ShapePathHash: -855526859
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1168268
+  m_InstanceId: 73852
 --- !u!114 &6361869969402622560
 MonoBehaviour:
   m_ObjectHideFlags: 0
