@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5633015130842655980}
   - component: {fileID: 5367112844963613658}
   m_Layer: 2
-  m_Name: Ray
+  m_Name: Ray Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

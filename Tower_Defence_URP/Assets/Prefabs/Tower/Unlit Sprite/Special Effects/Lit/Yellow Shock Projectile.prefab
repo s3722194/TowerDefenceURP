@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6886507279072416888}
   - component: {fileID: 2639068716258592609}
   m_Layer: 2
-  m_Name: Yellow Shock Ball_01
+  m_Name: Yellow Shock Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
