@@ -6,13 +6,18 @@ public class ShowRange : MonoBehaviour
 {
 
     [SerializeField] private GameObject rangeObject;
-    [SerializeField] private float rangeScale;
+   // [SerializeField] private float rangeScale;
     // Start is called before the first frame update
     void Start()
     {
-        rangeObject.SetActive(false);
-        rangeObject.transform.localScale = new Vector3 (rangeScale, rangeScale, 1);
+        //rangeObject.SetActive(true);
+       // rangeObject.transform.localScale = new Vector3 (rangeScale, rangeScale, 1);
         
+    }
+
+    public GameObject getRange()
+    {
+        return rangeObject;
     }
 
     // Update is called once per frame
@@ -21,7 +26,7 @@ public class ShowRange : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+   /* void OnMouseDown()
     {
         print("click toxic tower");
         rangeObject.SetActive(true);
@@ -30,5 +35,5 @@ public class ShowRange : MonoBehaviour
     private void OnMouseExit()
     {
         rangeObject.SetActive(false);
-    }
+    }*/
 }

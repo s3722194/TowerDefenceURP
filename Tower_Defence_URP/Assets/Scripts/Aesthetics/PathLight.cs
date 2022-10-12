@@ -60,7 +60,11 @@ public class PathLight : MonoBehaviour
             }
             else
             {
-                pathLights.Clear();
+                if (pathLights.Count > 0)
+                {
+                    pathLights.Clear();
+                }
+                
             }
         }
         catch (System.ArgumentOutOfRangeException)
