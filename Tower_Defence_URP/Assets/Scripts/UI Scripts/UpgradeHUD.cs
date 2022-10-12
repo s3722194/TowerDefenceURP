@@ -10,6 +10,7 @@ public class UpgradeHUD : MonoBehaviour
     public GameObject selectedTower;
     private ABuilding towerScript;
     private int sellCost;
+    private GameObject range;
 
     [SerializeField] private GameObject upgradeCanvas;
     [SerializeField] private Image towerImage;
@@ -18,6 +19,7 @@ public class UpgradeHUD : MonoBehaviour
     [SerializeField] private TextMeshProUGUI attackText;
     [SerializeField] private TextMeshProUGUI sellCostText;
     [SerializeField] private TextMeshProUGUI upgradeCostText;
+    
 
 
     // Start is called before the first frame update
@@ -35,10 +37,18 @@ public class UpgradeHUD : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
+    public void updateHUD(GameObject _selectedTower, GameObject towerRange)
+    {
+        range = towerRange;
+        updateHUD(_selectedTower);
+
+    }
+
     public void updateHUD(GameObject _selectedTower)
     {
         selectedTower = _selectedTower;
         towerScript = _selectedTower.GetComponent<ABuilding>();
+        
 
         if(towerScript != null)
         {
@@ -91,5 +101,7 @@ public class UpgradeHUD : MonoBehaviour
         upgradeCanvas.SetActive(false);
         selectedTower = null;
         towerScript = null;
+
+        range.SetActive(false);
     }
 }

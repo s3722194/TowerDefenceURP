@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70,11 +70,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -894102923
+  m_SortingLayer: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.39083377, g: 0.26032397, b: 0.8490566, a: 0.31764707}
+  m_Color: {r: 0.39083377, g: 0.26032397, b: 0.8490566, a: 0.34901962}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -384,6 +384,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4
+--- !u!114 &2530780193348876217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173682292494325721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3aaa71eec212fd4a93007edaf2ca9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeObject: {fileID: 3886808336245688706}
 --- !u!114 &6494126025131297686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +437,7 @@ MonoBehaviour:
   - {x: -0.39131126, y: -0.34346056, z: 0.000000022351742}
   m_ShapePathHash: -1450391104
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1113300
+  m_InstanceId: 1175554
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}

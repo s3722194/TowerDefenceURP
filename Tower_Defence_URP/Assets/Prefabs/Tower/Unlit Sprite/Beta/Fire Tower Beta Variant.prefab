@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.8679245, g: 0.48746157, b: 0.118725546, a: 0.31764707}
+  m_Color: {r: 0.8679245, g: 0.48746157, b: 0.118725546, a: 0.34901962}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -385,6 +385,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6
+--- !u!114 &-7926353470116530101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035722182896773497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3aaa71eec212fd4a93007edaf2ca9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeObject: {fileID: 1719397330618866457}
 --- !u!114 &-1218277155654752599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +441,7 @@ MonoBehaviour:
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
   m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1105950
+  m_InstanceId: 1168446
 --- !u!114 &5218394787845281232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +465,7 @@ MonoBehaviour:
   cost: 900
   upgradeCost: 0
   EnemiesInRange: []
-  ProjectilePrefab: {fileID: 9213397056524092256, guid: b9b7bce6e26d8534cb2f8ebee500f7e4, type: 3}
+  ProjectilePrefab: {fileID: 3757484330204549615, guid: 7444dd61dff4309459e91eb30f5acd5d, type: 3}
 --- !u!4 &2035722182896773499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5992573463983184556, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}

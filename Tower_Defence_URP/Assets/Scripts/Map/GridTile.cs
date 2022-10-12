@@ -8,6 +8,7 @@ public class GridTile : MonoBehaviour
     public int x;
     public int y;
     public float nodeSize;
+    private GameObject towerRange;
 
     public bool Occupied { get => OccupiedTower != null; }
     public GameObject OccupiedTower
@@ -50,20 +51,23 @@ public class GridTile : MonoBehaviour
             {
                 GameObject selectedTower = GM.GetSelectedTower();
                 ABuilding building = selectedTower.GetComponent<ABuilding>();
+                
 
                 if(building != null && GM.Money >= building.Cost)
                 {
                     // Place Tower
                     GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), transform.position, transform.rotation);
                     OccupiedTower = spawnedTower;
+                    towerRange = spawnedTower.GetComponent<ShowRange>().getRange();
+                   
                     GM.SpendMoney(building.Cost);
                     mapGrid.UpdatePosition(this);
                 } 
             }
         } else
         {
-            upgradeCanvas.updateHUD(occupiedTower);
-
+            upgradeCanvas.updateHUD(occupiedTower, towerRange);
+            towerRange.SetActive(true);
             GameObject info_canvas = GameObject.Find("Info_Canvas");
             foreach (Transform panel in info_canvas.GetComponentsInChildren<Transform>())
             {
@@ -72,6 +76,7 @@ public class GridTile : MonoBehaviour
                     if (panel.gameObject.activeSelf)
                     {
                         panel.gameObject.SetActive(false);
+                       
                     }
                 }
             }
