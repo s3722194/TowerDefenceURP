@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2321047272282536722}
   - component: {fileID: 6371845349600172284}
   - component: {fileID: 1306918066373472499}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4781,7 +4781,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4838,7 +4838,7 @@ GameObject:
   - component: {fileID: 9107658329429038158}
   - component: {fileID: 3758112477211245030}
   - component: {fileID: 3623064892392673794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Black Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4900,7 +4900,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -22,7 +22,6 @@ public class LightningBuilding : ABuilding
         // Fire a bullet every [AttackCooldown] seconds
         if (fireRate >= AttackCooldown)
         {
-            Debug.Log("spawning projectile");
             int firstTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);
             int secondTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);
             int thirdTarget = (int) Random.Range(0, EnemiesInRange.Count - 1);

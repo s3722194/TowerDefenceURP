@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2235161419066094672}
   - component: {fileID: 1833133599024425936}
   - component: {fileID: -2700384310782652952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1841092601
-  m_SortingLayer: 9
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

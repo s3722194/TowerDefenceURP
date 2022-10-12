@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -349,7 +349,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -517,7 +517,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -695,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644541, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644541, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -707,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4207677422278161152, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4207677422278161152, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -771,7 +771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013821, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013821, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8765285056442331950, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8765285056442331950, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -832,11 +832,6 @@ Transform:
 --- !u!1 &2895313261256788997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7217535514990200317, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
-  m_PrefabInstance: {fileID: 5478609558113978872}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4592972558143086388 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8339094660329625292, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
   m_PrefabInstance: {fileID: 5478609558113978872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5566523414977030248 stripped
@@ -898,7 +893,7 @@ MonoBehaviour:
   cost: 100
   upgradeCost: 0
   EnemiesInRange: []
-  ProjectilePrefab: {fileID: 4592972558143086388}
+  ProjectilePrefab: {fileID: 5918706840276306595, guid: 9651b1909cbc4cb4aa339bafe49b0b68, type: 3}
 --- !u!114 &7514525656187917168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +919,7 @@ MonoBehaviour:
   - {x: 0.5116451, y: -0.4217553, z: 0.000000022351742}
   m_ShapePathHash: 1060431707
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1119600
+  m_InstanceId: 198738
 --- !u!4 &5566523414977030250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 92233426818048402, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}

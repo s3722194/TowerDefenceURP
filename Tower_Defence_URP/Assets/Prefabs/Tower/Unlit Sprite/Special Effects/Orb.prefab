@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7451502605789448696}
   - component: {fileID: 2816713343074277325}
   - component: {fileID: 1866505445114251918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4935164263662793360}
   - component: {fileID: 7566122334255787582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

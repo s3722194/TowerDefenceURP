@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4655916451986931718}
   - component: {fileID: 1463036205114686810}
   - component: {fileID: 8848187391537559778}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Electricy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,8 +25,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691760565870208977}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.091508985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8713505292169406052}
   - component: {fileID: 6443310287136242201}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Yellow Centre Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,8 +132,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205877393035933072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.08295411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 6893285252196309370}
   - component: {fileID: 656929770466035549}
   - component: {fileID: 1647230020209015954}
+  - component: {fileID: 4778827240926372248}
   m_Layer: 9
   m_Name: Yellow Electic Ball
   m_TagString: Untagged
@@ -243,8 +244,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5637911999041725105}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 0.31, z: 0.026836015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -281,6 +282,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5.5
+--- !u!114 &4778827240926372248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5637911999041725105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380d79dd60cde049bc5d86af49f8c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake: 0
+  radis: 0.1
+  speed: 0.1
 --- !u!1 &6669657714330193954
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,9 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1131171328849718023}
-  - component: {fileID: 3678198900101237098}
-  - component: {fileID: 9168835834484284143}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Yellow Electic Ball_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,8 +320,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6669657714330193954}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.08295411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -318,37 +332,6 @@ Transform:
   m_Father: {fileID: 6893285252196309370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &3678198900101237098
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6669657714330193954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.4
---- !u!114 &9168835834484284143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6669657714330193954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0380d79dd60cde049bc5d86af49f8c75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shake: 1
-  radis: 0.1
-  speed: 0.1
 --- !u!1 &8315561144191414870
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3018766152680282788}
   - component: {fileID: 1994715306092262753}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +403,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -443,7 +426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3314272619635011127}
   - component: {fileID: 1070435453749291963}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: Yellow Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,8 +440,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8514004578901006312}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.8455796, y: 0.8796402, z: 0.08295411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

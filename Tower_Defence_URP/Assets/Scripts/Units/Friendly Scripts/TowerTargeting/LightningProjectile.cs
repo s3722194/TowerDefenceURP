@@ -30,6 +30,7 @@ public class LightningProjectile : MonoBehaviour
 
         Vector3 direction = target.position - this.transform.position;
         transform.position += direction.normalized * movementSpeed * Time.deltaTime;
+        Debug.Log(transform.position);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
