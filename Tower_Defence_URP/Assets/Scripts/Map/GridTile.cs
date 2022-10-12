@@ -94,8 +94,7 @@ public class GridTile : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if(towerRange != null)
-            towerRange.SetActive(true);
+        towerRange.SetActive(true);
     }
 
 

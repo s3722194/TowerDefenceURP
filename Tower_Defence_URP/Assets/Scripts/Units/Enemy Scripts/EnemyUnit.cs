@@ -1,4 +1,4 @@
-using System;
+
 using UnityEngine;
 using System.Collections;
 
@@ -11,6 +11,7 @@ public class EnemyUnit : AUnit
     [SerializeField] private string enemyTag;
     [SerializeField] private EnemyAnimation enemyAnimation;
     [SerializeField] private float deathAnimation = 1;
+    [SerializeField] private float blinkProbablity = 0.01f;
     private Rigidbody2D rb;
     private bool isDying = false;
 
@@ -22,6 +23,7 @@ public class EnemyUnit : AUnit
     private MapGrid mapGrid;
     private int pathNum;
     private int positionNum;
+
 
     protected override void Start()
     {
@@ -54,8 +56,11 @@ public class EnemyUnit : AUnit
             CheckExit();
         }
        
+       //
        
-        
+       if(Random.Range(0,1) < blinkProbablity) {
+            enemyAnimation.IsBlink();
+        }
         
     }
 
@@ -80,6 +85,7 @@ public class EnemyUnit : AUnit
 
     public override void Attack()
     {
+        enemyAnimation.IsAttack();
         throw new System.NotImplementedException();
     }
 
@@ -101,7 +107,12 @@ public class EnemyUnit : AUnit
 
     }
 
-
+    public override bool TakeDamage(int damage)
+    {
+        bool doesTakeDamage = base.TakeDamage(damage);
+        enemyAnimation.IsHurt();
+        return doesTakeDamage;
+    }
 
     public Vector2 DirectMoveToExit()
     {
