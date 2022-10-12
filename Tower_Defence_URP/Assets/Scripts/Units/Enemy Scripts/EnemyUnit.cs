@@ -11,7 +11,7 @@ public class EnemyUnit : AUnit
     [SerializeField] private string enemyTag;
     [SerializeField] private EnemyAnimation enemyAnimation;
     [SerializeField] private float deathAnimation = 1;
-    [SerializeField] private float blinkProbablity = 0.01f;
+    [SerializeField] private double blinkProbablity = 0.01;
     private Rigidbody2D rb;
     private bool isDying = false;
 
@@ -55,18 +55,26 @@ public class EnemyUnit : AUnit
             // Check if at exit
             CheckExit();
         }
-       
-       //
-       
-       if(Random.Range(0,1) < blinkProbablity) {
-            if (Random.Range(0, 1) < 0.5)
+
+        //
+        float random = Random.Range(0.0f, 1.0f);
+        
+        if (random < blinkProbablity) {
+            float randomBlink = Random.Range(0.0f, 1.0f);
+            if (randomBlink < 0.5f)
             {
+                //print("Random Blink");
                 enemyAnimation.IsBlink();
             }
             else
             {
+                print("Random Taunt");
                 enemyAnimation.IsTaunt();
             }
+        }
+        else
+        {
+            
         }
         
     }

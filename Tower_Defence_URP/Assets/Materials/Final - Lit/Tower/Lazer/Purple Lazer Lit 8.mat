@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Purple Lazer Lit 5
+  m_Name: Purple Lazer Lit 8
   m_Shader: {fileID: -6465566751694194690, guid: 6c18db7f487ce7c478d8ba85681ddb2b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Texture: {fileID: 2800000, guid: 80f07e891af38834487fe9248f0406a8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -56,14 +56,14 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _MaxNoiseValue: 1
-    - _MinNoiseValue: 0.3
+    - _MinNoiseValue: 0.2
     - _NoiseScale: 2
-    - _Power: 0.3
+    - _Power: 1
     m_Colors:
-    - _Color: {r: 63.336422, g: 18.367561, b: 120.972565, a: 1}
+    - _Color: {r: 12.54902, g: 3.6392157, b: 23.968628, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed2D: {r: 0, g: -3, b: 0, a: 0}
+    - _Speed2D: {r: 0, g: -7, b: 0, a: 0}
   m_BuildTextureStacks: []

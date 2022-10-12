@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Purple Lazer Lit 5
-  m_Shader: {fileID: -6465566751694194690, guid: 6c18db7f487ce7c478d8ba85681ddb2b, type: 3}
+  m_Name: Indigo Trail
+  m_Shader: {fileID: -6465566751694194690, guid: 79e24df0e15273945b07695d5cf49512, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -28,15 +28,19 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTexture:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: ae16943a5c380194eb27c4512d673e78, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_389157d492ff44a5a56858249e6bd84c_Out_0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -54,16 +58,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _DissolveScale: 35
     - _EnableExternalAlpha: 0
-    - _MaxNoiseValue: 1
-    - _MinNoiseValue: 0.3
-    - _NoiseScale: 2
-    - _Power: 0.3
+    - _MainSpeed: -0.1
     m_Colors:
-    - _Color: {r: 63.336422, g: 18.367561, b: 120.972565, a: 1}
+    - _Color: {r: 1.8980392, g: 1.0352942, b: 3.482353, a: 1}
+    - _Color_1: {r: 0.26666668, g: 0, b: 4, a: 0}
+    - _Color_2: {r: 0.1370453, g: 0.1351905, b: 0.9245283, a: 0}
+    - _DissolveSpeed: {r: -0.5, g: 0, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed2D: {r: 0, g: -3, b: 0, a: 0}
+    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -275,6 +275,7 @@ public class EnemyAnimation : MonoBehaviour
 
     public void IsBlink()
     {
+        print("set Blink");
         if(!animator.GetBool("IsHurt") && 
             !animator.GetBool("IsDying") && 
             !animator.GetBool("IsTaunt") &&
@@ -403,13 +404,14 @@ public class EnemyAnimation : MonoBehaviour
             animator.SetBool("IsHurt", false);
             animator.SetBool("IsTaunt", false);
             animator.SetBool("IsWalking", false);
-            StartCoroutine(ResetAnimation());
+            
         }
       
     }
 
     public void IsIdle()
     {
+        print("set idle");
         animator.SetBool("IsBlink", false);
         animator.SetBool("IsAttack", false);
         animator.SetBool("IsCastSpell", false);

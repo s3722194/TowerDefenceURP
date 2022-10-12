@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bd436031b257b5545b650db02cbe0809, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -40,8 +40,10 @@ Material:
     m_Floats:
     - _AngleOffset: 1
     - _CellDensity: 10
-    - _EdgeWeight: 8
+    - _EdgeWeight: 7
     - _LineThickness: 6.93
+    - _MaxLigthValue: 1
+    - _MinLightVaule: 0.8
     - _NoiseScale: 10
     - _NoiseScale1: 15
     - _VorSpeed1: 2
