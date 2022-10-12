@@ -390,7 +390,7 @@ MonoBehaviour:
   - {x: 0.46678162, y: -0.43044895, z: 0.000000022351742}
   m_ShapePathHash: -362886735
   m_Mesh: {fileID: 0}
-  m_InstanceId: 74286
+  m_InstanceId: 86830
 --- !u!114 &2443210320345771828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,15 +421,15 @@ MonoBehaviour:
   health: 360
   maxHealth: 360
   speed: 0
-  attackCooldown: 5
-  mDamage: 5
+  attackCooldown: 3
+  mDamage: 2
   rDamage: 0
   range: 5
   destructable: 0
   cost: 400
   upgradeCost: 0
   EnemiesInRange: []
-  ProjectilePrefab: {fileID: 5095556019783580505, guid: f27f230ce1e6b314dbe944f3c0fc0ea3, type: 3}
+  ProjectilePrefab: {fileID: 6308159105955538640, guid: 11f901f8f699a1141bbf758b7a4ade0e, type: 3}
 --- !u!114 &5249978057251903690
 MonoBehaviour:
   m_ObjectHideFlags: 0

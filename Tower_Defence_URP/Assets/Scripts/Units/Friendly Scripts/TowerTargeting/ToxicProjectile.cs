@@ -52,6 +52,11 @@ public class ToxicProjectile : Projectile
         }
     }
 
+     void OnTriggerEnter2D(Collider2D collider)
+    {
+
+    }
+
     public static new ToxicProjectile Spawn(GameObject prefab, Vector3 position, Quaternion rotation, Transform _target, int _damage)
     {
         GameObject spawnProjectile = Instantiate(prefab, position, rotation);
