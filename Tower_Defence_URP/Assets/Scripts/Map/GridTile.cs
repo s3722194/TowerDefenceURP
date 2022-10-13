@@ -21,6 +21,7 @@ public class GridTile : MonoBehaviour
     }
 
     private GameManager GM;
+    private AudioManager AM;
     private UpgradeHUD upgradeCanvas;
     private MapGrid mapGrid;
 
@@ -28,6 +29,7 @@ public class GridTile : MonoBehaviour
     void Start()
     {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        AM = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         upgradeCanvas = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
         mapGrid = transform.parent.parent.gameObject.GetComponent<MapGrid>();
 
@@ -62,6 +64,7 @@ public class GridTile : MonoBehaviour
                    
                     GM.SpendMoney(building.Cost);
                     mapGrid.UpdatePosition(this);
+                    AM.PlaySound(AudioManager.Sound.PlaceTower);
                 } 
             }
         } else

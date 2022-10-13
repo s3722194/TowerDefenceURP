@@ -68,7 +68,7 @@ public class EnemyUnit : AUnit
             }
             else
             {
-                print("Random Taunt");
+                // print("Random Taunt");
                 enemyAnimation.IsTaunt();
             }
         }
@@ -111,7 +111,12 @@ public class EnemyUnit : AUnit
         gameManager.Money += MoneyOnDeath;
         enemyAnimation.IsDying();
         StartCoroutine(EnemyDeath());
-        
+    }
+
+    public void Escape()
+    {
+        gameManager.Money += MoneyOnDeath;
+        Destroy(gameObject);
     }
 
     IEnumerator EnemyDeath()
@@ -119,7 +124,6 @@ public class EnemyUnit : AUnit
         yield return new WaitForSeconds(enemyAnimation.getAnimationTime()*deathAnimation);
 
         Destroy(gameObject);
-
     }
 
     public override bool TakeDamage(int damage)

@@ -28,10 +28,16 @@ public class LevelManager : MonoBehaviour
     private List<Tuple<EnemyUnit, float>> spawnQueue = new List<Tuple<EnemyUnit, float>>();
     [SerializeField]
     private float enemySpawnDelay;
-    
+    [SerializeField]
+    private float waveDelayReduction;
+    [SerializeField]
+    private float minSpawnDelay;
+    [SerializeField]
+    private float waveStartDelay;
+
 
     //to calcualte the x and y corrdinates for the game
-    
+
     private Dictionary<string, Vector2> southWestCorners = new Dictionary<string, Vector2>();
 
     private float time;
@@ -96,7 +102,6 @@ public class LevelManager : MonoBehaviour
                 time = 0f;
             }
         }
-
         if(prevWave < waveNum)
         {
             if(timeElapsed >= waitTime)
@@ -107,35 +112,48 @@ public class LevelManager : MonoBehaviour
                     prevWave = waveNum;
                     timeElapsed = 0.0f;
                 }
-            } else
+            }
+            else
             {
                 timeElapsed += Time.deltaTime;
             }
-
         }
     }
 
     public void SendWave()
     {
-        float delay = 1;
         waveNum += 1;
+        float delay = waveStartDelay;
 
         for (int i = 0; i < waveNum*3; i++)
         {
-           
-            Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(enemies[0], delay);
+            Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(GetEnemyType(waveNum), delay);
             spawnQueue.Add(spawnItem);
-            delay = enemySpawnDelay;
-           
-            
+            if (i==0)
+            {
+                delay = enemySpawnDelay - waveNum * waveDelayReduction;
+            }
         }
+    }
+
+    public EnemyUnit GetEnemyType (int waveNumber)
+    {
+        // Temporary override to only return the first enemy type
+        return enemies[0];
+        int randValue = UnityEngine.Random.Range(waveNumber, 100);
+        if (randValue > 95)
+        {
+            return enemies[2];
+        }
+        if (randValue > 60)
+        {
+            return enemies[1];
+        }
+        return enemies[0];
     }
 
     public int getWave()
     {
         return waveNum;
     }
-
-
-   
 }

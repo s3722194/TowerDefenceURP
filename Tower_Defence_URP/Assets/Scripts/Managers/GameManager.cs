@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public void Escape(EnemyUnit unit)
     {
         Lives -= unit.LivesOnEscape;
-        unit.Die();
+        unit.Escape();
         if (Lives <= 0)
         {
             SceneManager.LoadScene("GameOver");
