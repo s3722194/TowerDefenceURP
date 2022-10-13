@@ -1336,6 +1336,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8057374176993311725, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1553195515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553195513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Plasma Tower
 --- !u!4 &1588812547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8669025635558285671, guid: d161f8768c5532a41888cee99f9ba353, type: 3}
@@ -2423,6 +2436,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5480988490884991926, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2576598716734558628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2576598716734558626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Orb Shooter
 --- !u!1001 &5665102068271072591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2532,16 +2558,55 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4332727893774226509, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6048749983108320859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048749983108320857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Black Hole Tower
 --- !u!1 &7043980054457159311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1013509573624960155, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7043980054457159313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7043980054457159311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Mist Tower
 --- !u!1 &7618449364105333057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 462639628575839061, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7618449364105333059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7618449364105333057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Death Ray
 --- !u!1001 &8057374176128047636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2689,11 +2754,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2127633118573101861, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8239146487677491507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8239146487677491505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Blaze Tower
 --- !u!1 &8412107872092085732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1976029746719639536, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8412107872092085734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8412107872092085732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Toxic Tower
 --- !u!1001 &8856054980168279473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3052,3 +3143,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1345041411216649206, guid: 40cc8323830b86e49af406cd62940245, type: 3}
   m_PrefabInstance: {fileID: 8057374176128047636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9041828468304032228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9041828468304032226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652f4ca047714c4f8298bc40cb24af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoPanelTag: Chain Tower
