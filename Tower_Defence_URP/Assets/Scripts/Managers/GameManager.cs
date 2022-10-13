@@ -22,8 +22,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-
-
     public void Escape(EnemyUnit unit)
     {
         Lives -= unit.LivesOnEscape;
@@ -47,7 +45,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-        public void SpendMoney(int cost)
+    public void SpendMoney(int cost)
     {
         Money -= cost;
     }
