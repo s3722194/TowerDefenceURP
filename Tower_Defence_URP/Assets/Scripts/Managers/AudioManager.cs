@@ -12,9 +12,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private SoundAudioClip[] soundAudioClips;
     [SerializeField] private MusicAudioClip[] musicAudioClips;
 
-    private Dictionary<Sound, float> soundTimerDictionary;
-    private Dictionary<Sound, float> musicNumDictionary;
-
     public enum Sound
     {
         Plasma,
@@ -42,7 +39,8 @@ public class AudioManager : MonoBehaviour
     {
         AttackPhase,
         BuildingPhase,
-        Menu
+        Menu,
+        GameOver
     }
 
     [System.Serializable]

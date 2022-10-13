@@ -105,6 +105,7 @@ MonoBehaviour:
   - sound: 11
     audioClips:
     - {fileID: 8300000, guid: b7e83c480f6457f4a8f2f9ed7c675513, type: 3}
+    - {fileID: 8300000, guid: 7930e937b49936746afcfd1ab4b670ae, type: 3}
     volume: 0.1
     isLoop: 0
   - sound: 12
@@ -159,6 +160,11 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: 22f6a43108d65494095b1b4b94008d9a, type: 3}
     volume: 0.2
+    isLoop: 1
+  - music: 3
+    audioClips:
+    - {fileID: 8300000, guid: 7a1f7af3644221849a52bdbeb4c04519, type: 3}
+    volume: 0.3
     isLoop: 1
 --- !u!82 &4136738808343578605
 AudioSource:
