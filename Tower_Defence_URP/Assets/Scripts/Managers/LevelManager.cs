@@ -45,6 +45,7 @@ public class LevelManager : MonoBehaviour
     private int waveNum;
     private int prevWave;
     private const float waitTime = 1.5f;
+    private bool waveInProgress;
     private float timeElapsed;
     private TextMeshProUGUI wavesCompleted;
 
@@ -84,9 +85,13 @@ public class LevelManager : MonoBehaviour
         waveNum = 0;
         prevWave = 0;
         timeElapsed = 0.0f;
+        waveInProgress = false;
         wavesCompleted = GameObject.Find("WavesFinished").GetComponent<TextMeshProUGUI>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+
+        audioManager.PlayMusic(AudioManager.Music.BuildingPhase);
+        audioManager.PlaySound(AudioManager.Sound.GameStart);
     }
 
     // Update is called once per frame
@@ -104,6 +109,7 @@ public class LevelManager : MonoBehaviour
         }
         if(prevWave < waveNum)
         {
+            waveInProgress = true;
             if(timeElapsed >= waitTime)
             {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
@@ -111,6 +117,7 @@ public class LevelManager : MonoBehaviour
                     wavesCompleted.text = waveNum.ToString();
                     prevWave = waveNum;
                     timeElapsed = 0.0f;
+                    waveInProgress = false;
                 }
             }
             else
@@ -125,6 +132,7 @@ public class LevelManager : MonoBehaviour
         waveNum += 1;
         float delay = waveStartDelay;
         audioManager.PlaySound(AudioManager.Sound.WaveStart);
+        audioManager.PlayMusic(AudioManager.Music.AttackPhase);
 
         for (int i = 0; i < waveNum*3; i++)
         {

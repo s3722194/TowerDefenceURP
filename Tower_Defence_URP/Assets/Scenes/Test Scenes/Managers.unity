@@ -270,12 +270,12 @@ MonoBehaviour:
   - sound: 4
     audioClips:
     - {fileID: 8300000, guid: 1bc827c2e720e194ea4af4bafbff215d, type: 3}
-    volume: 0.7
+    volume: 0.5
     isLoop: 0
   - sound: 5
     audioClips:
     - {fileID: 8300000, guid: 3d70bfbd708d2ce4395ff4ad67c371e0, type: 3}
-    volume: 0.7
+    volume: 0.5
     isLoop: 0
   - sound: 6
     audioClips: []
@@ -288,16 +288,16 @@ MonoBehaviour:
   - sound: 8
     audioClips:
     - {fileID: 8300000, guid: 66ecfb52aec554449beb8f082028923e, type: 3}
-    - {fileID: 8300000, guid: baaff0d0abb851b4db494fa41873f295, type: 3}
-    - {fileID: 8300000, guid: a78397ec0a9343c4180d6b6831b3d93d, type: 3}
     volume: 0.8
     isLoop: 0
   - sound: 9
-    audioClips: []
+    audioClips:
+    - {fileID: 8300000, guid: baaff0d0abb851b4db494fa41873f295, type: 3}
     volume: 0.8
     isLoop: 0
   - sound: 10
-    audioClips: []
+    audioClips:
+    - {fileID: 8300000, guid: a78397ec0a9343c4180d6b6831b3d93d, type: 3}
     volume: 0.8
     isLoop: 0
   - sound: 11
@@ -324,6 +324,23 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 2bc2f5f3f4e76614fb47c32bab00dea9, type: 3}
     volume: 0.8
     isLoop: 0
+  musicAudioClips:
+  - music: 0
+    audioClips:
+    - {fileID: 8300000, guid: ea28f9b8849b4e742af43b939421b00b, type: 3}
+    - {fileID: 8300000, guid: 166b5dc73f883c34cb0259973aa8713c, type: 3}
+    volume: 0.05
+    isLoop: 1
+  - music: 1
+    audioClips:
+    - {fileID: 8300000, guid: 22f6a43108d65494095b1b4b94008d9a, type: 3}
+    - {fileID: 8300000, guid: 77071455504b1ec409e950be58b4c9b0, type: 3}
+    volume: 0.1
+    isLoop: 1
+  - music: 2
+    audioClips: []
+    volume: 0.05
+    isLoop: 1
 --- !u!82 &192729067
 AudioSource:
   m_ObjectHideFlags: 0
