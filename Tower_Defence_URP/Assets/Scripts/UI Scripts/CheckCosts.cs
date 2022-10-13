@@ -7,16 +7,18 @@ public class CheckCosts : MonoBehaviour
 {
     [SerializeField] private GameObject towerPrefab;
     [SerializeField] private Button button;
-    
-    private GameManager gm;
+
+    private GameManager gameManager;
+    private LevelManager levelManager;
     private ABuilding building;
     private UpgradeHUD upgrade;
 
     // Start is called before the first frame update
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+
         upgrade = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
 
         if (towerPrefab != null)
@@ -35,12 +37,13 @@ public class CheckCosts : MonoBehaviour
                 building = upgrade.selectedTower.GetComponent<ABuilding>();
             }
 
-            if (building.UpgradeCost > gm.Money)
+            if (building.UpgradeCost > gameManager.Money)
             {
                 button.interactable = false;
-            } else
+            }
+            else
             {
-                if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+                if (levelManager.WaveInProgress)
                 {
                     button.interactable = false;
                 }
@@ -49,20 +52,22 @@ public class CheckCosts : MonoBehaviour
                     button.interactable = true;
                 }
             }
-        } else
+        }
+        else
         {
-            if(building.Cost > gm.Money)
+            if(building.Cost > gameManager.Money)
             {
                 button.interactable = false;
                 GameObject infoPanel = checkInfoPanel();
                 if (infoPanel != null && infoPanel.activeSelf)
                 {
                     infoPanel.SetActive(false);
-                    gm.ResetTower();
+                    gameManager.ResetTower();
                 }
-            } else
+            }
+            else
             {
-                if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+                if (levelManager.WaveInProgress)
                 {
                     button.interactable = false;
                 }
@@ -73,7 +78,7 @@ public class CheckCosts : MonoBehaviour
             }
         }
 
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+        if (levelManager.WaveInProgress)
         {
             Button playButton = GameObject.Find("PlayButton").GetComponent<Button>();
             playButton.interactable = false;
@@ -82,9 +87,10 @@ public class CheckCosts : MonoBehaviour
             if(infoPanel != null && infoPanel.activeSelf)
             {
                 infoPanel.SetActive(false);
-                gm.ResetTower();
+                gameManager.ResetTower();
             }
-        } else
+        }
+        else
         {
             Button playButton = GameObject.Find("PlayButton").GetComponent<Button>();
             playButton.interactable = true;

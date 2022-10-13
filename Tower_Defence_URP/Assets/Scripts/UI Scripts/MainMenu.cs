@@ -6,9 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    void start()
+    private AudioManager audioManager;
+
+    // Start is called before the first frame update
+    void Start()
     {
         Time.timeScale = 1.0f;
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+
+        audioManager.PlayMusic(AudioManager.Music.Menu);
     }
 
     public void StartGame()

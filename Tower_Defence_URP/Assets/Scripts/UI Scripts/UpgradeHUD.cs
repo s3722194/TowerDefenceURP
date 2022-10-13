@@ -6,7 +6,8 @@ using TMPro;
 
 public class UpgradeHUD : MonoBehaviour
 {
-    private GameManager gm;
+    private GameManager gameManager;
+    private AudioManager audioManager;
     public GameObject selectedTower;
     private ABuilding towerScript;
     private int sellCost;
@@ -19,8 +20,6 @@ public class UpgradeHUD : MonoBehaviour
     [SerializeField] private TextMeshProUGUI attackText;
     [SerializeField] private TextMeshProUGUI sellCostText;
     [SerializeField] private TextMeshProUGUI upgradeCostText;
-    
-
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +33,8 @@ public class UpgradeHUD : MonoBehaviour
             upgradeCanvas.SetActive(false);
         }
 
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -79,8 +79,10 @@ public class UpgradeHUD : MonoBehaviour
         {
             if(sellCost > 0)
             {
-                gm.Money += sellCost;
+                gameManager.Money += sellCost;
                 upgradeCanvas.SetActive(false);
+
+                audioManager.PlaySound(AudioManager.Sound.SellTower);
 
                 Destroy(selectedTower);
             }
@@ -91,13 +93,15 @@ public class UpgradeHUD : MonoBehaviour
     {
         if (selectedTower != null && towerScript != null)
         {
-            if(towerScript.UpgradeCost > 0 && gm.Money >= towerScript.UpgradeCost)
+            if(towerScript.UpgradeCost > 0 && gameManager.Money >= towerScript.UpgradeCost)
             {
-                gm.SpendMoney(towerScript.UpgradeCost);
+                gameManager.SpendMoney(towerScript.UpgradeCost);
                 towerScript.Cost += towerScript.UpgradeCost;
                 towerScript.MDamage *= 2;
                 towerScript.Health += 100;
                 towerScript.UpgradeCost = (int)towerScript.Cost/2;
+
+                audioManager.PlaySound(AudioManager.Sound.UpgradeTower);
 
                 updateHUD(selectedTower);
             }

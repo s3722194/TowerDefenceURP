@@ -163,6 +163,7 @@ public class AudioManager : MonoBehaviour
         if (CanPlayMusic(audio))
         {
             musicSource.volume = audio.volume;
+            musicSource.loop = true;
             musicSource.clip = GetAudioClip(audio);
             musicSource.Play();
         }

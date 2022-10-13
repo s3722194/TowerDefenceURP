@@ -44,8 +44,8 @@ public class LevelManager : MonoBehaviour
     //private GameObject managers;
     private int waveNum;
     private int prevWave;
+    private bool autoNextWave;
     private const float waitTime = 1.5f;
-    private bool waveInProgress;
     private float timeElapsed;
     private TextMeshProUGUI wavesCompleted;
 
@@ -61,6 +61,7 @@ public class LevelManager : MonoBehaviour
     public List<Material> StartMaterials { get => startMaterials; }
     public List<Material> EndMaterials { get =>endMaterials; }
     public List<Material> WallMaterials { get => wallMaterials; }
+    public bool WaveInProgress { get; private set; }
 
     private GameManager gameManager;
 
@@ -85,7 +86,7 @@ public class LevelManager : MonoBehaviour
         waveNum = 0;
         prevWave = 0;
         timeElapsed = 0.0f;
-        waveInProgress = false;
+        WaveInProgress = false;
         wavesCompleted = GameObject.Find("WavesFinished").GetComponent<TextMeshProUGUI>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
@@ -97,8 +98,9 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnQueue.Count > 0 && gameManager.Lives >0)
+        if (spawnQueue.Count > 0 && gameManager.Lives > 0)
         {
+            WaveInProgress = true;
             time += Time.deltaTime;
             if (time > spawnQueue[0].Item2)
             {
@@ -107,9 +109,9 @@ public class LevelManager : MonoBehaviour
                 time = 0f;
             }
         }
-        if(prevWave < waveNum)
+        if (prevWave < waveNum)
         {
-            waveInProgress = true;
+            WaveInProgress = true;
             if(timeElapsed >= waitTime)
             {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
@@ -117,7 +119,11 @@ public class LevelManager : MonoBehaviour
                     wavesCompleted.text = waveNum.ToString();
                     prevWave = waveNum;
                     timeElapsed = 0.0f;
-                    waveInProgress = false;
+                    WaveInProgress = false;
+                    if (autoNextWave)
+                    {
+                        SendWave();
+                    }
                 }
             }
             else
@@ -164,5 +170,15 @@ public class LevelManager : MonoBehaviour
     public int getWave()
     {
         return waveNum;
+    }
+
+    public void ToggleAutoSendWaves()
+    {
+        autoNextWave = !autoNextWave;
+    }
+
+    public void SetAutoSendWaves(bool autoSend)
+    {
+        autoNextWave = autoSend;
     }
 }
