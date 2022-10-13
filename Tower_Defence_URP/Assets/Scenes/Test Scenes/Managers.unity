@@ -250,79 +250,79 @@ MonoBehaviour:
   - sound: 0
     audioClips:
     - {fileID: 8300000, guid: 57aab41c1548b66469f0f425065244a8, type: 3}
-    volume: 1
+    volume: 0.6
     isLoop: 0
   - sound: 1
     audioClips:
     - {fileID: 8300000, guid: 9a994f3eb8ce57040b154a0d9ab09781, type: 3}
-    volume: 1
+    volume: 0.5
     isLoop: 0
   - sound: 2
     audioClips:
     - {fileID: 8300000, guid: a0cf3f142d2bde44c851df1376aac911, type: 3}
-    volume: 1
+    volume: 0.4
     isLoop: 0
   - sound: 3
     audioClips:
     - {fileID: 8300000, guid: 8c060b1b45586b24685b79eedfde1ee0, type: 3}
-    volume: 1
+    volume: 0.4
     isLoop: 0
   - sound: 4
     audioClips:
     - {fileID: 8300000, guid: 1bc827c2e720e194ea4af4bafbff215d, type: 3}
-    volume: 1
+    volume: 0.7
     isLoop: 0
   - sound: 5
     audioClips:
     - {fileID: 8300000, guid: 3d70bfbd708d2ce4395ff4ad67c371e0, type: 3}
-    volume: 1
+    volume: 0.7
     isLoop: 0
   - sound: 6
     audioClips: []
-    volume: 1
+    volume: 0.5
     isLoop: 0
   - sound: 7
     audioClips: []
-    volume: 1
+    volume: 0.5
     isLoop: 0
   - sound: 8
     audioClips:
     - {fileID: 8300000, guid: 66ecfb52aec554449beb8f082028923e, type: 3}
     - {fileID: 8300000, guid: baaff0d0abb851b4db494fa41873f295, type: 3}
     - {fileID: 8300000, guid: a78397ec0a9343c4180d6b6831b3d93d, type: 3}
-    volume: 1
+    volume: 0.8
     isLoop: 0
   - sound: 9
     audioClips: []
-    volume: 1
+    volume: 0.8
     isLoop: 0
   - sound: 10
     audioClips: []
-    volume: 1
+    volume: 0.8
     isLoop: 0
   - sound: 11
     audioClips:
     - {fileID: 8300000, guid: b7e83c480f6457f4a8f2f9ed7c675513, type: 3}
-    volume: 1
+    volume: 0.1
     isLoop: 0
   - sound: 12
     audioClips: []
-    volume: 1
+    volume: 0.1
     isLoop: 0
   - sound: 13
     audioClips:
     - {fileID: 8300000, guid: 4304d82f5f8cc4849b7835f97c66533c, type: 3}
-    volume: 1
+    volume: 0.2
     isLoop: 0
   - sound: 14
     audioClips:
     - {fileID: 8300000, guid: ebe73d4fc5db57444acb1d8d5397e23d, type: 3}
-    volume: 1
+    volume: 0.8
     isLoop: 0
   - sound: 15
     audioClips:
     - {fileID: 8300000, guid: 2bc2f5f3f4e76614fb47c32bab00dea9, type: 3}
-    volume: 1
+    volume: 0.8
     isLoop: 0
 --- !u!82 &192729067
 AudioSource:
@@ -754,7 +754,7 @@ MonoBehaviour:
   - {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
   enemySpawnDelay: 3
   waveDelayReduction: 0.15
-  minSpawnDelay: 0.5
+  minSpawnDelay: 0.01
   waveStartDelay: 1
 --- !u!1 &1679346988
 GameObject:

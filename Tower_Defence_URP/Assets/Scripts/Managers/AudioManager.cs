@@ -70,8 +70,13 @@ public class AudioManager : MonoBehaviour
         return null;
     }
 
-    private bool CanPlaySound(Sound sound)
+    private bool CanPlaySound(SoundAudioClip soundAudioClip)
     {
+        if (soundAudioClip == null || GetAudioClip(soundAudioClip) == null)
+        {
+            return false;
+        }
+        Sound sound = soundAudioClip.sound;
         switch (sound)
         {
             default:
@@ -82,7 +87,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySound(Sound sound)
     {
         SoundAudioClip audio = GetSoundAudioClip(sound);
-        if (audio != null)
+        if (CanPlaySound(audio))
         {
             effectsSource.volume = audio.volume;
             effectsSource.PlayOneShot(GetAudioClip(audio));

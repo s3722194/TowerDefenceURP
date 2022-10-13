@@ -9,9 +9,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int lives;
     [SerializeField] private int money;
+
+    private AudioManager audioManager;
+
     public int Money {  get => money; set => money =value; }
-    
     public int Lives { get => lives; set => lives = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
         selectedTower = null;
         money = 100000;
         Time.timeScale = 1.0f;
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     public void Escape(EnemyUnit unit)
@@ -28,6 +32,7 @@ public class GameManager : MonoBehaviour
         unit.Escape();
         if (Lives <= 0)
         {
+            audioManager.PlaySound(AudioManager.Sound.GameOver);
             SceneManager.LoadScene("GameOver");
             StartCoroutine(UnLoadGrid());
         }

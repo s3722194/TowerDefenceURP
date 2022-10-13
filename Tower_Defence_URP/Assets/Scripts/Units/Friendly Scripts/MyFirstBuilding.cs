@@ -23,6 +23,7 @@ public class MyFirstBuilding : ABuilding
             // Debug.Log("spawning projectile");
             Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[0].transform, MDamage);
             fireRate = 0.0f;
+            audioManager.PlaySound(AudioManager.Sound.Orb);
         } else
         {
             fireRate += Time.deltaTime;

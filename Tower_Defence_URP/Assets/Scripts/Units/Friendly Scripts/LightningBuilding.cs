@@ -30,6 +30,8 @@ public class LightningBuilding : ABuilding
             LightningProjectile second = LightningProjectile.Spawn(secondLightning, this.transform.position, this.transform.rotation, EnemiesInRange[secondTarget].transform, MDamage);
             LightningProjectile third = LightningProjectile.Spawn(thirdLightning, this.transform.position, this.transform.rotation, EnemiesInRange[thirdTarget].transform, MDamage);
 
+            audioManager.PlaySound(AudioManager.Sound.Chain);
+
             fireRate = 0.0f;
         }
         else

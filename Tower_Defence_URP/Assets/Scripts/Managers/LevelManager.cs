@@ -35,7 +35,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private float waveStartDelay;
 
-
     //to calcualte the x and y corrdinates for the game
 
     private Dictionary<string, Vector2> southWestCorners = new Dictionary<string, Vector2>();
@@ -64,7 +63,7 @@ public class LevelManager : MonoBehaviour
 
     private GameManager gameManager;
 
-
+    private AudioManager audioManager;
 
     private void Awake()
     {
@@ -87,6 +86,7 @@ public class LevelManager : MonoBehaviour
         timeElapsed = 0.0f;
         wavesCompleted = GameObject.Find("WavesFinished").GetComponent<TextMeshProUGUI>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -124,6 +124,7 @@ public class LevelManager : MonoBehaviour
     {
         waveNum += 1;
         float delay = waveStartDelay;
+        audioManager.PlaySound(AudioManager.Sound.WaveStart);
 
         for (int i = 0; i < waveNum*3; i++)
         {
