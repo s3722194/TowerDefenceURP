@@ -19,9 +19,10 @@ public class GameManager : MonoBehaviour
         // idk what they are so i wont touch them
         selectedTower = null;
         money = 100000;
+        Time.timeScale = 1.0f;
     }
 
-    
+
 
     public void Escape(EnemyUnit unit)
     {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
         unit.Die();
         if (Lives <= 0)
         {
-            SceneManager.LoadScene("Game Over", LoadSceneMode.Additive);
+            SceneManager.LoadScene("GameOver");
             StartCoroutine(UnLoadGrid());
         }
     }
