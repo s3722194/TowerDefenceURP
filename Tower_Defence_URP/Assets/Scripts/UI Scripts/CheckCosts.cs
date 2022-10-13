@@ -54,7 +54,7 @@ public class CheckCosts : MonoBehaviour
             if(building.Cost > gm.Money)
             {
                 button.interactable = false;
-                GameObject infoPanel = GameObject.FindGameObjectWithTag("InfoPanel");
+                GameObject infoPanel = checkInfoPanel();
                 if (infoPanel != null && infoPanel.activeSelf)
                 {
                     infoPanel.SetActive(false);
@@ -89,5 +89,23 @@ public class CheckCosts : MonoBehaviour
             Button playButton = GameObject.Find("PlayButton").GetComponent<Button>();
             playButton.interactable = true;
         }
+    }
+
+    private GameObject checkInfoPanel()
+    {
+        GameObject[] infoPanels = GameObject.FindGameObjectsWithTag("InfoPanel");
+        
+        foreach(GameObject panel in infoPanels)
+        {
+            InfoTag tag = panel.GetComponent<InfoTag>();
+
+            if(tag != null && tag.InfoPanelTag.Equals(building.tag))
+            {
+                Debug.Log("found");
+                return panel;
+            }
+        }
+
+        return null;
     }
 }
