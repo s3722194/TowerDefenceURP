@@ -38,6 +38,9 @@ public class LevelManager : MonoBehaviour
     private GameObject ui;
     //private GameObject managers;
     private int waveNum;
+    private int prevWave;
+    private const float waitTime = 1.5f;
+    private float timeElapsed;
     private TextMeshProUGUI wavesCompleted;
 
     public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
@@ -74,6 +77,8 @@ public class LevelManager : MonoBehaviour
     {
         time = 0;
         waveNum = 0;
+        prevWave = 0;
+        timeElapsed = 0.0f;
         wavesCompleted = GameObject.Find("WavesFinished").GetComponent<TextMeshProUGUI>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
@@ -91,14 +96,29 @@ public class LevelManager : MonoBehaviour
                 time = 0f;
             }
         }
+
+        if(prevWave < waveNum)
+        {
+            if(timeElapsed >= waitTime)
+            {
+                if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+                {
+                    wavesCompleted.text = waveNum.ToString();
+                    prevWave = waveNum;
+                    timeElapsed = 0.0f;
+                }
+            } else
+            {
+                timeElapsed += Time.deltaTime;
+            }
+
+        }
     }
 
     public void SendWave()
     {
         float delay = 1;
         waveNum += 1;
-
-        wavesCompleted.text = waveNum.ToString();
 
         for (int i = 0; i < waveNum*3; i++)
         {
