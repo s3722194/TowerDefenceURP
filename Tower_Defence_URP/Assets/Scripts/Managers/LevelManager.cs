@@ -72,8 +72,8 @@ public class LevelManager : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 
+        // audioManager.PlaySound(AudioManager.Sound.GameStart);
         audioManager.PlayMusic(AudioManager.Music.BuildingPhase);
-        audioManager.PlaySound(AudioManager.Sound.GameStart);
     }
 
     // Update is called once per frame

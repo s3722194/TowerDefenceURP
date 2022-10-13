@@ -150,8 +150,7 @@ public class AudioManager : MonoBehaviour
         SoundAudioClip audio = GetSoundAudioClip(sound);
         if (CanPlaySound(audio))
         {
-            effectsSource.volume = audio.volume;
-            effectsSource.PlayOneShot(GetAudioClip(audio));
+            effectsSource.PlayOneShot(GetAudioClip(audio), audio.volume);
         }
     }
 
