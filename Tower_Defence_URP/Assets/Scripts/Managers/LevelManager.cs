@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -37,8 +38,8 @@ public class LevelManager : MonoBehaviour
     private GameObject ui;
     //private GameObject managers;
     private int waveNum;
+    private TextMeshProUGUI wavesCompleted;
 
-    
     public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
     public GameObject Background { get => background; set => background = value; }
     public GameObject GridBackground { get => gridBackground; set => gridBackground = value; }
@@ -73,7 +74,7 @@ public class LevelManager : MonoBehaviour
     {
         time = 0;
         waveNum = 0;
-
+        wavesCompleted = GameObject.Find("WavesFinished").GetComponent<TextMeshProUGUI>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
@@ -96,6 +97,8 @@ public class LevelManager : MonoBehaviour
     {
         float delay = 1;
         waveNum += 1;
+
+        wavesCompleted.text = waveNum.ToString();
 
         for (int i = 0; i < waveNum*3; i++)
         {
