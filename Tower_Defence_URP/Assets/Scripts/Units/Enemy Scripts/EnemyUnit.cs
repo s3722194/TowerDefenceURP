@@ -40,6 +40,7 @@ public class EnemyUnit : AUnit
         rb = GetComponent<Rigidbody2D>();
         rb.position = new Vector3(startPos.x, startPos.y);
         positionNum = 0;
+        audioManager.PlaySound(AudioManager.Sound.EnemySpawn);
     }
 
     protected override void Update()
@@ -110,12 +111,14 @@ public class EnemyUnit : AUnit
         rb.constraints = RigidbodyConstraints2D.FreezePosition;
         gameManager.Money += MoneyOnDeath;
         enemyAnimation.IsDying();
+        audioManager.PlaySound(AudioManager.Sound.EnemyDeath);
         StartCoroutine(EnemyDeath());
     }
 
     public void Escape()
     {
         gameManager.Money += MoneyOnDeath;
+        audioManager.PlaySound(AudioManager.Sound.EnemyExit);
         Destroy(gameObject);
     }
 

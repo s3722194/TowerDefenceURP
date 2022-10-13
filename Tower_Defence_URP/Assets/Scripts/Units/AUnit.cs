@@ -11,6 +11,9 @@ public abstract class AUnit : MonoBehaviour
     [SerializeField] private int mDamage;
     [SerializeField] private int rDamage;
     [SerializeField] private float range;
+    [SerializeField] private string unitName;
+
+    protected AudioManager audioManager;
 
     public int Health { get => health; set => health = value; }
     public int MaxHealth { get => maxHealth; protected set => maxHealth = value; }
@@ -19,10 +22,12 @@ public abstract class AUnit : MonoBehaviour
     public int MDamage { get => mDamage; set => mDamage = value; }
     public int RDamage { get => rDamage; protected set => rDamage = value; }
     public float Range { get => range; protected set => range = value; }
+    public string UnitName { get => unitName; protected set => unitName = value; }
 
     protected virtual void Start()
     {
         Health = MaxHealth;
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     protected abstract void Update();

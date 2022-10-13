@@ -32,7 +32,10 @@ public class AudioManager : MonoBehaviour
         WaveEnd,
         MenuTransition,
         GameOver,
-        GameStart
+        GameStart,
+        EnemySpawn,
+        EnemyDeath,
+        EnemyExit
     }
 
     public enum Music

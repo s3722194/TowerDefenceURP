@@ -322,7 +322,21 @@ MonoBehaviour:
   - sound: 15
     audioClips:
     - {fileID: 8300000, guid: 2bc2f5f3f4e76614fb47c32bab00dea9, type: 3}
+    volume: 0
+    isLoop: 0
+  - sound: 16
+    audioClips: []
     volume: 0.8
+    isLoop: 0
+  - sound: 17
+    audioClips:
+    - {fileID: 8300000, guid: 2714c566f53d54e4593e17e7cfdb4acc, type: 3}
+    volume: 0.4
+    isLoop: 0
+  - sound: 18
+    audioClips:
+    - {fileID: 8300000, guid: b21c5b7b896262445959b8a34cc3fd0e, type: 3}
+    volume: 0.4
     isLoop: 0
   musicAudioClips:
   - music: 0

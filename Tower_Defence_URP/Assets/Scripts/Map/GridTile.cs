@@ -67,7 +67,8 @@ public class GridTile : MonoBehaviour
                     AM.PlaySound(AudioManager.Sound.PlaceTower);
                 } 
             }
-        } else
+        }
+        else
         {
             upgradeCanvas.updateHUD(occupiedTower, towerRange);
             towerRange.SetActive(true);
@@ -80,11 +81,9 @@ public class GridTile : MonoBehaviour
                     {
                         panel.gameObject.SetActive(false);
                         towerRange.SetActive(false);
-                       
                     }
                 }
             }
-
             GM.ResetTower();
         }
     }
@@ -94,9 +93,7 @@ public class GridTile : MonoBehaviour
         if(towerRange != null)
         {
             towerRange.SetActive(false);
-
-        }
-            
+        }   
     }
 
     private void OnMouseEnter()
@@ -107,7 +104,6 @@ public class GridTile : MonoBehaviour
         }
     }
 
-
     public bool GetOccupied()
     {
         return OccupiedTower != null;
@@ -117,60 +113,4 @@ public class GridTile : MonoBehaviour
     {
         return transform.parent.parent.GetComponent<MapGrid>();
     }
-
-    /*/// <summary>
-    /// Checks if a tower can be placed on this node.
-    /// </summary>
-    /// <returns></returns>
-    public bool CanPlace(Grid grid)
-    {
-        if (!grid.ContainsNode(this))
-        {
-            throw new System.InvalidOperationException("Node.CanPlace() must be given a valid grid containing the node");
-        }
-        return Occupied;
-    }*/
-
-  /*  /// <summary>
-    /// Checks if enemies are able to travel through this space.
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <returns></returns>
-    public bool CanWalk(Grid grid)
-    {
-        if (!grid.ContainsNode(this))
-        {
-            throw new System.InvalidOperationException("Node.CanPlace() must be given a valid grid containing the node");
-        }
-        return Occupied;
-    }*/
-
-  /*  /// <summary>
-    /// Checks if enemies are able to travel through this space.
-    /// </summary>
-    /// <param name="grid"></param>
-    /// <param name="damage"></param>
-    /// <returns></returns>
-    public float WalkCost(Grid grid, int damage)
-    {
-        if (!grid.ContainsNode(this))
-        {
-            throw new System.InvalidOperationException("Node.CanPlace() must be given a valid grid containing the node");
-        }
-        if (Occupied)
-        {
-            if (damage <= 0)
-            {
-                return -1;
-            }
-            else
-            {
-                return Building.Health / damage;
-            }
-        }
-        else
-        {
-            return 0;
-        }
-    }*/
 }

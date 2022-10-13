@@ -11,13 +11,10 @@ public abstract class ABuilding : AUnit
     public int Cost { get => cost; set => cost = value; }
     public int UpgradeCost { get => upgradeCost; set => upgradeCost = value; }
 
-    protected AudioManager audioManager;
-
     protected override void Start()
     {
         base.Start();
         UpgradeCost = (int)Cost / 2;
-        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     //Store a list of enemies that come into range of a tower

@@ -15,8 +15,6 @@ public class MyFirstBuilding : ABuilding
 
     public override void Attack()
     {
-        //throw new System.NotImplementedException();
-        
         // Fire a bullet every [AttackCooldown] seconds
         if(fireRate >= AttackCooldown)
         {
@@ -24,7 +22,8 @@ public class MyFirstBuilding : ABuilding
             Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[0].transform, MDamage);
             fireRate = 0.0f;
             audioManager.PlaySound(AudioManager.Sound.Orb);
-        } else
+        }
+        else
         {
             fireRate += Time.deltaTime;
         }
