@@ -12,7 +12,7 @@ public class WaveReached : MonoBehaviour
     {
         text = GetComponent<TMP_Text>();
        LevelManager levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
-       int waves = levelManager.getWave();
+       int waves = levelManager.GetWave();
         text.text = "Wave Reached: " + waves;
       
     }

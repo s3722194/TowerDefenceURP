@@ -108,7 +108,10 @@ MonoBehaviour:
     volume: 0.1
     isLoop: 0
   - sound: 12
-    audioClips: []
+    audioClips:
+    - {fileID: 8300000, guid: 4603cbb48e869e745831af7123f80712, type: 3}
+    - {fileID: 8300000, guid: ad25bc0e999c0fb43a9d02664e52c682, type: 3}
+    - {fileID: 8300000, guid: 1d123927ed6b3254d82d7f10bf7ee831, type: 3}
     volume: 0.1
     isLoop: 0
   - sound: 13
@@ -137,7 +140,7 @@ MonoBehaviour:
     isLoop: 0
   - sound: 18
     audioClips:
-    - {fileID: 8300000, guid: b21c5b7b896262445959b8a34cc3fd0e, type: 3}
+    - {fileID: 8300000, guid: c16dd8b595ff1d44598c86e29c169e02, type: 3}
     volume: 0.4
     isLoop: 0
   musicAudioClips:

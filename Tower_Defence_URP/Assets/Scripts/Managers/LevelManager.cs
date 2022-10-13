@@ -7,41 +7,28 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject background;
-    [SerializeField]
-    private GameObject gridBackground;
-    [SerializeField]
-    private GameObject map;
+    [SerializeField] private GameObject background;
+    [SerializeField] private GameObject gridBackground;
+    [SerializeField] private GameObject map;
 
-    [SerializeField]
-    private List<Material> wallMaterials = new List<Material>();
-    [SerializeField]
-    private List<Material> tileMaterials = new List<Material>();
-    [SerializeField]
-    private List<Material> startMaterials = new List<Material>();
-    [SerializeField]
-    private List<Material> endMaterials = new List<Material>();
+    [SerializeField] private List<Material> wallMaterials = new List<Material>();
+    [SerializeField] private List<Material> tileMaterials = new List<Material>();
+    [SerializeField] private List<Material> startMaterials = new List<Material>();
+    [SerializeField] private List<Material> endMaterials = new List<Material>();
 
-    [SerializeField]
-    private List<EnemyUnit> enemies = new List<EnemyUnit>();
+    [SerializeField] private List<EnemyUnit> enemies = new List<EnemyUnit>();
     private List<Tuple<EnemyUnit, float>> spawnQueue = new List<Tuple<EnemyUnit, float>>();
-    [SerializeField]
-    private float enemySpawnDelay;
-    [SerializeField]
-    private float waveDelayReduction;
-    [SerializeField]
-    private float minSpawnDelay;
-    [SerializeField]
-    private float waveStartDelay;
 
-    //to calcualte the x and y corrdinates for the game
+    [SerializeField] private float enemySpawnDelay;
+    [SerializeField] private float waveDelayReduction;
+    [SerializeField] private float minSpawnDelay;
+    [SerializeField] private float waveStartDelay;
+
+    //to calculate the x and y corrdinates for the game
 
     private Dictionary<string, Vector2> southWestCorners = new Dictionary<string, Vector2>();
 
     private float time;
-    private GameObject ui;
-    //private GameObject managers;
     private int waveNum;
     private int prevWave;
     private bool autoNextWave;
@@ -57,14 +44,13 @@ public class LevelManager : MonoBehaviour
 
     
 
-    public List<Material> TileMaterials { get =>tileMaterials; }
+    public List<Material> TileMaterials { get => tileMaterials; }
     public List<Material> StartMaterials { get => startMaterials; }
-    public List<Material> EndMaterials { get =>endMaterials; }
+    public List<Material> EndMaterials { get => endMaterials; }
     public List<Material> WallMaterials { get => wallMaterials; }
     public bool WaveInProgress { get; private set; }
 
     private GameManager gameManager;
-
     private AudioManager audioManager;
 
     private void Awake()
@@ -72,11 +58,6 @@ public class LevelManager : MonoBehaviour
         southWestCorners.Add("Map_9x9", new Vector2(-4, -4));
         southWestCorners.Add("Map_19x19", new Vector2(-9, -9));
         southWestCorners.Add("Map_17x17", new Vector2(-8, -8));
-    }
-
-    private void ScaleBackground()
-    {
-
     }
 
     // Start is called before the first frame update
@@ -153,8 +134,6 @@ public class LevelManager : MonoBehaviour
 
     public EnemyUnit GetEnemyType (int waveNumber)
     {
-        // Temporary override to only return the first enemy type
-        return enemies[0];
         int randValue = UnityEngine.Random.Range(waveNumber, 100);
         if (randValue > 95)
         {
@@ -167,7 +146,7 @@ public class LevelManager : MonoBehaviour
         return enemies[0];
     }
 
-    public int getWave()
+    public int GetWave()
     {
         return waveNum;
     }

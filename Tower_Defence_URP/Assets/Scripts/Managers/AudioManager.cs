@@ -78,7 +78,7 @@ public class AudioManager : MonoBehaviour
                 break;
             }
         }
-        Debug.LogError("Sound " + sound + " not found!");
+        Debug.LogWarning("Sound " + sound + " not found!");
         return null;
     }
 
@@ -95,7 +95,7 @@ public class AudioManager : MonoBehaviour
                 break;
             }
         }
-        Debug.LogError("Music " + music + " not found!");
+        Debug.LogWarning("Music " + music + " not found!");
         return null;
     }
 
