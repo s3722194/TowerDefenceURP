@@ -221,7 +221,7 @@ TrailRenderer:
   m_SortingLayerID: 1156062459
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Time: 2.5
+  m_Time: 3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.73878086, g: 0.6061766, b: 0.9245283, a: 1}
+  m_Color: {r: 0.38581538, g: 0.28622285, b: 0.9056604, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0

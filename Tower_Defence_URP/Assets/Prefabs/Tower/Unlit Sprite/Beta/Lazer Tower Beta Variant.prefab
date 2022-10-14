@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -349,7 +349,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -517,7 +517,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -645,6 +645,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.9375
       objectReference: {fileID: 0}
+    - target: {fileID: 3393295379330188499, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Name
+      value: Lazer Particles
+      objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644538, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
       value: West Lazer
@@ -695,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644541, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3433329400193644541, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -707,7 +711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4207677422278161152, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4207677422278161152, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -771,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013821, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6948567749821013821, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -799,7 +803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8765285056442331950, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8765285056442331950, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_SortingLayerID
@@ -820,6 +824,10 @@ PrefabInstance:
     - target: {fileID: 8765285056442331951, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.097
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151673195741694170, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
+      propertyPath: m_Name
+      value: Lazer Line
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 903763508296570646, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
@@ -889,6 +897,7 @@ MonoBehaviour:
   mDamage: 15
   rDamage: 5
   range: 5
+  unitName: 
   destructable: 0
   cost: 100
   upgradeCost: 0
@@ -919,7 +928,7 @@ MonoBehaviour:
   - {x: 0.5116451, y: -0.4217553, z: 0.000000022351742}
   m_ShapePathHash: 1060431707
   m_Mesh: {fileID: 0}
-  m_InstanceId: 73948
+  m_InstanceId: 48040
 --- !u!114 &8604560573431288381
 MonoBehaviour:
   m_ObjectHideFlags: 0
