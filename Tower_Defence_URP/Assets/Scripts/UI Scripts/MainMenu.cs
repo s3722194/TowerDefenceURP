@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     private AudioManager audioManager;
+    [SerializeField] private GameObject HelpMenuCanvas;
+    [SerializeField] private GameObject MainMenuCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,18 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Grid HandDrawn");
+    }
+
+    public void ToHelp()
+    {
+        HelpMenuCanvas.SetActive(true);
+        MainMenuCanvas.SetActive(false);
+
+        HelpMenu help = GameObject.FindObjectOfType<HelpMenu>();
+        if(help != null)
+        {
+            help.RestartPasses();
+        }
     }
 
     public void ToMainMenu()
