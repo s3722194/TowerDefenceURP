@@ -388,7 +388,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 8
 --- !u!114 &-7926353470116530101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,8 +445,8 @@ MonoBehaviour:
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
   m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1654002
---- !u!114 &5218394787845281232
+  m_InstanceId: 128028
+--- !u!114 &3465840076124091748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,21 +455,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2035722182896773497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21985d0570c5124a96e7c50b086f89d, type: 3}
+  m_Script: {fileID: 11500000, guid: b279d06b9c9d62342b6eccc50f9842e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 450
   maxHealth: 450
-  speed: 10
   attackCooldown: 10
-  mDamage: 100
-  rDamage: 0
-  range: 50
+  damage: 220
+  range: 8
+  unitName: Blaze Tower
   destructable: 0
-  cost: 900
-  upgradeCost: 0
-  EnemiesInRange: []
+  cost: 800
+  upgradeCostRate: 0.5
   ProjectilePrefab: {fileID: 3757484330204549615, guid: 7444dd61dff4309459e91eb30f5acd5d, type: 3}
+  sound: 4
+  upgradeable: 1
+  upgradeCost: 0
+  enemiesInRange: []
 --- !u!4 &2035722182896773499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5992573463983184556, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}

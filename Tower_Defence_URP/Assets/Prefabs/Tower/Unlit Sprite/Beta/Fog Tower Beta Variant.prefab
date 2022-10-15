@@ -199,8 +199,7 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5191788495441484189, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}
 --- !u!1 &2093819992983936561 stripped
 GameObject:
@@ -287,7 +286,7 @@ MonoBehaviour:
   - {x: 0.4322729, y: -0.41620398, z: -0.00000015646219}
   m_ShapePathHash: -855526859
   m_Mesh: {fileID: 0}
-  m_InstanceId: 73852
+  m_InstanceId: 122060
 --- !u!114 &6361869969402622560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,15 +301,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 200
   maxHealth: 200
-  speed: 15
   attackCooldown: 0.01
-  mDamage: 0
-  rDamage: 0
-  range: 10
+  damage: 0
+  range: 3
+  unitName: 
   destructable: 0
-  cost: 150
+  cost: 400
+  upgradeCostRate: 0.5
+  ProjectilePrefab: {fileID: 0}
+  sound: 2
+  upgradeable: 0
   upgradeCost: 0
-  EnemiesInRange: []
+  enemiesInRange: []
+  slowDownRate: 3
 --- !u!4 &2093819992983936563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2802711681706284274, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}

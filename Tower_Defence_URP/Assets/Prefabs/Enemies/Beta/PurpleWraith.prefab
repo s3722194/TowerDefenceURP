@@ -366,14 +366,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 50
-  speed: 3
+  maxHealth: 200
   attackCooldown: 0
-  mDamage: 0
-  rDamage: 0
+  damage: 0
   range: 0
-  unitName: 
-  moneyOnDeath: 100
+  unitName: Purple Wraith
+  speed: 2
+  moneyOnDeath: 50
   livesOnEscape: 1
   enemyTag: Enemy
   enemyAnimation: {fileID: -4767969781564234157}

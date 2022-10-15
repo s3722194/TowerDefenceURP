@@ -6,10 +6,8 @@ public abstract class AUnit : MonoBehaviour
 {
     [SerializeReference] private int health;
     [SerializeField] private int maxHealth;
-    [SerializeField] private float speed;
     [SerializeField] private float attackCooldown;
-    [SerializeField] private int mDamage;
-    [SerializeField] private int rDamage;
+    [SerializeField] private int damage;
     [SerializeField] private float range;
     [SerializeField] private string unitName;
 
@@ -17,10 +15,8 @@ public abstract class AUnit : MonoBehaviour
 
     public int Health { get => health; set => health = value; }
     public int MaxHealth { get => maxHealth; protected set => maxHealth = value; }
-    public float Speed { get => speed; set => speed = value; }
     public float AttackCooldown { get => attackCooldown; protected set => attackCooldown = value; }
-    public int MDamage { get => mDamage; set => mDamage = value; }
-    public int RDamage { get => rDamage; protected set => rDamage = value; }
+    public int Damage { get => damage; set => damage = value; }
     public float Range { get => range; protected set => range = value; }
     public string UnitName { get => unitName; protected set => unitName = value; }
 
@@ -56,5 +52,8 @@ public abstract class AUnit : MonoBehaviour
         return false;
     }
 
-    public abstract void Die();
+    public virtual void Die()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1156062459
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -558,7 +558,7 @@ MonoBehaviour:
   - {x: -0.31971955, y: -0.30684972, z: 0.000000022351742}
   m_ShapePathHash: 1441849937
   m_Mesh: {fileID: 0}
-  m_InstanceId: 73640
+  m_InstanceId: 128082
 --- !u!114 &6504688555254336223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,15 +573,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 500
   maxHealth: 500
-  speed: 1
   attackCooldown: 0.5
-  mDamage: 50
-  rDamage: 1
-  range: 0
+  damage: 15
+  range: 4.4
+  unitName: 
   destructable: 0
-  cost: 1500
+  cost: 2000
+  upgradeCostRate: 1.5
+  ProjectilePrefab: {fileID: 0}
+  sound: 7
+  upgradeable: 1
   upgradeCost: 0
-  EnemiesInRange: []
+  enemiesInRange: []
 --- !u!114 &7893263213882311926
 MonoBehaviour:
   m_ObjectHideFlags: 0

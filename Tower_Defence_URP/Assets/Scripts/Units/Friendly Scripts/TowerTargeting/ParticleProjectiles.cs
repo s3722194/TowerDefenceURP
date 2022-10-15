@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticleProjectiles : MonoBehaviour
 {
-    [SerializeField] private ABuilding BlackHoleTower;
+    [SerializeField] private Building BlackHoleTower;
 
     private ParticleSystem ps;
     private List<ParticleCollisionEvent> collisionEvents;
@@ -26,7 +26,7 @@ public class ParticleProjectiles : MonoBehaviour
         {
             if(enemy)
             {
-                enemy.TakeDamage(BlackHoleTower.MDamage);
+                enemy.TakeDamage(BlackHoleTower.Damage);
             }
             i++;
         }

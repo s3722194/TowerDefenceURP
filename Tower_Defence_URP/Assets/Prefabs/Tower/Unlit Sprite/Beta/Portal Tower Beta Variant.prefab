@@ -566,15 +566,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 200
   maxHealth: 200
-  speed: 1
   attackCooldown: 5
-  mDamage: 1
-  rDamage: 25
-  range: 10
+  damage: 50
+  range: 2
+  unitName: Black Hole
   destructable: 0
   cost: 1000
+  upgradeCostRate: 1.5
+  ProjectilePrefab: {fileID: 0}
+  sound: 6
+  upgradeable: 1
   upgradeCost: 0
-  EnemiesInRange: []
+  enemiesInRange: []
 --- !u!114 &7982498325443416727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +621,7 @@ MonoBehaviour:
   - {x: 0.35493064, y: -0.33327246, z: 0.000000022351742}
   m_ShapePathHash: -2016135523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 74174
+  m_InstanceId: 128434
 --- !u!4 &5072118316001354987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959825259802375860, guid: f116628cbd4415d46b7e62a6172df875, type: 3}

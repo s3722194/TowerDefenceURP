@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MistBuilding : ABuilding
+public class MistBuilding : Building
 {
-    private const float speedRate = 10.0f;
+    [SerializeField] private float slowDownRate;
 
     public override void Attack()
     {
         // NOT ATTACKING
-    }
-
-    public override void Die()
-    {
-        throw new System.NotImplementedException();
     }
 
     protected override void Update()
@@ -29,7 +24,7 @@ public class MistBuilding : ABuilding
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if(enemy != null)
             {
-                enemy.Speed = enemy.Speed / speedRate;
+                enemy.Speed /= slowDownRate;
             }
         }
     }
@@ -42,7 +37,7 @@ public class MistBuilding : ABuilding
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if (enemy != null)
             {
-                enemy.Speed = enemy.Speed * speedRate;
+                enemy.Speed *= slowDownRate;
             }
         }
     }

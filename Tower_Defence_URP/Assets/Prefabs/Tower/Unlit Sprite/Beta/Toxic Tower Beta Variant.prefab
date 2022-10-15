@@ -390,7 +390,7 @@ MonoBehaviour:
   - {x: 0.46678162, y: -0.43044895, z: 0.000000022351742}
   m_ShapePathHash: -362886735
   m_Mesh: {fileID: 0}
-  m_InstanceId: 86830
+  m_InstanceId: 128638
 --- !u!114 &2443210320345771828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,16 +420,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 360
   maxHealth: 360
-  speed: 0
   attackCooldown: 3
-  mDamage: 2
-  rDamage: 0
-  range: 5
+  damage: 10
+  range: 1
+  unitName: Toxic Tower
   destructable: 0
-  cost: 400
-  upgradeCost: 0
-  EnemiesInRange: []
+  cost: 600
+  upgradeCostRate: 1
   ProjectilePrefab: {fileID: 6308159105955538640, guid: 11f901f8f699a1141bbf758b7a4ade0e, type: 3}
+  sound: 3
+  upgradeable: 1
+  upgradeCost: 0
+  enemiesInRange: []
 --- !u!114 &5249978057251903690
 MonoBehaviour:
   m_ObjectHideFlags: 0

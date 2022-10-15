@@ -7,9 +7,9 @@ public class Node
     private int x;
     private int y;
     private float nodeSize;
-    private ABuilding building;
+    private Building building;
 
-    public ABuilding Building { get => building; set => building = value; }
+    public Building Building { get => building; set => building = value; }
     public bool Occupied { get => Building != null; }
 
     public Node(int x, int y, float nodeSize)

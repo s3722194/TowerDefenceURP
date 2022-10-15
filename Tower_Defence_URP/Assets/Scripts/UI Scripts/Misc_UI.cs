@@ -22,7 +22,8 @@ public class Misc_UI : MonoBehaviour
     void Update()
     {
         moneyText.text = "$ " + gm.Money.ToString();
-        healthText.text = gm.Lives.ToString() + " / 100";
+        healthText.text = gm.Lives.ToString() + " / " + gm.MaxLives.ToString();
         healthBar.value = gm.Lives;
+        healthBar.maxValue = gm.MaxLives;
     }
 }

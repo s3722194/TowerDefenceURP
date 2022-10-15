@@ -2,49 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyFirstBuilding : ABuilding
+public class MyFirstBuilding : Building
 {
-    public GameObject ProjectilePrefab;
-
-    private float fireRate;
-
-    void Awake()
-    {
-        fireRate = AttackCooldown;
-    }
-
     public override void Attack()
     {
         // Fire a bullet every [AttackCooldown] seconds
-        if(fireRate >= AttackCooldown)
+        if(FireRate >= AttackCooldown)
         {
             // Debug.Log("spawning projectile");
-            Projectile p = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, EnemiesInRange[0].transform, MDamage);
-            fireRate = 0.0f;
+            _ = Projectile.Spawn(ProjectilePrefab, this.transform.position, this.transform.rotation, enemiesInRange[0].transform, Damage);
+            FireRate = 0.0f;
             audioManager.PlaySound(AudioManager.Sound.Orb);
         }
         else
         {
-            fireRate += Time.deltaTime;
-        }
-    }
-
-    public override void Die()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void Update()
-    {
-        //throw new System.NotImplementedException();
-        
-        if(EnemiesInRange.Count > 0)
-        {
-            Attack();
-        }
-        else
-        {
-            fireRate = AttackCooldown;
+            FireRate += Time.deltaTime;
         }
     }
 }

@@ -10,7 +10,7 @@ public class CheckCosts : MonoBehaviour
 
     private GameManager gameManager;
     private LevelManager levelManager;
-    private ABuilding building;
+    private Building building;
     private UpgradeHUD upgrade;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class CheckCosts : MonoBehaviour
 
         if (towerPrefab != null)
         {
-            building = towerPrefab.GetComponent<ABuilding>();
+            building = towerPrefab.GetComponent<Building>();
         }
     }
 
@@ -34,7 +34,7 @@ public class CheckCosts : MonoBehaviour
         {
             if(upgrade.selectedTower != null)
             {
-                building = upgrade.selectedTower.GetComponent<ABuilding>();
+                building = upgrade.selectedTower.GetComponent<Building>();
             }
 
             if (building.UpgradeCost > gameManager.Money)

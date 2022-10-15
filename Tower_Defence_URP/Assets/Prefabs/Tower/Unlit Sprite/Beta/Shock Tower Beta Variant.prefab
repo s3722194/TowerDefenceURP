@@ -436,7 +436,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 6
 --- !u!114 &2529163994613330117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
   m_ShapePathHash: -1014512811
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1679072
+  m_InstanceId: 128492
 --- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,15 +480,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 300
   maxHealth: 300
-  speed: 10
   attackCooldown: 2
-  mDamage: 10
-  rDamage: 2
-  range: 50
+  damage: 40
+  range: 6
+  unitName: Shock Tower
   destructable: 0
-  cost: 700
+  cost: 600
+  upgradeCostRate: 1.2
+  ProjectilePrefab: {fileID: 0}
+  sound: 5
+  upgradeable: 1
   upgradeCost: 0
-  EnemiesInRange: []
+  enemiesInRange: []
   firstLightning: {fileID: 3455376017817686582, guid: 5348676dd95f85041a91d8066125ae1d, type: 3}
   secondLightning: {fileID: 4432242467140003617, guid: 81fc9662c8350f34e896e2dd9a432317, type: 3}
   thirdLightning: {fileID: 829971830658889584, guid: adc96a9c5a6ab6344b8a954af69f2b2d, type: 3}

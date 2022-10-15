@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int lives;
     [SerializeField] private int money;
-
     private AudioManager audioManager;
 
     public int Money {  get => money; set => money =value; }
     public int Lives { get => lives; set => lives = value; }
+    public int MaxLives { get; private set; }
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         // probs want to initialise these values
         // idk what they are so i wont touch them
         selectedTower = null;
-        money = 100000;
+        MaxLives = lives;
         Time.timeScale = 1.0f;
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }

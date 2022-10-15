@@ -52,7 +52,7 @@ public class GridTile : MonoBehaviour
             if(GM.GetSelectedTower() != null)
             {
                 GameObject selectedTower = GM.GetSelectedTower();
-                ABuilding building = selectedTower.GetComponent<ABuilding>();
+                Building building = selectedTower.GetComponent<Building>();
                 
 
                 if(building != null && GM.Money >= building.Cost)
@@ -70,7 +70,7 @@ public class GridTile : MonoBehaviour
         }
         else
         {
-            upgradeCanvas.updateHUD(occupiedTower, towerRange);
+            upgradeCanvas.UpdateHUD(occupiedTower, towerRange);
             towerRange.SetActive(true);
             GameObject info_canvas = GameObject.Find("Info_Canvas");
             foreach (Transform panel in info_canvas.GetComponentsInChildren<Transform>())

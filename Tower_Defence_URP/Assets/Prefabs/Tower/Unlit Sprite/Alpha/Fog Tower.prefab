@@ -265,7 +265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2802711681706284274}
   - component: {fileID: 2802711681706284273}
-  - component: {fileID: 5191788495441484189}
   m_Layer: 0
   m_Name: Fog Tower
   m_TagString: Tower
@@ -342,19 +341,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5191788495441484189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2802711681706284272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8475, y: 0.85875, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3122897147758345120
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +412,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -510,7 +496,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1963401755
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -9,7 +9,7 @@ public class UpgradeHUD : MonoBehaviour
     private GameManager gameManager;
     private AudioManager audioManager;
     public GameObject selectedTower;
-    private ABuilding towerScript;
+    private Building towerScript;
     private int sellCost;
     private GameObject range;
 
@@ -41,21 +41,20 @@ public class UpgradeHUD : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Delete) && upgradeCanvas.activeSelf)
         {
-            sellTower();
+            SellTower();
         }
     }
 
-    public void updateHUD(GameObject _selectedTower, GameObject towerRange)
+    public void UpdateHUD(GameObject _selectedTower, GameObject towerRange)
     {
         range = towerRange;
-        updateHUD(_selectedTower);
-
+        UpdateHUD(_selectedTower);
     }
 
-    public void updateHUD(GameObject _selectedTower)
+    public void UpdateHUD(GameObject _selectedTower)
     {
         selectedTower = _selectedTower;
-        towerScript = _selectedTower.GetComponent<ABuilding>();
+        towerScript = _selectedTower.GetComponent<Building>();
         
 
         if(towerScript != null)
@@ -64,7 +63,7 @@ public class UpgradeHUD : MonoBehaviour
                 towerImage.sprite = selectedTower.GetComponent<SpriteRenderer>().sprite;
                 towerName.text = selectedTower.tag;
                 healthText.text = towerScript.Health.ToString();
-                attackText.text = towerScript.MDamage.ToString();
+                attackText.text = towerScript.Damage.ToString();
 
                 sellCost = (int) towerScript.Cost / 2;
 
@@ -73,7 +72,7 @@ public class UpgradeHUD : MonoBehaviour
         }
     }
 
-    public void sellTower()
+    public void SellTower()
     {
         if(selectedTower != null && towerScript != null)
         {
@@ -89,26 +88,26 @@ public class UpgradeHUD : MonoBehaviour
         }
     }
 
-    public void upgradeTower()
+    public void UpgradeTower()
     {
         if (selectedTower != null && towerScript != null)
         {
-            if(towerScript.UpgradeCost > 0 && gameManager.Money >= towerScript.UpgradeCost)
+            if(towerScript.UpgradeCost > 0 && gameManager.Money >= towerScript.UpgradeCost && towerScript.Upgradeable)
             {
                 gameManager.SpendMoney(towerScript.UpgradeCost);
                 towerScript.Cost += towerScript.UpgradeCost;
-                towerScript.MDamage *= 2;
+                towerScript.Damage *= 2;
                 towerScript.Health += 100;
                 towerScript.UpgradeCost = (int)towerScript.Cost/2;
 
                 audioManager.PlaySound(AudioManager.Sound.UpgradeTower);
 
-                updateHUD(selectedTower);
+                UpdateHUD(selectedTower);
             }
         }
     }
 
-    public void cancelUpgrade()
+    public void CancelUpgrade()
     {
         upgradeCanvas.SetActive(false);
         selectedTower = null;

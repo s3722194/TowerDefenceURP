@@ -315,56 +315,7 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7977802913381393394, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7977802913381393394, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: cost
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: range
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: health
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: mDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: rDamage
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: buildingTag
-      value: Tower
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: attackCooldown
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734264222947530066, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
-      propertyPath: ProjectilePrefab
-      value: 
-      objectReference: {fileID: 720772566777826878, guid: b3e0e080496c62f4087eb447b53dd12d, type: 3}
-    m_RemovedComponents:
-    - {fileID: 7977802913381393394, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
 --- !u!1 &2173682292343665349 stripped
 GameObject:
@@ -416,6 +367,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4
+--- !u!114 &-4485771459764001157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173682292494325721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b279d06b9c9d62342b6eccc50f9842e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  maxHealth: 50
+  attackCooldown: 0.15
+  damage: 2
+  range: 4
+  unitName: Orb Shooter
+  destructable: 0
+  cost: 250
+  upgradeCostRate: 0.8
+  ProjectilePrefab: {fileID: 720772566777826878, guid: b3e0e080496c62f4087eb447b53dd12d, type: 3}
+  sound: 1
+  upgradeable: 1
+  upgradeCost: 0
+  enemiesInRange: []
 --- !u!114 &2530780193348876217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,7 +446,7 @@ MonoBehaviour:
   - {x: -0.39131126, y: -0.34346056, z: 0.000000022351742}
   m_ShapePathHash: -1450391104
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1654396
+  m_InstanceId: 128342
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}

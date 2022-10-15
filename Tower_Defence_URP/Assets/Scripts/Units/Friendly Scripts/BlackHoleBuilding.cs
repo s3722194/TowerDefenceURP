@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackHoleBuilding : ABuilding
+public class BlackHoleBuilding : Building
 {
     public override void Attack()
     {
-        //Do Nothing
-        audioManager.PlaySound(AudioManager.Sound.BlackHole);
-    }
-
-    public override void Die()
-    {
-        throw new System.NotImplementedException();
+        audioManager.PlaySound(sound);
     }
 
     protected override void Update()

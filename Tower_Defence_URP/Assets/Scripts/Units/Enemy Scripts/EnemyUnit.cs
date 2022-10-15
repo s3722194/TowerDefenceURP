@@ -6,31 +6,31 @@ using System.Collections;
 
 public class EnemyUnit : AUnit
 {
-    [SerializeField] private int moneyOnDeath;
-    [SerializeField] private int livesOnEscape;
-    [SerializeField] private string enemyTag;
-    [SerializeField] private EnemyAnimation enemyAnimation;
-    [SerializeField] private float deathAnimation = 1;
-    [SerializeField] private double blinkProbablity = 0.01;
-    private Rigidbody2D rb;
-    private bool isDying = false;
+    [SerializeField] protected float speed;
+    [SerializeField] protected int moneyOnDeath;
+    [SerializeField] protected int livesOnEscape;
+    [SerializeField] protected string enemyTag;
+    [SerializeField] protected EnemyAnimation enemyAnimation;
+    [SerializeField] protected float deathAnimation = 1;
+    [SerializeField] protected double blinkProbablity = 0.01;
 
-    public int LivesOnEscape { get => livesOnEscape; private set => livesOnEscape = value; }
-    public int MoneyOnDeath { get => moneyOnDeath; private set => moneyOnDeath = value; }
-
+    protected Rigidbody2D rb;
     private GameManager gameManager;
-    private LevelManager levelManager;
     private MapGrid mapGrid;
     private int pathNum;
     private int positionNum;
 
+    public int LivesOnEscape { get => livesOnEscape; private set => livesOnEscape = value; }
+    public int MoneyOnDeath { get => moneyOnDeath; private set => moneyOnDeath = value; }
+    public float Speed { get => speed; set => speed = value; }
+    public bool IsDying { get; protected set; }
 
     protected override void Start()
     {
         base.Start();
         gameObject.tag = enemyTag;
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+        IsDying = false;
 
         // Determine path number
         mapGrid = FindObjectOfType<MapGrid>();
@@ -40,12 +40,13 @@ public class EnemyUnit : AUnit
         rb = GetComponent<Rigidbody2D>();
         rb.position = new Vector3(startPos.x, startPos.y);
         positionNum = 0;
+
         audioManager.PlaySound(AudioManager.Sound.EnemySpawn);
     }
 
     protected override void Update()
     {
-        if (!isDying)
+        if (!IsDying)
         {
             Vector2 force = WalkAlongPath();
             // Vector2 force = DirectMoveToExit();
@@ -107,7 +108,7 @@ public class EnemyUnit : AUnit
 
     public override void Die()
     {
-        isDying = true;
+        IsDying = true;
         rb.constraints = RigidbodyConstraints2D.FreezePosition;
         gameManager.Money += MoneyOnDeath;
         enemyAnimation.IsDying();

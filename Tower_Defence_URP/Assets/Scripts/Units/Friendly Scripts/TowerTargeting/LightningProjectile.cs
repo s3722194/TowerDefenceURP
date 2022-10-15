@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class LightningProjectile : MonoBehaviour
 {
-    public float movementSpeed = 5.5f;
-    private static int damage;
+    [SerializeField] private float movementSpeed = 5.5f;
+    [SerializeReference] private static int damage;
 
-    private int chainChance = 100;
-    private float radius = 1.0f;
+    [SerializeField] private int chainChance = 100;
+    [SerializeField] private int chainProbReduction = 10;
+    private readonly float radius = 1.0f;
     private float radiusSq;
 
     private Transform target;
@@ -62,7 +63,7 @@ public class LightningProjectile : MonoBehaviour
                     if(chainProbability < chainChance)
                     {
                         target = newTargets[randomTarget].transform;
-                        chainChance -= 10;
+                        chainChance -= chainProbReduction;
                     } else
                     {
                         Destroy(gameObject);

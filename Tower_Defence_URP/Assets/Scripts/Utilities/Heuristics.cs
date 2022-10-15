@@ -16,7 +16,7 @@ public static class Heuristics
         float score = DistanceHeuristic(grid, position, goalPosition);
         if (grid.HasGridTile(position) && grid.GetGridTile(position).Occupied)
         {
-            score += grid.GetGridTile(position).OccupiedTower.GetComponent<ABuilding>().Health;
+            score += grid.GetGridTile(position).OccupiedTower.GetComponent<Building>().Health;
         }
         return score;
     }

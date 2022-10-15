@@ -164,7 +164,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 422360241
-  m_SortingLayer: 7
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3f2c59ac9587c644280c6515b83ddb99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -258,12 +258,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 50
-  speed: 1
   attackCooldown: 0
-  mDamage: 0
-  rDamage: 0
+  damage: 0
   range: 0
-  moneyOnDeath: 20
+  unitName: Blue Wraith
+  speed: 1
+  moneyOnDeath: 10
   livesOnEscape: 1
   enemyTag: Enemy
   enemyAnimation: {fileID: 7595859158783691156}
@@ -409,7 +409,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 314535509
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
