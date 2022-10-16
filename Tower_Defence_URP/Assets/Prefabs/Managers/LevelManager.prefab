@@ -104,7 +104,7 @@ MonoBehaviour:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
     endWaveBonus: 15
-  - waveName: Increased Quantity (40)
+  - waveName: Increased Quantity (50)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
@@ -127,7 +127,30 @@ MonoBehaviour:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
     endWaveBonus: 30
-  - waveName: Grouping (74)
+  - waveName: Grouping (50)
+    spawnList:
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    endWaveBonus: 30
+  - waveName: Increased Grouping (74)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
@@ -154,10 +177,12 @@ MonoBehaviour:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1
     endWaveBonus: 50
-  - waveName: Increased Speed (99)
+  - waveName: Increased Speed (101)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1.5
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
@@ -214,7 +239,7 @@ MonoBehaviour:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1
     endWaveBonus: 70
-  - waveName: Increased Quantity (100)
+  - waveName: Increased Quantity (125)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
@@ -276,8 +301,8 @@ MonoBehaviour:
       delayToThis: 1
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1
-    endWaveBonus: 40
-  - waveName: Increased Quantity (220)
+    endWaveBonus: 65
+  - waveName: Increased Quantity (200)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
@@ -399,7 +424,7 @@ MonoBehaviour:
       delayToThis: 0.5
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 0.5
-    endWaveBonus: 100
+    endWaveBonus: 80
   - waveName: Increased Strength (150)
     spawnList:
     - enemy: {fileID: 5363133832958399745, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
@@ -492,7 +517,7 @@ MonoBehaviour:
     - enemy: {fileID: 5363133832958399745, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
       delayToThis: 3.5
     endWaveBonus: 150
-  - waveName: Grouping + Speed + Quantity (200)
+  - waveName: Grouping + Speed + Quantity (260)
     spawnList:
     - enemy: {fileID: 5363133832958399745, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
       delayToThis: 3
@@ -544,8 +569,8 @@ MonoBehaviour:
       delayToThis: 3
     - enemy: {fileID: 5363133832958399745, guid: ebf06c5fb343d0a458f0a3b5815e61c0, type: 3}
       delayToThis: 3
-    endWaveBonus: 40
-  - waveName: Speed Demons (100)
+    endWaveBonus: 100
+  - waveName: Speed Demons (300)
     spawnList:
     - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
       delayToThis: 3
@@ -567,7 +592,130 @@ MonoBehaviour:
       delayToThis: 2
     - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
       delayToThis: 2
-    endWaveBonus: 40
+    endWaveBonus: 200
+  - waveName: Mixed Speeds
+    spawnList:
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 3e217471acecf6f4bab548a7842581f1, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    - enemy: {fileID: 4346392046146053814, guid: 8e82e58ac42e2534db105fb8f5bbfe3e, type: 3}
+      delayToThis: 0.5
+    endWaveBonus: 300
   - waveName: Boss (1100)
     spawnList:
     - enemy: {fileID: 5363133832958399745, guid: 6a8870e884098d9468b5242ddcfee789, type: 3}
