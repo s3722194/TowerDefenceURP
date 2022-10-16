@@ -263,7 +263,7 @@ MonoBehaviour:
   range: 0
   unitName: Blue Wraith
   speed: 1
-  moneyOnDeath: 2
+  moneyOnDeath: 10
   livesOnEscape: 1
   enemyTag: Enemy
   enemyAnimation: {fileID: 7595859158783691156}
