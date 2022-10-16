@@ -910,7 +910,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   attackCooldown: 1
-  damage: 20
+  damage: 25
   range: 4
   unitName: Plasma Tower
   destructable: 0

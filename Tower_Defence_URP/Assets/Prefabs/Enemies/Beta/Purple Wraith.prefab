@@ -372,7 +372,7 @@ MonoBehaviour:
   range: 0
   unitName: Purple Wraith
   speed: 2
-  moneyOnDeath: 6
+  moneyOnDeath: 40
   livesOnEscape: 1
   enemyTag: Enemy
   enemyAnimation: {fileID: -4767969781564234157}

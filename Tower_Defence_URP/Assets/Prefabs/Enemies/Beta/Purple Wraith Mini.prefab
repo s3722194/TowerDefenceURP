@@ -372,7 +372,7 @@ MonoBehaviour:
   range: 0
   unitName: Purple Wraith Mini
   speed: 5
-  moneyOnDeath: 4
+  moneyOnDeath: 5
   livesOnEscape: 1
   enemyTag: Enemy
   enemyAnimation: {fileID: -4767969781564234157}
