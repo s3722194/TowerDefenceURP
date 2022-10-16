@@ -571,7 +571,7 @@ MonoBehaviour:
   range: 2
   unitName: Black Hole
   destructable: 0
-  cost: 2500
+  cost: 1500
   upgradeCostRate: 1.5
   ProjectilePrefab: {fileID: 0}
   sound: 6

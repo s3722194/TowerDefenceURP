@@ -465,7 +465,7 @@ MonoBehaviour:
   range: 8
   unitName: Blaze Tower
   destructable: 0
-  cost: 750
+  cost: 500
   upgradeCostRate: 1.2
   ProjectilePrefab: {fileID: 3757484330204549615, guid: 7444dd61dff4309459e91eb30f5acd5d, type: 3}
   sound: 4
