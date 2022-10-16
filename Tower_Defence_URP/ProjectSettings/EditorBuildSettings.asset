@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e47982488905b9441ac1cb65f1b48931
   - enabled: 1
-    path: Assets/Scenes/Test Scenes/Grid HandDrawn.unity
-    guid: c16ea015942f30143829aedcf079741c
-  - enabled: 1
     path: Assets/Scenes/Test Scenes/Managers.unity
     guid: 7f3434ea566c2aa4fbab51b255a1e32a
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/Grid HandDrawn.unity
+    guid: c16ea015942f30143829aedcf079741c
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 0880f3d16801dd547a9afe761f9ba1c0
