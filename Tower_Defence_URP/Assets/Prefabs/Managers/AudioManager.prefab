@@ -52,12 +52,12 @@ MonoBehaviour:
   - sound: 0
     audioClips:
     - {fileID: 8300000, guid: 57aab41c1548b66469f0f425065244a8, type: 3}
-    volume: 0.6
+    volume: 0.3
     isLoop: 0
   - sound: 1
     audioClips:
     - {fileID: 8300000, guid: 9a994f3eb8ce57040b154a0d9ab09781, type: 3}
-    volume: 0.5
+    volume: 0.3
     isLoop: 0
   - sound: 2
     audioClips:
@@ -133,12 +133,12 @@ MonoBehaviour:
   - sound: 16
     audioClips:
     - {fileID: 8300000, guid: 2c27f9502d5f7584880eb19c0cc250cc, type: 3}
-    volume: 0.3
+    volume: 0.4
     isLoop: 0
   - sound: 17
     audioClips:
     - {fileID: 8300000, guid: 2714c566f53d54e4593e17e7cfdb4acc, type: 3}
-    volume: 0.4
+    volume: 0.6
     isLoop: 0
   - sound: 18
     audioClips:
