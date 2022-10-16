@@ -149,7 +149,7 @@ MonoBehaviour:
       delayToThis: 3
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1.5
-    endWaveBonus: 30
+    endWaveBonus: 55
   - waveName: Increased Grouping (74)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}

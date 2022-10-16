@@ -445,7 +445,7 @@ MonoBehaviour:
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
   m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 181442
+  m_InstanceId: 193266
 --- !u!114 &3465840076124091748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,8 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  attackCooldown: 10
-  damage: 220
+  attackCooldown: 6
+  damage: 140
   range: 8
   unitName: Blaze Tower
   destructable: 0
