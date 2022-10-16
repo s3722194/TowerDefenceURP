@@ -456,7 +456,7 @@ MonoBehaviour:
   range: 0
   unitName: Brown Wraith
   speed: 0.9
-  moneyOnDeath: 10
+  moneyOnDeath: 15
   livesOnEscape: 2
   enemyTag: Enemy
   enemyAnimation: {fileID: 4548420546093271854}
