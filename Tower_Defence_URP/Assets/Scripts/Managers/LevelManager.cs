@@ -16,15 +16,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<Material> startMaterials = new List<Material>();
     [SerializeField] private List<Material> endMaterials = new List<Material>();
 
-    [SerializeField] private List<EnemyUnit> enemies = new List<EnemyUnit>();
     private List<Tuple<EnemyUnit, float>> spawnQueue = new List<Tuple<EnemyUnit, float>>();
 
-    [SerializeField] private float enemySpawnDelay;
-    [SerializeField] private float waveDelayReduction;
-    [SerializeField] private float minSpawnDelay;
     [SerializeField] private float waveStartDelay;
+    [SerializeField] private List<Wave> waves;
 
-    //to calculate the x and y corrdinates for the game
+    //to calculate the x and y coordinates for the game
 
     private Dictionary<string, Vector2> southWestCorners = new Dictionary<string, Vector2>();
 
@@ -39,10 +36,7 @@ public class LevelManager : MonoBehaviour
     public Dictionary<string, Vector2> SouthWestCorners { get => southWestCorners; }
     public GameObject Background { get => background; set => background = value; }
     public GameObject GridBackground { get => gridBackground; set => gridBackground = value; }
-
     public GameObject Map { get => map; set => map = value; }
-
-    
 
     public List<Material> TileMaterials { get => tileMaterials; }
     public List<Material> StartMaterials { get => startMaterials; }
@@ -98,6 +92,7 @@ public class LevelManager : MonoBehaviour
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
                 {
                     wavesCompleted.text = waveNum.ToString();
+                    gameManager.Money += waves[prevWave].EndWaveBonus;
                     prevWave = waveNum;
                     timeElapsed = 0.0f;
                     WaveInProgress = false;
@@ -116,34 +111,38 @@ public class LevelManager : MonoBehaviour
 
     public void SendWave()
     {
-        waveNum += 1;
-        float delay = waveStartDelay;
         audioManager.PlaySound(AudioManager.Sound.WaveStart);
         audioManager.PlayMusic(AudioManager.Music.AttackPhase);
 
-        for (int i = 0; i < waveNum*3; i++)
+        if (waveNum >= waves.Count)
         {
-            Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(GetEnemyType(waveNum), delay);
-            spawnQueue.Add(spawnItem);
-            if (i==0)
+            Wave wave = waves[waves.Count - 1];
+            int extraWaveCount = waveNum - waves.Count + 1;
+
+            for (int i = 0; i < wave.Length; i++)
             {
-                delay = enemySpawnDelay - waveNum * waveDelayReduction;
+                Wave.Spawn spawn = wave.SpawnList[i];
+                for (int j = 0; j < extraWaveCount; j++)
+                {
+                    float delay = i+j == 0 ? waveStartDelay : spawn.delayToThis / extraWaveCount;
+                    Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(spawn.enemy, delay);
+                    spawnQueue.Add(spawnItem);
+                }
             }
         }
-    }
+        else
+        {
+            Wave wave = waves[waveNum];
 
-    public EnemyUnit GetEnemyType (int waveNumber)
-    {
-        int randValue = UnityEngine.Random.Range(waveNumber, 100);
-        if (randValue > 95)
-        {
-            return enemies[2];
+            for (int i = 0; i < wave.Length; i++)
+            {
+                Wave.Spawn spawn = wave.SpawnList[i];
+                float delay = i == 0 ? waveStartDelay : spawn.delayToThis;
+                Tuple<EnemyUnit, float> spawnItem = new Tuple<EnemyUnit, float>(spawn.enemy, delay);
+                spawnQueue.Add(spawnItem);
+            }
         }
-        if (randValue > 60)
-        {
-            return enemies[1];
-        }
-        return enemies[0];
+        waveNum += 1;
     }
 
     public int GetWave()

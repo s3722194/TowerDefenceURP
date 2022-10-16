@@ -286,7 +286,7 @@ MonoBehaviour:
   - {x: 0.4322729, y: -0.41620398, z: -0.00000015646219}
   m_ShapePathHash: -855526859
   m_Mesh: {fileID: 0}
-  m_InstanceId: 122060
+  m_InstanceId: 87308
 --- !u!114 &6361869969402622560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,14 +306,14 @@ MonoBehaviour:
   range: 3
   unitName: 
   destructable: 0
-  cost: 400
-  upgradeCostRate: 0.5
+  cost: 1250
+  upgradeCostRate: 1
   ProjectilePrefab: {fileID: 0}
   sound: 2
-  upgradeable: 0
+  upgradeable: 1
   upgradeCost: 0
   enemiesInRange: []
-  slowDownRate: 3
+  slowDownRate: 1.5
 --- !u!4 &2093819992983936563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2802711681706284274, guid: 9085cbf98e10b8a4abfa886e365cd55a, type: 3}

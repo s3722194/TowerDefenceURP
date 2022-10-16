@@ -43,6 +43,10 @@ public abstract class AUnit : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException();
         }
+        if (Health <= 0)
+        {
+            return false;
+        }
         Health -= damage;
         if (Health <= 0)
         {

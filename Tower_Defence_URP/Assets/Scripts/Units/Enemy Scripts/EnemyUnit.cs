@@ -133,8 +133,11 @@ public class EnemyUnit : AUnit
     public override bool TakeDamage(int damage)
     {
         bool doesTakeDamage = base.TakeDamage(damage);
-        enemyAnimation.IsHurt();
-        enemyAnimation.BasicDamage();
+        if (doesTakeDamage)
+        {
+            enemyAnimation.IsHurt();
+            enemyAnimation.BasicDamage();
+        }
         return doesTakeDamage;
     }
 

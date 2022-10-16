@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         MaxLives = lives;
         Time.timeScale = 1.0f;
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        Application.runInBackground = true;
     }
 
     public void Escape(EnemyUnit unit)

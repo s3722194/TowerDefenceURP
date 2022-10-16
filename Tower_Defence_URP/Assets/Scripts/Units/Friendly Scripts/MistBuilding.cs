@@ -6,6 +6,8 @@ public class MistBuilding : Building
 {
     [SerializeField] private float slowDownRate;
 
+    public float SlowDownRate { get => slowDownRate; set => slowDownRate = value; }
+
     public override void Attack()
     {
         // NOT ATTACKING
@@ -24,7 +26,7 @@ public class MistBuilding : Building
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if(enemy != null)
             {
-                enemy.Speed /= slowDownRate;
+                enemy.Speed /= SlowDownRate;
             }
         }
     }
@@ -37,7 +39,7 @@ public class MistBuilding : Building
             EnemyUnit enemy = collider.gameObject.GetComponent<EnemyUnit>();
             if (enemy != null)
             {
-                enemy.Speed *= slowDownRate;
+                enemy.Speed *= SlowDownRate;
             }
         }
     }

@@ -72,15 +72,33 @@ public class Building : AUnit
 
     public GameObject SelectTarget()
     {
-        foreach (GameObject obj in enemiesInRange)
+        List<EnemyUnit> oldEnemies = new List<EnemyUnit>();
+        GameObject target = null;
+        for (int i = 0; i < enemiesInRange.Count; i++)
         {
-            EnemyUnit enemy = obj.GetComponent<EnemyUnit>();
-            if (enemy && !enemy.IsDying)
+            EnemyUnit enemy = enemiesInRange[i].GetComponent<EnemyUnit>();
+            if (enemy)
             {
-                return enemy.gameObject;
+                if (enemy.IsDying)
+                {
+                    oldEnemies.Add(enemy);
+                }
+                else
+                {
+                    target = enemy.gameObject;
+                    break;
+                }
+            }
+            else
+            {
+                oldEnemies.Add(enemy);
             }
         }
-        return null;
+        foreach (EnemyUnit enemy in oldEnemies)
+        {
+            enemiesInRange.Remove(enemy.gameObject);
+        }
+        return target;
     }
 
     public override bool TakeDamage(int damage)

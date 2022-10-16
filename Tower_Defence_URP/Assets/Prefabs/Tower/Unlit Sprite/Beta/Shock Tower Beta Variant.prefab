@@ -485,7 +485,7 @@ MonoBehaviour:
   range: 6
   unitName: Shock Tower
   destructable: 0
-  cost: 600
+  cost: 1500
   upgradeCostRate: 1.2
   ProjectilePrefab: {fileID: 0}
   sound: 5

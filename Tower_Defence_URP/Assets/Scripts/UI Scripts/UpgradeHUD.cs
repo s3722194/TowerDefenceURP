@@ -98,6 +98,12 @@ public class UpgradeHUD : MonoBehaviour
                 towerScript.Cost += towerScript.UpgradeCost;
                 towerScript.Damage *= 2;
                 towerScript.Health += 100;
+
+                MistBuilding mist = towerScript.gameObject.GetComponent<MistBuilding>();
+                if (mist)
+                {
+                    mist.SlowDownRate += 0.5f;
+                }
                 towerScript.UpgradeCost = (int)towerScript.Cost/2;
 
                 audioManager.PlaySound(AudioManager.Sound.UpgradeTower);

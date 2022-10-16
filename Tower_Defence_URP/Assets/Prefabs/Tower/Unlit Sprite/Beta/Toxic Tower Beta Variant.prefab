@@ -425,8 +425,8 @@ MonoBehaviour:
   range: 1
   unitName: Toxic Tower
   destructable: 0
-  cost: 600
-  upgradeCostRate: 1
+  cost: 2000
+  upgradeCostRate: 1.2
   ProjectilePrefab: {fileID: 6308159105955538640, guid: 11f901f8f699a1141bbf758b7a4ade0e, type: 3}
   sound: 3
   upgradeable: 1
