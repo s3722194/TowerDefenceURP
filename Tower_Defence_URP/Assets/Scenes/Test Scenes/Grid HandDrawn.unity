@@ -2649,6 +2649,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: InfoPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 462639628720573574, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 462639629865431623, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
       value: 
@@ -2661,9 +2665,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: InfoPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1013509573769628488, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 1250
+      objectReference: {fileID: 0}
     - target: {fileID: 1345041411216649206, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_TagString
       value: InfoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345041411344610341, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 1345041412473719524, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
@@ -2673,6 +2685,10 @@ PrefabInstance:
       propertyPath: TowerPanel
       value: 
       objectReference: {fileID: 1909534189}
+    - target: {fileID: 1976029746579167267, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 1976029746719639536, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_TagString
       value: InfoPanel
@@ -2684,6 +2700,10 @@ PrefabInstance:
     - target: {fileID: 2127633118573101861, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_TagString
       value: InfoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127633118696873206, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4332727892648359263, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
@@ -2702,6 +2722,10 @@ PrefabInstance:
         A short range unit that emits hundreds of particles that
         damage enemies on contact.'
       objectReference: {fileID: 0}
+    - target: {fileID: 4332727893633682334, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 4332727893774226509, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2713,6 +2737,10 @@ PrefabInstance:
     - target: {fileID: 5480988490884991926, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_TagString
       value: InfoPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480988491025536101, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5480988492145748644, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: TowerPanel
@@ -2773,6 +2801,10 @@ PrefabInstance:
     - target: {fileID: 8057374176751559157, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057374176869606462, guid: 40cc8323830b86e49af406cd62940245, type: 3}
+      propertyPath: m_text
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8057374176993311725, guid: 40cc8323830b86e49af406cd62940245, type: 3}
       propertyPath: m_TagString
