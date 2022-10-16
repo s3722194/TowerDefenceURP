@@ -578,7 +578,7 @@ MonoBehaviour:
   range: 4.4
   unitName: 
   destructable: 0
-  cost: 4000
+  cost: 3000
   upgradeCostRate: 1.5
   ProjectilePrefab: {fileID: 0}
   sound: 7

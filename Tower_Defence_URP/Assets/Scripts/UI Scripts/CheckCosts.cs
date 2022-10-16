@@ -107,7 +107,6 @@ public class CheckCosts : MonoBehaviour
 
             if(tag != null && tag.InfoPanelTag.Equals(building.tag))
             {
-                Debug.Log("found");
                 return panel;
             }
         }

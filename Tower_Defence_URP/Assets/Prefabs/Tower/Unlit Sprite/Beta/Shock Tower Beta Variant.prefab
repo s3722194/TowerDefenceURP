@@ -465,7 +465,7 @@ MonoBehaviour:
   - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
   m_ShapePathHash: -1014512811
   m_Mesh: {fileID: 0}
-  m_InstanceId: 128492
+  m_InstanceId: 146970
 --- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,14 +478,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16811afd700cb384b8697be4a9eb1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 800
   maxHealth: 300
   attackCooldown: 2
   damage: 40
   range: 6
   unitName: Shock Tower
   destructable: 0
-  cost: 1500
+  cost: 800
   upgradeCostRate: 1.2
   ProjectilePrefab: {fileID: 0}
   sound: 5

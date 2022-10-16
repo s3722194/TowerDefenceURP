@@ -911,7 +911,7 @@ MonoBehaviour:
   maxHealth: 100
   attackCooldown: 1
   damage: 20
-  range: 4
+  range: 5
   unitName: Plasma Tower
   destructable: 0
   cost: 150
