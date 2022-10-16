@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 5310889468608681233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.06467297}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 12, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5383567817789444858}
@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d1a60a14a91925d4bb91b5ce6bb14609, type: 2}
     - target: {fileID: 731292499974833925, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Name
-      value: Shock Tower Beta Variant
+      value: Chain Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 731292499974833925, guid: 7b32c1259fb4ffd4aaed9e587f4e9e72, type: 3}
       propertyPath: m_Layer
@@ -465,7 +465,7 @@ MonoBehaviour:
   - {x: -0.23635468, y: -0.4053582, z: 0.000000022351742}
   m_ShapePathHash: -1014512811
   m_Mesh: {fileID: 0}
-  m_InstanceId: 146970
+  m_InstanceId: 181262
 --- !u!114 &2608318251546826163
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4080167062780008385
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 611235323423751181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.06467297}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5072118316001354987}
@@ -357,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Name
-      value: Portal Tower Beta Variant
+      value: Black Hole Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 959825259802375862, guid: f116628cbd4415d46b7e62a6172df875, type: 3}
       propertyPath: m_Layer
@@ -621,7 +621,7 @@ MonoBehaviour:
   - {x: 0.35493064, y: -0.33327246, z: 0.000000022351742}
   m_ShapePathHash: -2016135523
   m_Mesh: {fileID: 0}
-  m_InstanceId: 128434
+  m_InstanceId: 180982
 --- !u!4 &5072118316001354987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959825259802375860, guid: f116628cbd4415d46b7e62a6172df875, type: 3}

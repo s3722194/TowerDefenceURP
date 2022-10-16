@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1719397330618866457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.06467297}
-  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_LocalScale: {x: 16, y: 16, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035722182896773499}
@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 47564af5ed481684a8a3fe6ac79ec5d0, type: 2}
     - target: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Name
-      value: Fire Tower Beta Variant
+      value: Blaze Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5992573463983184558, guid: 0c6a361dd7f28864d92eb223023a839a, type: 3}
       propertyPath: m_Layer
@@ -445,7 +445,7 @@ MonoBehaviour:
   - {x: 0.35876322, y: -0.31530005, z: 0.000000022351742}
   m_ShapePathHash: -1761156079
   m_Mesh: {fileID: 0}
-  m_InstanceId: 128028
+  m_InstanceId: 181442
 --- !u!114 &3465840076124091748
 MonoBehaviour:
   m_ObjectHideFlags: 0

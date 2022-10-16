@@ -60,7 +60,7 @@ public class GridTile : MonoBehaviour
                     // Place Tower
                     GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), transform.position, transform.rotation);
                     OccupiedTower = spawnedTower;
-                    towerRange = spawnedTower.GetComponent<ShowRange>().getRange();
+                    towerRange = spawnedTower.GetComponent<ShowRange>().GetRange();
                    
                     GM.SpendMoney(building.Cost);
                     mapGrid.UpdatePosition(this);

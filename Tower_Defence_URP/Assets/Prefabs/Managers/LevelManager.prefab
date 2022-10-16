@@ -126,8 +126,8 @@ MonoBehaviour:
       delayToThis: 3
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
-    endWaveBonus: 20
-  - waveName: Grouping (49)
+    endWaveBonus: 30
+  - waveName: Grouping (74)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
@@ -149,71 +149,71 @@ MonoBehaviour:
       delayToThis: 1
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 3
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    endWaveBonus: 25
-  - waveName: Increased Speed (74)
-    spawnList:
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 3
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    endWaveBonus: 50
-  - waveName: Speedy Grouping (80)
-    spawnList:
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 3
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1
-    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
-      delayToThis: 1.5
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
       delayToThis: 1
     endWaveBonus: 50
+  - waveName: Increased Speed (99)
+    spawnList:
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    endWaveBonus: 75
+  - waveName: Speedy Grouping (100)
+    spawnList:
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 3
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1.5
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}
+      delayToThis: 1
+    endWaveBonus: 70
   - waveName: Increased Quantity (100)
     spawnList:
     - enemy: {fileID: 4190926774936116961, guid: 75b6f4f83b1b6544f83ea21013d2f2cb, type: 3}

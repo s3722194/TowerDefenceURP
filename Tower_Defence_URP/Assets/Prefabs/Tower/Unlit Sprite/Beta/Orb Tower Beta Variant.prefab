@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e669bb0eafbb1ba4db18dff5b405b735, type: 2}
     - target: {fileID: 2823415487228418254, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Name
-      value: Orb Shooter Beta Variant
+      value: Orb Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2823415487228418254, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}
       propertyPath: m_Layer
@@ -446,7 +446,7 @@ MonoBehaviour:
   - {x: -0.39131126, y: -0.34346056, z: 0.000000022351742}
   m_ShapePathHash: -1450391104
   m_Mesh: {fileID: 0}
-  m_InstanceId: 128342
+  m_InstanceId: 181600
 --- !u!1 &2173682292665146262 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2823415487468442753, guid: b42e7be2c96185a45b4c9e52d28f8d8c, type: 3}

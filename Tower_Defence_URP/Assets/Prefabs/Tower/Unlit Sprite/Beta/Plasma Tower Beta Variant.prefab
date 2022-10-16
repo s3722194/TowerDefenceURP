@@ -543,7 +543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Name
-      value: Lazer Tower Beta Variant
+      value: Plasma Tower Beta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 92233426818048400, guid: aea55179cc2e37f4ea48ebfb58cabb50, type: 3}
       propertyPath: m_Layer
@@ -853,7 +853,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 5
 --- !u!114 &1367649047039654235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
   - {x: 0.5116451, y: -0.4217553, z: 0.000000022351742}
   m_ShapePathHash: 1060431707
   m_Mesh: {fileID: 0}
-  m_InstanceId: 128226
+  m_InstanceId: 181736
 --- !u!114 &8309679711001331286
 MonoBehaviour:
   m_ObjectHideFlags: 0
