@@ -131,8 +131,9 @@ MonoBehaviour:
     volume: 0
     isLoop: 0
   - sound: 16
-    audioClips: []
-    volume: 0.8
+    audioClips:
+    - {fileID: 8300000, guid: 2c27f9502d5f7584880eb19c0cc250cc, type: 3}
+    volume: 0.3
     isLoop: 0
   - sound: 17
     audioClips:
