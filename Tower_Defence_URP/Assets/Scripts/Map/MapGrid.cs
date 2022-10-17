@@ -132,14 +132,10 @@ public class MapGrid : MonoBehaviour
             }
         }
     }
-    
+
     public bool HasGridTile(int x, int y)
     {
-        if (tiles.GetLength(0) > x && tiles.GetLength(1) > y)
-        {
-            return tiles[x, y] != null;
-        }
-        return false;
+        return HasGridTile(new Vector2Int(x, y));
     }
 
     public bool HasGridTile(Vector2Int pos)
@@ -176,6 +172,30 @@ public class MapGrid : MonoBehaviour
             throw new ArgumentOutOfRangeException("Grid tile position is too high for tilemap size");
         }
         tiles[pos_x, pos_y] = gridTile;
+    }
+
+    /// <summary>
+    /// If the provided gridTile is at a position where no valid paths can be formed, block a building from being placed there.
+    /// </summary>
+    /// <param name="gridTile"></param>
+    /// <returns></returns>
+    public bool CanPlaceBuilding(GridTile gridTile)
+    {
+        Vector3 vector3 = gridTile.transform.position;
+        Vector2Int pos = new Vector2Int((int)vector3.x, (int)vector3.y);
+        List<Vector2Int> exclusions = new List<Vector2Int>{ pos };
+        foreach (Path path in paths)
+        {
+            if (path.Contains(pos))
+            {
+                bool check = AStarSearch.GetPathExists(this, path.GetStartPosition(), path.GetEndPosition(), exclusions, allowDiagonalMovement);
+                if (!check)
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public int AssignPathNumber()

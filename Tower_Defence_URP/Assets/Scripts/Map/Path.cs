@@ -59,7 +59,7 @@ public class Path : IList<Vector2Int>
         return position.Equals(GetEndPosition());
     }
 
-    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0, float tolerance = 0.10f)
+    public Vector2Int CalculateNextPosition(Vector2 point, int positionNumber=0, float tolerance = 0.20f)
     {
         for (int i = positionNumber; i < Count - 1; i++)
         {

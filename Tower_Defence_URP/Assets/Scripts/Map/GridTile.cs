@@ -4,32 +4,24 @@ using UnityEngine;
 
 public class GridTile : MonoBehaviour
 {
-    private GameObject occupiedTower;
     public int x;
     public int y;
     public float nodeSize;
     private GameObject towerRange;
 
     public bool Occupied { get => OccupiedTower != null; }
-    public GameObject OccupiedTower
-    {
-        get => occupiedTower;
-        set
-        {
-            occupiedTower = value;
-        }
-    }
+    public GameObject OccupiedTower { get; set; }
 
-    private GameManager GM;
-    private AudioManager AM;
+    private GameManager gameManager;
+    private AudioManager audioManager;
     private UpgradeHUD upgradeCanvas;
     private MapGrid mapGrid;
 
     // Start is called before the first frame update
     void Start()
     {
-        GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        AM = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         upgradeCanvas = GameObject.Find("Upgrade_HUD").GetComponent<UpgradeHUD>();
         mapGrid = transform.parent.parent.gameObject.GetComponent<MapGrid>();
 
@@ -49,28 +41,27 @@ public class GridTile : MonoBehaviour
     {
         if(OccupiedTower == null)
         {
-            if(GM.GetSelectedTower() != null)
+            if(gameManager.GetSelectedTower() != null)
             {
-                GameObject selectedTower = GM.GetSelectedTower();
+                GameObject selectedTower = gameManager.GetSelectedTower();
                 Building building = selectedTower.GetComponent<Building>();
                 
-
-                if(building != null && GM.Money >= building.Cost)
+                if(CanPlaceTower(building))
                 {
                     // Place Tower
-                    GameObject spawnedTower = Instantiate(GM.GetSelectedTower(), transform.position, transform.rotation);
+                    GameObject spawnedTower = Instantiate(gameManager.GetSelectedTower(), transform.position, transform.rotation);
                     OccupiedTower = spawnedTower;
                     towerRange = spawnedTower.GetComponent<ShowRange>().GetRange();
                    
-                    GM.SpendMoney(building.Cost);
+                    gameManager.SpendMoney(building.Cost);
                     mapGrid.UpdatePosition(this);
-                    AM.PlaySound(AudioManager.Sound.PlaceTower);
+                    audioManager.PlaySound(AudioManager.Sound.PlaceTower);
                 } 
             }
         }
         else
         {
-            upgradeCanvas.UpdateHUD(occupiedTower, towerRange);
+            upgradeCanvas.UpdateHUD(OccupiedTower, towerRange);
             towerRange.SetActive(true);
             GameObject info_canvas = GameObject.Find("Info_Canvas");
             foreach (Transform panel in info_canvas.GetComponentsInChildren<Transform>())
@@ -84,7 +75,7 @@ public class GridTile : MonoBehaviour
                     }
                 }
             }
-            GM.ResetTower();
+            gameManager.ResetTower();
         }
     }
 
@@ -104,13 +95,19 @@ public class GridTile : MonoBehaviour
         }
     }
 
+
+    public bool CanPlaceTower(Building building)
+    {
+        bool canPlace = true;
+        canPlace = canPlace && building != null;
+        canPlace = canPlace && gameManager.Money >= building.Cost;
+        // Expensive, run last
+        canPlace = canPlace && mapGrid.CanPlaceBuilding(this);
+        return canPlace;
+    }
+
     public bool GetOccupied()
     {
         return OccupiedTower != null;
-    }
-
-    private MapGrid GetGrid()
-    {
-        return transform.parent.parent.GetComponent<MapGrid>();
     }
 }

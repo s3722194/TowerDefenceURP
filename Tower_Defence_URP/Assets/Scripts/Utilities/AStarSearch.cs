@@ -6,11 +6,12 @@ using UnityEngine;
 public static class AStarSearch
 {
     public static List<Vector2Int> Search(MapGrid grid, Vector2Int startPos, Vector2Int endPos,
-        bool goThroughBuildings=false, bool ignoreBuildings=false, bool allowDiagonal=false)
+        bool goThroughBuildings = false, bool ignoreBuildings = false, bool allowDiagonal = false)
     {
-        Node node = new Node(startPos, cost:1);
-        if (IsGoalState(node, endPos)) {
-            return new List<Vector2Int>();
+        Node node = new Node(startPos, cost: 1);
+        if (IsGoalState(node, endPos))
+        {
+            return new List<Vector2Int> { startPos };
         }
 
         PriorityQueue<Node> frontier = new PriorityQueue<Node>();
@@ -35,8 +36,46 @@ public static class AStarSearch
                 Node child = new Node(pos, node);
                 if (!explored.Contains(child.Position))
                 {
-                    float cost = child.GetPathCost() + Heuristics.BuildingHeuristic(grid, child.Position, endPos);
+                    float cost = child.GetPathCost() + Heuristics.DistanceHeuristic(grid, child.Position, endPos);
                     frontier.Update(child, cost);
+                }
+            }
+        }
+    }
+
+    public static bool GetPathExists(MapGrid grid, Vector2Int startPos, Vector2Int endPos, List<Vector2Int> exclusions, bool allowDiagonal = false)
+    {
+        if (exclusions.Contains(startPos))
+        {
+            return false;
+        }
+        if (startPos.Equals(endPos))
+        {
+            return true;
+        }
+
+        Queue<Vector2Int> frontier = new Queue<Vector2Int>();
+        HashSet<Vector2Int> explored = new HashSet<Vector2Int>();
+
+        frontier.Enqueue(startPos);
+        while (true)
+        {
+            if (frontier.Count == 0)
+            {
+                return false;
+            }
+            Vector2Int currentPos = frontier.Dequeue();
+            if (currentPos.Equals(endPos))
+            {
+                return true;
+            }
+            explored.Add(currentPos);
+            List<Vector2Int> successors = GetSuccessors(grid, currentPos, allowDiagonal);
+            foreach (Vector2Int pos in successors)
+            {
+                if (!explored.Contains(pos) && !exclusions.Contains(pos) && !frontier.Contains(pos))
+                {
+                    frontier.Enqueue(pos);
                 }
             }
         }
@@ -79,13 +118,64 @@ public static class AStarSearch
                 }
                 // Remove pos if there is no tile there
                 pos = new Vector2Int(node.Position.x+i, node.Position.y+j);
-                if (!grid.HasGridTile(pos))
+                try
+                {
+                    if (!grid.HasGridTile(pos))
+                    {
+                        continue;
+                    }
+                    // Remove pos if there is a building there
+                    if (grid.GetGridTile(pos).Occupied)
+                    {
+                        continue;
+                    }
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    Debug.LogWarning("Index out of range during A* path creation");
+                    continue;
+                }
+
+                successors.Add(pos);
+            }
+        }
+        return successors;
+    }
+
+    private static List<Vector2Int> GetSuccessors(MapGrid grid, Vector2Int currentPos, bool allowDiagonal)
+    {
+        List<Vector2Int> successors = new List<Vector2Int>();
+        Vector2Int pos;
+        for (int i = -1; i <= 1; i++)
+        {
+            for (int j = -1; j <= 1; j++)
+            {
+                // allowDiagonal, and clear central pos
+                if (i == 0 && j == 0)
                 {
                     continue;
                 }
-                // Remove pos if there is a building there
-                if (!goThroughBuildings && grid.GetGridTile(pos).Occupied)
+                if ((i + j) % 2 == 0 && !allowDiagonal)
                 {
+                    continue;
+                }
+                // Remove pos if there is no tile there
+                pos = new Vector2Int(currentPos.x + i, currentPos.y + j);
+                try
+                {
+                    if (!grid.HasGridTile(pos))
+                    {
+                        continue;
+                    }
+                    // Remove pos if there is a building there
+                    if (grid.GetGridTile(pos).Occupied)
+                    {
+                        continue;
+                    }
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    Debug.LogWarning("Index out of range during BFS path check");
                     continue;
                 }
 
