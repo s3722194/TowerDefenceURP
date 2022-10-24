@@ -54,6 +54,10 @@ public class Building : AUnit
     public override void Attack()
     {
         // Fire a bullet every [AttackCooldown] seconds
+        if (AttackCooldown <= 0)
+        {
+            return;
+        }
         if (FireRate >= AttackCooldown)
         {
             GameObject target = SelectTarget();
